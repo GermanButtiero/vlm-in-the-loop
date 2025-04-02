@@ -27,33 +27,13 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    
-    # Download the COCO-2017 
-    absolute_data_path = os.path.abspath("data")
-    os.makedirs(absolute_data_path, exist_ok=True)
-    fo.config.dataset_zoo_dir = absolute_data_path
-
-    dataset_train = foz.load_zoo_dataset("coco-2017", split="train",  dataset_dir= "")
-    dataset_train.name = "coco-2017-train"
-    dataset_train.persistent = True
-    print(f'Dataset {dataset_train.name} loaded with {len(dataset_train)} samples.')
-
-    dataset = foz.load_zoo_dataset("coco-2017", split="validation", dataset_dir= "")
-    dataset.name = "coco-2017-validation"
-    dataset.persistent = True
-    print(f'Dataset {dataset.name} loaded with {len(dataset)} samples.')
-
    
     config = json.load(open("config.json"))
-
-    categories_to_keep = config["categories_to_keep"]
 
     # Split the original training set
     train_dataset_full = CocoSegmentationDatasetMRCNN(
         config["train_image_dir"],
-        config["train_annotation_file"],
-        categories_to_keep=categories_to_keep,
-        min_area_threshold=config["min_area_threshold"]
+        config["train_annotation_file"]
     )
 
     train_size = int(0.9 * len(train_dataset_full))
@@ -65,9 +45,7 @@ if __name__ == "__main__":
 
     dataset_test = CocoSegmentationDatasetMRCNN(
         config["val_image_dir"],
-        config["val_annotation_file"],
-        categories_to_keep=categories_to_keep,
-        min_area_threshold=config["min_area_threshold"]
+        config["val_annotation_file"]
     )
 
     def collate_fn(batch):
@@ -92,7 +70,7 @@ if __name__ == "__main__":
     )
     if args.train:
         print("Training the model...")
-        num_classes = len(categories_to_keep)
+        num_classes = config["num_classes"]
         train_model(data_loader_train, data_loader_val, num_classes, num_epochs= config["num_epochs"], device=device)
         
     if args.test:

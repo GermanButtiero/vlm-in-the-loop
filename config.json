@@ -1,19 +1,14 @@
 {
-    "train_image_dir": "coco-2017/train/data",
-    "train_annotation_file": "coco-2017/train/labels.json",
+    "train_image_dir": "data/train",
+    "train_annotation_file": "data/labels/labels_train.json",
 
-    "val_image_dir": "coco-2017/validation/data",
-    "val_annotation_file": "coco-2017/validation/labels.json",
-
-    "test_image_dir": "coco-2017/test/data",
-    "test_annotation_file": "coco-2017/test/labels.json",
+    "val_image_dir": "data/validation",
+    "val_annotation_file": "data/labels/labels_val.json",
 
     "model_path": "models/best_maskrcnn_model.pth",
 
     "num_epochs": 10,
     "batch_size": 4,
-    "categories_to_keep": [3, 23, 53],
-    "min_area_threshold": 655
-
+    "num_classes": 4
 
 }

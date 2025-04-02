@@ -13,33 +13,20 @@ import cv2
 from pycocotools import mask as coco_mask
 from matplotlib import pyplot as plt
 
-config = json.load(open("config.json"))
 
 class CocoSegmentationDatasetMRCNN(Dataset):
-    def __init__(self, image_dir, seg_annotation_file, categories_to_keep=[1], min_area_threshold=100):
+    def __init__(self, image_dir, seg_annotation_file):
         self.image_dir = image_dir
         self.coco_seg = COCO(seg_annotation_file)
-        self.min_area_threshold = min_area_threshold
-        self.categories_to_keep = categories_to_keep
         
-        # Filter images to keep only those containing objects from specified categories
-        self.image_ids = []
-        for cat_id in self.categories_to_keep:
-            ann_ids = self.coco_seg.getAnnIds(catIds=[cat_id], iscrowd=False)
-            anns = self.coco_seg.loadAnns(ann_ids)
-            valid_anns = [ann for ann in anns if ann['area'] >= self.min_area_threshold]
-            img_ids = list(set([ann['image_id'] for ann in valid_anns]))
-            self.image_ids.extend(img_ids)
+        # Get all image IDs from the dataset
+        self.image_ids = list(self.coco_seg.imgs.keys())
+        print(f"Dataset contains {len(self.image_ids)} images")
         
-        # Remove duplicates
-        self.image_ids = list(set(self.image_ids))
-        print(f"Dataset contains {len(self.image_ids)} images with categories {categories_to_keep}")
-        
-        # For visualization, create a category mapping
+        # Create a category mapping for all categories
         self.category_map = {}
-        for cat_id in self.categories_to_keep:
-            cat_info = self.coco_seg.loadCats(cat_id)[0]
-            self.category_map[cat_id] = cat_info['name']
+        for cat in self.coco_seg.loadCats(self.coco_seg.getCatIds()):
+            self.category_map[cat['id']] = cat['name']
 
     def __len__(self):
         return len(self.image_ids)
@@ -55,8 +42,8 @@ class CocoSegmentationDatasetMRCNN(Dataset):
         # Convert to tensor
         image = transforms.ToTensor()(image)
         
-        # Load annotations
-        ann_ids = self.coco_seg.getAnnIds(imgIds=image_id, catIds=self.categories_to_keep, iscrowd=False)
+        # Load all annotations for this image
+        ann_ids = self.coco_seg.getAnnIds(imgIds=image_id, iscrowd=False)
         anns = self.coco_seg.loadAnns(ann_ids)
         
         # Initialize target dictionary
@@ -68,9 +55,6 @@ class CocoSegmentationDatasetMRCNN(Dataset):
         
         # Process each annotation
         for ann in anns:
-            if ann['area'] < self.min_area_threshold:
-                continue
-                
             # Get bounding box
             bbox = ann['bbox']  # [x, y, width, height] format
             # Convert to [x1, y1, x2, y2] format
@@ -102,6 +86,3 @@ class CocoSegmentationDatasetMRCNN(Dataset):
         target["image_id"] = torch.tensor([image_id])
         
         return image, target
-    
-
-
