@@ -16,30 +16,35 @@ from src.dataset import CocoSegmentationDatasetMRCNN
 from src.train import train_model
 from src.evaluate import evaluate, calculate_ap
 import argparse
+import requests
+from zipfile import ZipFile
 
 
-if "__name__" == "__main__":
+if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Train a Mask R-CNN model on COCO dataset")
     parser.add_argument("--train", action="store_true", default=True, help="Train the model")
     parser.add_argument("--test", action="store_true", default=False, help="Test the model")
     args = parser.parse_args()
 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    
+    # Download the COCO-2017 
+    absolute_data_path = os.path.abspath("data")
+    os.makedirs(absolute_data_path, exist_ok=True)
+    fo.config.dataset_zoo_dir = absolute_data_path
 
-    config = json.load(open("config.json"))
-
-    # Download the COCO-2017 validation split and load it into FiftyOne
-    dataset = foz.load_zoo_dataset("coco-2017", split="validation")
-
-    dataset.name = "coco-2017-validation"
-    dataset.persistent = True
-    print(f'Dataset {dataset.name} loaded with {len(dataset)} samples.')
-
-    dataset_train = foz.load_zoo_dataset("coco-2017", split="train")
+    dataset_train = foz.load_zoo_dataset("coco-2017", split="train",  dataset_dir= "")
     dataset_train.name = "coco-2017-train"
     dataset_train.persistent = True
     print(f'Dataset {dataset_train.name} loaded with {len(dataset_train)} samples.')
 
+    dataset = foz.load_zoo_dataset("coco-2017", split="validation", dataset_dir= "")
+    dataset.name = "coco-2017-validation"
+    dataset.persistent = True
+    print(f'Dataset {dataset.name} loaded with {len(dataset)} samples.')
+
+   
+    config = json.load(open("config.json"))
 
     categories_to_keep = config["categories_to_keep"]
 

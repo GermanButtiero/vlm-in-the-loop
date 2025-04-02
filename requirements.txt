@@ -1,4 +1,6 @@
-fiftyone==0.16.0
+fiftyone==1.4.0
+fiftyone-brain==0.20.1
+fiftyone_db==1.1.7
 pycocotools==2.0.5
 numpy==1.23.0
 matplotlib==3.5.1
@@ -6,3 +8,4 @@ torch==1.10.0
 torchvision==0.11.1
 Pillow==8.4.0
 opencv-python==4.5.3.56
+mongoengine==0.29.1

@@ -176,9 +176,3 @@ def calculate_ap(model, data_loader, device, iou_threshold=0.5):
     
     return mAP, ap_per_class
 
-# To use:
-mAP, ap_per_class = calculate_ap(model, data_loader_test, device)
-print(f"Mean Average Precision (mAP): {mAP:.4f}")
-print("AP per class:")
-for class_id, ap in ap_per_class.items():
-    print(f"Class {class_id}: {ap:.4f}")
