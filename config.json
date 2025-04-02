@@ -6,8 +6,14 @@
     "val_annotation_file": "coco-2017/validation/labels.json",
 
     "test_image_dir": "coco-2017/test/data",
-    "test_annotation_file": "coco-2017/test/labels.json"
+    "test_annotation_file": "coco-2017/test/labels.json",
 
+    "model_path": "models/best_maskrcnn_model.pth",
+
+    "num_epochs": 10,
+    "batch_size": 4,
+    "categories_to_keep": [3, 23, 53],
+    "min_area_threshold": 655
 
 
 }
