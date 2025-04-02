@@ -1,2 +1,5 @@
 coco-2017
 models
+__pycache__
+*.pyc
+data/
