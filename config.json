@@ -1,0 +1,13 @@
+{
+    "train_image_dir": "coco-2017/train/data",
+    "train_annotation_file": "coco-2017/train/labels.json",
+
+    "val_image_dir": "coco-2017/validation/data",
+    "val_annotation_file": "coco-2017/validation/labels.json",
+
+    "test_image_dir": "coco-2017/test/data",
+    "test_annotation_file": "coco-2017/test/labels.json"
+
+
+
+}
