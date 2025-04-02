@@ -40,9 +40,6 @@ def train_model(data_loader_train, data_loader_val, num_classes, num_epochs=None
     # Learning rate scheduler
     lr_scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size=3, gamma=0.1)
     
-    # Number of epochs
-    num_epochs = num_epochs
-    
     # Training loop
     best_loss = float('inf')
     for epoch in range(num_epochs):

@@ -3,7 +3,7 @@ from torchvision.utils import draw_segmentation_masks
 import torchvision.ops as ops
 
 def evaluate(model, data_loader, device):
-    model.eval()
+    model.train()
     total_loss = 0
     
     with torch.no_grad():

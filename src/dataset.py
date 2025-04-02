@@ -13,15 +13,23 @@ import cv2
 from pycocotools import mask as coco_mask
 from matplotlib import pyplot as plt
 
-
 class CocoSegmentationDatasetMRCNN(Dataset):
     def __init__(self, image_dir, seg_annotation_file):
         self.image_dir = image_dir
         self.coco_seg = COCO(seg_annotation_file)
         
         # Get all image IDs from the dataset
-        self.image_ids = list(self.coco_seg.imgs.keys())
-        print(f"Dataset contains {len(self.image_ids)} images")
+        all_image_ids = list(self.coco_seg.imgs.keys())
+        
+        # Filter to only include images that exist in the directory
+        self.image_ids = []
+        for img_id in all_image_ids:
+            img_info = self.coco_seg.loadImgs(img_id)[0]
+            img_path = os.path.join(image_dir, img_info["file_name"])
+            if os.path.exists(img_path):
+                self.image_ids.append(img_id)
+        
+        print(f"Dataset contains {len(self.image_ids)} valid images out of {len(all_image_ids)} in annotations")
         
         # Create a category mapping for all categories
         self.category_map = {}
@@ -37,6 +45,11 @@ class CocoSegmentationDatasetMRCNN(Dataset):
         # Load image
         image_info = self.coco_seg.loadImgs(image_id)[0]
         image_path = os.path.join(self.image_dir, image_info["file_name"])
+        
+        # Double-check file exists
+        if not os.path.exists(image_path):
+            raise FileNotFoundError(f"Image file not found: {image_path}")
+            
         image = Image.open(image_path).convert("RGB")
         
         # Convert to tensor
