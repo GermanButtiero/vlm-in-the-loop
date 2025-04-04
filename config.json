@@ -1,13 +1,13 @@
 {
-    "train_image_dir": "data1/train",
-    "train_annotation_file": "data1/labels/labels_train.json",
+    "train_image_dir": "data/train",
+    "train_annotation_file": "data/labels/labels_train.json",
 
-    "val_image_dir": "data1/validation",
-    "val_annotation_file": "data1/labels/labels_val.json",
+    "val_image_dir": "data/validation",
+    "val_annotation_file": "data/labels/labels_val.json",
 
-    "model_path": "models/best_maskrcnn_model_data1.pth",
+    "model_path": "models/best_maskrcnn_model_data.pth",
 
-    "num_epochs": 10,
+    "num_epochs": 5,
     "batch_size": 4,
     "num_classes": 4
 
