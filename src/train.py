@@ -26,7 +26,6 @@ def get_model_instance_segmentation(num_classes):
 
 
 def train_model(data_loader_train, data_loader_val, num_classes, num_epochs=None, device=None):
-    # Define number of classes (background + your categories)
     num_classes = num_classes + 1  # +1 for background
     
     # Get the model
@@ -76,7 +75,7 @@ def train_model(data_loader_train, data_loader_val, num_classes, num_epochs=None
         if val_loss < best_loss:
             print(f'Current best loss: {best_loss:.4f}, new best loss: {val_loss:.4f}')
             best_loss = val_loss
-            torch.save(model.state_dict(), 'models/best_maskrcnn_model.pth')
+            torch.save(model.state_dict(), 'models/best_maskrcnn_model_data1.pth')
             print(f"Saved best model with validation loss: {best_loss:.4f}")
         else:
             print(f'Current best loss: {best_loss:.4f}, no improvement since validation loss: {val_loss:.4f}')

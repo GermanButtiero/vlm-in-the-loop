@@ -1,6 +1,7 @@
 import torch
 from torchvision.utils import draw_segmentation_masks
 import torchvision.ops as ops
+import numpy as np
 
 def evaluate(model, data_loader, device):
     total_loss = 0
@@ -30,6 +31,7 @@ def calculate_ap(model, data_loader, device, iou_threshold=0.5):
     all_pred_scores = []
     all_pred_masks = []
     
+    model.eval()
     with torch.no_grad():
         for images, targets in data_loader:
             images = list(img.to(device) for img in images)

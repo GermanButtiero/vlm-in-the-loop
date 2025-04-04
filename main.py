@@ -1,22 +1,9 @@
-import fiftyone as fo
-import fiftyone.zoo as foz
 import json
-import numpy as np
-import matplotlib.patches as patches
 import torch
-from torch.utils.data import Dataset
-import torchvision.transforms as transforms
-from pycocotools.coco import COCO
-from PIL import Image
-import os
-import cv2  
-from pycocotools import mask as coco_mask
-from matplotlib import pyplot as plt
 from src.dataset import CocoSegmentationDatasetMRCNN
-from src.train import train_model
-from src.evaluate import evaluate, calculate_ap
+from src.train import train_model, get_model_instance_segmentation
+from src.evaluate import calculate_ap
 import argparse
-import requests
 from zipfile import ZipFile
 
 def collate_fn(batch):
@@ -66,17 +53,22 @@ if __name__ == "__main__":
         print("Evaluating the model...")
 
         dataset_test = CocoSegmentationDatasetMRCNN(
-        config["val_image_dir"],
-        config["val_annotation_file"]
-    )
+            config["val_image_dir"],
+            config["val_annotation_file"]
+        )
         data_loader_test = torch.utils.data.DataLoader(
-        dataset_test, batch_size=config["batch_size"],
-        shuffle=False, 
-        collate_fn=collate_fn
-    )
-        # Load the trained model
-        model = torch.load(config["model_path"])
+            dataset_test, batch_size=config["batch_size"],
+            shuffle=False, 
+            collate_fn=collate_fn
+        )
+        num_classes = config["num_classes"] + 1  # +1 for background
+    
+        model = get_model_instance_segmentation(num_classes=num_classes)
+         
+        # Load the trained weights
+        model.load_state_dict(torch.load(config["model_path"]))
+        model.to(device)
 
-        #Get mean average precision on test data
-        mean_ap = calculate_ap(model, data_loader_test, device, iou_threshold=0.5)
+        # Get mean average precision on test data
+        mean_ap, ap_per_class = calculate_ap(model, data_loader_test, device, iou_threshold=0.5)
         print(f"Mean Average Precision: {mean_ap:.4f}")
