@@ -3,7 +3,6 @@ from torchvision.utils import draw_segmentation_masks
 import torchvision.ops as ops
 
 def evaluate(model, data_loader, device):
-    model.train()
     total_loss = 0
     
     with torch.no_grad():
@@ -22,7 +21,6 @@ def evaluate(model, data_loader, device):
 
 def calculate_ap(model, data_loader, device, iou_threshold=0.5):
     """Calculate Average Precision on the test data"""
-    model.eval()
     
     all_gt_boxes = []
     all_gt_labels = []
