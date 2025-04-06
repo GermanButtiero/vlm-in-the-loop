@@ -3,6 +3,7 @@ from torchvision.models.detection.faster_rcnn import FastRCNNPredictor
 from torchvision.models.detection.mask_rcnn import MaskRCNNPredictor
 import torch
 from src.evaluate import evaluate
+import os
 
 def get_model_instance_segmentation(num_classes):
     # Load a pre-trained Mask R-CNN model
@@ -75,7 +76,10 @@ def train_model(data_loader_train, data_loader_val, num_classes, num_epochs=None
         if val_loss < best_loss:
             print(f'Current best loss: {best_loss:.4f}, new best loss: {val_loss:.4f}')
             best_loss = val_loss
-            torch.save(model.state_dict(), 'models/best_maskrcnn_model_data1.pth')
+            # Ensure the 'models' directory exists
+            os.makedirs('models', exist_ok=True)
+            
+            torch.save(model.state_dict(), 'models/best_maskrcnn_model_data.pth')
             print(f"Saved best model with validation loss: {best_loss:.4f}")
         else:
             print(f'Current best loss: {best_loss:.4f}, no improvement since validation loss: {val_loss:.4f}')
