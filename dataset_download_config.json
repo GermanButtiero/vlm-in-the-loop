@@ -1,0 +1,1 @@
+{"train_image_dir": "data/train", "val_image_dir": "data/validation", "train_annotation_file": "data/labels/labels_train.json", "val_annotation_file": "data/labels/labels_val.json", "categories": [84, 16, 13, 24], "max_images_per_category": 700}

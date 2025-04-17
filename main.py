@@ -18,9 +18,23 @@ import torchvision.transforms as T
 from transformers import (
     AutoModelForCausalLM,
 )
+COCO_INSTANCE_CATEGORY_NAMES = [
+    '__background__', 'person', 'bicycle', 'car', 'motorcycle', 'airplane', 'bus',
+    'train', 'truck', 'boat', 'traffic light', 'fire hydrant', 'stop sign',
+    'parking meter', 'bench', 'bird', 'cat', 'dog', 'horse', 'sheep', 'cow',
+    'elephant', 'bear', 'zebra', 'giraffe', 'backpack', 'umbrella', 'handbag',
+    'tie', 'suitcase', 'frisbee', 'skis', 'snowboard', 'sports ball', 'kite',
+    'baseball bat', 'baseball glove', 'skateboard', 'surfboard', 'tennis racket',
+    'bottle', 'wine glass', 'cup', 'fork', 'knife', 'spoon', 'bowl', 'banana',
+    'apple', 'sandwich', 'orange', 'broccoli', 'carrot', 'hot dog', 'pizza',
+    'donut', 'cake', 'chair', 'couch', 'potted plant', 'bed', 'dining table',
+    'toilet', 'tv', 'laptop', 'mouse', 'remote', 'keyboard', 'cell phone',
+    'microwave', 'oven', 'toaster', 'sink', 'refrigerator', 'book', 'clock',
+    'vase', 'scissors', 'teddy bear', 'hair drier', 'toothbrush'
+]
 
-def collate_fn(batch):
-        return tuple(zip(*batch))
+def collate_fn(batch): # PUrpose: define how individual data samples form the dataser are combine into batches when passed to the DtataLoader. THe datasets may have varying shapes and size: iamges, annotations.
+        return tuple(zip(*batch)) # if input is batch=[(a1, b1), (a2, b2), (a3, b3)], output is [(a1, a2, a3), (b1, b2, b3)]. * unpacks the tuple into two lists, one for images and one for annotations.
 
 def calculate_mask_iou(pred_mask, gt_mask):
     """Calculate IoU between prediction and ground truth masks"""
@@ -31,13 +45,62 @@ def calculate_mask_iou(pred_mask, gt_mask):
         pred_mask = (pred_mask > 0.5).float()
     
     intersection = (pred_mask * gt_mask).sum().float()
-    union = ((pred_mask + gt_mask) > 0).float().sum()
+    union = ((pred_mask + gt_mask) > 0).float().sum()#>0 converts any non-zero value to 1
     
     if union == 0:
         return 0.0
     return (intersection / union).item()
 
+
 def simulate_human_feedback(prediction, target, iou_threshold=0.6):
+    pred_masks=prediction['masks'].cpu()
+    pred_labels=prediction['labels'].cpu()
+    gt_masks = target['masks'].cpu()
+    gt_labels = target['labels'].cpu()
+
+    # Handle empty masks
+    if len(pred_masks) == 0 and len(gt_masks) == 0:
+        return True  # Correct: nothing to detect, nothing detected
+    if len(pred_masks) == 0 or len(gt_masks) == 0:
+        return False  # One is empty, the other is not
+    
+    # Filter predictions with score > 0.5
+    keep = prediction['scores'].cpu() > 0.5
+    pred_masks = pred_masks[keep]
+    pred_labels = pred_labels[keep]
+    
+    if len(pred_masks) == 0:
+        return False
+    
+    #Track which predictions have been matched
+    pred_matched = [False] * len(pred_masks)
+    
+    #Check if each GT has a good match of the same class
+    used_pred_indices = set()
+    for gt_mask, gt_label in zip(gt_masks, gt_labels):
+        best_iou = 0
+        best_idx = -1
+        for idx, (pred_mask, pred_label) in enumerate(zip(pred_masks, pred_labels)):
+            if pred_label != gt_label or idx in used_pred_indices:
+                continue
+            iou = calculate_mask_iou(pred_mask, gt_mask)
+            if iou > best_iou:
+                best_iou = iou
+                best_idx = idx
+        if best_iou >= iou_threshold:
+            pred_matched[best_idx] = True
+            used_pred_indices.add(best_idx)
+        else:
+            return False  # GT mask not matched
+
+    # Penalize extra predictions (false positives)
+    if not all(pred_matched):
+        return False
+
+    return True
+    
+    
+def simulate_human_feedback_old(prediction, target, iou_threshold=0.6):
     """
     Simulate human feedback by comparing prediction with ground truth masks.
     Returns True if the prediction meets the IoU threshold criteria.
@@ -138,6 +201,7 @@ class LocalVLM:
         print(f"Loading VLM model: {model_name}")
         self.model_name = model_name
         self.device = device
+        self.model_type = "Ovis2"
         
         # Check if this is an Ovis2-4B model
         is_ovis2_model = "Ovis2" in model_name
@@ -208,16 +272,19 @@ class LocalVLM:
                     )[0]
                     
                     response = self.text_tokenizer.decode(output_ids, skip_special_tokens=True)
-                # Extract the model's answer
-                if prompt in response:
-                    answer = response.split(prompt, 1)[1].strip().lower()
-                else:
-                    answer = response.lower()
+                    # Extract the model's answer
+                    if prompt in response:
+                        answer = response.split(prompt, 1)[1].strip().lower()
+                    else:
+                        answer = response.lower()
+                    
+                    # Check if the answer indicates approval
+                    is_approved = True if "yes" in answer else False#in answer and not ("no" in answer and len(answer) < 20)
                 
-                # Check if the answer indicates approval
-                is_approved = "yes" in answer and not ("no" in answer and len(answer) < 20)
-            
-            return is_approved, answer
+                return is_approved, answer
+            else:
+                # Handle unsupported model types
+                return False, "Unsupported VLM model type"
             
         except Exception as e:
             print(f"Error during VLM inference: {e}")
@@ -268,17 +335,6 @@ def run_active_learning(config, device, iou_threshold=0.6, iterations=10, use_vl
         "ap_per_class": [],
         "feedback_method": "vlm" if use_vlm else f"iou_threshold_{iou_threshold}"
     }
-    
-    # Update the VLM prompt in run_active_learning
-    # Update the VLM prompt in run_active_learning
-    vlm_prompt_template = """
-    Examine this image showing object segmentation masks.
-    The colored areas represent the computer's identification of objects in the image.
-
-    Evaluate if the segmentation is accurate. The segmentation is accurate when the colored masks precisely follow the boundaries of the actual objects in the image.
-
-    Answer with ONLY "Yes" if the segmentation is accurate, or "No" followed by a brief explanation if the segmentation is poor (masks miss objects or don't follow object boundaries correctly).
-    """
         
     # Initialize VLM if using it
     vlm = None
@@ -379,11 +435,26 @@ def run_active_learning(config, device, iou_threshold=0.6, iterations=10, use_vl
                 # Check if prediction meets quality threshold
                 if use_vlm:
                     # Create visualization
+                    class_ids = target[0]['labels'].cpu().numpy()
+                    class_names = [COCO_INSTANCE_CATEGORY_NAMES[cid] for cid in np.unique(class_ids)]
+                    class_names_str = ", ".join(class_names)
+                    # Create visualization
                     vis_img = visualize_segmentation_mask(image[0], outputs[0])
-                    
+                    prompt_debug=f"""
+                    only say "yes"
+                    """
+                    prompt= f"""
+            Examine this image showing object segmentation masks.
+            The colored areas represent the computer's identification of objects in the image.
+
+            The objects present in this image are: {class_names_str}.
+
+            Answer with:
+            - Begin the sentence with "yes" if the segmentation is accurate, and begin with "No" followed by a brief explanation if the segmentation is poor (masks miss objects or don't follow object boundaries og yhe objects in the image correctly).
+            """
                     # Get VLM feedback
-                    is_approved, answer = vlm.evaluate_segmentation(vis_img, vlm_prompt_template)
-                    
+                    is_approved, answer = vlm.evaluate_segmentation(vis_img, prompt)
+                    print(f"VLM returned: is_approved={is_approved!r}, answer={answer!r}")#DEbug
                     # Save decision for analysis
                     vlm_decisions.append({
                         "image_idx": original_idx,
@@ -447,7 +518,7 @@ if __name__ == "__main__":
     parser.add_argument("--active", action="store_true", default=False, help="Run active learning loop")
     parser.add_argument("--vlm", action="store_true", default=False, help="Use VLM for feedback instead of IoU")
     parser.add_argument("--vlm-model", type=str, 
-                       default="Aimv2-huge-patch14-448-Qwen2.5-3B-Instruct", 
+                       default="AIDC-AI/Ovis2-4B", #imv2-huge-patch14-448-Qwen2.5-3B-Instruct
                        help="VLM model name from HuggingFace or path to Ovis model")
     parser.add_argument("--iou-threshold", type=float, default=0.6, help="IoU threshold for active learning")
     parser.add_argument("--iterations", type=int, default=10, help="Number of active learning iterations")
