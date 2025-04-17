@@ -13,6 +13,8 @@ import cv2
 from PIL import Image
 from io import BytesIO
 import torchvision.transforms as T
+import datetime
+from src.evaluate import evaluate
 
 # Update imports at the top of the file
 from transformers import (
@@ -99,39 +101,6 @@ def simulate_human_feedback(prediction, target, iou_threshold=0.6):
 
     return True
     
-    
-def simulate_human_feedback_old(prediction, target, iou_threshold=0.6):
-    """
-    Simulate human feedback by comparing prediction with ground truth masks.
-    Returns True if the prediction meets the IoU threshold criteria.
-    """
-    pred_masks = prediction['masks'].cpu()
-    gt_masks = target['masks'].cpu()
-    
-    # Skip images with no masks
-    if len(pred_masks) == 0 or len(gt_masks) == 0:
-        return False
-    
-    # Filter predictions with score > 0.5
-    keep = prediction['scores'].cpu() > 0.5
-    pred_masks = pred_masks[keep]
-    
-    if len(pred_masks) == 0:
-        return False
-    
-    # Check if each ground truth has a good match
-    all_matched = True
-    for gt_mask in gt_masks:
-        best_iou = 0
-        for pred_mask in pred_masks:
-            iou = calculate_mask_iou(pred_mask, gt_mask)
-            best_iou = max(best_iou, iou)
-        
-        if best_iou < iou_threshold:
-            all_matched = False
-            break
-    
-    return all_matched
 
 def visualize_segmentation_mask(image, prediction, threshold=0.5):
     """
@@ -290,7 +259,10 @@ class LocalVLM:
             print(f"Error during VLM inference: {e}")
             return False, f"Error generating response: {e}"
 
-def run_active_learning(config, device, iou_threshold=0.6, iterations=10, use_vlm=False, vlm_model_name=None):
+def run_active_learning(
+    config, device, iou_threshold=0.6, iterations=10, init_train_proportion=0.2,
+    use_vlm=False, vlm_model_name=None, output_root="output"
+):
     """
     Run active learning loop with either simulated human feedback or VLM feedback.
     
@@ -301,6 +273,7 @@ def run_active_learning(config, device, iou_threshold=0.6, iterations=10, use_vl
         iterations: Number of active learning iterations
         use_vlm: Whether to use VLM for feedback
         vlm_model_name: Name of the VLM model to use
+        output_root: Root directory for saving outputs
     """
     # Load the full training dataset
     full_dataset = CocoSegmentationDatasetMRCNN(
@@ -308,14 +281,22 @@ def run_active_learning(config, device, iou_threshold=0.6, iterations=10, use_vl
         config["train_annotation_file"]
     )
     
-    # Create initial split: 20% train, 80% inference pool
+    # Split off a fixed validation set for early stopping/model selection ---
     dataset_size = len(full_dataset)
-    all_indices = list(range(dataset_size))
-    np.random.shuffle(all_indices)  # Randomize
+    all_indices = np.arange(dataset_size)
+    np.random.shuffle(all_indices)
+
+    fixed_val_size = int(0.1 * dataset_size)
+    fixed_val_indices = set(all_indices[:fixed_val_size])
+    remaining_indices = all_indices[fixed_val_size:]
+
+    # The remaining 90% will be used for active learning (train/inference pool)
+    active_learning_indices = list(remaining_indices)
     
-    initial_train_size = int(0.2 * dataset_size)
-    train_indices = set(all_indices[:initial_train_size])
-    inference_indices = set(all_indices[initial_train_size:])
+    # Create initial split: initial train and inference pool from the 90%
+    initial_train_size = int(init_train_proportion * len(active_learning_indices))
+    train_indices = set(active_learning_indices[:initial_train_size])
+    inference_indices = set(active_learning_indices[initial_train_size:])
     
     # Prepare test dataset for consistent evaluation
     test_dataset = CocoSegmentationDatasetMRCNN(
@@ -324,6 +305,12 @@ def run_active_learning(config, device, iou_threshold=0.6, iterations=10, use_vl
     )
     test_loader = torch.utils.data.DataLoader(
         test_dataset, batch_size=config["batch_size"],
+        shuffle=False, collate_fn=collate_fn
+    )
+    # Fixed validation set for early stopping/model selection
+    fixed_val_dataset = torch.utils.data.Subset(full_dataset, list(fixed_val_indices))
+    fixed_val_loader = torch.utils.data.DataLoader(
+        fixed_val_dataset, batch_size=config["batch_size"],
         shuffle=False, collate_fn=collate_fn
     )
     
@@ -341,15 +328,21 @@ def run_active_learning(config, device, iou_threshold=0.6, iterations=10, use_vl
     if use_vlm:
         vlm = LocalVLM(model_name=vlm_model_name, device=device)
     
+    # --- Directory setup ---
+    run_type = "vlm" if use_vlm else "human"
+    run_name = f"iter{iterations}_iou{iou_threshold}_init{init_train_proportion}"
+    timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
+    run_folder = os.path.join(output_root, run_type, f"{run_name}_{timestamp}")
+    os.makedirs(run_folder, exist_ok=True)
+    if use_vlm:
+        vlm_decisions_dir = os.path.join(run_folder, "vlm_decisions")
+        os.makedirs(vlm_decisions_dir, exist_ok=True)
+    
     print(f"Starting active learning with {initial_train_size} initial training images")
     if use_vlm:
         print(f"Using VLM feedback with model: {vlm_model_name}")
     else:
         print(f"Using simulated human feedback with IoU threshold of {iou_threshold}")
-    
-    # Create a folder for saving visualizations if using VLM
-    if use_vlm:
-        os.makedirs("vlm_decisions", exist_ok=True)
     
     # Active learning iterations
     for iteration in range(iterations):
@@ -360,31 +353,27 @@ def run_active_learning(config, device, iou_threshold=0.6, iterations=10, use_vl
         # Create current training dataset
         train_dataset = torch.utils.data.Subset(full_dataset, list(train_indices))
         
-        # Split into train and validation
-        train_size = int(0.9 * len(train_dataset))
-        val_size = len(train_dataset) - train_size
-        
-        dataset_train, dataset_val = torch.utils.data.random_split(
-            train_dataset, [train_size, val_size]
-        )
-        
-        # Create data loaders
+        # Use all current train_indices for training
         data_loader_train = torch.utils.data.DataLoader(
-            dataset_train, batch_size=config["batch_size"],
+            torch.utils.data.Subset(full_dataset, list(train_indices)),
+            batch_size=config["batch_size"],
             shuffle=True, collate_fn=collate_fn
         )
-        
-        data_loader_val = torch.utils.data.DataLoader(
-            dataset_val, batch_size=config["batch_size"],
-            shuffle=False, collate_fn=collate_fn
-        )
+
+        # Use the fixed validation set for early stopping/model selection
+        data_loader_val = fixed_val_loader
         
         # Train model
         print("Training model...")
         num_classes = config["num_classes"]
-        train_model(data_loader_train, data_loader_val, num_classes, 
-                  num_epochs=config["num_epochs"], device=device)
-        
+        #train_model(data_loader_train, data_loader_val, num_classes, 
+                  #num_epochs=config["num_epochs"], device=device)
+        metrics_epoch = train_model(data_loader_train, data_loader_val, num_classes, 
+                           num_epochs=config["num_epochs"], device=device)
+        metrics_log.setdefault("train_loss_per_epoch", []).append(metrics_epoch["train_loss"])
+        metrics_log.setdefault("val_loss_per_epoch", []).append(metrics_epoch["val_loss"])
+        metrics_log.setdefault("train_map_per_epoch", []).append(metrics_epoch["train_map"])
+        metrics_log.setdefault("val_map_per_epoch", []).append(metrics_epoch["val_map"])
         # Load trained model
         model = get_model_instance_segmentation(num_classes=num_classes + 1)  # +1 for background
         model.load_state_dict(torch.load(config["model_path"]))
@@ -403,7 +392,7 @@ def run_active_learning(config, device, iou_threshold=0.6, iterations=10, use_vl
         metrics_log["ap_per_class"].append([float(ap) for ap in ap_per_class])
         
         # Save intermediate log
-        log_filename = f"active_learning_metrics_{'vlm' if use_vlm else 'iou'}_iter_{iteration+1}.json"
+        log_filename = os.path.join(run_folder, f"active_learning_metrics_{run_type}_iter_{iteration+1}.json")
         with open(log_filename, "w") as f:
             json.dump(metrics_log, f, indent=4)
         
@@ -465,7 +454,7 @@ def run_active_learning(config, device, iou_threshold=0.6, iterations=10, use_vl
                     # Save some examples to inspect VLM decisions
                     if i % 10 == 0:
                         decision = "approved" if is_approved else "rejected"
-                        vis_img.save(f"vlm_decisions/iter{iteration+1}_img{i}_{decision}.jpg")
+                        vis_img.save(os.path.join(vlm_decisions_dir, f"iter{iteration+1}_img{i}_{decision}.jpg"))
                 else:
                     # Use simulated feedback based on IoU
                     is_approved = simulate_human_feedback(outputs[0], target[0], iou_threshold)
@@ -475,7 +464,7 @@ def run_active_learning(config, device, iou_threshold=0.6, iterations=10, use_vl
         
         # Save VLM decisions if using VLM
         if use_vlm:
-            with open(f"vlm_decisions_iter_{iteration+1}.json", "w") as f:
+            with open(os.path.join(run_folder, f"vlm_decisions_iter_{iteration+1}.json"), "w") as f:
                 json.dump(vlm_decisions, f, indent=4)
         
         print(f"Approved {len(approved_indices)} new images")
@@ -485,12 +474,12 @@ def run_active_learning(config, device, iou_threshold=0.6, iterations=10, use_vl
         inference_indices = inference_indices.difference(set(approved_indices))
     
     # Save final metrics log
-    final_log_filename = f"active_learning_metrics_{'vlm' if use_vlm else 'iou'}_final.json"
+    final_log_filename = os.path.join(run_folder, f"active_learning_metrics_{run_type}_final.json")
     with open(final_log_filename, "w") as f:
         json.dump(metrics_log, f, indent=4)
     
     # Plot results
-    plot_learning_curve(metrics_log, use_vlm)
+    plot_learning_curve(metrics_log, use_vlm, save_path=os.path.join(run_folder, f"active_learning_curve_{run_type}.png"))
     
     print("\nActive learning completed!")
     print(f"Final training set size: {len(train_indices)}")
@@ -498,7 +487,7 @@ def run_active_learning(config, device, iou_threshold=0.6, iterations=10, use_vl
     
     return metrics_log
 
-def plot_learning_curve(metrics_log, use_vlm=False):
+def plot_learning_curve(metrics_log, use_vlm=False, save_path=None):
     """Create a plot of mean AP vs iteration"""
     plt.figure(figsize=(10, 6))
     plt.plot(metrics_log["iteration"], metrics_log["mean_ap"], 'o-', linewidth=2)
@@ -507,7 +496,10 @@ def plot_learning_curve(metrics_log, use_vlm=False):
     method = "VLM Feedback" if use_vlm else "IoU-based Feedback"
     plt.title(f'Active Learning Performance with {method}')
     plt.grid(True)
-    plt.savefig(f'active_learning_curve_{"vlm" if use_vlm else "iou"}.png')
+    if save_path:
+        plt.savefig(save_path)
+    else:
+        plt.savefig(f'active_learning_curve_{"vlm" if use_vlm else "iou"}.png')
     plt.close()
 
 # Fix the duplicate argument in the argparse section
@@ -535,8 +527,10 @@ if __name__ == "__main__":
             device, 
             iou_threshold=args.iou_threshold,
             iterations=args.iterations,
+            init_train_proportion=config.get("init_train_proportion", 0.2),
             use_vlm=args.vlm,
-            vlm_model_name=args.vlm_model
+            vlm_model_name=args.vlm_model,
+            output_root="output"
         )
     elif args.train:
         # Split the original training set
@@ -582,12 +576,13 @@ if __name__ == "__main__":
         )
         num_classes = config["num_classes"] + 1  # +1 for background
     
-        model = get_model_instance_segmentation(num_classes=num_classes)
-         
-        # Load the trained weights
+        # Load trained model
+        model = get_model_instance_segmentation(num_classes=num_classes + 1)  # +1 for background
         model.load_state_dict(torch.load(config["model_path"]))
         model.to(device)
+        model.eval()
 
-        # Get mean average precision on test data
+        # Evaluate on test set
+        print("Evaluating model...")
         mean_ap, ap_per_class = calculate_ap(model, data_loader_test, device, iou_threshold=0.5)
         print(f"Mean Average Precision: {mean_ap:.4f}")

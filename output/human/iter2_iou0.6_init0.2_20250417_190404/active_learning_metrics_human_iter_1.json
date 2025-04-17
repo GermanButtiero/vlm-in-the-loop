@@ -1,0 +1,40 @@
+{
+    "iteration": [
+        1
+    ],
+    "train_size": [
+        502
+    ],
+    "mean_ap": [
+        0.49877283588298305
+    ],
+    "ap_per_class": [
+        [
+            1.0,
+            2.0,
+            3.0,
+            4.0
+        ]
+    ],
+    "feedback_method": "iou_threshold_0.6",
+    "train_loss_per_epoch": [
+        [
+            0.7199379844324929
+        ]
+    ],
+    "val_loss_per_epoch": [
+        [
+            0.5278148097651345
+        ]
+    ],
+    "train_map_per_epoch": [
+        [
+            0.7133608571792925
+        ]
+    ],
+    "val_map_per_epoch": [
+        [
+            0.649750995057693
+        ]
+    ]
+}
