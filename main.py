@@ -16,6 +16,7 @@ import torchvision.transforms as T
 import datetime
 from src.evaluate import evaluate
 
+
 # Update imports at the top of the file
 from transformers import (
     AutoModelForCausalLM,
@@ -275,10 +276,14 @@ def run_active_learning(
         vlm_model_name: Name of the VLM model to use
         output_root: Root directory for saving outputs
     """
-    # Load the full training dataset
+    # Categories to keep (book, bird, stop sign, zebra)
+    categories_to_keep = [84, 16, 13, 24]
+
+    # Load the full training dataset with filter
     full_dataset = CocoSegmentationDatasetMRCNN(
         config["train_image_dir"],
-        config["train_annotation_file"]
+        config["train_annotation_file"],
+        categories_to_keep=categories_to_keep
     )
     
     # Split off a fixed validation set for early stopping/model selection ---
@@ -301,7 +306,8 @@ def run_active_learning(
     # Prepare test dataset for consistent evaluation
     test_dataset = CocoSegmentationDatasetMRCNN(
         config["val_image_dir"],
-        config["val_annotation_file"]
+        config["val_annotation_file"],
+        categories_to_keep=categories_to_keep  
     )
     test_loader = torch.utils.data.DataLoader(
         test_dataset, batch_size=config["batch_size"],
@@ -423,38 +429,129 @@ def run_active_learning(
                 
                 # Check if prediction meets quality threshold
                 if use_vlm:
-                    # Create visualization
-                    class_ids = target[0]['labels'].cpu().numpy()
-                    class_names = [COCO_INSTANCE_CATEGORY_NAMES[cid] for cid in np.unique(class_ids)]
-                    class_names_str = ", ".join(class_names)
+                    # Extract predicted classes from model output
+                    # Filter by threshold for confidence
+                    pred_scores = outputs[0]['scores'].cpu()
+                    keep = pred_scores > 0.5  # Only consider predictions with confidence > 0.5
+                    
+                    # Get predicted class IDs 
+                    pred_class_ids = outputs[0]['labels'].cpu().numpy()[keep]
+                    pred_masks = outputs[0]['masks'].cpu()[keep]
+                    pred_boxes = outputs[0]['boxes'].cpu()[keep]
+
+                    # Map these back to COCO category names
+                    pred_class_names = []
+                    for idx in pred_class_ids:
+                        # Convert model index back to COCO category ID:
+                        for coco_id, model_idx in full_dataset.category_id_to_idx.items():
+                            if model_idx == idx:
+                                pred_class_names.append(full_dataset.category_map[coco_id])
+                                break
+                        else:
+                            # Fallback if mapping not found
+                            if 0 <= idx < len(COCO_INSTANCE_CATEGORY_NAMES):
+                                pred_class_names.append(COCO_INSTANCE_CATEGORY_NAMES[idx])
+                            else:
+                                pred_class_names.append(f"unknown-class-{idx}")
+                    
+                    pred_class_names_str = ", ".join(pred_class_names) if pred_class_names else "no objects"
+                    
                     # Create visualization
                     vis_img = visualize_segmentation_mask(image[0], outputs[0])
-                    prompt_debug=f"""
-                    only say "yes"
-                    """
-                    prompt= f"""
+                    
+                    # For debugging/comparison, get ground truth classes too
+                    gt_class_ids = target[0]['category_ids'].cpu().numpy() if 'category_ids' in target[0] else target[0]['labels'].cpu().numpy()
+                    gt_masks = target[0]['masks'].cpu() if 'masks' in target[0] else []
+                    gt_boxes = target[0]['boxes'].cpu() if 'boxes' in target[0] else []
+                    
+                    # Get ground truth class names safely
+                    gt_class_names = []
+                    for cid in np.unique(gt_class_ids):
+                        if cid in full_dataset.category_map:
+                            gt_class_names.append(full_dataset.category_map[cid])
+                        elif 0 <= cid < len(COCO_INSTANCE_CATEGORY_NAMES):
+                            gt_class_names.append(COCO_INSTANCE_CATEGORY_NAMES[cid])
+                        else:
+                            gt_class_names.append(f"unknown-category-{cid}")
+                    
+                    gt_class_names_str = ", ".join(gt_class_names)
+                    
+                    prompt = f"""
             Examine this image showing object segmentation masks.
             The colored areas represent the computer's identification of objects in the image.
-
-            The objects present in this image are: {class_names_str}.
-
+            
+            The computer detected these objects: {pred_class_names_str}.
+            
             Answer with:
-            - Begin the sentence with "yes" if the segmentation is accurate, and begin with "No" followed by a brief explanation if the segmentation is poor (masks miss objects or don't follow object boundaries og yhe objects in the image correctly).
+            - Begin with "yes" if both the object classes and segmentation masks are accurate
+            - Begin with "no" followed by an explanation if any objects are misclassified or poorly segmented
             """
                     # Get VLM feedback
                     is_approved, answer = vlm.evaluate_segmentation(vis_img, prompt)
-                    print(f"VLM returned: is_approved={is_approved!r}, answer={answer!r}")#DEbug
-                    # Save decision for analysis
+                    print(f"VLM returned: is_approved={is_approved!r}, answer={answer!r}")
+                    
+                    # Convert masks to serializable format (contours)
+                    serializable_pred_masks = []
+                    for mask in pred_masks:
+                        mask_np = mask.squeeze().numpy() > 0.5
+                        contours, _ = cv2.findContours((mask_np * 255).astype(np.uint8), 
+                                                      cv2.RETR_EXTERNAL, 
+                                                      cv2.CHAIN_APPROX_SIMPLE)
+                        # Convert contours to lists for JSON serialization
+                        mask_contours = []
+                        for contour in contours:
+                            mask_contours.append(contour.reshape(-1).tolist())
+                        serializable_pred_masks.append(mask_contours)
+                    
+                    serializable_gt_masks = []
+                    for mask in gt_masks:
+                        mask_np = mask.numpy() > 0.5
+                        contours, _ = cv2.findContours((mask_np * 255).astype(np.uint8), 
+                                                      cv2.RETR_EXTERNAL, 
+                                                      cv2.CHAIN_APPROX_SIMPLE)
+                        mask_contours = []
+                        for contour in contours:
+                            mask_contours.append(contour.reshape(-1).tolist())
+                        serializable_gt_masks.append(mask_contours)
+                    
+                    # Create detailed evaluation record
+                    detailed_evaluation = {
+                        "image_idx": int(original_idx),  # Convert NumPy int64 to Python int
+                        "approved": bool(is_approved),
+                        "vlm_response": answer,
+                        "prediction": {
+                            "classes": pred_class_names,
+                            "class_ids": pred_class_ids.tolist(),
+                            "scores": pred_scores[keep].tolist(),
+                            "boxes": pred_boxes.tolist(),
+                            "masks_contours": serializable_pred_masks
+                        },
+                        "ground_truth": {
+                            "classes": gt_class_names,
+                            "class_ids": gt_class_ids.tolist(),
+                            "boxes": gt_boxes.tolist() if len(gt_boxes) > 0 else [],
+                            "masks_contours": serializable_gt_masks
+                        }
+                    }
+                    
+                    # Save to a detailed JSON file in the output directory
+                    detail_dir = os.path.join(run_folder, "detailed_evaluations", f"iter_{iteration+1}")
+                    os.makedirs(detail_dir, exist_ok=True)
+                    detail_file = os.path.join(detail_dir, f"img_{original_idx}.json")
+                    with open(detail_file, 'w') as f:
+                        json.dump(detailed_evaluation, f, indent=2)
+                    
+                    # Save visualization alongside the JSON
+                    vis_img.save(os.path.join(detail_dir, f"img_{original_idx}.jpg"))
+                    
+                    # Also keep the summary information for the iteration summary
                     vlm_decisions.append({
                         "image_idx": original_idx,
                         "approved": is_approved,
-                        "vlm_response": answer
+                        "vlm_response": answer,
+                        "predicted_classes": pred_class_names,
+                        "ground_truth_classes": gt_class_names
                     })
-                    
-                    # Save some examples to inspect VLM decisions
-                    if i % 10 == 0:
-                        decision = "approved" if is_approved else "rejected"
-                        vis_img.save(os.path.join(vlm_decisions_dir, f"iter{iteration+1}_img{i}_{decision}.jpg"))
                 else:
                     # Use simulated feedback based on IoU
                     is_approved = simulate_human_feedback(outputs[0], target[0], iou_threshold)
@@ -510,7 +607,7 @@ if __name__ == "__main__":
     parser.add_argument("--active", action="store_true", default=False, help="Run active learning loop")
     parser.add_argument("--vlm", action="store_true", default=False, help="Use VLM for feedback instead of IoU")
     parser.add_argument("--vlm-model", type=str, 
-                       default="AIDC-AI/Ovis2-4B", #imv2-huge-patch14-448-Qwen2.5-3B-Instruct
+                       default="AIDC-AI/Ovis2-8B", #imv2-huge-patch14-448-Qwen2.5-3B-Instruct
                        help="VLM model name from HuggingFace or path to Ovis model")
     parser.add_argument("--iou-threshold", type=float, default=0.6, help="IoU threshold for active learning")
     parser.add_argument("--iterations", type=int, default=10, help="Number of active learning iterations")
@@ -560,7 +657,7 @@ if __name__ == "__main__":
 
         print("Training the model...")
         num_classes = config["num_classes"]
-        train_model(data_loader_train, data_loader_val, num_classes, num_epochs= config["num_epochs"], device=device)
+        train_model(data_loader_train, data_loader_val, num_epochs= config["num_epochs"], device=device)
         
     if args.test:
         print("Evaluating the model...")

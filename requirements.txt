@@ -25,3 +25,5 @@ fiftyone-db==1.1.7
 #Then run
 #pip install -r requirements.txt
 #pip install flash-attn==2.7.0.post2 --no-build-isolation
+
+## Bare in mind that you need compatible nvidia toolkit, and nvidia triver isntalled. They must also at least support the torch version installed here:=2.4.0
