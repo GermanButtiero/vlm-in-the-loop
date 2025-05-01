@@ -174,5 +174,20 @@ def calculate_ap(model, data_loader, device, iou_threshold=0.5):
     valid_aps = [ap for ap in ap_per_class.values() if not np.isnan(ap)]
     mAP = sum(valid_aps) / len(valid_aps) if valid_aps else 0
     
-    return mAP, ap_per_class
+    # Fix here: Convert the dictionary to match the expected format
+    # Instead of returning class IDs as keys, create a dictionary with class names mapped to values
+    class_names = {
+        1: "book",
+        2: "bird",
+        3: "stop sign",
+        4: "zebra"
+    }
+    
+    # Create a proper dictionary with class names and their actual AP values
+    formatted_ap = {}
+    for class_id, ap_value in ap_per_class.items():
+        class_name = class_names.get(class_id, f"class_{class_id}")
+        formatted_ap[class_name] = float(ap_value)  # Ensure it's a native Python float
+    
+    return mAP, formatted_ap
 

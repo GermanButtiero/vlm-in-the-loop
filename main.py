@@ -394,8 +394,9 @@ def run_active_learning(
         # Log metrics
         metrics_log["iteration"].append(iteration+1)
         metrics_log["train_size"].append(len(train_indices))
-        metrics_log["mean_ap"].append(float(mean_ap))
-        metrics_log["ap_per_class"].append([float(ap) for ap in ap_per_class])
+        metrics_log["mean_ap"].append(mean_ap)
+        # ap_per_class is already formatted correctly from calculate_ap
+        metrics_log["ap_per_class"].append(ap_per_class)
         
         # Save intermediate log
         log_filename = os.path.join(run_folder, f"active_learning_metrics_{run_type}_iter_{iteration+1}.json")
@@ -431,16 +432,66 @@ def run_active_learning(
                 if use_vlm:
                     # Extract predicted classes from model output
                     # Filter by threshold for confidence
-                    pred_scores = outputs[0]['scores'].cpu()
-                    keep = pred_scores > 0.5  # Only consider predictions with confidence > 0.5
-                    
-                    # Get predicted class IDs 
-                    pred_class_ids = outputs[0]['labels'].cpu().numpy()[keep]
-                    pred_masks = outputs[0]['masks'].cpu()[keep]
-                    pred_boxes = outputs[0]['boxes'].cpu()[keep]
+                    pred_scores_tensor = outputs[0]['scores'] # Keep as tensor for now
+                    labels_tensor = outputs[0]['labels']     # Keep as tensor for now
+                    masks_tensor = outputs[0]['masks']       # Keep as tensor for now
+                    boxes_tensor = outputs[0]['boxes']       # Keep as tensor for now
+
+                    # --- Start Debug Prints ---
+                    print(f"\n--- Debug Info for Image Index {original_idx} ---")
+                    print(f"  Scores Tensor Shape: {pred_scores_tensor.shape}, Values: {pred_scores_tensor}")
+                    print(f"  Labels Tensor Shape: {labels_tensor.shape}, Values: {labels_tensor}")
+                    print(f"  Masks Tensor Shape: {masks_tensor.shape}")
+                    print(f"  Boxes Tensor Shape: {boxes_tensor.shape}")
+                    # --- End Debug Prints ---
+
+                    pred_scores = pred_scores_tensor.cpu() # Now move to CPU
+                    keep = pred_scores > 0.99  # Create boolean mask
+
+                    labels_np = labels_tensor.cpu().numpy() # Convert labels to numpy
+
+                    # --- Start Debug Prints for NumPy arrays ---
+                    print(f"  Keep (Boolean Mask) Shape: {keep.shape}, Values: {keep}")
+                    print(f"  Labels NumPy Shape: {labels_np.shape}, Values: {labels_np}")
+                    # --- End Debug Prints ---
+
+                    # Get predicted class IDs
+                    try:
+                        print("  Attempting: pred_class_ids = labels_np[keep]")
+                        
+                        # Fix: Check if any values in the mask are True before indexing
+                        if keep.any():
+                            # At least one True value exists in the mask
+                            pred_class_ids = labels_np[keep].tolist()
+                        else:
+                            # All values in the mask are False
+                            pred_class_ids = []  # Use an empty list when nothing passes the threshold
+                        
+                        print(f"  Success: pred_class_ids (list) = {pred_class_ids}")
+                        
+                        print("  Attempting: pred_masks = masks_tensor.cpu()[keep]")
+                        pred_masks = masks_tensor.cpu()[keep]
+                        print(f"  Success: pred_masks.shape = {pred_masks.shape}")
+                        
+                        print("  Attempting: pred_boxes = boxes_tensor.cpu()[keep]")
+                        pred_boxes = boxes_tensor.cpu()[keep]
+                        print(f"  Success: pred_boxes.shape = {pred_boxes.shape}")
+                        
+                        # Also handle scores similarly
+                        filtered_scores = pred_scores[keep].tolist() if keep.any() else []
+
+                    except IndexError as e:
+                        print(f"  !!! IndexError occurred during indexing: {e}")
+                        # Decide how to handle: re-raise, skip image, etc.
+                        print(f"  Skipping image {original_idx} due to indexing error.")
+                        continue # Skip to the next image in the loop
+                    except Exception as e:
+                        print(f"  !!! An unexpected error occurred: {e}")
+                        raise e # Re-raise other unexpected errors
 
                     # Map these back to COCO category names
                     pred_class_names = []
+                    # Now iterating over pred_class_ids (which is a list) is safe
                     for idx in pred_class_ids:
                         # Convert model index back to COCO category ID:
                         for coco_id, model_idx in full_dataset.category_id_to_idx.items():
@@ -521,9 +572,9 @@ def run_active_learning(
                         "vlm_response": answer,
                         "prediction": {
                             "classes": pred_class_names,
-                            "class_ids": pred_class_ids.tolist(),
-                            "scores": pred_scores[keep].tolist(),
-                            "boxes": pred_boxes.tolist(),
+                            "class_ids": pred_class_ids, # Already a list
+                            "scores": filtered_scores,   # Use the list version
+                            "boxes": pred_boxes.tolist(), # Convert boxes tensor to list here
                             "masks_contours": serializable_pred_masks
                         },
                         "ground_truth": {
@@ -546,24 +597,36 @@ def run_active_learning(
                     
                     # Also keep the summary information for the iteration summary
                     vlm_decisions.append({
-                        "image_idx": original_idx,
-                        "approved": is_approved,
-                        "vlm_response": answer,
-                        "predicted_classes": pred_class_names,
-                        "ground_truth_classes": gt_class_names
+                        "image_id": int(original_idx), # Explicitly convert to Python int
+                        "is_approved": is_approved,
+                        "vlm_answer": answer,
+                        "prompt": prompt,
+                        "kept_predictions": {
+                            "classes": pred_class_names,
+                            "class_ids": pred_class_ids, # Already list
+                            "scores": filtered_scores,   # Already list
+                            "boxes": pred_boxes.tolist(), # Already list
+                            "masks_contours": serializable_pred_masks
+                        }
                     })
-                else:
-                    # Use simulated feedback based on IoU
-                    is_approved = simulate_human_feedback(outputs[0], target[0], iou_threshold)
-                
-                if is_approved:
-                    approved_indices.append(original_idx)
-        
-        # Save VLM decisions if using VLM
-        if use_vlm:
-            with open(os.path.join(run_folder, f"vlm_decisions_iter_{iteration+1}.json"), "w") as f:
-                json.dump(vlm_decisions, f, indent=4)
-        
+
+                    if is_approved:
+                        approved_indices.append(original_idx) # Keep original_idx as is for set operations
+
+            # --- End VLM/IoU Feedback ---
+
+        # Save VLM decisions for this iteration (if applicable)
+        if use_vlm and vlm_decisions:
+            vlm_decision_file = os.path.join(run_folder, f"vlm_decisions_iter_{iteration+1}.json")
+            print(f"Saving VLM decisions for iteration {iteration+1} to {vlm_decision_file}")
+            try:
+                with open(vlm_decision_file, "w") as f:
+                    json.dump(vlm_decisions, f, indent=4)
+            except TypeError as e:
+                print(f"!!! ERROR saving VLM decisions: {e}")
+                print("Problematic data snippet:", vlm_decisions[-1] if vlm_decisions else "None")
+                raise e
+
         print(f"Approved {len(approved_indices)} new images")
         
         # Update indices
