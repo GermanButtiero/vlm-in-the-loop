@@ -1,0 +1,86 @@
+{
+  "image_idx": 527,
+  "approved": false,
+  "vlm_response": "the image shows a street intersection with various road signs, a stop sign, and a \"road work ahead\" sign. the computer's detection of \"no objects\" is inaccurate. the image contains multiple objects, including road signs, a stop sign, a \"road work ahead\" sign, a building, a fence, and pedestrians. the segmentation masks should identify these objects accurately. therefore, the correct response is:\n\nno",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        315.1499938964844,
+        186.25999450683594,
+        379.8900146484375,
+        259.9800109863281
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          354,
+          186,
+          353,
+          187,
+          335,
+          187,
+          315,
+          207,
+          315,
+          239,
+          317,
+          241,
+          317,
+          242,
+          322,
+          247,
+          322,
+          248,
+          326,
+          252,
+          326,
+          253,
+          330,
+          257,
+          330,
+          258,
+          331,
+          259,
+          359,
+          259,
+          362,
+          256,
+          362,
+          255,
+          372,
+          245,
+          372,
+          244,
+          379,
+          237,
+          379,
+          225,
+          378,
+          224,
+          378,
+          204,
+          371,
+          197,
+          371,
+          196,
+          361,
+          186
+        ]
+      ]
+    ]
+  }
+}

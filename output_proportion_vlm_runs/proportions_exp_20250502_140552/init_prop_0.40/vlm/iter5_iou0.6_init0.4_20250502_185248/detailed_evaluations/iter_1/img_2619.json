@@ -1,0 +1,92 @@
+{
+  "image_idx": 2619,
+  "approved": false,
+  "vlm_response": "the image shows a stop sign with graffiti, and the computer's detection of objects is not accurate. the computer detected no objects, which is incorrect. the stop sign is the main object in the image, and it should be identified as such. the graffiti on the stop sign is also a notable feature, but it is not a separate object class. therefore, the answer is:\n\nno, the computer detected no objects, which is inaccurate. the stop sign and graffiti should be identified as separate objects.",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        151.00999450683594,
+        49.09000015258789,
+        277.8500061035156,
+        175.92999267578125
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          190,
+          49,
+          183,
+          56,
+          182,
+          56,
+          168,
+          70,
+          167,
+          70,
+          153,
+          84,
+          152,
+          84,
+          152,
+          93,
+          151,
+          94,
+          151,
+          137,
+          173,
+          159,
+          173,
+          160,
+          186,
+          173,
+          199,
+          173,
+          200,
+          174,
+          226,
+          174,
+          227,
+          175,
+          240,
+          175,
+          243,
+          172,
+          244,
+          172,
+          273,
+          143,
+          274,
+          143,
+          276,
+          141,
+          276,
+          113,
+          277,
+          112,
+          277,
+          86,
+          272,
+          81,
+          272,
+          80,
+          241,
+          49
+        ]
+      ]
+    ]
+  }
+}

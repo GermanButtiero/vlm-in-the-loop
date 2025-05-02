@@ -1,0 +1,76 @@
+{
+  "image_idx": 2767,
+  "approved": false,
+  "vlm_response": "the image shows a person sitting on a bench, writing with a marker. the computer's detection of \"no objects\" is not accurate. the image clearly contains a person, a bench, and a marker, which are the main objects in the scene. the segmentation masks should identify these objects, but the computer's detection is missing these elements. therefore, the answer is:\n\nno",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "book"
+    ],
+    "class_ids": [
+      84
+    ],
+    "boxes": [
+      [
+        298.3900146484375,
+        256.1400146484375,
+        395.9700012207031,
+        271.0
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          311,
+          256,
+          308,
+          259,
+          307,
+          259,
+          299,
+          267,
+          319,
+          267,
+          320,
+          268,
+          349,
+          268,
+          350,
+          269,
+          380,
+          269,
+          381,
+          270,
+          395,
+          270,
+          391,
+          266,
+          391,
+          265,
+          386,
+          260,
+          386,
+          259,
+          365,
+          259,
+          364,
+          258,
+          342,
+          258,
+          341,
+          257,
+          318,
+          257,
+          317,
+          256
+        ]
+      ]
+    ]
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "image_idx": 237,
+  "approved": false,
+  "vlm_response": "the computer's detection of objects in the image is not accurate. the image shows several objects, including a couch, a coffee table, a side table, a potted plant, a handbag, a thermostat, a mirror, a poster, and a staircase railing. the segmentation masks should identify these objects, but the computer's output indicates no objects were detected. therefore, the answer is:\n\nno",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "book"
+    ],
+    "class_ids": [
+      84
+    ],
+    "boxes": [
+      [
+        374.3399963378906,
+        181.64999389648438,
+        426.6600036621094,
+        201.5800018310547
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          387,
+          182,
+          386,
+          183,
+          385,
+          183,
+          383,
+          185,
+          382,
+          185,
+          381,
+          186,
+          380,
+          186,
+          379,
+          187,
+          378,
+          187,
+          377,
+          188,
+          376,
+          188,
+          375,
+          189,
+          375,
+          194,
+          374,
+          195,
+          380,
+          195,
+          381,
+          196,
+          386,
+          196,
+          387,
+          197,
+          393,
+          197,
+          394,
+          198,
+          400,
+          198,
+          401,
+          199,
+          407,
+          199,
+          408,
+          200,
+          416,
+          200,
+          419,
+          197,
+          420,
+          197,
+          424,
+          193,
+          425,
+          193,
+          425,
+          186,
+          420,
+          186,
+          419,
+          185,
+          412,
+          185,
+          411,
+          184,
+          404,
+          184,
+          403,
+          183,
+          396,
+          183,
+          395,
+          182
+        ]
+      ]
+    ]
+  }
+}

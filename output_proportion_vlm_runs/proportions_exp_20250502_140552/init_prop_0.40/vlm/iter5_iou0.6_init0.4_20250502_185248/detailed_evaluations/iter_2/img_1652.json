@@ -1,0 +1,68 @@
+{
+  "image_idx": 1652,
+  "approved": false,
+  "vlm_response": "the image shows a stop sign with graffiti and a green sign with the word \"ammo\" written on it. the computer's detection of objects is not accurate as it did not identify any objects. the segmentation masks are not present in the image, but based on the visual content, the computer should have detected at least the stop sign and the green sign. therefore, the answer is:\n\nno",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        179.3699951171875,
+        289.239990234375,
+        318.3900146484375,
+        428.25
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          217,
+          289,
+          209,
+          297,
+          209,
+          298,
+          194,
+          313,
+          194,
+          314,
+          179,
+          329,
+          179,
+          387,
+          191,
+          399,
+          192,
+          399,
+          219,
+          426,
+          219,
+          427,
+          259,
+          427,
+          260,
+          426,
+          278,
+          426,
+          317,
+          387,
+          317,
+          326,
+          280,
+          289
+        ]
+      ]
+    ]
+  }
+}

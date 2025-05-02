@@ -1,0 +1,64 @@
+{
+  "image_idx": 2423,
+  "approved": true,
+  "vlm_response": "the image shows a train crossing with a stop sign and a barrier arm, which are correctly identified by the segmentation masks. the colored areas accurately represent the objects in the image, such as the train, the barrier arm, and the stop sign. the segmentation masks are well-defined and correctly identify the objects, with no misclassifications or poor segmentation. therefore, the answer is:\n\nyes",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        445.95001220703125,
+        134.57000732421875,
+        539.72998046875,
+        192.99000549316406
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          447,
+          135,
+          447,
+          166,
+          446,
+          167,
+          446,
+          190,
+          469,
+          190,
+          470,
+          191,
+          515,
+          191,
+          516,
+          192,
+          539,
+          192,
+          539,
+          179,
+          538,
+          178,
+          538,
+          137,
+          488,
+          137,
+          487,
+          136,
+          448,
+          136
+        ]
+      ]
+    ]
+  }
+}

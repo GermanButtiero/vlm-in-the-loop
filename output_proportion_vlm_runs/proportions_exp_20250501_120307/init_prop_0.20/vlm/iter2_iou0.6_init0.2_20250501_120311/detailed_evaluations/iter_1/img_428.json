@@ -1,0 +1,84 @@
+{
+  "image_idx": 428,
+  "approved": false,
+  "vlm_response": "the image shows a hotel room with two beds, a nightstand, and various items on it, such as a telephone, an alarm clock, and lamps. the object segmentation masks are not provided, but based on the description, the computer detected no objects, which is incorrect. the image clearly shows multiple objects, including beds, pillows, a nightstand, a telephone, an alarm clock, and lamps. therefore, the answer is:\n\nno, the computer detected no objects, which is inaccurate.",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "book"
+    ],
+    "class_ids": [
+      84
+    ],
+    "boxes": [
+      [
+        270.82000732421875,
+        308.3800048828125,
+        315.75,
+        341.45001220703125
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          271,
+          308,
+          271,
+          340,
+          287,
+          340,
+          288,
+          339,
+          305,
+          339,
+          306,
+          338,
+          315,
+          338,
+          315,
+          337,
+          314,
+          336,
+          314,
+          333,
+          313,
+          332,
+          313,
+          328,
+          312,
+          327,
+          312,
+          323,
+          311,
+          322,
+          311,
+          318,
+          310,
+          317,
+          310,
+          313,
+          308,
+          311,
+          297,
+          311,
+          296,
+          310,
+          285,
+          310,
+          284,
+          309,
+          273,
+          309,
+          272,
+          308
+        ]
+      ]
+    ]
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "image_idx": 1199,
+  "approved": false,
+  "vlm_response": "the computer's detection of \"no objects\" is inaccurate. the image clearly shows a stop sign and a no left turn sign, which are both correctly identified by the segmentation masks. the stop sign is accurately segmented with a red octagonal shape, and the no left turn sign is correctly identified with a blue background and a red circle with a diagonal line through a left turn arrow. the green circle around the stop sign's reflection in the puddle is also correctly segmented. therefore, the correct answer is:\n\nno",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        236.75999450683594,
+        36.02000045776367,
+        324.4200134277344,
+        123.68000030517578
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          263,
+          36,
+          255,
+          44,
+          254,
+          44,
+          237,
+          61,
+          237,
+          76,
+          238,
+          77,
+          238,
+          96,
+          253,
+          111,
+          253,
+          112,
+          264,
+          123,
+          297,
+          123,
+          321,
+          99,
+          321,
+          97,
+          322,
+          96,
+          322,
+          80,
+          323,
+          79,
+          323,
+          63,
+          316,
+          56,
+          316,
+          55,
+          305,
+          44,
+          305,
+          43,
+          300,
+          38,
+          298,
+          38,
+          297,
+          37,
+          275,
+          37,
+          274,
+          36
+        ]
+      ]
+    ]
+  }
+}

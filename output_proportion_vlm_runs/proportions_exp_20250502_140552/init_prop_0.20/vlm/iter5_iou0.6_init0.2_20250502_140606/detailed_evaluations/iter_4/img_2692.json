@@ -1,0 +1,98 @@
+{
+  "image_idx": 2692,
+  "approved": false,
+  "vlm_response": "the image shows a scene with multiple vehicles stopped at a traffic light, along with a construction vehicle and a worker. the computer's detection of \"no objects\" is inaccurate. the image clearly contains several vehicles, a traffic light, and a construction sign, among other elements. the segmentation masks should identify these objects accurately. therefore, the correct response is:\n\nno",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        395.94000244140625,
+        97.93000030517578,
+        422.9200134277344,
+        135.32000732421875
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          400,
+          98,
+          400,
+          103,
+          399,
+          104,
+          399,
+          111,
+          398,
+          112,
+          398,
+          119,
+          397,
+          120,
+          397,
+          127,
+          396,
+          128,
+          396,
+          131,
+          398,
+          131,
+          399,
+          132,
+          405,
+          132,
+          406,
+          133,
+          412,
+          133,
+          413,
+          134,
+          418,
+          134,
+          418,
+          128,
+          419,
+          127,
+          419,
+          120,
+          420,
+          119,
+          420,
+          113,
+          421,
+          112,
+          421,
+          105,
+          422,
+          104,
+          422,
+          101,
+          419,
+          101,
+          418,
+          100,
+          412,
+          100,
+          411,
+          99,
+          404,
+          99,
+          403,
+          98
+        ]
+      ]
+    ]
+  }
+}

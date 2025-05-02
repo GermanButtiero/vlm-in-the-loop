@@ -1,0 +1,104 @@
+{
+  "image_idx": 2218,
+  "approved": false,
+  "vlm_response": "the image shows a stop sign with graffiti, a green traffic light, and a background with buildings, power lines, and a tower. the computer's detection of \"no objects\" is inaccurate. the stop sign and traffic light are clearly visible and should be included in the object segmentation masks. therefore, the answer is:\n\nno, the computer detected no objects, but there are clearly identifiable objects in the image.",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        292.8599853515625,
+        98.37000274658203,
+        437.5799865722656,
+        241.60000610351562
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          391,
+          98,
+          390,
+          99,
+          376,
+          99,
+          375,
+          100,
+          361,
+          100,
+          360,
+          101,
+          347,
+          101,
+          346,
+          102,
+          336,
+          102,
+          315,
+          123,
+          315,
+          124,
+          294,
+          145,
+          294,
+          176,
+          293,
+          177,
+          293,
+          201,
+          333,
+          241,
+          336,
+          241,
+          337,
+          240,
+          379,
+          240,
+          380,
+          239,
+          392,
+          239,
+          417,
+          214,
+          417,
+          213,
+          437,
+          193,
+          437,
+          138,
+          436,
+          138,
+          427,
+          129,
+          426,
+          129,
+          417,
+          120,
+          416,
+          120,
+          408,
+          112,
+          407,
+          112,
+          398,
+          103,
+          397,
+          103,
+          392,
+          98
+        ]
+      ]
+    ]
+  }
+}

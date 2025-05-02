@@ -1,0 +1,82 @@
+{
+  "image_idx": 2008,
+  "approved": false,
+  "vlm_response": "the image shows a street scene with various objects, including a fire hydrant, a stop sign, pedestrians, vehicles, and a newspaper stand. the computer's detection of \"no objects\" is inaccurate. the segmentation masks should identify the fire hydrant, stop sign, pedestrians, vehicles, and newspaper stand, among other objects. the objects are not well segmented, as the computer has not detected them. therefore, the answer is:\n\nno",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        377.8599853515625,
+        0.0,
+        440.82000732421875,
+        55.08000183105469
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          411,
+          0,
+          410,
+          1,
+          386,
+          1,
+          385,
+          2,
+          384,
+          2,
+          381,
+          5,
+          380,
+          5,
+          379,
+          6,
+          379,
+          14,
+          378,
+          15,
+          378,
+          35,
+          397,
+          54,
+          418,
+          54,
+          419,
+          53,
+          423,
+          53,
+          435,
+          41,
+          435,
+          40,
+          439,
+          36,
+          439,
+          21,
+          440,
+          20,
+          440,
+          4,
+          437,
+          1,
+          436,
+          1,
+          435,
+          0
+        ]
+      ]
+    ]
+  }
+}

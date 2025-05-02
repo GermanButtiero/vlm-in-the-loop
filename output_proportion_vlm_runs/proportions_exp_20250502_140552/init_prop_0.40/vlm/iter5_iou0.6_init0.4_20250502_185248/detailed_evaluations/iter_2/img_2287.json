@@ -1,0 +1,78 @@
+{
+  "image_idx": 2287,
+  "approved": true,
+  "vlm_response": "the image shows a vehicle with a green segmentation mask, indicating the computer's identification of the vehicle. the stop sign is also clearly visible with its red color and white text. the computer has correctly identified the vehicle and the stop sign, and the segmentation masks are accurate. therefore, the answer is:\n\nyes",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        512.010009765625,
+        269.57000732421875,
+        565.8699951171875,
+        323.0799865722656
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          529,
+          270,
+          526,
+          273,
+          525,
+          273,
+          521,
+          277,
+          520,
+          277,
+          517,
+          280,
+          516,
+          280,
+          513,
+          283,
+          513,
+          299,
+          512,
+          300,
+          512,
+          307,
+          517,
+          312,
+          518,
+          312,
+          528,
+          322,
+          550,
+          322,
+          557,
+          315,
+          558,
+          315,
+          565,
+          308,
+          565,
+          287,
+          549,
+          271,
+          548,
+          271,
+          547,
+          270
+        ]
+      ]
+    ]
+  }
+}

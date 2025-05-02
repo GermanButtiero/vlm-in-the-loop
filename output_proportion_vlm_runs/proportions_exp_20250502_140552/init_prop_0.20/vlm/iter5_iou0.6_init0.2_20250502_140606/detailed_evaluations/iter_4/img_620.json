@@ -1,0 +1,188 @@
+{
+  "image_idx": 620,
+  "approved": true,
+  "vlm_response": "yes, the object classes and segmentation masks are accurate. the computer has correctly identified the stop sign in the image. the segmentation mask for the stop sign is well-defined, highlighting the red octagonal shape with white lettering, which is consistent with the typical appearance of a stop sign. there are no apparent misclassifications or poor segmentations in the image.",
+  "prediction": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      3
+    ],
+    "scores": [
+      0.9946212768554688
+    ],
+    "boxes": [
+      [
+        514.4615478515625,
+        116.15058898925781,
+        572.3389282226562,
+        172.0728302001953
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          534,
+          116,
+          533,
+          117,
+          531,
+          117,
+          526,
+          122,
+          525,
+          122,
+          519,
+          128,
+          518,
+          128,
+          518,
+          129,
+          515,
+          132,
+          515,
+          135,
+          514,
+          136,
+          514,
+          153,
+          515,
+          154,
+          515,
+          155,
+          516,
+          156,
+          516,
+          157,
+          530,
+          171,
+          532,
+          171,
+          533,
+          172,
+          553,
+          172,
+          554,
+          171,
+          555,
+          171,
+          556,
+          170,
+          557,
+          170,
+          563,
+          164,
+          564,
+          164,
+          564,
+          163,
+          565,
+          162,
+          566,
+          162,
+          570,
+          158,
+          570,
+          156,
+          571,
+          155,
+          571,
+          154,
+          572,
+          153,
+          572,
+          135,
+          571,
+          134,
+          571,
+          132,
+          570,
+          131,
+          570,
+          130,
+          558,
+          118,
+          557,
+          118,
+          556,
+          117,
+          554,
+          117,
+          553,
+          116
+        ]
+      ]
+    ]
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        515.260009765625,
+        116.58999633789062,
+        572.1699829101562,
+        172.66000366210938
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          531,
+          117,
+          527,
+          121,
+          526,
+          121,
+          522,
+          125,
+          521,
+          125,
+          517,
+          129,
+          516,
+          129,
+          515,
+          130,
+          515,
+          154,
+          522,
+          161,
+          522,
+          162,
+          530,
+          170,
+          532,
+          170,
+          533,
+          171,
+          553,
+          171,
+          554,
+          172,
+          555,
+          172,
+          571,
+          156,
+          571,
+          132,
+          566,
+          127,
+          566,
+          126,
+          559,
+          119,
+          559,
+          118,
+          558,
+          117
+        ]
+      ]
+    ]
+  }
+}

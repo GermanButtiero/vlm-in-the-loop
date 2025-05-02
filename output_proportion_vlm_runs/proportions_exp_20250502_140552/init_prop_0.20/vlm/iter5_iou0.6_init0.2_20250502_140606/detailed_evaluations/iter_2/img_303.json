@@ -1,0 +1,62 @@
+{
+  "image_idx": 303,
+  "approved": false,
+  "vlm_response": "the computer's detection of \"no objects\" is not accurate. the image clearly shows several objects, including a person, road signs, traffic cones, and vehicles. the segmentation masks should identify these objects, but the current detection is incorrect. therefore, the answer is:\n\nno",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        79.1500015258789,
+        97.88999938964844,
+        149.1300048828125,
+        169.00999450683594
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          79,
+          98,
+          79,
+          165,
+          96,
+          165,
+          97,
+          166,
+          116,
+          166,
+          117,
+          167,
+          136,
+          167,
+          137,
+          168,
+          146,
+          168,
+          146,
+          148,
+          147,
+          147,
+          147,
+          118,
+          148,
+          117,
+          148,
+          98
+        ]
+      ]
+    ]
+  }
+}

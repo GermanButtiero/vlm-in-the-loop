@@ -1,0 +1,98 @@
+{
+  "image_idx": 1233,
+  "approved": false,
+  "vlm_response": "the image shows a traffic light with a green overlay, a stop sign, and a sign indicating when to stop. the computer's detection of \"no objects\" is incorrect. the traffic light, stop sign, and the sign indicating when to stop are all present and should be detected. the segmentation masks are not accurately identifying these objects. therefore, the answer is:\n\nno",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        203.8699951171875,
+        289.0799865722656,
+        297.7099914550781,
+        389.3900146484375
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          227,
+          289,
+          216,
+          300,
+          216,
+          301,
+          204,
+          313,
+          204,
+          339,
+          205,
+          340,
+          205,
+          359,
+          229,
+          383,
+          229,
+          384,
+          231,
+          386,
+          236,
+          386,
+          237,
+          387,
+          253,
+          387,
+          254,
+          388,
+          269,
+          388,
+          277,
+          380,
+          278,
+          380,
+          286,
+          372,
+          287,
+          372,
+          294,
+          365,
+          295,
+          365,
+          297,
+          363,
+          297,
+          358,
+          296,
+          357,
+          296,
+          338,
+          295,
+          337,
+          295,
+          320,
+          266,
+          291,
+          254,
+          291,
+          253,
+          290,
+          237,
+          290,
+          236,
+          289
+        ]
+      ]
+    ]
+  }
+}

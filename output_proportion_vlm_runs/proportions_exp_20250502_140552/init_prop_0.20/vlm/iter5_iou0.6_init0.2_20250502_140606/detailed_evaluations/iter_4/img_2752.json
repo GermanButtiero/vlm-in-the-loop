@@ -1,0 +1,90 @@
+{
+  "image_idx": 2752,
+  "approved": false,
+  "vlm_response": "the computer's detection of objects in the image is inaccurate. the segmentation mask highlights a green object that is not present in the image. the object appears to be a digitally added overlay, not a real object in the scene. the computer has misclassified this overlay as an object, which is not accurate. therefore, the correct response is:\n\nno",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        203.8000030517578,
+        0.3199999928474426,
+        400.4700012207031,
+        106.22000122070312
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          205,
+          1,
+          205,
+          25,
+          204,
+          26,
+          204,
+          51,
+          258,
+          105,
+          344,
+          105,
+          344,
+          104,
+          350,
+          98,
+          350,
+          97,
+          357,
+          90,
+          357,
+          89,
+          364,
+          82,
+          364,
+          81,
+          371,
+          74,
+          371,
+          73,
+          377,
+          67,
+          377,
+          66,
+          384,
+          59,
+          384,
+          58,
+          391,
+          51,
+          391,
+          50,
+          397,
+          44,
+          397,
+          43,
+          398,
+          42,
+          398,
+          28,
+          399,
+          27,
+          399,
+          2,
+          206,
+          2
+        ]
+      ]
+    ]
+  }
+}

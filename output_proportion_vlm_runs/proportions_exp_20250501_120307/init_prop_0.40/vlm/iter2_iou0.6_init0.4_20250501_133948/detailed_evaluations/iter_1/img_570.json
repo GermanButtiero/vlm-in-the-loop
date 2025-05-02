@@ -1,0 +1,96 @@
+{
+  "image_idx": 570,
+  "approved": false,
+  "vlm_response": "the computer's detection of objects in the image is not accurate. the segmentation masks highlight various objects, but the labels provided do not match the objects in the image. for example, the green mask is over the piano, but the label \"no objects\" is incorrect. additionally, the segmentation masks are not well-defined, with some areas overlapping and others not clearly representing distinct objects. therefore, the answer is:\n\nno",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "book"
+    ],
+    "class_ids": [
+      84
+    ],
+    "boxes": [
+      [
+        184.3300018310547,
+        144.69000244140625,
+        244.0500030517578,
+        174.8699951171875
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          186,
+          145,
+          185,
+          146,
+          184,
+          146,
+          185,
+          147,
+          185,
+          152,
+          186,
+          153,
+          186,
+          159,
+          187,
+          160,
+          187,
+          165,
+          188,
+          166,
+          188,
+          172,
+          189,
+          173,
+          189,
+          174,
+          192,
+          174,
+          193,
+          173,
+          206,
+          173,
+          207,
+          172,
+          219,
+          172,
+          220,
+          171,
+          233,
+          171,
+          234,
+          170,
+          243,
+          170,
+          243,
+          166,
+          242,
+          165,
+          242,
+          157,
+          241,
+          156,
+          241,
+          149,
+          240,
+          148,
+          240,
+          146,
+          223,
+          146,
+          222,
+          145
+        ]
+      ]
+    ]
+  }
+}

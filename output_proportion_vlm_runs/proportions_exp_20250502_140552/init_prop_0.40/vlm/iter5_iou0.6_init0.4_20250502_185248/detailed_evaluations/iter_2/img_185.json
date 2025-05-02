@@ -1,0 +1,80 @@
+{
+  "image_idx": 185,
+  "approved": false,
+  "vlm_response": "the image shows a man walking past a stop sign, with a blue brick wall in the background. the computer's detection of \"no objects\" is inaccurate. the image clearly contains a stop sign and a person, which are the main objects in the scene. the segmentation masks should identify these objects accurately. therefore, the correct response is:\n\nno, the computer detected no objects, but there is a stop sign and a person in the image.",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        57.0099983215332,
+        20.209999084472656,
+        144.75,
+        107.19000244140625
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          81,
+          20,
+          73,
+          28,
+          73,
+          29,
+          65,
+          37,
+          65,
+          38,
+          57,
+          46,
+          57,
+          82,
+          78,
+          103,
+          79,
+          103,
+          82,
+          106,
+          120,
+          106,
+          120,
+          105,
+          128,
+          97,
+          128,
+          96,
+          136,
+          88,
+          136,
+          87,
+          144,
+          79,
+          144,
+          45,
+          137,
+          38,
+          136,
+          38,
+          120,
+          22,
+          119,
+          22,
+          117,
+          20
+        ]
+      ]
+    ]
+  }
+}

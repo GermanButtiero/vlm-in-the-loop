@@ -1,0 +1,86 @@
+{
+  "image_idx": 1199,
+  "approved": false,
+  "vlm_response": "the computer's detection of \"no objects\" is inaccurate. the image clearly shows two traffic signs: a red stop sign and a no left turn sign. additionally, there is a green stop sign reflection in the water. the segmentation masks should identify these objects, but they are not present in the provided information. therefore, the correct answer is:\n\nno",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        236.75999450683594,
+        36.02000045776367,
+        324.4200134277344,
+        123.68000030517578
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          263,
+          36,
+          255,
+          44,
+          254,
+          44,
+          237,
+          61,
+          237,
+          76,
+          238,
+          77,
+          238,
+          96,
+          253,
+          111,
+          253,
+          112,
+          264,
+          123,
+          297,
+          123,
+          321,
+          99,
+          321,
+          97,
+          322,
+          96,
+          322,
+          80,
+          323,
+          79,
+          323,
+          63,
+          316,
+          56,
+          316,
+          55,
+          305,
+          44,
+          305,
+          43,
+          300,
+          38,
+          298,
+          38,
+          297,
+          37,
+          275,
+          37,
+          274,
+          36
+        ]
+      ]
+    ]
+  }
+}

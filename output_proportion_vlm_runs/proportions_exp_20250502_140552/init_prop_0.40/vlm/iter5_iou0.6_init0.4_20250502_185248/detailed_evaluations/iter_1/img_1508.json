@@ -1,0 +1,58 @@
+{
+  "image_idx": 1508,
+  "approved": false,
+  "vlm_response": "the image shows a black and white photograph with a red stop sign on a railway track. the computer's detection of \"no objects\" is inaccurate. the stop sign is a clear object in the image, and it should be identified as such. the segmentation masks should highlight the stop sign, but they are not present in the provided information. therefore, the correct answer is:\n\nno, the computer detected no objects, but there is a stop sign in the image.",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        83.27999877929688,
+        240.50999450683594,
+        110.91000366210938,
+        280.70001220703125
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          107,
+          241,
+          106,
+          242,
+          85,
+          242,
+          85,
+          244,
+          84,
+          245,
+          84,
+          271,
+          83,
+          272,
+          83,
+          280,
+          109,
+          280,
+          109,
+          274,
+          110,
+          273,
+          110,
+          241
+        ]
+      ]
+    ]
+  }
+}

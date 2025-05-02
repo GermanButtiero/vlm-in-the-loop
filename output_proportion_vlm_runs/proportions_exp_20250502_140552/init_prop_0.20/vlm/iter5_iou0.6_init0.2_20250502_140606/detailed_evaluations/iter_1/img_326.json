@@ -1,0 +1,108 @@
+{
+  "image_idx": 326,
+  "approved": false,
+  "vlm_response": "the image shows a street scene with various objects, including a \"stop\" sign, a \"donuts\" sign, and other storefronts. the computer's detection of \"no objects\" is inaccurate. the segmentation masks should identify the \"stop\" sign, the \"donuts\" sign, and other elements like the storefronts and street signs. therefore, the correct answer is:\n\nno",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        45.54999923706055,
+        430.0,
+        132.80999755859375,
+        521.3599853515625
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          95,
+          430,
+          94,
+          431,
+          79,
+          431,
+          78,
+          432,
+          70,
+          432,
+          52,
+          450,
+          52,
+          451,
+          46,
+          457,
+          46,
+          494,
+          47,
+          495,
+          47,
+          496,
+          58,
+          507,
+          58,
+          508,
+          69,
+          519,
+          69,
+          520,
+          77,
+          520,
+          78,
+          519,
+          86,
+          519,
+          87,
+          518,
+          95,
+          518,
+          96,
+          517,
+          104,
+          517,
+          105,
+          516,
+          108,
+          516,
+          115,
+          509,
+          115,
+          508,
+          132,
+          491,
+          132,
+          454,
+          131,
+          453,
+          130,
+          453,
+          124,
+          447,
+          123,
+          447,
+          117,
+          441,
+          116,
+          441,
+          110,
+          435,
+          109,
+          435,
+          104,
+          430
+        ]
+      ]
+    ]
+  }
+}

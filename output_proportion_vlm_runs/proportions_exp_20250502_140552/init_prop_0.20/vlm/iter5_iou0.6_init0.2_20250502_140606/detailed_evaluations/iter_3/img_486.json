@@ -1,0 +1,88 @@
+{
+  "image_idx": 486,
+  "approved": false,
+  "vlm_response": "the image shows a street scene with a focus on a chinese restaurant named \"tong palace.\" the computer's detection of objects is not accurate in this case. the segmentation masks are not present in the image, and the computer's detection of \"no objects\" is incorrect. the image contains various objects such as cars, pedestrians, a stop sign, and signage, which are not identified by the computer. therefore, the answer is:\n\nno",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        404.1099853515625,
+        250.1300048828125,
+        445.1400146484375,
+        289.5
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          416,
+          250,
+          412,
+          254,
+          411,
+          254,
+          406,
+          259,
+          405,
+          259,
+          404,
+          260,
+          404,
+          278,
+          405,
+          278,
+          413,
+          286,
+          414,
+          286,
+          417,
+          289,
+          418,
+          289,
+          419,
+          288,
+          432,
+          288,
+          433,
+          287,
+          434,
+          287,
+          440,
+          281,
+          441,
+          281,
+          444,
+          278,
+          444,
+          264,
+          442,
+          262,
+          442,
+          261,
+          438,
+          257,
+          438,
+          256,
+          435,
+          253,
+          435,
+          252,
+          433,
+          250
+        ]
+      ]
+    ]
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "image_idx": 746,
+  "approved": false,
+  "vlm_response": "the image shows a street scene with various objects, including road signs, a stop sign, a fire hydrant, and a gas station. the computer's detection of \"no objects\" is inaccurate. the segmentation masks should identify the stop sign, road signs, fire hydrant, and gas station. therefore, the correct answer is:\n\nno, the computer detected no objects, but there are several objects in the image.",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        480.30999755859375,
+        210.47999572753906,
+        575.3300170898438,
+        306.2900085449219
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          507,
+          210,
+          503,
+          214,
+          503,
+          215,
+          488,
+          230,
+          488,
+          231,
+          480,
+          239,
+          480,
+          240,
+          481,
+          241,
+          481,
+          260,
+          482,
+          261,
+          482,
+          278,
+          489,
+          285,
+          489,
+          286,
+          498,
+          295,
+          498,
+          296,
+          506,
+          304,
+          526,
+          304,
+          527,
+          305,
+          547,
+          305,
+          558,
+          294,
+          558,
+          293,
+          573,
+          278,
+          573,
+          262,
+          574,
+          261,
+          574,
+          239,
+          546,
+          211,
+          512,
+          211,
+          511,
+          210
+        ]
+      ]
+    ]
+  }
+}

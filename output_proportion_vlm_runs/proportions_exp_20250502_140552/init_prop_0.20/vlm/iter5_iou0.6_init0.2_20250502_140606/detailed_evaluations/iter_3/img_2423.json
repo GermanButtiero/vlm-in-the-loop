@@ -1,0 +1,64 @@
+{
+  "image_idx": 2423,
+  "approved": false,
+  "vlm_response": "the image shows a train crossing with a red light and a barrier, but the computer's detection of objects is not accurate. the computer detected no objects, which is incorrect. the image clearly shows a train, a barrier, a red light, and a sign. therefore, the answer is:\n\nno",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        445.95001220703125,
+        134.57000732421875,
+        539.72998046875,
+        192.99000549316406
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          447,
+          135,
+          447,
+          166,
+          446,
+          167,
+          446,
+          190,
+          469,
+          190,
+          470,
+          191,
+          515,
+          191,
+          516,
+          192,
+          539,
+          192,
+          539,
+          179,
+          538,
+          178,
+          538,
+          137,
+          488,
+          137,
+          487,
+          136,
+          448,
+          136
+        ]
+      ]
+    ]
+  }
+}

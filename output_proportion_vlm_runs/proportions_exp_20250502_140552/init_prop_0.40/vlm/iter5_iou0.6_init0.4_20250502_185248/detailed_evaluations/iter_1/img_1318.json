@@ -1,0 +1,76 @@
+{
+  "image_idx": 1318,
+  "approved": false,
+  "vlm_response": "the image shows a person with two colored segmentation masks overlaid on their shirt, one green and one red. the text identifies the person as peter baynes, executive director of the new york state conference of mayors. the segmentation masks appear to be accurately identifying the shirt as two separate objects, with the green mask covering the left side and the red mask covering the right side. the computer's detection of no objects is not accurate in this context, as the segmentation masks clearly identify two distinct areas of the shirt. therefore, the answer is:\n\nno, the segmentation masks are not accurate as they identify two objects (the left and right sides of the shirt) rather than no objects.",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "book"
+    ],
+    "class_ids": [
+      84
+    ],
+    "boxes": [
+      [
+        430.3800048828125,
+        245.16000366210938,
+        461.1199951171875,
+        308.95001220703125
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          453,
+          245,
+          452,
+          246,
+          441,
+          246,
+          440,
+          247,
+          430,
+          247,
+          431,
+          248,
+          431,
+          271,
+          432,
+          272,
+          432,
+          308,
+          449,
+          308,
+          450,
+          307,
+          460,
+          307,
+          460,
+          297,
+          459,
+          296,
+          459,
+          281,
+          458,
+          280,
+          458,
+          266,
+          457,
+          265,
+          457,
+          250,
+          456,
+          249,
+          456,
+          245
+        ]
+      ]
+    ]
+  }
+}

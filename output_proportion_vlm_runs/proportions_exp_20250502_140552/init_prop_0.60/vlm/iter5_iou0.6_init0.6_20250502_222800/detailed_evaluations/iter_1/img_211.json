@@ -1,0 +1,108 @@
+{
+  "image_idx": 211,
+  "approved": false,
+  "vlm_response": "the image shows a stop sign, trees, and a vehicle's dashboard. the computer's detection of \"no objects\" is inaccurate. the stop sign is a clear object that should be detected, and the trees and vehicle's dashboard are also visible. therefore, the correct answer is:\n\nno, the computer detected no objects, but there are objects present in the image.",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        258.0799865722656,
+        194.25,
+        320.5199890136719,
+        256.2300109863281
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          276,
+          194,
+          272,
+          198,
+          271,
+          198,
+          260,
+          209,
+          260,
+          216,
+          259,
+          217,
+          259,
+          230,
+          258,
+          231,
+          258,
+          238,
+          273,
+          253,
+          281,
+          253,
+          282,
+          254,
+          293,
+          254,
+          294,
+          255,
+          302,
+          255,
+          307,
+          250,
+          308,
+          250,
+          315,
+          243,
+          316,
+          243,
+          317,
+          242,
+          317,
+          239,
+          318,
+          238,
+          318,
+          227,
+          319,
+          226,
+          319,
+          216,
+          320,
+          215,
+          318,
+          213,
+          318,
+          212,
+          313,
+          207,
+          313,
+          206,
+          309,
+          202,
+          309,
+          201,
+          304,
+          196,
+          303,
+          196,
+          302,
+          195,
+          282,
+          195,
+          281,
+          194
+        ]
+      ]
+    ]
+  }
+}

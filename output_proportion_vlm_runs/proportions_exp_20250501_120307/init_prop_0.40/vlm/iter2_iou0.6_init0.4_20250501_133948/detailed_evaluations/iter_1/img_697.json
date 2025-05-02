@@ -1,0 +1,100 @@
+{
+  "image_idx": 697,
+  "approved": true,
+  "vlm_response": "the image shows a clear view of a railway crossing with a stop sign and a crossing sign. the computer's detection of objects is accurate, as it has identified the stop sign and the railway crossing sign. the segmentation masks are correctly identifying these objects, with the stop sign and crossing sign being distinctly marked. therefore, the answer is:\n\nyes",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        110.80999755859375,
+        243.13999938964844,
+        220.0800018310547,
+        351.4599914550781
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          145,
+          243,
+          142,
+          246,
+          141,
+          246,
+          131,
+          256,
+          130,
+          256,
+          119,
+          267,
+          118,
+          267,
+          114,
+          271,
+          114,
+          281,
+          113,
+          282,
+          113,
+          295,
+          112,
+          296,
+          112,
+          308,
+          111,
+          309,
+          111,
+          318,
+          135,
+          342,
+          135,
+          343,
+          142,
+          350,
+          188,
+          350,
+          197,
+          341,
+          197,
+          340,
+          213,
+          324,
+          214,
+          324,
+          219,
+          319,
+          219,
+          283,
+          218,
+          282,
+          218,
+          275,
+          204,
+          261,
+          204,
+          260,
+          189,
+          245,
+          190,
+          244,
+          157,
+          244,
+          156,
+          243
+        ]
+      ]
+    ]
+  }
+}

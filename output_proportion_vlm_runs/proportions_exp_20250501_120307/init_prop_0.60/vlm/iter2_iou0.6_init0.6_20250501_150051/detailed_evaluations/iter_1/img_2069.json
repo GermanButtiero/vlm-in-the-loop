@@ -1,0 +1,84 @@
+{
+  "image_idx": 2069,
+  "approved": false,
+  "vlm_response": "the image shows a road intersection with a stop sign and the shadow of a person. the computer's detection of \"no objects\" is inaccurate. the image clearly contains a stop sign and a person's shadow, which should be classified as objects. therefore, the correct answer is:\n\nno, the computer detected no objects, but there are objects present in the image.",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        402.5400085449219,
+        168.17999267578125,
+        438.489990234375,
+        213.47999572753906
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          414,
+          168,
+          405,
+          177,
+          405,
+          178,
+          403,
+          180,
+          403,
+          201,
+          407,
+          205,
+          407,
+          206,
+          412,
+          211,
+          412,
+          212,
+          426,
+          212,
+          429,
+          209,
+          429,
+          208,
+          433,
+          204,
+          433,
+          203,
+          437,
+          199,
+          437,
+          181,
+          436,
+          180,
+          436,
+          179,
+          433,
+          176,
+          433,
+          175,
+          430,
+          172,
+          430,
+          171,
+          428,
+          169,
+          425,
+          169,
+          424,
+          168
+        ]
+      ]
+    ]
+  }
+}

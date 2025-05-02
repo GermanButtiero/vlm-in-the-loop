@@ -1,0 +1,78 @@
+{
+  "image_idx": 15,
+  "approved": false,
+  "vlm_response": "the image shows a person riding a bicycle, wearing a pink helmet and a purple outfit, with a stop sign and a building in the background. the computer's detection of \"no objects\" is inaccurate. the image clearly contains multiple objects, including the person, the bicycle, the stop sign, and parts of the building. therefore, the correct answer is:\n\nno",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        324.69000244140625,
+        0.0,
+        381.1600036621094,
+        27.700000762939453
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          325,
+          0,
+          325,
+          10,
+          326,
+          10,
+          335,
+          19,
+          336,
+          19,
+          344,
+          27,
+          362,
+          27,
+          365,
+          24,
+          366,
+          24,
+          369,
+          21,
+          370,
+          21,
+          374,
+          17,
+          375,
+          17,
+          379,
+          13,
+          380,
+          13,
+          380,
+          3,
+          372,
+          3,
+          371,
+          2,
+          353,
+          2,
+          352,
+          1,
+          335,
+          1,
+          334,
+          0
+        ]
+      ]
+    ]
+  }
+}

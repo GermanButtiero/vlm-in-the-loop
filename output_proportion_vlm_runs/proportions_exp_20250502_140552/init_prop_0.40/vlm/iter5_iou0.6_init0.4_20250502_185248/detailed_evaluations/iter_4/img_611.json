@@ -1,0 +1,80 @@
+{
+  "image_idx": 611,
+  "approved": false,
+  "vlm_response": "the image shows a herd of sheep being herded by a person on a horse, with a dog nearby. the computer's segmentation masks highlight specific areas, including a sheep in green and another in red. however, the computer's detection of \"no objects\" is inaccurate. the segmentation masks are not accurately identifying the objects in the image. the sheep, horse, and dog are not properly segmented, and the computer's detection is missing these objects entirely. therefore, the answer is:\n\nno",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        439.1099853515625,
+        21.040000915527344,
+        484.5400085449219,
+        69.55999755859375
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          459,
+          21,
+          459,
+          22,
+          446,
+          35,
+          446,
+          36,
+          439,
+          43,
+          443,
+          47,
+          443,
+          48,
+          447,
+          52,
+          447,
+          53,
+          451,
+          57,
+          451,
+          58,
+          455,
+          62,
+          455,
+          63,
+          459,
+          67,
+          459,
+          68,
+          460,
+          68,
+          468,
+          60,
+          469,
+          60,
+          483,
+          46,
+          483,
+          45,
+          465,
+          27,
+          465,
+          26,
+          460,
+          21
+        ]
+      ]
+    ]
+  }
+}

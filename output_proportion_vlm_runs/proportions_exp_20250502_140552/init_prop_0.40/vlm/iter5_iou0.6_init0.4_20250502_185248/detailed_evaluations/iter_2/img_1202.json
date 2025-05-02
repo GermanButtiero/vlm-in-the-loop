@@ -1,0 +1,140 @@
+{
+  "image_idx": 1202,
+  "approved": true,
+  "vlm_response": "yes, the object classes and segmentation masks appear to be accurate. the computer has correctly identified the stop sign in the image. the segmentation mask for the stop sign is clearly visible and accurately represents the object. there are no apparent misclassifications or poor segmentations in the image.",
+  "prediction": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      3
+    ],
+    "scores": [
+      0.9949794411659241
+    ],
+    "boxes": [
+      [
+        83.02008819580078,
+        174.94546508789062,
+        110.55852508544922,
+        203.58485412597656
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          91,
+          175,
+          88,
+          178,
+          87,
+          178,
+          84,
+          181,
+          84,
+          182,
+          83,
+          183,
+          83,
+          193,
+          84,
+          194,
+          84,
+          195,
+          87,
+          198,
+          87,
+          199,
+          89,
+          201,
+          90,
+          201,
+          91,
+          202,
+          100,
+          202,
+          102,
+          200,
+          103,
+          200,
+          103,
+          199,
+          108,
+          194,
+          108,
+          193,
+          109,
+          192,
+          109,
+          183,
+          107,
+          181,
+          107,
+          180,
+          103,
+          176,
+          102,
+          176,
+          101,
+          175
+        ]
+      ]
+    ]
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        82.5999984741211,
+        175.1999969482422,
+        110.30000305175781,
+        201.9600067138672
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          83,
+          175,
+          83,
+          200,
+          94,
+          200,
+          95,
+          201,
+          101,
+          201,
+          102,
+          200,
+          103,
+          200,
+          105,
+          198,
+          106,
+          198,
+          107,
+          197,
+          107,
+          196,
+          108,
+          195,
+          108,
+          186,
+          109,
+          185,
+          109,
+          176,
+          93,
+          176,
+          92,
+          175
+        ]
+      ]
+    ]
+  }
+}

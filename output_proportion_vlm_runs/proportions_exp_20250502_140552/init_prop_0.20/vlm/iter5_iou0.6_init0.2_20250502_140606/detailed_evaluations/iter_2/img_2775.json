@@ -1,0 +1,86 @@
+{
+  "image_idx": 2775,
+  "approved": false,
+  "vlm_response": "the image shows a busy street scene with various people and objects, including surfers, pedestrians, and vehicles. the computer's detection of \"no objects\" is inaccurate. the segmentation masks should identify people, surfboards, vehicles, and other objects. the computer's detection is missing these objects, which are clearly visible in the image. therefore, the answer is:\n\nno",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        225.49000549316406,
+        0.0,
+        307.3999938964844,
+        29.8700008392334
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          227,
+          0,
+          227,
+          1,
+          226,
+          2,
+          226,
+          6,
+          225,
+          7,
+          226,
+          8,
+          227,
+          8,
+          233,
+          14,
+          234,
+          14,
+          239,
+          19,
+          240,
+          19,
+          245,
+          24,
+          246,
+          24,
+          251,
+          29,
+          290,
+          29,
+          292,
+          27,
+          292,
+          26,
+          296,
+          22,
+          296,
+          21,
+          299,
+          18,
+          299,
+          17,
+          303,
+          13,
+          303,
+          12,
+          306,
+          9,
+          306,
+          1,
+          305,
+          0
+        ]
+      ]
+    ]
+  }
+}

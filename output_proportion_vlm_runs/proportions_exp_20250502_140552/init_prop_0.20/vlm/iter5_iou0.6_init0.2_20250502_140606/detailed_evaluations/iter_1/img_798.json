@@ -1,0 +1,110 @@
+{
+  "image_idx": 798,
+  "approved": false,
+  "vlm_response": "the image shows a stop sign, a road, and a forested area. the computer's detection of \"no objects\" is inaccurate. the stop sign is a clear object in the image, and it should be included in the segmentation masks. therefore, the correct answer is:\n\nno, the computer detected no objects, but there is a stop sign present in the image.",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        113.88999938964844,
+        241.88999938964844,
+        165.39999389648438,
+        295.1499938964844
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          129,
+          242,
+          127,
+          244,
+          126,
+          244,
+          118,
+          252,
+          117,
+          252,
+          116,
+          253,
+          116,
+          255,
+          115,
+          256,
+          115,
+          269,
+          114,
+          270,
+          114,
+          279,
+          115,
+          280,
+          116,
+          280,
+          119,
+          283,
+          120,
+          283,
+          122,
+          285,
+          123,
+          285,
+          126,
+          288,
+          127,
+          288,
+          130,
+          291,
+          134,
+          291,
+          135,
+          292,
+          140,
+          292,
+          141,
+          293,
+          145,
+          293,
+          146,
+          294,
+          149,
+          294,
+          161,
+          282,
+          161,
+          281,
+          163,
+          279,
+          163,
+          269,
+          164,
+          268,
+          164,
+          256,
+          156,
+          248,
+          156,
+          247,
+          152,
+          243,
+          146,
+          243,
+          145,
+          242
+        ]
+      ]
+    ]
+  }
+}

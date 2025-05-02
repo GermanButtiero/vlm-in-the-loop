@@ -1,0 +1,98 @@
+{
+  "image_idx": 1605,
+  "approved": false,
+  "vlm_response": "the image shows a stop sign with the word \"arr\u00eat\" on it, which is a french word for \"stop.\" the computer's detection of \"no objects\" is incorrect. the stop sign is the primary object in the image, and it should be identified and segmented. the segmentation masks should highlight the stop sign, which is the only object of interest in this context. therefore, the computer's detection is inaccurate.\n\nanswer: no",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        158.05999755859375,
+        154.97000122070312,
+        284.3900146484375,
+        279.8999938964844
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          193,
+          155,
+          176,
+          172,
+          175,
+          172,
+          159,
+          188,
+          159,
+          212,
+          158,
+          213,
+          158,
+          237,
+          163,
+          242,
+          163,
+          243,
+          170,
+          250,
+          170,
+          251,
+          178,
+          259,
+          178,
+          260,
+          185,
+          267,
+          185,
+          268,
+          192,
+          275,
+          192,
+          276,
+          194,
+          278,
+          221,
+          278,
+          222,
+          279,
+          248,
+          279,
+          254,
+          273,
+          254,
+          272,
+          277,
+          249,
+          277,
+          248,
+          283,
+          242,
+          283,
+          209,
+          282,
+          208,
+          282,
+          190,
+          277,
+          185,
+          276,
+          185,
+          246,
+          155
+        ]
+      ]
+    ]
+  }
+}

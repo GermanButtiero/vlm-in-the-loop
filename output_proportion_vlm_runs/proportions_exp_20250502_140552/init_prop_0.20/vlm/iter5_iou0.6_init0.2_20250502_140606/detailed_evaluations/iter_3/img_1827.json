@@ -1,0 +1,173 @@
+{
+  "image_idx": 1827,
+  "approved": false,
+  "vlm_response": "the computer's detection of objects in the image is not accurate. the image shows a dog lying on a bed, and the segmentation masks highlight the dog and parts of the bed. however, the computer has not identified any objects, which is incorrect. the dog is the main subject, and it should be classified as an object. additionally, the segmentation masks are not well-defined, as they do not clearly separate the dog from the bed or the background. therefore, the answer is:\n\nno",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "book"
+    ],
+    "class_ids": [
+      84,
+      84,
+      84,
+      84
+    ],
+    "boxes": [
+      [
+        451.2900085449219,
+        135.97999572753906,
+        500.0,
+        171.75
+      ],
+      [
+        468.489990234375,
+        97.02999877929688,
+        477.739990234375,
+        129.05999755859375
+      ],
+      [
+        449.7300109863281,
+        54.52000045776367,
+        500.0,
+        90.58999633789062
+      ],
+      [
+        454.55999755859375,
+        99.58999633789062,
+        467.6199951171875,
+        130.60000610351562
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          463,
+          136,
+          462,
+          137,
+          452,
+          137,
+          452,
+          155,
+          451,
+          156,
+          451,
+          164,
+          452,
+          165,
+          452,
+          166,
+          460,
+          166,
+          461,
+          167,
+          469,
+          167,
+          470,
+          168,
+          478,
+          168,
+          479,
+          169,
+          487,
+          169,
+          488,
+          170,
+          496,
+          170,
+          497,
+          171,
+          499,
+          171,
+          499,
+          136
+        ]
+      ],
+      [
+        [
+          469,
+          97,
+          469,
+          122,
+          468,
+          123,
+          468,
+          127,
+          471,
+          127,
+          472,
+          128,
+          475,
+          128,
+          475,
+          121,
+          476,
+          120,
+          476,
+          98,
+          477,
+          97
+        ]
+      ],
+      [
+        [
+          487,
+          55,
+          486,
+          56,
+          473,
+          56,
+          472,
+          57,
+          459,
+          57,
+          458,
+          58,
+          452,
+          58,
+          452,
+          59,
+          451,
+          60,
+          451,
+          77,
+          450,
+          78,
+          450,
+          90,
+          457,
+          90,
+          458,
+          89,
+          499,
+          89,
+          499,
+          55
+        ]
+      ],
+      [
+        [
+          455,
+          100,
+          455,
+          129,
+          465,
+          129,
+          466,
+          130,
+          467,
+          130,
+          467,
+          100
+        ]
+      ]
+    ]
+  }
+}

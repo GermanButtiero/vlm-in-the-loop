@@ -1,0 +1,90 @@
+{
+  "image_idx": 2752,
+  "approved": false,
+  "vlm_response": "the image shows a stop sign with a \"global warming\" sticker and an \"all way\" sign below it, mounted on a post that appears to be wrapped in some kind of material. the segmentation mask highlights the stop sign and the post, but it does not accurately identify any other objects in the image. the computer's detection of \"no objects\" is incorrect because it should have identified the stop sign, the \"all way\" sign, and the post. additionally, the segmentation mask is not accurately identifying the post, as it is not fully encompassed by the mask. therefore, the answer is:\n\nno",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        203.8000030517578,
+        0.3199999928474426,
+        400.4700012207031,
+        106.22000122070312
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          205,
+          1,
+          205,
+          25,
+          204,
+          26,
+          204,
+          51,
+          258,
+          105,
+          344,
+          105,
+          344,
+          104,
+          350,
+          98,
+          350,
+          97,
+          357,
+          90,
+          357,
+          89,
+          364,
+          82,
+          364,
+          81,
+          371,
+          74,
+          371,
+          73,
+          377,
+          67,
+          377,
+          66,
+          384,
+          59,
+          384,
+          58,
+          391,
+          51,
+          391,
+          50,
+          397,
+          44,
+          397,
+          43,
+          398,
+          42,
+          398,
+          28,
+          399,
+          27,
+          399,
+          2,
+          206,
+          2
+        ]
+      ]
+    ]
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "image_idx": 1432,
+  "approved": false,
+  "vlm_response": "the image shows several road signs, including a green sign indicating a bike route to beacon hill station, a sign instructing to use the sidewalk, a 4-hour parking sign, and a stop sign. the computer's detection of \"no objects\" is inaccurate. the correct object classes and segmentation masks should identify the signs, the stop sign, and possibly the road and sidewalk. the segmentation masks should highlight the distinct areas of each object, such as the green and white areas of the signs, the red stop sign, and the road. therefore, the answer is \"no\" followed by an explanation that the computer's detection is inaccurate.",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        321.5299987792969,
+        358.6199951171875,
+        360.7699890136719,
+        396.6099853515625
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          330,
+          359,
+          328,
+          361,
+          328,
+          362,
+          322,
+          368,
+          322,
+          380,
+          324,
+          382,
+          324,
+          383,
+          325,
+          384,
+          325,
+          385,
+          327,
+          387,
+          327,
+          388,
+          329,
+          390,
+          329,
+          391,
+          331,
+          393,
+          331,
+          394,
+          336,
+          394,
+          337,
+          395,
+          346,
+          395,
+          347,
+          396,
+          355,
+          388,
+          356,
+          388,
+          359,
+          385,
+          359,
+          381,
+          360,
+          380,
+          360,
+          370,
+          358,
+          368,
+          357,
+          368,
+          350,
+          361,
+          349,
+          361,
+          347,
+          359
+        ]
+      ]
+    ]
+  }
+}

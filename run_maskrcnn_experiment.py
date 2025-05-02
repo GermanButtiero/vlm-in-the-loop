@@ -22,10 +22,14 @@ def run_experiment(
         "val_loss": []
     }
 
-    # Load full training dataset
+    # Add the categories to keep (book, bird, stop sign, zebra)
+    categories_to_keep = [84, 16, 13, 24]
+
+    # Load full training dataset WITH filtering
     full_train_dataset = CocoSegmentationDatasetMRCNN(
         config["train_image_dir"],
-        config["train_annotation_file"]
+        config["train_annotation_file"],
+        categories_to_keep=categories_to_keep  # Add this parameter
     )
     dataset_size = len(full_train_dataset)
     indices = np.random.permutation(dataset_size)
@@ -43,7 +47,8 @@ def run_experiment(
     # COCO validation set for final evaluation
     coco_val_dataset = CocoSegmentationDatasetMRCNN(
         config["val_image_dir"],
-        config["val_annotation_file"]
+        config["val_annotation_file"],
+        categories_to_keep=categories_to_keep  # Add this parameter here too
     )
     coco_val_loader = torch.utils.data.DataLoader(
         coco_val_dataset, batch_size=config["batch_size"],
@@ -83,7 +88,7 @@ def run_experiment(
         results["train_proportion"].append(proportion)
         results["train_size"].append(train_size)
         results["mean_ap"].append(float(mean_ap))
-        results["ap_per_class"].append([float(ap) for ap in ap_per_class])
+        results["ap_per_class"].append(ap_per_class)  # ap_per_class is already a dictionary of class_name:ap_value
         results["train_loss"].append(metrics_epoch["train_loss"])
         results["val_loss"].append(metrics_epoch["val_loss"])
 

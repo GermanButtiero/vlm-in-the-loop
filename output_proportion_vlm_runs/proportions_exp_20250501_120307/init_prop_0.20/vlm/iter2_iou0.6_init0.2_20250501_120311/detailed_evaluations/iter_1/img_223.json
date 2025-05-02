@@ -1,0 +1,84 @@
+{
+  "image_idx": 223,
+  "approved": false,
+  "vlm_response": "the image shows a red fire hydrant, a stop sign, and some cars in the background. the computer's detection of \"no objects\" is inaccurate. the fire hydrant and stop sign are clearly visible and should be included in the object segmentation masks. the cars in the background are also present but may not be as prominently segmented. therefore, the correct answer is:\n\nno, the computer detected no objects, but there are clearly visible objects in the image.",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        512.9500122070312,
+        249.32000732421875,
+        554.22998046875,
+        289.3800048828125
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          537,
+          249,
+          536,
+          250,
+          523,
+          250,
+          523,
+          251,
+          516,
+          258,
+          516,
+          259,
+          513,
+          262,
+          513,
+          278,
+          522,
+          287,
+          523,
+          287,
+          524,
+          288,
+          536,
+          288,
+          537,
+          287,
+          544,
+          287,
+          552,
+          279,
+          552,
+          278,
+          553,
+          277,
+          553,
+          268,
+          552,
+          267,
+          552,
+          261,
+          549,
+          258,
+          548,
+          258,
+          541,
+          251,
+          540,
+          251,
+          538,
+          249
+        ]
+      ]
+    ]
+  }
+}

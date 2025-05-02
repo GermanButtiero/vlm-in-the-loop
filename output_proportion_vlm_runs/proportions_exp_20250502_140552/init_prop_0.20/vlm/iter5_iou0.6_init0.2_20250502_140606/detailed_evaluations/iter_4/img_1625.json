@@ -1,0 +1,150 @@
+{
+  "image_idx": 1625,
+  "approved": true,
+  "vlm_response": "yes, the object classes and segmentation masks appear to be accurate. the computer has correctly identified the stop sign, which is visible in the image. the segmentation mask for the stop sign is clearly marked in red, indicating that the computer has successfully segmented this object. additionally, other objects such as the fire hydrant, cars, and buildings are also visible and not misclassified. the segmentation masks for these objects are appropriately colored and segmented, showing that the computer's object detection and segmentation are accurate.",
+  "prediction": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      3
+    ],
+    "scores": [
+      0.9955052137374878
+    ],
+    "boxes": [
+      [
+        2.123931884765625,
+        177.3502197265625,
+        43.861114501953125,
+        219.65948486328125
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          14,
+          177,
+          13,
+          178,
+          12,
+          178,
+          2,
+          188,
+          2,
+          208,
+          3,
+          209,
+          3,
+          210,
+          4,
+          210,
+          11,
+          217,
+          11,
+          218,
+          12,
+          218,
+          13,
+          219,
+          31,
+          219,
+          32,
+          218,
+          33,
+          218,
+          43,
+          208,
+          43,
+          189,
+          42,
+          188,
+          42,
+          187,
+          39,
+          184,
+          38,
+          184,
+          36,
+          182,
+          36,
+          181,
+          33,
+          178,
+          32,
+          178,
+          31,
+          177
+        ]
+      ]
+    ]
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        1.840000033378601,
+        177.75999450683594,
+        44.380001068115234,
+        221.5399932861328
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          14,
+          178,
+          13,
+          179,
+          11,
+          179,
+          10,
+          180,
+          10,
+          181,
+          2,
+          189,
+          2,
+          208,
+          14,
+          220,
+          25,
+          220,
+          26,
+          219,
+          31,
+          219,
+          32,
+          218,
+          33,
+          218,
+          33,
+          217,
+          42,
+          208,
+          42,
+          207,
+          43,
+          206,
+          43,
+          188,
+          40,
+          185,
+          39,
+          185,
+          34,
+          180,
+          33,
+          180,
+          31,
+          178
+        ]
+      ]
+    ]
+  }
+}

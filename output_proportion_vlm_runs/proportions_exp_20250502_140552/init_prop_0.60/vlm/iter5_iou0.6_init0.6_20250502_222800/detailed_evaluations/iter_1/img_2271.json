@@ -1,0 +1,110 @@
+{
+  "image_idx": 2271,
+  "approved": false,
+  "vlm_response": "the image shows a stop sign, a sidewalk, and a grassy area with wildflowers. the computer's detection of \"no objects\" is inaccurate. the stop sign is a clear object that should be detected, and the sidewalk and grassy area are also identifiable. therefore, the correct answer is:\n\nno, the computer detected no objects, which is inaccurate.",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        117.05000305175781,
+        13.90999984741211,
+        183.25999450683594,
+        80.11000061035156
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          137,
+          14,
+          127,
+          24,
+          126,
+          24,
+          117,
+          33,
+          117,
+          38,
+          118,
+          39,
+          118,
+          47,
+          119,
+          48,
+          119,
+          53,
+          122,
+          56,
+          122,
+          57,
+          126,
+          61,
+          126,
+          62,
+          129,
+          65,
+          129,
+          66,
+          133,
+          70,
+          133,
+          71,
+          136,
+          74,
+          136,
+          75,
+          140,
+          79,
+          159,
+          79,
+          166,
+          72,
+          167,
+          72,
+          176,
+          63,
+          177,
+          63,
+          179,
+          61,
+          179,
+          60,
+          180,
+          59,
+          180,
+          52,
+          181,
+          51,
+          181,
+          44,
+          182,
+          43,
+          182,
+          38,
+          177,
+          33,
+          177,
+          32,
+          166,
+          21,
+          166,
+          20,
+          160,
+          14
+        ]
+      ]
+    ]
+  }
+}

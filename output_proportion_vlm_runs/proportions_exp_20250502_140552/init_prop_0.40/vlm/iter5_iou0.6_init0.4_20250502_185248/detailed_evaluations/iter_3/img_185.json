@@ -1,0 +1,80 @@
+{
+  "image_idx": 185,
+  "approved": false,
+  "vlm_response": "the computer's detection of objects in the image is not accurate. the image shows a person and a stop sign, but the computer has not identified these objects. instead, it has segmented the person in green, which is not a standard object class. the stop sign is also not detected. therefore, the answer is:\n\nno",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        57.0099983215332,
+        20.209999084472656,
+        144.75,
+        107.19000244140625
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          81,
+          20,
+          73,
+          28,
+          73,
+          29,
+          65,
+          37,
+          65,
+          38,
+          57,
+          46,
+          57,
+          82,
+          78,
+          103,
+          79,
+          103,
+          82,
+          106,
+          120,
+          106,
+          120,
+          105,
+          128,
+          97,
+          128,
+          96,
+          136,
+          88,
+          136,
+          87,
+          144,
+          79,
+          144,
+          45,
+          137,
+          38,
+          136,
+          38,
+          120,
+          22,
+          119,
+          22,
+          117,
+          20
+        ]
+      ]
+    ]
+  }
+}

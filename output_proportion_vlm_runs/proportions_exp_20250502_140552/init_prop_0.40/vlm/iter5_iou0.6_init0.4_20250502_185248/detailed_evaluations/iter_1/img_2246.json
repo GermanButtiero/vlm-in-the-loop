@@ -1,0 +1,70 @@
+{
+  "image_idx": 2246,
+  "approved": false,
+  "vlm_response": "the image shows a vase with flowers, and the segmentation masks are applied to the flowers. the computer has detected the flowers as objects, which is accurate. however, the segmentation masks are not perfectly aligned with the flowers, and there are some areas where the masks overlap or are incomplete. additionally, the computer has detected a background object, which is not present in the image. therefore, the segmentation masks are not entirely accurate.\n\nthe correct answer is: no, the segmentation masks are not entirely accurate due to misclassifications and poor segmentation.",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "book"
+    ],
+    "class_ids": [
+      84
+    ],
+    "boxes": [
+      [
+        139.41000366210938,
+        30.489999771118164,
+        169.9499969482422,
+        69.2699966430664
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          167,
+          30,
+          166,
+          31,
+          143,
+          31,
+          142,
+          32,
+          141,
+          32,
+          141,
+          39,
+          140,
+          40,
+          140,
+          65,
+          139,
+          66,
+          139,
+          68,
+          152,
+          68,
+          153,
+          67,
+          158,
+          67,
+          159,
+          66,
+          164,
+          66,
+          165,
+          65,
+          169,
+          65,
+          169,
+          30
+        ]
+      ]
+    ]
+  }
+}

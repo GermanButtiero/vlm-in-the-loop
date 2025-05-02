@@ -1,0 +1,94 @@
+{
+  "image_idx": 1102,
+  "approved": false,
+  "vlm_response": "the computer's detection of objects in the image is not accurate. the image shows a woman and a baby in a living room setting, with various objects such as a couch, armchair, lamp, and a dog bowl visible. however, the computer's segmentation masks indicate that no objects have been detected. this is incorrect as the image clearly contains multiple objects. therefore, the answer is:\n\nno",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "book"
+    ],
+    "class_ids": [
+      84
+    ],
+    "boxes": [
+      [
+        348.5299987792969,
+        406.0899963378906,
+        477.510009765625,
+        427.0
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          453,
+          406,
+          452,
+          407,
+          432,
+          407,
+          431,
+          408,
+          411,
+          408,
+          410,
+          409,
+          389,
+          409,
+          388,
+          410,
+          368,
+          410,
+          367,
+          411,
+          349,
+          411,
+          349,
+          422,
+          350,
+          423,
+          350,
+          426,
+          476,
+          426,
+          476,
+          425,
+          474,
+          423,
+          474,
+          422,
+          473,
+          421,
+          473,
+          420,
+          471,
+          418,
+          471,
+          417,
+          469,
+          415,
+          469,
+          414,
+          467,
+          412,
+          467,
+          411,
+          465,
+          409,
+          465,
+          408,
+          464,
+          407,
+          464,
+          406
+        ]
+      ]
+    ]
+  }
+}

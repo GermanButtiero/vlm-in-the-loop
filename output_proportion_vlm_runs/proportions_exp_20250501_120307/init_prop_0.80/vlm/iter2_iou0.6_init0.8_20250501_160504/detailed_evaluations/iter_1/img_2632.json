@@ -1,0 +1,66 @@
+{
+  "image_idx": 2632,
+  "approved": false,
+  "vlm_response": "the computer's detection of objects in the image is not accurate. the image shows a bedroom with various objects, including a bed, a curtain, a headboard, a nightstand, a lamp, and several decorative items. however, the computer's output indicates that no objects were detected. this is incorrect, as the image clearly contains multiple objects. therefore, the answer is:\n\nno",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "book"
+    ],
+    "class_ids": [
+      84
+    ],
+    "boxes": [
+      [
+        7.989999771118164,
+        135.99000549316406,
+        64.87000274658203,
+        171.13999938964844
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          10,
+          136,
+          10,
+          155,
+          9,
+          156,
+          9,
+          159,
+          8,
+          160,
+          8,
+          170,
+          64,
+          170,
+          64,
+          148,
+          63,
+          147,
+          63,
+          140,
+          62,
+          139,
+          62,
+          138,
+          46,
+          138,
+          45,
+          137,
+          22,
+          137,
+          21,
+          136
+        ]
+      ]
+    ]
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "image_idx": 1826,
+  "approved": false,
+  "vlm_response": "the computer's detection of objects in the image is not accurate. the segmentation masks are not correctly identifying any objects. the image shows a person sitting on the grass with a stop sign in the background, but the computer has not detected any objects. therefore, the answer is:\n\nno",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        264.010009765625,
+        55.72999954223633,
+        295.5199890136719,
+        85.81999969482422
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          276,
+          56,
+          275,
+          57,
+          271,
+          57,
+          269,
+          59,
+          268,
+          59,
+          266,
+          61,
+          265,
+          61,
+          265,
+          67,
+          264,
+          68,
+          264,
+          74,
+          267,
+          77,
+          267,
+          78,
+          270,
+          81,
+          270,
+          84,
+          275,
+          84,
+          276,
+          85,
+          281,
+          85,
+          283,
+          83,
+          284,
+          83,
+          285,
+          82,
+          286,
+          82,
+          288,
+          80,
+          289,
+          80,
+          290,
+          79,
+          291,
+          79,
+          293,
+          77,
+          294,
+          77,
+          294,
+          67,
+          295,
+          66,
+          295,
+          65,
+          286,
+          56
+        ]
+      ]
+    ]
+  }
+}

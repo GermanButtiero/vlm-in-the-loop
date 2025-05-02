@@ -1,0 +1,102 @@
+{
+  "image_idx": 1459,
+  "approved": false,
+  "vlm_response": "the image shows a stop sign in a rural setting, with no other objects of significance. the computer's detection of \"no objects\" is accurate, as there are no other objects to segment. however, the stop sign itself is not segmented, which is a misclassification. the correct segmentation should include the stop sign as the primary object. therefore, the answer is:\n\nno, the stop sign should be included in the segmentation masks.",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        292.54998779296875,
+        164.1999969482422,
+        343.510009765625,
+        218.42999267578125
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          308,
+          164,
+          301,
+          171,
+          300,
+          171,
+          293,
+          178,
+          293,
+          198,
+          294,
+          199,
+          294,
+          200,
+          297,
+          203,
+          297,
+          204,
+          300,
+          207,
+          300,
+          208,
+          302,
+          210,
+          302,
+          211,
+          305,
+          214,
+          305,
+          215,
+          307,
+          217,
+          327,
+          217,
+          333,
+          211,
+          334,
+          211,
+          342,
+          203,
+          342,
+          185,
+          343,
+          184,
+          343,
+          182,
+          341,
+          180,
+          341,
+          179,
+          339,
+          177,
+          339,
+          176,
+          337,
+          174,
+          337,
+          173,
+          335,
+          171,
+          335,
+          170,
+          332,
+          167,
+          332,
+          166,
+          330,
+          164
+        ]
+      ]
+    ]
+  }
+}

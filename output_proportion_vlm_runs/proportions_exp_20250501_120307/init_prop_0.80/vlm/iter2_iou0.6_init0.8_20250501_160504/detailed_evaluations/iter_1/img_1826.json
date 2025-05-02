@@ -1,0 +1,154 @@
+{
+  "image_idx": 1826,
+  "approved": true,
+  "vlm_response": "yes, the object classes and segmentation masks are accurate. the computer has correctly identified the stop sign in the image. the segmentation mask for the stop sign is well-defined, highlighting the red octagonal shape with the word \"stop\" clearly visible. there are no misclassifications or poor segmentations in this image.",
+  "prediction": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      3
+    ],
+    "scores": [
+      0.9920032024383545
+    ],
+    "boxes": [
+      [
+        261.6823425292969,
+        53.34089660644531,
+        294.68548583984375,
+        85.44412994384766
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          273,
+          54,
+          269,
+          58,
+          268,
+          58,
+          264,
+          62,
+          264,
+          65,
+          263,
+          66,
+          263,
+          76,
+          270,
+          83,
+          271,
+          83,
+          272,
+          84,
+          284,
+          84,
+          285,
+          83,
+          286,
+          83,
+          289,
+          80,
+          290,
+          80,
+          294,
+          76,
+          294,
+          62,
+          292,
+          60,
+          292,
+          59,
+          287,
+          54
+        ]
+      ]
+    ]
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        264.010009765625,
+        55.72999954223633,
+        295.5199890136719,
+        85.81999969482422
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          276,
+          56,
+          275,
+          57,
+          271,
+          57,
+          269,
+          59,
+          268,
+          59,
+          266,
+          61,
+          265,
+          61,
+          265,
+          67,
+          264,
+          68,
+          264,
+          74,
+          267,
+          77,
+          267,
+          78,
+          270,
+          81,
+          270,
+          84,
+          275,
+          84,
+          276,
+          85,
+          281,
+          85,
+          283,
+          83,
+          284,
+          83,
+          285,
+          82,
+          286,
+          82,
+          288,
+          80,
+          289,
+          80,
+          290,
+          79,
+          291,
+          79,
+          293,
+          77,
+          294,
+          77,
+          294,
+          67,
+          295,
+          66,
+          295,
+          65,
+          286,
+          56
+        ]
+      ]
+    ]
+  }
+}

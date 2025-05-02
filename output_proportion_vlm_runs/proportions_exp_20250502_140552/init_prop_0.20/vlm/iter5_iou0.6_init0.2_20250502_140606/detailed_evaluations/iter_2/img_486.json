@@ -1,0 +1,88 @@
+{
+  "image_idx": 486,
+  "approved": false,
+  "vlm_response": "the image shows a street scene with various objects, including cars, pedestrians, a stop sign, and a restaurant sign. the computer's detection of \"no objects\" is inaccurate. the segmentation masks should identify the cars, pedestrians, the stop sign, and the restaurant sign, among other objects. the computer's detection is missing these objects, indicating a misclassification or poor segmentation.",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        404.1099853515625,
+        250.1300048828125,
+        445.1400146484375,
+        289.5
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          416,
+          250,
+          412,
+          254,
+          411,
+          254,
+          406,
+          259,
+          405,
+          259,
+          404,
+          260,
+          404,
+          278,
+          405,
+          278,
+          413,
+          286,
+          414,
+          286,
+          417,
+          289,
+          418,
+          289,
+          419,
+          288,
+          432,
+          288,
+          433,
+          287,
+          434,
+          287,
+          440,
+          281,
+          441,
+          281,
+          444,
+          278,
+          444,
+          264,
+          442,
+          262,
+          442,
+          261,
+          438,
+          257,
+          438,
+          256,
+          435,
+          253,
+          435,
+          252,
+          433,
+          250
+        ]
+      ]
+    ]
+  }
+}

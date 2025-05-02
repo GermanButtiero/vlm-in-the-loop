@@ -1,0 +1,98 @@
+{
+  "image_idx": 2679,
+  "approved": true,
+  "vlm_response": "the image provided does not contain any colored areas or segmentation masks that would indicate the computer's identification of objects. the image is a grayscale photograph of a document with text and a portrait, and there are no objects that can be segmented. therefore, the computer's detection of \"no objects\" is accurate.\n\nanswer: yes",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "book"
+    ],
+    "class_ids": [
+      84
+    ],
+    "boxes": [
+      [
+        54.86000061035156,
+        57.5,
+        408.6700134277344,
+        579.6099853515625
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          57,
+          58,
+          57,
+          114,
+          56,
+          115,
+          56,
+          177,
+          55,
+          178,
+          55,
+          392,
+          56,
+          393,
+          56,
+          468,
+          57,
+          469,
+          57,
+          577,
+          179,
+          577,
+          180,
+          578,
+          370,
+          578,
+          371,
+          579,
+          405,
+          579,
+          405,
+          570,
+          406,
+          569,
+          406,
+          552,
+          407,
+          551,
+          407,
+          515,
+          406,
+          514,
+          406,
+          482,
+          405,
+          481,
+          405,
+          350,
+          406,
+          349,
+          406,
+          319,
+          407,
+          318,
+          407,
+          76,
+          408,
+          75,
+          408,
+          59,
+          301,
+          59,
+          300,
+          58
+        ]
+      ]
+    ]
+  }
+}

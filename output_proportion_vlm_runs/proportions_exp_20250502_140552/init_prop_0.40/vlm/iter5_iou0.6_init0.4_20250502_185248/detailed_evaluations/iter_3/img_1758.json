@@ -1,0 +1,78 @@
+{
+  "image_idx": 1758,
+  "approved": false,
+  "vlm_response": "the image shows a residential street with houses, a stop sign, and a street sign. the computer's detection of \"no objects\" is inaccurate. the image contains several objects that should be identified, such as houses, a stop sign, and a street sign. the segmentation masks should highlight these objects, but they are not present in the provided information. therefore, the answer is:\n\nno",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        469.7799987792969,
+        312.3999938964844,
+        520.75,
+        366.739990234375
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          486,
+          312,
+          482,
+          316,
+          481,
+          316,
+          476,
+          321,
+          475,
+          321,
+          471,
+          325,
+          471,
+          328,
+          470,
+          329,
+          470,
+          352,
+          476,
+          358,
+          477,
+          358,
+          484,
+          365,
+          496,
+          365,
+          497,
+          364,
+          504,
+          364,
+          505,
+          365,
+          507,
+          365,
+          520,
+          352,
+          520,
+          327,
+          511,
+          318,
+          510,
+          318,
+          504,
+          312
+        ]
+      ]
+    ]
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "image_idx": 2107,
+  "approved": false,
+  "vlm_response": "the image shows a road with a stop sign, bollards, and some tall grass. the computer's detection of \"no objects\" is inaccurate. the image clearly contains several objects, including a stop sign, bollards, and tall grass. the segmentation masks should identify these objects accurately. therefore, the correct response is:\n\nno, the computer detected no objects, but there are several objects in the image, including a stop sign, bollards, and tall grass.",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        330.67999267578125,
+        32.65999984741211,
+        366.760009765625,
+        69.7300033569336
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          339,
+          33,
+          338,
+          34,
+          338,
+          35,
+          334,
+          39,
+          334,
+          40,
+          331,
+          43,
+          331,
+          58,
+          342,
+          69,
+          345,
+          69,
+          346,
+          68,
+          356,
+          68,
+          364,
+          60,
+          365,
+          60,
+          366,
+          59,
+          366,
+          55,
+          365,
+          54,
+          365,
+          44,
+          363,
+          42,
+          363,
+          41,
+          359,
+          37,
+          359,
+          36,
+          356,
+          33
+        ]
+      ]
+    ]
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "image_idx": 621,
+  "approved": true,
+  "vlm_response": "yes, the object classes and segmentation masks are accurate. the computer has correctly identified the stop sign in the image. the segmentation mask for the stop sign is well-defined, highlighting the red octagonal shape with white lettering, which is consistent with the typical appearance of a stop sign. there are no apparent misclassifications or poor segmentations in the image.",
+  "prediction": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      3
+    ],
+    "scores": [
+      0.9901601672172546
+    ],
+    "boxes": [
+      [
+        416.8319396972656,
+        148.81613159179688,
+        455.091064453125,
+        190.12991333007812
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          427,
+          149,
+          426,
+          150,
+          425,
+          150,
+          424,
+          151,
+          424,
+          152,
+          423,
+          153,
+          422,
+          153,
+          417,
+          158,
+          417,
+          177,
+          418,
+          178,
+          418,
+          179,
+          421,
+          182,
+          422,
+          182,
+          426,
+          186,
+          426,
+          187,
+          427,
+          188,
+          444,
+          188,
+          445,
+          187,
+          446,
+          187,
+          446,
+          186,
+          449,
+          183,
+          450,
+          183,
+          452,
+          181,
+          452,
+          180,
+          454,
+          178,
+          454,
+          162,
+          453,
+          161,
+          453,
+          159,
+          443,
+          149
+        ]
+      ]
+    ]
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        417.1300048828125,
+        149.1300048828125,
+        456.010009765625,
+        188.8699951171875
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          428,
+          149,
+          423,
+          154,
+          422,
+          154,
+          417,
+          159,
+          417,
+          172,
+          418,
+          173,
+          418,
+          177,
+          422,
+          181,
+          422,
+          182,
+          428,
+          188,
+          438,
+          188,
+          439,
+          187,
+          443,
+          187,
+          444,
+          186,
+          445,
+          186,
+          449,
+          182,
+          450,
+          182,
+          454,
+          178,
+          455,
+          178,
+          455,
+          163,
+          445,
+          153,
+          445,
+          152,
+          443,
+          150,
+          439,
+          150,
+          438,
+          149
+        ]
+      ]
+    ]
+  }
+}

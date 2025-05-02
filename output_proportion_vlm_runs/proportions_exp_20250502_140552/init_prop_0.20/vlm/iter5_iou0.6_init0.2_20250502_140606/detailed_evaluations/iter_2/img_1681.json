@@ -1,0 +1,108 @@
+{
+  "image_idx": 1681,
+  "approved": false,
+  "vlm_response": "the image shows a clear scene with a stop sign, a building, a red pickup truck, and other elements. the computer's detection of \"no objects\" is inaccurate. the segmentation masks should identify the stop sign, the building, the truck, and other elements in the scene. therefore, the correct answer is:\n\nno",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        133.14999389648438,
+        265.54998779296875,
+        210.97999572753906,
+        347.1499938964844
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          159,
+          266,
+          133,
+          292,
+          133,
+          322,
+          141,
+          330,
+          141,
+          331,
+          152,
+          342,
+          152,
+          343,
+          155,
+          346,
+          161,
+          346,
+          162,
+          345,
+          183,
+          345,
+          184,
+          344,
+          190,
+          344,
+          192,
+          342,
+          192,
+          341,
+          200,
+          333,
+          200,
+          332,
+          209,
+          323,
+          209,
+          317,
+          210,
+          316,
+          210,
+          291,
+          209,
+          291,
+          202,
+          284,
+          201,
+          284,
+          195,
+          278,
+          194,
+          278,
+          187,
+          271,
+          186,
+          271,
+          185,
+          270,
+          183,
+          270,
+          182,
+          269,
+          177,
+          269,
+          176,
+          268,
+          171,
+          268,
+          170,
+          267,
+          165,
+          267,
+          164,
+          266
+        ]
+      ]
+    ]
+  }
+}

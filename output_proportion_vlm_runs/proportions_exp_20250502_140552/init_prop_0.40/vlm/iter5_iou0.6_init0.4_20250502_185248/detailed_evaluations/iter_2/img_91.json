@@ -1,0 +1,46 @@
+{
+  "image_idx": 91,
+  "approved": false,
+  "vlm_response": "the image shows a scene with multiple people and buses, but the computer's detection of \"no objects\" is inaccurate. the segmentation masks should identify the people, buses, and possibly other objects like bags and signs. the computer's detection is missing these objects, leading to an incorrect classification. therefore, the answer is:\n\nno",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        606.8300170898438,
+        160.6699981689453,
+        639.8300170898438,
+        192.8300018310547
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          607,
+          161,
+          607,
+          188,
+          608,
+          189,
+          608,
+          192,
+          639,
+          192,
+          639,
+          161
+        ]
+      ]
+    ]
+  }
+}

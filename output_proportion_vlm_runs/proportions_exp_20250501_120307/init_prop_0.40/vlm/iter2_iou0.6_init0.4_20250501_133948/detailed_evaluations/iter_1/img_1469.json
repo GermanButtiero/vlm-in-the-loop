@@ -1,0 +1,88 @@
+{
+  "image_idx": 1469,
+  "approved": false,
+  "vlm_response": "the computer's detection of objects in the image is not accurate. the image contains several objects, including a red fire hydrant, a green road sign indicating a 12% slope, a small building, and some vegetation. the segmentation masks provided do not accurately represent these objects. the masks are either missing or incorrectly identifying objects, such as the fire hydrant and the road sign. therefore, the answer is:\n\nno",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        45.02000045776367,
+        188.27999877929688,
+        74.6500015258789,
+        223.75999450683594
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          52,
+          188,
+          52,
+          189,
+          49,
+          192,
+          49,
+          193,
+          45,
+          197,
+          45,
+          203,
+          46,
+          204,
+          46,
+          213,
+          48,
+          215,
+          48,
+          216,
+          55,
+          223,
+          59,
+          223,
+          60,
+          222,
+          67,
+          222,
+          68,
+          221,
+          68,
+          220,
+          70,
+          218,
+          70,
+          217,
+          72,
+          215,
+          72,
+          214,
+          74,
+          212,
+          74,
+          211,
+          73,
+          210,
+          73,
+          200,
+          72,
+          199,
+          72,
+          196,
+          64,
+          188
+        ]
+      ]
+    ]
+  }
+}

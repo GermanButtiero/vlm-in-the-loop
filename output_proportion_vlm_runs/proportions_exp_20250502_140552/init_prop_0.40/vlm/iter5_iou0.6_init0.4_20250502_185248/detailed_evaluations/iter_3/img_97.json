@@ -1,0 +1,80 @@
+{
+  "image_idx": 97,
+  "approved": false,
+  "vlm_response": "the computer's detection of objects in the image is not accurate. the segmentation masks provided do not correspond to any objects in the image. the image shows a man on a skateboard, a plastic bag, and several cars, but the segmentation masks do not identify these objects. therefore, the answer is:\n\nno",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        182.17999267578125,
+        0.3199999928474426,
+        243.47999572753906,
+        24.229999542236328
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          212,
+          0,
+          211,
+          1,
+          183,
+          1,
+          183,
+          3,
+          184,
+          4,
+          184,
+          5,
+          190,
+          11,
+          191,
+          11,
+          197,
+          17,
+          198,
+          17,
+          203,
+          22,
+          206,
+          22,
+          207,
+          23,
+          227,
+          23,
+          232,
+          18,
+          232,
+          17,
+          238,
+          11,
+          238,
+          10,
+          242,
+          6,
+          242,
+          4,
+          241,
+          3,
+          241,
+          1,
+          240,
+          0
+        ]
+      ]
+    ]
+  }
+}

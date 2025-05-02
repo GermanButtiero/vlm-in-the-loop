@@ -1,0 +1,102 @@
+{
+  "image_idx": 812,
+  "approved": false,
+  "vlm_response": "the image shows a concrete overpass with various objects such as a stop sign, traffic lights, and other infrastructure elements. the computer's detection of \"no objects\" is inaccurate. the segmentation masks should identify the stop sign, traffic lights, and other elements within the image. therefore, the correct answer is:\n\nno, the computer detected no objects, which is inaccurate.",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        30.719999313354492,
+        537.530029296875,
+        81.72000122070312,
+        590.1300048828125
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          49,
+          538,
+          46,
+          541,
+          45,
+          541,
+          41,
+          545,
+          40,
+          545,
+          35,
+          550,
+          34,
+          550,
+          34,
+          553,
+          33,
+          554,
+          33,
+          561,
+          32,
+          562,
+          32,
+          568,
+          31,
+          569,
+          31,
+          574,
+          33,
+          576,
+          33,
+          577,
+          45,
+          589,
+          62,
+          589,
+          70,
+          581,
+          71,
+          581,
+          78,
+          574,
+          78,
+          571,
+          79,
+          570,
+          79,
+          563,
+          80,
+          562,
+          80,
+          555,
+          81,
+          554,
+          81,
+          553,
+          80,
+          552,
+          80,
+          551,
+          74,
+          545,
+          74,
+          544,
+          69,
+          539,
+          69,
+          538
+        ]
+      ]
+    ]
+  }
+}

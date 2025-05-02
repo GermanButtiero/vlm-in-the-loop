@@ -1,0 +1,62 @@
+{
+  "image_idx": 303,
+  "approved": false,
+  "vlm_response": "the image shows a person walking on a road with various traffic signs and construction barriers. the computer's detection of \"no objects\" is inaccurate. the image contains several objects that should be identified, such as the person, traffic signs, and construction barriers. the segmentation masks should highlight these objects, but they are not present in the provided information. therefore, the answer is:\n\nno",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        79.1500015258789,
+        97.88999938964844,
+        149.1300048828125,
+        169.00999450683594
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          79,
+          98,
+          79,
+          165,
+          96,
+          165,
+          97,
+          166,
+          116,
+          166,
+          117,
+          167,
+          136,
+          167,
+          137,
+          168,
+          146,
+          168,
+          146,
+          148,
+          147,
+          147,
+          147,
+          118,
+          148,
+          117,
+          148,
+          98
+        ]
+      ]
+    ]
+  }
+}

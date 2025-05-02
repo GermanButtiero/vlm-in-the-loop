@@ -1,0 +1,102 @@
+{
+  "image_idx": 2585,
+  "approved": false,
+  "vlm_response": "the image shows a railroad crossing with several signs, including a \"railroad crossing\" sign, a \"stop\" sign, and a \"private crossing no trespassing\" sign. the computer's detection of \"no objects\" is inaccurate. the image clearly contains multiple objects, specifically the signs mentioned. the segmentation masks should identify these signs, but they are not present in the provided information. therefore, the correct response is:\n\nno, the computer detected no objects, but the image contains multiple signs.",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        211.89999389648438,
+        285.05999755859375,
+        369.3999938964844,
+        438.260009765625
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          256,
+          285,
+          244,
+          297,
+          244,
+          298,
+          230,
+          312,
+          230,
+          313,
+          216,
+          327,
+          216,
+          328,
+          212,
+          332,
+          212,
+          352,
+          213,
+          353,
+          213,
+          389,
+          216,
+          392,
+          217,
+          392,
+          252,
+          427,
+          253,
+          427,
+          263,
+          437,
+          322,
+          437,
+          330,
+          429,
+          330,
+          428,
+          361,
+          397,
+          361,
+          396,
+          364,
+          393,
+          364,
+          389,
+          365,
+          388,
+          365,
+          374,
+          366,
+          373,
+          366,
+          359,
+          367,
+          358,
+          367,
+          344,
+          368,
+          343,
+          368,
+          330,
+          324,
+          286,
+          281,
+          286,
+          280,
+          285
+        ]
+      ]
+    ]
+  }
+}

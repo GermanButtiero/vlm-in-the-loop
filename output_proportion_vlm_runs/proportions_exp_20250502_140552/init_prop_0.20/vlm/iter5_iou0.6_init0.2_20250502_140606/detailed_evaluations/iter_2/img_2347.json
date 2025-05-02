@@ -1,0 +1,54 @@
+{
+  "image_idx": 2347,
+  "approved": false,
+  "vlm_response": "the image shows a road with traffic lights and a sign, but the computer's detection of \"no objects\" is inaccurate. the image clearly contains traffic lights and a sign, which are the main objects in the scene. the segmentation masks should identify these objects, but they are not present in the provided information. therefore, the answer is:\n\nno, the computer detected no objects, but there are traffic lights and a sign in the image.",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        505.5,
+        123.68000030517578,
+        580.4600219726562,
+        209.35000610351562
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          551,
+          124,
+          550,
+          125,
+          521,
+          125,
+          520,
+          126,
+          506,
+          126,
+          506,
+          208,
+          579,
+          208,
+          579,
+          166,
+          578,
+          165,
+          578,
+          124
+        ]
+      ]
+    ]
+  }
+}

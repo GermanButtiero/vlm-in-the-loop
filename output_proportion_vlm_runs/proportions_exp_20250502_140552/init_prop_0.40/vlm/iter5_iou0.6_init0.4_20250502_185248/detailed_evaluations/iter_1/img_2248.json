@@ -1,0 +1,74 @@
+{
+  "image_idx": 2248,
+  "approved": false,
+  "vlm_response": "the image shows a scene with a stop sign, traffic lights, and wind turbines. the computer's detection of \"no objects\" is inaccurate. the correct object classes include a stop sign, traffic lights, and wind turbines. the segmentation masks should accurately identify these objects. therefore, the answer is:\n\nno, the computer detected no objects, but there are stop signs, traffic lights, and wind turbines in the image.",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        141.5800018310547,
+        251.94000244140625,
+        174.57000732421875,
+        286.6199951171875
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          152,
+          252,
+          143,
+          261,
+          143,
+          262,
+          142,
+          263,
+          142,
+          276,
+          149,
+          283,
+          149,
+          284,
+          150,
+          285,
+          157,
+          285,
+          158,
+          286,
+          164,
+          286,
+          173,
+          277,
+          173,
+          270,
+          174,
+          269,
+          174,
+          263,
+          173,
+          262,
+          173,
+          261,
+          165,
+          253,
+          164,
+          253,
+          163,
+          252
+        ]
+      ]
+    ]
+  }
+}

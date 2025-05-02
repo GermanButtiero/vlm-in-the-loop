@@ -1,0 +1,62 @@
+{
+  "image_idx": 1710,
+  "approved": false,
+  "vlm_response": "the computer's detection of objects in the image is not accurate. the segmentation masks, particularly the red one, do not correspond to any identifiable objects in the image. the red mask appears to be a misclassification, as it does not outline any recognizable object. additionally, the computer has not identified any objects, which is incorrect given the presence of various items in the room. therefore, the answer is:\n\nno",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "book"
+    ],
+    "class_ids": [
+      84
+    ],
+    "boxes": [
+      [
+        108.58000183105469,
+        161.32000732421875,
+        178.4199981689453,
+        180.50999450683594
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          166,
+          161,
+          165,
+          162,
+          110,
+          162,
+          110,
+          165,
+          109,
+          166,
+          109,
+          178,
+          114,
+          178,
+          115,
+          179,
+          172,
+          179,
+          173,
+          180,
+          177,
+          180,
+          177,
+          166,
+          176,
+          165,
+          176,
+          161
+        ]
+      ]
+    ]
+  }
+}

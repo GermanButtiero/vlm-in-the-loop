@@ -1,0 +1,98 @@
+{
+  "image_idx": 2765,
+  "approved": true,
+  "vlm_response": "the computer detected two objects: a green laptop and a red laptop. the segmentation masks accurately identify these objects, with the green mask around the laptop on the left and the red mask around the laptop on the right. the object classes are correctly identified as laptops, and the segmentation masks are well-defined, clearly outlining the laptops. therefore, the answer is:\n\nyes",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "book"
+    ],
+    "class_ids": [
+      84
+    ],
+    "boxes": [
+      [
+        607.760009765625,
+        330.7900085449219,
+        640.0,
+        359.20001220703125
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          634,
+          331,
+          633,
+          332,
+          626,
+          332,
+          625,
+          333,
+          618,
+          333,
+          617,
+          334,
+          610,
+          334,
+          609,
+          335,
+          608,
+          335,
+          609,
+          336,
+          610,
+          336,
+          612,
+          338,
+          613,
+          338,
+          616,
+          341,
+          616,
+          343,
+          615,
+          344,
+          615,
+          348,
+          614,
+          349,
+          614,
+          350,
+          613,
+          351,
+          613,
+          352,
+          612,
+          353,
+          612,
+          354,
+          613,
+          355,
+          615,
+          355,
+          616,
+          356,
+          618,
+          356,
+          619,
+          357,
+          622,
+          357,
+          623,
+          358,
+          639,
+          358,
+          639,
+          331
+        ]
+      ]
+    ]
+  }
+}

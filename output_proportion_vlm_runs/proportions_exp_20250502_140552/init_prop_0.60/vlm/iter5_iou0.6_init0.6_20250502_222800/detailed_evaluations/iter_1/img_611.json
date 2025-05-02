@@ -1,0 +1,80 @@
+{
+  "image_idx": 611,
+  "approved": true,
+  "vlm_response": "the image shows a scene with a shepherd on horseback herding a flock of sheep on a road. the computer's segmentation masks are overlaid on the image, highlighting different objects with distinct colors. the masks appear to accurately identify the shepherd, horse, dog, and sheep, with each object having a unique color. the segmentation masks are well-defined and do not overlap inappropriately, indicating that the computer has correctly identified the objects in the image. therefore, the answer is:\n\nyes",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        439.1099853515625,
+        21.040000915527344,
+        484.5400085449219,
+        69.55999755859375
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          459,
+          21,
+          459,
+          22,
+          446,
+          35,
+          446,
+          36,
+          439,
+          43,
+          443,
+          47,
+          443,
+          48,
+          447,
+          52,
+          447,
+          53,
+          451,
+          57,
+          451,
+          58,
+          455,
+          62,
+          455,
+          63,
+          459,
+          67,
+          459,
+          68,
+          460,
+          68,
+          468,
+          60,
+          469,
+          60,
+          483,
+          46,
+          483,
+          45,
+          465,
+          27,
+          465,
+          26,
+          460,
+          21
+        ]
+      ]
+    ]
+  }
+}

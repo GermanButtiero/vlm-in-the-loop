@@ -1,0 +1,102 @@
+{
+  "image_idx": 698,
+  "approved": false,
+  "vlm_response": "the image shows a stop sign with arabic text and the word \"stop\" in english. the computer's detection of \"no objects\" is inaccurate. the stop sign is the primary object in the image, and it should be segmented. the segmentation masks should highlight the stop sign, the pole, the road, the sidewalk, and the wall in the background. the computer's detection is missing these objects, leading to an incorrect classification. therefore, the answer is:\n\nno",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        208.6999969482422,
+        48.119998931884766,
+        362.1600036621094,
+        204.7899932861328
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          309,
+          48,
+          308,
+          49,
+          289,
+          49,
+          288,
+          50,
+          269,
+          50,
+          268,
+          51,
+          250,
+          51,
+          209,
+          92,
+          209,
+          160,
+          214,
+          165,
+          214,
+          166,
+          219,
+          171,
+          219,
+          172,
+          225,
+          178,
+          225,
+          179,
+          230,
+          184,
+          230,
+          185,
+          235,
+          190,
+          235,
+          191,
+          240,
+          196,
+          240,
+          197,
+          245,
+          202,
+          245,
+          203,
+          246,
+          204,
+          315,
+          204,
+          323,
+          196,
+          323,
+          195,
+          351,
+          167,
+          351,
+          166,
+          360,
+          157,
+          360,
+          122,
+          361,
+          121,
+          361,
+          94,
+          315,
+          48
+        ]
+      ]
+    ]
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "image_idx": 497,
+  "approved": false,
+  "vlm_response": "the computer's detection of objects in the image is not accurate. the image contains several objects that are not identified, such as the street sign, the pole with stickers, the construction crane, the buildings, and the man. the segmentation masks are not present in the image, and the computer's detection of \"no objects\" is incorrect. therefore, the answer is:\n\nno",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        273.6000061035156,
+        250.5800018310547,
+        301.510009765625,
+        285.7799987792969
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          281,
+          251,
+          274,
+          258,
+          274,
+          275,
+          278,
+          279,
+          279,
+          279,
+          283,
+          283,
+          284,
+          283,
+          286,
+          285,
+          287,
+          284,
+          289,
+          284,
+          290,
+          283,
+          292,
+          283,
+          293,
+          282,
+          294,
+          282,
+          294,
+          281,
+          295,
+          280,
+          295,
+          279,
+          296,
+          278,
+          296,
+          277,
+          297,
+          276,
+          297,
+          275,
+          298,
+          274,
+          298,
+          273,
+          299,
+          272,
+          299,
+          271,
+          300,
+          270,
+          300,
+          264,
+          299,
+          263,
+          299,
+          260,
+          298,
+          259,
+          298,
+          258,
+          297,
+          257,
+          297,
+          256,
+          296,
+          255,
+          296,
+          254,
+          294,
+          252,
+          294,
+          251
+        ]
+      ]
+    ]
+  }
+}

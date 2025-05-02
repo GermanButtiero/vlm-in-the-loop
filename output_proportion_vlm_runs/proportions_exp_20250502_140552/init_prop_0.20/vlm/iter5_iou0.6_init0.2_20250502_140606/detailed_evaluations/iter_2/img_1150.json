@@ -1,0 +1,100 @@
+{
+  "image_idx": 1150,
+  "approved": false,
+  "vlm_response": "the image shows a street scene with a sunset, palm trees, traffic lights, and a stop sign. the computer's detection of \"no objects\" is inaccurate. the image contains several objects that should be detected, such as traffic lights, a stop sign, and palm trees. the segmentation masks should identify these objects, but the current detection is not accurate. therefore, the answer is:\n\nno",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        586.7100219726562,
+        168.44000244140625,
+        621.3200073242188,
+        206.25
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          608,
+          168,
+          607,
+          169,
+          597,
+          169,
+          595,
+          171,
+          594,
+          171,
+          587,
+          178,
+          587,
+          193,
+          591,
+          197,
+          591,
+          198,
+          596,
+          203,
+          596,
+          204,
+          597,
+          205,
+          606,
+          205,
+          607,
+          204,
+          608,
+          204,
+          609,
+          203,
+          610,
+          203,
+          611,
+          202,
+          612,
+          202,
+          613,
+          201,
+          614,
+          201,
+          615,
+          200,
+          616,
+          200,
+          617,
+          199,
+          618,
+          199,
+          618,
+          198,
+          619,
+          197,
+          619,
+          188,
+          620,
+          187,
+          620,
+          178,
+          617,
+          175,
+          616,
+          175,
+          609,
+          168
+        ]
+      ]
+    ]
+  }
+}

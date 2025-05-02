@@ -1,0 +1,76 @@
+{
+  "image_idx": 2427,
+  "approved": false,
+  "vlm_response": "the image shows a stop sign, a building, and a rural landscape. the computer's detection of \"no objects\" is inaccurate. the stop sign is clearly visible and should be classified as an object. the building and other structures in the background are also identifiable. therefore, the correct classification should include the stop sign, the building, and possibly other structures. the segmentation masks should accurately identify these objects.",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        222.72000122070312,
+        193.52999877929688,
+        298.9200134277344,
+        267.6600036621094
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          244,
+          194,
+          224,
+          214,
+          224,
+          226,
+          223,
+          227,
+          223,
+          244,
+          245,
+          266,
+          270,
+          266,
+          271,
+          267,
+          274,
+          267,
+          279,
+          262,
+          280,
+          262,
+          290,
+          252,
+          291,
+          252,
+          298,
+          245,
+          298,
+          214,
+          297,
+          214,
+          289,
+          206,
+          288,
+          206,
+          280,
+          198,
+          279,
+          198,
+          275,
+          194
+        ]
+      ]
+    ]
+  }
+}

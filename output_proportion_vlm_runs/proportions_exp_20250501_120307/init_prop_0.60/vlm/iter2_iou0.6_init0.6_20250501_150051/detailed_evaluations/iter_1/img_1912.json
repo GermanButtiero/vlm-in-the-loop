@@ -1,0 +1,58 @@
+{
+  "image_idx": 1912,
+  "approved": false,
+  "vlm_response": "the computer's detection of objects in the image is not accurate. the image shows a cat, a piano, a table, a plant, and a rug, among other items. the segmentation masks are not present in the image, but if they were, they would likely highlight these objects. the computer's detection of \"no objects\" is incorrect. therefore, the answer is:\n\nno",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "book"
+    ],
+    "class_ids": [
+      84
+    ],
+    "boxes": [
+      [
+        283.80999755859375,
+        0.0,
+        397.1400146484375,
+        41.900001525878906
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          288,
+          0,
+          287,
+          1,
+          285,
+          1,
+          285,
+          12,
+          284,
+          13,
+          284,
+          41,
+          396,
+          41,
+          396,
+          2,
+          371,
+          2,
+          370,
+          1,
+          318,
+          1,
+          317,
+          0
+        ]
+      ]
+    ]
+  }
+}

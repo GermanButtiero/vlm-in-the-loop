@@ -1,0 +1,90 @@
+{
+  "image_idx": 591,
+  "approved": false,
+  "vlm_response": "the image shows a variety of objects, including a backpack, a water bottle, a book, pens, a wallet, a lighter, a cell phone, and other small items. the computer's detection of \"no objects\" is incorrect. the segmentation masks should accurately identify each object in the image. the objects are clearly visible and distinct, and the segmentation masks should reflect this. therefore, the correct response is:\n\nno, the computer detected no objects, which is inaccurate.",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "book"
+    ],
+    "class_ids": [
+      84
+    ],
+    "boxes": [
+      [
+        6.289999961853027,
+        47.13999938964844,
+        107.93000030517578,
+        193.24000549316406
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          8,
+          47,
+          8,
+          97,
+          7,
+          98,
+          7,
+          170,
+          6,
+          171,
+          6,
+          192,
+          103,
+          192,
+          103,
+          190,
+          102,
+          189,
+          102,
+          186,
+          101,
+          185,
+          101,
+          163,
+          102,
+          162,
+          102,
+          142,
+          103,
+          141,
+          103,
+          121,
+          104,
+          120,
+          104,
+          100,
+          105,
+          99,
+          105,
+          79,
+          106,
+          78,
+          106,
+          58,
+          107,
+          57,
+          107,
+          47,
+          62,
+          47,
+          61,
+          48,
+          13,
+          48,
+          12,
+          47
+        ]
+      ]
+    ]
+  }
+}

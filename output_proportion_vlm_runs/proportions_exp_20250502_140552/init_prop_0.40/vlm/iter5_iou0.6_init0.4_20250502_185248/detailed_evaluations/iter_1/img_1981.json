@@ -1,0 +1,68 @@
+{
+  "image_idx": 1981,
+  "approved": false,
+  "vlm_response": "the computer's detection of objects in the image is not accurate. the segmentation masks highlight areas that do not correspond to actual objects. for example, the red and green areas do not align with any identifiable objects in the image. the red area is on the countertop, which is not an object, and the green area is on the floor, which also does not represent an object. additionally, the computer has not identified any objects in the image, which is incorrect as there are several objects present, such as the kitchen island, appliances, and the bicycle poster. therefore, the answer is:\n\nno",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "book"
+    ],
+    "class_ids": [
+      84
+    ],
+    "boxes": [
+      [
+        220.72999572753906,
+        362.54998779296875,
+        278.1400146484375,
+        381.1400146484375
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          221,
+          363,
+          222,
+          364,
+          222,
+          380,
+          243,
+          380,
+          244,
+          379,
+          274,
+          379,
+          275,
+          378,
+          277,
+          378,
+          277,
+          377,
+          276,
+          376,
+          276,
+          373,
+          275,
+          372,
+          275,
+          369,
+          274,
+          368,
+          274,
+          366,
+          273,
+          365,
+          273,
+          363
+        ]
+      ]
+    ]
+  }
+}

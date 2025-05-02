@@ -1,0 +1,116 @@
+{
+  "image_idx": 411,
+  "approved": false,
+  "vlm_response": "the computer's detection of objects in the image is not accurate. the image shows several objects, including people, cars, a fire hydrant, and a stop sign, among others. the segmentation masks are not present in the image, but based on the visual content, the computer has failed to identify these objects. therefore, the correct response is:\n\nno",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        458.07000732421875,
+        12.970000267028809,
+        531.4099731445312,
+        86.7699966430664
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          512,
+          16,
+          512,
+          27,
+          511,
+          28,
+          511,
+          41,
+          510,
+          42,
+          510,
+          54,
+          509,
+          55,
+          509,
+          68,
+          508,
+          69,
+          508,
+          82,
+          507,
+          83,
+          507,
+          85,
+          508,
+          84,
+          509,
+          84,
+          527,
+          66,
+          527,
+          64,
+          528,
+          63,
+          528,
+          54,
+          529,
+          53,
+          529,
+          44,
+          530,
+          43,
+          530,
+          34
+        ],
+        [
+          477,
+          13,
+          459,
+          31,
+          459,
+          48,
+          458,
+          49,
+          458,
+          58,
+          461,
+          61,
+          461,
+          62,
+          465,
+          66,
+          465,
+          67,
+          469,
+          71,
+          469,
+          72,
+          473,
+          76,
+          473,
+          77,
+          477,
+          81,
+          477,
+          82,
+          478,
+          83,
+          478,
+          39,
+          477,
+          38
+        ]
+      ]
+    ]
+  }
+}

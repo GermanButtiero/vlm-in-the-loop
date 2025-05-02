@@ -1,0 +1,80 @@
+{
+  "image_idx": 631,
+  "approved": false,
+  "vlm_response": "the image shows a street scene with traffic lights, a stop sign, and buildings. the computer's detection of \"no objects\" is inaccurate. the image clearly contains multiple objects, including traffic lights, a stop sign, and buildings. the segmentation masks should identify these objects, but the provided information indicates that the computer did not detect any objects. therefore, the answer is:\n\nno",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        24.049999237060547,
+        190.8699951171875,
+        60.61000061035156,
+        230.10000610351562
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          34,
+          191,
+          27,
+          198,
+          27,
+          199,
+          24,
+          202,
+          24,
+          203,
+          25,
+          204,
+          25,
+          206,
+          24,
+          207,
+          24,
+          218,
+          33,
+          227,
+          33,
+          228,
+          34,
+          229,
+          49,
+          229,
+          59,
+          219,
+          60,
+          219,
+          60,
+          217,
+          59,
+          216,
+          59,
+          203,
+          55,
+          199,
+          55,
+          198,
+          51,
+          194,
+          51,
+          193,
+          49,
+          191
+        ]
+      ]
+    ]
+  }
+}

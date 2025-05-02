@@ -1,0 +1,70 @@
+{
+  "image_idx": 2358,
+  "approved": false,
+  "vlm_response": "the image shows a scene with a garbage truck, a stop sign, and other urban elements. the computer's detection of \"no objects\" is inaccurate. the image clearly contains multiple objects, including a garbage truck, a stop sign, and other elements like buildings, a taxi, and a billboard. the segmentation masks should identify these objects accurately. therefore, the correct response is:\n\nno",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        398.989990234375,
+        194.1699981689453,
+        428.239990234375,
+        224.27999877929688
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          411,
+          194,
+          410,
+          195,
+          407,
+          195,
+          399,
+          203,
+          399,
+          210,
+          400,
+          211,
+          400,
+          214,
+          401,
+          215,
+          401,
+          216,
+          408,
+          223,
+          418,
+          223,
+          419,
+          222,
+          420,
+          222,
+          423,
+          219,
+          423,
+          218,
+          427,
+          214,
+          427,
+          202,
+          419,
+          194
+        ]
+      ]
+    ]
+  }
+}

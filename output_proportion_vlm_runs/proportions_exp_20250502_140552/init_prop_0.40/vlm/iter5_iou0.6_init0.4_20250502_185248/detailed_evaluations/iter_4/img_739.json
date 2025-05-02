@@ -1,0 +1,96 @@
+{
+  "image_idx": 739,
+  "approved": false,
+  "vlm_response": "the image shows a scene with a motorcycle approaching a stop sign, viewed from inside a vehicle. the computer's detection of objects is not accurate in this case. the segmentation masks should identify the motorcycle, the stop sign, and possibly the road and surrounding environment. however, the computer detected no objects, which is incorrect. the motorcycle and stop sign are the primary objects in the image, and they should be clearly segmented. therefore, the answer is:\n\nno",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        260.04998779296875,
+        222.1999969482422,
+        294.80999755859375,
+        254.02999877929688
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          281,
+          222,
+          280,
+          223,
+          272,
+          223,
+          271,
+          224,
+          268,
+          224,
+          262,
+          230,
+          262,
+          231,
+          261,
+          232,
+          261,
+          238,
+          260,
+          239,
+          260,
+          244,
+          264,
+          248,
+          265,
+          248,
+          269,
+          252,
+          270,
+          252,
+          271,
+          253,
+          285,
+          253,
+          285,
+          252,
+          292,
+          245,
+          292,
+          244,
+          294,
+          242,
+          294,
+          240,
+          293,
+          239,
+          293,
+          231,
+          292,
+          230,
+          292,
+          229,
+          291,
+          228,
+          290,
+          228,
+          286,
+          224,
+          285,
+          224,
+          283,
+          222
+        ]
+      ]
+    ]
+  }
+}

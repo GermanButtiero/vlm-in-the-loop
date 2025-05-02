@@ -1,0 +1,82 @@
+{
+  "image_idx": 2037,
+  "approved": false,
+  "vlm_response": "the image shows a bus, cars, a pedestrian, and various urban elements such as buildings, signs, and a stop sign. the computer's detection of \"no objects\" is inaccurate. the segmentation masks should identify the bus, cars, pedestrian, and other elements in the scene. the objects are not well segmented, as the computer did not detect any objects. therefore, the answer is:\n\nno",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        82.77999877929688,
+        187.39999389648438,
+        117.55999755859375,
+        221.32000732421875
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          93,
+          187,
+          89,
+          191,
+          88,
+          191,
+          83,
+          196,
+          83,
+          211,
+          88,
+          216,
+          89,
+          216,
+          90,
+          217,
+          101,
+          217,
+          102,
+          218,
+          102,
+          220,
+          107,
+          220,
+          111,
+          216,
+          112,
+          216,
+          115,
+          213,
+          115,
+          212,
+          116,
+          211,
+          116,
+          199,
+          117,
+          198,
+          111,
+          192,
+          110,
+          192,
+          106,
+          188,
+          100,
+          188,
+          99,
+          187
+        ]
+      ]
+    ]
+  }
+}
