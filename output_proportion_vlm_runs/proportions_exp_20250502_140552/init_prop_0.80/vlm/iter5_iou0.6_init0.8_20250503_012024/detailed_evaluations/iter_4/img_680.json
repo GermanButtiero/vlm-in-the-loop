@@ -1,0 +1,96 @@
+{
+  "image_idx": 680,
+  "approved": false,
+  "vlm_response": "the image shows a fire engine, a golf cart, a stop sign, and a building. the computer's detection of \"no objects\" is inaccurate. the fire engine is the most prominent object, and it should be segmented. additionally, the golf cart, stop sign, and building are also present and should be included in the segmentation masks. therefore, the correct answer is:\n\nno",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        604.0900268554688,
+        151.13999938964844,
+        640.0,
+        202.92999267578125
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          619,
+          151,
+          617,
+          153,
+          617,
+          154,
+          606,
+          165,
+          606,
+          166,
+          605,
+          167,
+          605,
+          177,
+          604,
+          178,
+          604,
+          184,
+          607,
+          187,
+          607,
+          188,
+          610,
+          191,
+          610,
+          192,
+          612,
+          194,
+          612,
+          195,
+          615,
+          198,
+          615,
+          199,
+          618,
+          202,
+          636,
+          202,
+          637,
+          201,
+          637,
+          200,
+          638,
+          199,
+          638,
+          198,
+          639,
+          197,
+          639,
+          158,
+          638,
+          157,
+          638,
+          156,
+          637,
+          155,
+          637,
+          154,
+          635,
+          152,
+          620,
+          152
+        ]
+      ]
+    ]
+  }
+}

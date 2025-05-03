@@ -1,0 +1,108 @@
+{
+  "image_idx": 1848,
+  "approved": false,
+  "vlm_response": "the image shows a stop sign mounted on a wooden post. the computer's detection of \"no objects\" is inaccurate. the stop sign and the post are the main objects in the image, and they should be identified and segmented correctly. the segmentation masks should highlight the stop sign and the post, but the computer's detection is missing these objects. therefore, the answer is:\n\nno",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        130.1300048828125,
+        64.73999786376953,
+        237.1699981689453,
+        168.63999938964844
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          199,
+          65,
+          198,
+          66,
+          188,
+          66,
+          187,
+          67,
+          176,
+          67,
+          175,
+          68,
+          165,
+          68,
+          164,
+          69,
+          159,
+          69,
+          153,
+          75,
+          153,
+          76,
+          139,
+          90,
+          139,
+          91,
+          132,
+          98,
+          132,
+          111,
+          131,
+          112,
+          131,
+          130,
+          130,
+          131,
+          130,
+          136,
+          133,
+          139,
+          133,
+          140,
+          161,
+          168,
+          162,
+          167,
+          174,
+          167,
+          175,
+          166,
+          187,
+          166,
+          188,
+          165,
+          200,
+          165,
+          201,
+          164,
+          202,
+          164,
+          234,
+          132,
+          234,
+          124,
+          235,
+          123,
+          235,
+          107,
+          236,
+          106,
+          236,
+          94,
+          207,
+          65
+        ]
+      ]
+    ]
+  }
+}

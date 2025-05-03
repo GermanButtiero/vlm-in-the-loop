@@ -1,0 +1,70 @@
+{
+  "image_idx": 2246,
+  "approved": false,
+  "vlm_response": "the computer's detection of objects in the image is not accurate. the image shows a vase with flowers, but the computer has not identified any objects. the segmentation mask highlights a red area at the bottom of the vase, which is not an object but rather a part of the vase itself. therefore, the correct answer is:\n\nno",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "book"
+    ],
+    "class_ids": [
+      84
+    ],
+    "boxes": [
+      [
+        139.41000366210938,
+        30.489999771118164,
+        169.9499969482422,
+        69.2699966430664
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          167,
+          30,
+          166,
+          31,
+          143,
+          31,
+          142,
+          32,
+          141,
+          32,
+          141,
+          39,
+          140,
+          40,
+          140,
+          65,
+          139,
+          66,
+          139,
+          68,
+          152,
+          68,
+          153,
+          67,
+          158,
+          67,
+          159,
+          66,
+          164,
+          66,
+          165,
+          65,
+          169,
+          65,
+          169,
+          30
+        ]
+      ]
+    ]
+  }
+}

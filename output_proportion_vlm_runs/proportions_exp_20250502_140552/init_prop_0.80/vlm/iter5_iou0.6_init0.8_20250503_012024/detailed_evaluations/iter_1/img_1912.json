@@ -1,0 +1,58 @@
+{
+  "image_idx": 1912,
+  "approved": false,
+  "vlm_response": "the computer's detection of objects in the image is not accurate. the segmentation masks incorrectly identify a cat as a yellow object, which is not accurate. the cat is actually a gray object, and the segmentation mask does not correctly outline the cat. additionally, the computer has not detected any other objects in the image. therefore, the answer is:\n\nno",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "book"
+    ],
+    "class_ids": [
+      84
+    ],
+    "boxes": [
+      [
+        283.80999755859375,
+        0.0,
+        397.1400146484375,
+        41.900001525878906
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          288,
+          0,
+          287,
+          1,
+          285,
+          1,
+          285,
+          12,
+          284,
+          13,
+          284,
+          41,
+          396,
+          41,
+          396,
+          2,
+          371,
+          2,
+          370,
+          1,
+          318,
+          1,
+          317,
+          0
+        ]
+      ]
+    ]
+  }
+}

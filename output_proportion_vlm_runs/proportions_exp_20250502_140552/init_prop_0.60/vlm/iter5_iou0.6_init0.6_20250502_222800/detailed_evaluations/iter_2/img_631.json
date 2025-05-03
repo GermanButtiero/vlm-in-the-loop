@@ -1,0 +1,154 @@
+{
+  "image_idx": 631,
+  "approved": true,
+  "vlm_response": "yes, the object classes and segmentation masks appear to be accurate. the computer has correctly identified the stop sign in the image. the segmentation mask for the stop sign is clearly visible and accurately represents the object. there are no other objects misclassified or poorly segmented in the image.",
+  "prediction": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      3
+    ],
+    "scores": [
+      0.9909908771514893
+    ],
+    "boxes": [
+      [
+        25.130178451538086,
+        190.80162048339844,
+        58.483726501464844,
+        228.24276733398438
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          33,
+          191,
+          31,
+          193,
+          30,
+          193,
+          29,
+          194,
+          29,
+          195,
+          24,
+          200,
+          24,
+          219,
+          31,
+          226,
+          31,
+          227,
+          33,
+          227,
+          34,
+          228,
+          49,
+          228,
+          50,
+          227,
+          51,
+          227,
+          56,
+          222,
+          57,
+          222,
+          57,
+          221,
+          58,
+          220,
+          58,
+          201,
+          57,
+          200,
+          57,
+          199,
+          56,
+          198,
+          55,
+          198,
+          53,
+          196,
+          53,
+          195,
+          50,
+          192,
+          49,
+          192,
+          48,
+          191
+        ]
+      ]
+    ]
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        24.049999237060547,
+        190.8699951171875,
+        60.61000061035156,
+        230.10000610351562
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          34,
+          191,
+          27,
+          198,
+          27,
+          199,
+          24,
+          202,
+          24,
+          203,
+          25,
+          204,
+          25,
+          206,
+          24,
+          207,
+          24,
+          218,
+          33,
+          227,
+          33,
+          228,
+          34,
+          229,
+          49,
+          229,
+          59,
+          219,
+          60,
+          219,
+          60,
+          217,
+          59,
+          216,
+          59,
+          203,
+          55,
+          199,
+          55,
+          198,
+          51,
+          194,
+          51,
+          193,
+          49,
+          191
+        ]
+      ]
+    ]
+  }
+}

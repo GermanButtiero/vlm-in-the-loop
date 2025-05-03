@@ -1,0 +1,152 @@
+{
+  "image_idx": 2533,
+  "approved": true,
+  "vlm_response": "yes, the object classes and segmentation masks appear to be accurate. the computer has correctly identified the stop sign, and the segmentation mask for the stop sign is well-defined, clearly outlining the sign's shape and color. the other objects in the image, such as the people and the billboard, are not segmented, which is appropriate as the task is specifically focused on the stop sign.",
+  "prediction": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      3
+    ],
+    "scores": [
+      0.9937740564346313
+    ],
+    "boxes": [
+      [
+        138.23065185546875,
+        18.18900489807129,
+        174.58229064941406,
+        62.87700271606445
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          147,
+          19,
+          142,
+          24,
+          142,
+          25,
+          140,
+          27,
+          139,
+          27,
+          138,
+          28,
+          138,
+          30,
+          137,
+          31,
+          137,
+          49,
+          138,
+          50,
+          138,
+          51,
+          149,
+          62,
+          167,
+          62,
+          168,
+          61,
+          168,
+          60,
+          173,
+          55,
+          173,
+          54,
+          174,
+          53,
+          174,
+          31,
+          173,
+          30,
+          173,
+          29,
+          171,
+          27,
+          170,
+          27,
+          168,
+          25,
+          168,
+          24,
+          163,
+          19
+        ]
+      ]
+    ]
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        137.10000610351562,
+        21.100000381469727,
+        176.94000244140625,
+        64.62999725341797
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          158,
+          21,
+          157,
+          22,
+          148,
+          22,
+          137,
+          33,
+          137,
+          34,
+          138,
+          35,
+          138,
+          41,
+          139,
+          42,
+          139,
+          48,
+          140,
+          49,
+          140,
+          51,
+          141,
+          52,
+          141,
+          53,
+          151,
+          63,
+          161,
+          63,
+          162,
+          64,
+          164,
+          64,
+          169,
+          59,
+          169,
+          58,
+          176,
+          51,
+          176,
+          34,
+          168,
+          26,
+          168,
+          25,
+          164,
+          21
+        ]
+      ]
+    ]
+  }
+}

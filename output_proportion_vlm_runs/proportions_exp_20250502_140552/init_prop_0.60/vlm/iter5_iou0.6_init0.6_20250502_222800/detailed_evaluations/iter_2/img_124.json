@@ -1,0 +1,60 @@
+{
+  "image_idx": 124,
+  "approved": false,
+  "vlm_response": "the image shows a traffic light with a smiley face sticker on the red light, which is a creative modification. the segmentation mask highlights the traffic light, but it incorrectly identifies the smiley face as part of the traffic light. the computer's detection of \"no objects\" is inaccurate because it fails to recognize the traffic light and the smiley face as distinct objects. therefore, the segmentation masks are not accurate.\n\nthe correct answer is: \"no\" followed by an explanation that the smiley face is not part of the traffic light and should be recognized as a separate object.",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        285.1099853515625,
+        309.79998779296875,
+        374.9100036621094,
+        329.260009765625
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          333,
+          310,
+          332,
+          311,
+          301,
+          311,
+          292,
+          320,
+          292,
+          321,
+          285,
+          328,
+          373,
+          328,
+          373,
+          327,
+          367,
+          321,
+          367,
+          320,
+          362,
+          315,
+          362,
+          314,
+          358,
+          310
+        ]
+      ]
+    ]
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "image_idx": 418,
+  "approved": false,
+  "vlm_response": "the image shows a stop sign, a traffic light, a toll booth, and a vehicle. the computer's detection of \"no objects\" is inaccurate. the objects in the image are correctly identified, but the segmentation masks are not provided, so the accuracy of the segmentation cannot be assessed. therefore, the answer is:\n\nno",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        187.0800018310547,
+        123.02999877929688,
+        283.1499938964844,
+        224.16000366210938
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          214,
+          123,
+          190,
+          147,
+          189,
+          147,
+          187,
+          149,
+          187,
+          191,
+          190,
+          194,
+          190,
+          195,
+          194,
+          199,
+          194,
+          200,
+          198,
+          204,
+          198,
+          205,
+          202,
+          209,
+          202,
+          210,
+          205,
+          213,
+          205,
+          214,
+          209,
+          218,
+          209,
+          219,
+          212,
+          222,
+          217,
+          222,
+          218,
+          223,
+          256,
+          223,
+          279,
+          200,
+          280,
+          200,
+          282,
+          198,
+          282,
+          154,
+          276,
+          148,
+          276,
+          147,
+          268,
+          139,
+          268,
+          138,
+          259,
+          129,
+          259,
+          128,
+          256,
+          125,
+          249,
+          125,
+          248,
+          124,
+          226,
+          124,
+          225,
+          123
+        ]
+      ]
+    ]
+  }
+}

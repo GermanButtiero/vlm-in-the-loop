@@ -1,0 +1,58 @@
+{
+  "image_idx": 1912,
+  "approved": false,
+  "vlm_response": "the computer's detection of objects in the image is not accurate. the segmentation mask highlights a cat lying on the piano bench, which is not one of the object classes listed. additionally, the segmentation mask is not well-defined, as it includes parts of the piano and the bench, which are not highlighted. therefore, the correct answer is:\n\nno",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "book"
+    ],
+    "class_ids": [
+      84
+    ],
+    "boxes": [
+      [
+        283.80999755859375,
+        0.0,
+        397.1400146484375,
+        41.900001525878906
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          288,
+          0,
+          287,
+          1,
+          285,
+          1,
+          285,
+          12,
+          284,
+          13,
+          284,
+          41,
+          396,
+          41,
+          396,
+          2,
+          371,
+          2,
+          370,
+          1,
+          318,
+          1,
+          317,
+          0
+        ]
+      ]
+    ]
+  }
+}

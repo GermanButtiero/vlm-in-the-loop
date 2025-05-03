@@ -1,0 +1,80 @@
+{
+  "image_idx": 611,
+  "approved": false,
+  "vlm_response": "the image shows a scene with a shepherd on a horse herding a flock of sheep across a road. the computer's segmentation masks are overlaid on the image, highlighting various objects with different colors. the masks appear to be identifying the sheep, the horse, and the shepherd, as well as the road and surrounding environment. however, the text indicates that the computer detected \"no objects,\" which is incorrect. the segmentation masks are present and correctly identify the objects in the image. therefore, the answer is:\n\nno, the computer detected no objects, but the segmentation masks are present and correctly identify the objects in the image.",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        439.1099853515625,
+        21.040000915527344,
+        484.5400085449219,
+        69.55999755859375
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          459,
+          21,
+          459,
+          22,
+          446,
+          35,
+          446,
+          36,
+          439,
+          43,
+          443,
+          47,
+          443,
+          48,
+          447,
+          52,
+          447,
+          53,
+          451,
+          57,
+          451,
+          58,
+          455,
+          62,
+          455,
+          63,
+          459,
+          67,
+          459,
+          68,
+          460,
+          68,
+          468,
+          60,
+          469,
+          60,
+          483,
+          46,
+          483,
+          45,
+          465,
+          27,
+          465,
+          26,
+          460,
+          21
+        ]
+      ]
+    ]
+  }
+}

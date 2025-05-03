@@ -1,0 +1,70 @@
+{
+  "image_idx": 2648,
+  "approved": false,
+  "vlm_response": "the image shows a group of people standing on a street corner, with a \"do not enter\" sign and a ups drop box visible. the computer's detection of \"no objects\" is inaccurate. the image contains multiple objects, including people, a sign, a drop box, and a building. the segmentation masks should identify these objects, but the computer's detection is missing these elements. therefore, the answer is:\n\nno",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        147.3000030517578,
+        81.2699966430664,
+        196.27000427246094,
+        151.05999755859375
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          187,
+          81,
+          186,
+          82,
+          169,
+          82,
+          168,
+          83,
+          150,
+          83,
+          149,
+          84,
+          148,
+          84,
+          147,
+          85,
+          147,
+          149,
+          148,
+          149,
+          149,
+          150,
+          176,
+          150,
+          177,
+          149,
+          193,
+          149,
+          195,
+          147,
+          195,
+          82,
+          194,
+          82,
+          193,
+          81
+        ]
+      ]
+    ]
+  }
+}

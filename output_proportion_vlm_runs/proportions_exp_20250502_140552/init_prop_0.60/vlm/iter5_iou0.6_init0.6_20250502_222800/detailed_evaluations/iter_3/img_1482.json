@@ -1,0 +1,84 @@
+{
+  "image_idx": 1482,
+  "approved": false,
+  "vlm_response": "the image shows a scene with a restaurant, bicycles, and a person. the computer's detection of \"no objects\" is inaccurate. the image contains several objects that should be identified, such as the restaurant, bicycles, and the person. the segmentation masks should accurately identify these objects. therefore, the correct response is:\n\nno",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        45.2400016784668,
+        110.38999938964844,
+        87.48999786376953,
+        149.1699981689453
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          71,
+          110,
+          70,
+          111,
+          50,
+          111,
+          49,
+          112,
+          49,
+          116,
+          48,
+          117,
+          48,
+          122,
+          47,
+          123,
+          47,
+          127,
+          46,
+          128,
+          46,
+          132,
+          45,
+          133,
+          45,
+          134,
+          50,
+          139,
+          50,
+          140,
+          57,
+          147,
+          57,
+          148,
+          69,
+          148,
+          70,
+          147,
+          75,
+          147,
+          86,
+          136,
+          86,
+          119,
+          80,
+          113,
+          80,
+          112,
+          78,
+          110
+        ]
+      ]
+    ]
+  }
+}

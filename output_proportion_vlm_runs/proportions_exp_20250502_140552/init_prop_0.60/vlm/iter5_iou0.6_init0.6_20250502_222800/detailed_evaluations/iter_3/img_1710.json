@@ -1,0 +1,62 @@
+{
+  "image_idx": 1710,
+  "approved": false,
+  "vlm_response": "the computer's detection of objects in the image is not accurate. the segmentation masks indicate the presence of objects that are not actually in the image, such as a red outline around a non-existent object on the floor. additionally, the computer has not identified any objects, which is incorrect given the visible items in the room. therefore, the answer is:\n\nno",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "book"
+    ],
+    "class_ids": [
+      84
+    ],
+    "boxes": [
+      [
+        108.58000183105469,
+        161.32000732421875,
+        178.4199981689453,
+        180.50999450683594
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          166,
+          161,
+          165,
+          162,
+          110,
+          162,
+          110,
+          165,
+          109,
+          166,
+          109,
+          178,
+          114,
+          178,
+          115,
+          179,
+          172,
+          179,
+          173,
+          180,
+          177,
+          180,
+          177,
+          166,
+          176,
+          165,
+          176,
+          161
+        ]
+      ]
+    ]
+  }
+}

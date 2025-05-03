@@ -1,0 +1,140 @@
+{
+  "image_idx": 835,
+  "approved": true,
+  "vlm_response": "yes, the object classes and segmentation masks are accurate. the computer has correctly identified the stop sign in the image. the segmentation mask for the stop sign is well-defined, highlighting the red octagonal shape with white text, which is consistent with the typical appearance of a stop sign. there are no other objects in the image that have been misclassified or poorly segmented.",
+  "prediction": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      3
+    ],
+    "scores": [
+      0.9949758052825928
+    ],
+    "boxes": [
+      [
+        114.68466186523438,
+        172.88392639160156,
+        156.44561767578125,
+        213.58285522460938
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          127,
+          173,
+          119,
+          181,
+          118,
+          181,
+          117,
+          182,
+          117,
+          183,
+          116,
+          184,
+          116,
+          188,
+          117,
+          189,
+          117,
+          202,
+          120,
+          205,
+          121,
+          205,
+          129,
+          213,
+          145,
+          213,
+          155,
+          203,
+          155,
+          183,
+          148,
+          176,
+          148,
+          175,
+          147,
+          175,
+          145,
+          173
+        ]
+      ]
+    ]
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        115.47000122070312,
+        172.4600067138672,
+        157.5800018310547,
+        213.47999572753906
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          143,
+          172,
+          142,
+          173,
+          130,
+          173,
+          129,
+          174,
+          127,
+          174,
+          123,
+          178,
+          122,
+          178,
+          119,
+          181,
+          118,
+          181,
+          115,
+          184,
+          116,
+          185,
+          116,
+          192,
+          117,
+          193,
+          117,
+          200,
+          118,
+          201,
+          118,
+          202,
+          122,
+          206,
+          123,
+          206,
+          129,
+          212,
+          145,
+          212,
+          157,
+          200,
+          157,
+          199,
+          156,
+          198,
+          156,
+          184,
+          144,
+          172
+        ]
+      ]
+    ]
+  }
+}

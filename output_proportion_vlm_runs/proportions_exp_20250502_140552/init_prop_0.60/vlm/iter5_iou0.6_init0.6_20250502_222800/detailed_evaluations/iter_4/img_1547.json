@@ -1,0 +1,62 @@
+{
+  "image_idx": 1547,
+  "approved": false,
+  "vlm_response": "the image shows a kitchen with various objects, including cabinets, a microwave, an oven, and some items on the countertop. the computer's detection of \"no objects\" is inaccurate. the segmentation masks should identify the cabinets, microwave, oven, and other items on the countertop. therefore, the correct answer is:\n\nno, the computer detected no objects, which is inaccurate.",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "book"
+    ],
+    "class_ids": [
+      84
+    ],
+    "boxes": [
+      [
+        419.92999267578125,
+        312.67999267578125,
+        457.8500061035156,
+        358.9800109863281
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          420,
+          313,
+          420,
+          355,
+          425,
+          355,
+          426,
+          356,
+          438,
+          356,
+          439,
+          357,
+          450,
+          357,
+          451,
+          358,
+          456,
+          358,
+          456,
+          348,
+          457,
+          347,
+          457,
+          314,
+          449,
+          314,
+          448,
+          313
+        ]
+      ]
+    ]
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "image_idx": 2702,
+  "approved": false,
+  "vlm_response": "the image shows a \"one way\" sign, a billboard with cartoon characters, and a pedestrian signal. the computer's detection of \"no objects\" is inaccurate. the objects in the image include the \"one way\" sign, the billboard, and the pedestrian signal. therefore, the correct answer is:\n\nno",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        334.45001220703125,
+        474.4599914550781,
+        379.20001220703125,
+        513.6199951171875
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          338,
+          474,
+          337,
+          475,
+          337,
+          482,
+          336,
+          483,
+          336,
+          491,
+          335,
+          492,
+          335,
+          499,
+          334,
+          500,
+          335,
+          501,
+          335,
+          502,
+          336,
+          503,
+          336,
+          504,
+          337,
+          505,
+          337,
+          506,
+          338,
+          507,
+          338,
+          508,
+          339,
+          509,
+          339,
+          510,
+          340,
+          511,
+          342,
+          511,
+          343,
+          512,
+          372,
+          512,
+          373,
+          513,
+          375,
+          513,
+          375,
+          512,
+          376,
+          511,
+          376,
+          499,
+          377,
+          498,
+          377,
+          487,
+          378,
+          486,
+          378,
+          478,
+          377,
+          477,
+          367,
+          477,
+          366,
+          476,
+          355,
+          476,
+          354,
+          475,
+          343,
+          475,
+          342,
+          474
+        ]
+      ]
+    ]
+  }
+}

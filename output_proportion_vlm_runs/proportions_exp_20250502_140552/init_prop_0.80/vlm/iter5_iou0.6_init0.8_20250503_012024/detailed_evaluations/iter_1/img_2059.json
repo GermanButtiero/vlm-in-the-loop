@@ -1,0 +1,112 @@
+{
+  "image_idx": 2059,
+  "approved": false,
+  "vlm_response": "the image shows a group of people sitting around a table with various objects on it, such as plates, glasses, and a small flag. the computer's detection of \"no objects\" is inaccurate. the segmentation masks should identify the people, table, chairs, plates, glasses, and other items on the table. the objects are not well segmented, as the computer did not detect them. therefore, the answer is:\n\nno",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "book"
+    ],
+    "class_ids": [
+      84
+    ],
+    "boxes": [
+      [
+        284.3599853515625,
+        237.4499969482422,
+        333.2099914550781,
+        266.9100036621094
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          313,
+          237,
+          312,
+          238,
+          284,
+          238,
+          285,
+          239,
+          285,
+          247,
+          286,
+          248,
+          286,
+          252,
+          287,
+          253,
+          287,
+          257,
+          288,
+          258,
+          288,
+          262,
+          289,
+          263,
+          289,
+          265,
+          290,
+          266,
+          298,
+          266,
+          299,
+          265,
+          316,
+          265,
+          317,
+          264,
+          332,
+          264,
+          332,
+          261,
+          331,
+          260,
+          331,
+          257,
+          330,
+          256,
+          330,
+          254,
+          329,
+          253,
+          329,
+          252,
+          328,
+          251,
+          328,
+          249,
+          327,
+          248,
+          327,
+          247,
+          326,
+          246,
+          326,
+          245,
+          325,
+          244,
+          325,
+          243,
+          324,
+          242,
+          324,
+          240,
+          323,
+          239,
+          323,
+          238,
+          322,
+          237
+        ]
+      ]
+    ]
+  }
+}

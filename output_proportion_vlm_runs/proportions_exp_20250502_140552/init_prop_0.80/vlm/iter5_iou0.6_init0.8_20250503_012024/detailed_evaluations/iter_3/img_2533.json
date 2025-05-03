@@ -1,0 +1,82 @@
+{
+  "image_idx": 2533,
+  "approved": false,
+  "vlm_response": "the image shows a street scene with several people, a stop sign, and various signs and billboards. the computer's detection of \"no objects\" is inaccurate. the image contains multiple objects, including people, a stop sign, street signs, billboards, and other urban elements. the segmentation masks should identify these objects accurately. therefore, the correct response is:\n\nno",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        137.10000610351562,
+        21.100000381469727,
+        176.94000244140625,
+        64.62999725341797
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          158,
+          21,
+          157,
+          22,
+          148,
+          22,
+          137,
+          33,
+          137,
+          34,
+          138,
+          35,
+          138,
+          41,
+          139,
+          42,
+          139,
+          48,
+          140,
+          49,
+          140,
+          51,
+          141,
+          52,
+          141,
+          53,
+          151,
+          63,
+          161,
+          63,
+          162,
+          64,
+          164,
+          64,
+          169,
+          59,
+          169,
+          58,
+          176,
+          51,
+          176,
+          34,
+          168,
+          26,
+          168,
+          25,
+          164,
+          21
+        ]
+      ]
+    ]
+  }
+}

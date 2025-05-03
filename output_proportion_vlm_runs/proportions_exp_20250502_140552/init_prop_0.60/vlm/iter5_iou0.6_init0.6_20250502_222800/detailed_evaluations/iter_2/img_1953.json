@@ -1,0 +1,188 @@
+{
+  "image_idx": 1953,
+  "approved": true,
+  "vlm_response": "yes, the object classes and segmentation masks are accurate. the computer has correctly identified the stop sign in the image. the segmentation mask for the stop sign is well-defined, highlighting the red octagonal shape with white lettering, which is consistent with the typical appearance of a stop sign. there are no other objects misclassified or poorly segmented in the image.",
+  "prediction": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      3
+    ],
+    "scores": [
+      0.9959388971328735
+    ],
+    "boxes": [
+      [
+        481.0911560058594,
+        154.70925903320312,
+        529.880126953125,
+        203.66807556152344
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          497,
+          154,
+          496,
+          155,
+          495,
+          155,
+          494,
+          156,
+          493,
+          156,
+          484,
+          165,
+          483,
+          165,
+          482,
+          166,
+          482,
+          167,
+          481,
+          168,
+          481,
+          192,
+          487,
+          198,
+          488,
+          198,
+          493,
+          203,
+          517,
+          203,
+          527,
+          193,
+          528,
+          193,
+          529,
+          192,
+          529,
+          167,
+          524,
+          162,
+          524,
+          161,
+          518,
+          155,
+          517,
+          155,
+          516,
+          154
+        ]
+      ]
+    ]
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        478.489990234375,
+        153.57000732421875,
+        531.6799926757812,
+        206.75999450683594
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          496,
+          154,
+          494,
+          156,
+          493,
+          156,
+          490,
+          159,
+          489,
+          159,
+          487,
+          161,
+          486,
+          161,
+          483,
+          164,
+          482,
+          164,
+          479,
+          167,
+          478,
+          167,
+          479,
+          168,
+          479,
+          177,
+          480,
+          178,
+          480,
+          187,
+          481,
+          188,
+          481,
+          189,
+          485,
+          193,
+          485,
+          194,
+          489,
+          198,
+          489,
+          199,
+          493,
+          203,
+          493,
+          204,
+          494,
+          205,
+          504,
+          205,
+          505,
+          206,
+          515,
+          206,
+          515,
+          205,
+          520,
+          200,
+          520,
+          199,
+          525,
+          194,
+          525,
+          193,
+          529,
+          189,
+          529,
+          181,
+          530,
+          180,
+          530,
+          172,
+          531,
+          171,
+          526,
+          166,
+          526,
+          165,
+          519,
+          158,
+          519,
+          157,
+          517,
+          155,
+          509,
+          155,
+          508,
+          154
+        ]
+      ]
+    ]
+  }
+}

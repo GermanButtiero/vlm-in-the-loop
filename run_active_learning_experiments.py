@@ -105,7 +105,7 @@ if __name__ == "__main__":
 
     # Ensure the number of classes is correctly read from config for the model
     if "num_classes" not in base_config:
-         # You might need to calculate this based on your categories_to_keep or set it manually
+         # You might need to calculate this based on your categories_to_ or set it manually
          print("Warning: 'num_classes' not found in config.json. Assuming 4 based on default categories.")
          base_config["num_classes"] = 4 # Adjust if your default categories change
 

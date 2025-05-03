@@ -1,0 +1,102 @@
+{
+  "image_idx": 1369,
+  "approved": false,
+  "vlm_response": "the computer's detection of objects in the image is not accurate. the image shows a food truck, two people, a silver suv, a fire hydrant, a one-way sign, and a building. the computer has not detected any objects, which is incorrect. the segmentation masks should have identified the food truck, people, and other objects in the scene. therefore, the answer is \"no\" followed by an explanation that the object classes and segmentation masks are not accurate.",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        67.3499984741211,
+        155.63999938964844,
+        98.0199966430664,
+        194.97999572753906
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          76,
+          156,
+          73,
+          159,
+          73,
+          160,
+          70,
+          163,
+          70,
+          164,
+          68,
+          166,
+          68,
+          173,
+          67,
+          174,
+          67,
+          180,
+          69,
+          182,
+          69,
+          183,
+          71,
+          185,
+          71,
+          186,
+          74,
+          189,
+          74,
+          190,
+          76,
+          192,
+          76,
+          193,
+          77,
+          194,
+          86,
+          194,
+          89,
+          191,
+          89,
+          190,
+          95,
+          184,
+          95,
+          181,
+          96,
+          180,
+          96,
+          172,
+          97,
+          171,
+          97,
+          167,
+          96,
+          166,
+          96,
+          165,
+          94,
+          163,
+          94,
+          162,
+          91,
+          159,
+          91,
+          158,
+          89,
+          156
+        ]
+      ]
+    ]
+  }
+}
