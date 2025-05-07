@@ -2,7 +2,7 @@
 #conda activate ovis
 
 # Core
-torch==2.4.0
+torch==2.2.0
 torchvision==0.17.0
 transformers==4.46.2
 numpy==1.25.0
@@ -21,7 +21,7 @@ mongoengine==0.29.1
 fiftyone==1.4.0
 fiftyone-brain==0.20.1
 fiftyone-db==1.1.7
-
+tqdm
 #Then run
 #pip install -r requirements.txt
 #pip install flash-attn==2.7.0.post2 --no-build-isolation

@@ -169,7 +169,6 @@ def run_active_learning(
         maskrcnn = MaskRCNN(num_classes=num_classes, device= device)
         maskrcnn.load_state_dict(torch.load(config["model_path"]))
         maskrcnn.to(device)
-        maskrcnn.eval()
         
         # Evaluate on test set
         print("Evaluating model...")
@@ -204,6 +203,7 @@ def run_active_learning(
         
         approved_indices = []
         vlm_decisions = []  # Store VLM decisions for analysis
+        maskrcnn.eval()
         with torch.no_grad():
             for i, (image, target) in enumerate(tqdm(inference_loader, desc="Evaluating images")):
                 original_idx = list(inference_indices)[i]

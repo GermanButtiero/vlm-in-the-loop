@@ -1,16 +1,9 @@
-
-import json
-import numpy as np
-import matplotlib.patches as patches
 import torch
 from torch.utils.data import Dataset
 import torchvision.transforms as transforms
 from pycocotools.coco import COCO
 from PIL import Image
 import os
-import cv2  
-from pycocotools import mask as coco_mask
-from matplotlib import pyplot as plt
 
 class CocoSegmentationDatasetMRCNN(Dataset):
     def __init__(self, image_dir, seg_annotation_file, categories_to_keep=None):

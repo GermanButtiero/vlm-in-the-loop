@@ -1,4 +1,4 @@
-from src.utils import collate_fn, calculate_mask_iou
+from src.utils import calculate_mask_iou
 
 def simulate_human_feedback(prediction, target, iou_threshold=0.6):
     pred_masks=prediction['masks'].cpu()

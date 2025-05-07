@@ -1,6 +1,4 @@
 import torch
-from torchvision.utils import draw_segmentation_masks
-import torchvision.ops as ops
 import numpy as np
 
 def evaluate(model, data_loader, device):
