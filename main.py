@@ -157,7 +157,6 @@ def run_active_learning(
         num_classes = config["num_classes"]
         #train_model(data_loader_train, data_loader_val, num_classes, 
                   #num_epochs=config["num_epochs"], device=device)
-
         metrics_epoch = model.train_model(data_loader_train, data_loader_val, 
                            num_epochs=config["num_epochs"], device=device)
         metrics_log.setdefault("train_loss_per_epoch", []).append(metrics_epoch["train_loss"])
@@ -169,7 +168,7 @@ def run_active_learning(
         maskrcnn = MaskRCNN(num_classes=num_classes, device= device)
         maskrcnn.load_state_dict(torch.load(config["model_path"]))
         maskrcnn.to(device)
-        
+        maskrcnn.eval()
         # Evaluate on test set
         print("Evaluating model...")
         mean_ap, ap_per_class = calculate_ap(maskrcnn, test_loader, device, iou_threshold=0.5)

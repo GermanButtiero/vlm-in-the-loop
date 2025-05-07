@@ -70,7 +70,6 @@ class MaskRCNN(nn.Module):
             self.lr_scheduler.step()
             
             # Validation loss
-            self.eval()  # Inherited from nn.Module
             val_loss = evaluate(self, data_loader_val, device)
             metrics_per_epoch["val_loss"].append(val_loss)
             

@@ -3,7 +3,7 @@ import numpy as np
 
 def evaluate(model, data_loader, device):
     total_loss = 0
-    
+
     with torch.no_grad():
         for images, targets in data_loader:
             images = list(image.to(device) for image in images)
@@ -52,7 +52,7 @@ def calculate_ap(model, data_loader, device, iou_threshold=0.5):
     
     # Calculate AP for each class
     ap_per_class = {}
-    for class_id in range(1, model.roi_heads.box_predictor.cls_score.out_features):  # Skip background (0)
+    for class_id in range(1, model.num_classes -1):  # Skip background (0)
         true_positives = 0
         false_positives = 0
         total_gt = 0
