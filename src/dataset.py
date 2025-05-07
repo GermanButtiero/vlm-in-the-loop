@@ -1,5 +1,4 @@
-import fiftyone as fo
-import fiftyone.zoo as foz
+
 import json
 import numpy as np
 import matplotlib.patches as patches

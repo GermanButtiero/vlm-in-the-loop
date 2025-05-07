@@ -2,6 +2,8 @@
 from matplotlib import pyplot as plt
 import numpy as np
 import matplotlib.patches as patches
+from PIL import Image
+import cv2
 
 def visualize_bounding_boxes(dataset, idx=0):
     """Visualize an example from the dataset"""
@@ -159,3 +161,75 @@ def visualize_individual_masks(dataset, idx=0):
     
     plt.tight_layout()
     plt.show()
+
+
+
+def visualize_segmentation_mask(image, prediction, threshold=0.5):
+    """
+    Create a visualization of the segmentation masks on the image.
+    
+    Args:
+        image: The original image tensor
+        prediction: The model prediction with masks
+        threshold: Score threshold for showing masks
+    
+    Returns:
+        PIL Image with visualization
+    """
+    # Convert image tensor to numpy array
+    img_np = image.cpu().permute(1, 2, 0).numpy()
+    
+    # Denormalize if needed
+    if img_np.max() <= 1.0:
+        img_np = (img_np * 255).astype(np.uint8)
+    
+    # Create a copy for visualization
+    vis_img = img_np.copy()
+    
+    # Get masks and scores
+    masks = prediction['masks'].cpu().squeeze(1).numpy()
+    scores = prediction['scores'].cpu().numpy()
+    
+    # Apply different colors for each mask
+    colors = [(255, 0, 0), (0, 255, 0), (0, 0, 255), (255, 255, 0), 
+              (255, 0, 255), (0, 255, 255), (128, 0, 0), (0, 128, 0)]
+    
+    for i, (mask, score) in enumerate(zip(masks, scores)):
+        if score < threshold:
+            continue
+            
+        # Convert mask to binary
+        binary_mask = (mask > 0.5).astype(np.uint8)
+        
+        # Apply color to mask
+        color = colors[i % len(colors)]
+        colored_mask = np.zeros_like(vis_img)
+        for c in range(3):
+            colored_mask[:, :, c] = binary_mask * color[c]
+        
+        # Blend with original image
+        alpha = 0.4
+        vis_img = cv2.addWeighted(vis_img, 1, colored_mask, alpha, 0)
+        
+        # Find contours and draw them
+        contours, _ = cv2.findContours(binary_mask, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
+        cv2.drawContours(vis_img, contours, -1, color, 2)
+    
+    # Convert back to PIL image
+    return Image.fromarray(vis_img)
+
+
+def plot_learning_curve(metrics_log, use_vlm=False, save_path=None):
+    """Create a plot of mean AP vs iteration"""
+    plt.figure(figsize=(10, 6))
+    plt.plot(metrics_log["iteration"], metrics_log["mean_ap"], 'o-', linewidth=2)
+    plt.xlabel('Iteration')
+    plt.ylabel('Mean Average Precision')
+    method = "VLM Feedback" if use_vlm else "IoU-based Feedback"
+    plt.title(f'Active Learning Performance with {method}')
+    plt.grid(True)
+    if save_path:
+        plt.savefig(save_path)
+    else:
+        plt.savefig(f'active_learning_curve_{"vlm" if use_vlm else "iou"}.png')
+    plt.close()
