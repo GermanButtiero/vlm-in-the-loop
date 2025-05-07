@@ -395,7 +395,7 @@ def run_active_learning(
                     if is_approved:
                         approved_indices.append(original_idx) # Keep original_idx as is for set operations
                 else:
-                    is_approved = simulate_human_feedback(outputs,target)
+                    is_approved = simulate_human_feedback(outputs[0],target)
                     if is_approved:
                         approved_indices.append(original_idx)
             if i%100 == 0:
