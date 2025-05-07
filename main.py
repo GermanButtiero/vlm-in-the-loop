@@ -399,7 +399,8 @@ def run_active_learning(
                     is_approved = simulate_human_feedback(outputs,target)
                     if is_approved:
                         approved_indices.append(original_idx)
-
+            if i%100 == 0:
+                print(f'{"i:", i}')
             # --- End VLM/IoU Feedback ---
 
         # Save VLM decisions for this iteration (if applicable)
@@ -456,17 +457,19 @@ if __name__ == "__main__":
     config = json.load(open("config.json"))
 
     if args.active:
-        print("Running active learning loop...")
-        run_active_learning(
-            config, 
-            device, 
-            iou_threshold=args.iou_threshold,
-            iterations=args.iterations,
-            init_train_proportion=config.get("init_train_proportion", 0.2),
-            use_vlm=args.vlm,
-            vlm_model_name=args.vlm_model,
-            output_root="output"
-        )
+        init_train_proportions = [0.2,0.4,0.6,0.8]
+        for prop in init_train_proportions:
+            print("Running active learning loop...")
+            run_active_learning(
+                config, 
+                device, 
+                iou_threshold=args.iou_threshold,
+                iterations=args.iterations,
+                init_train_proportion=prop,
+                use_vlm=args.vlm,
+                vlm_model_name=args.vlm_model,
+                output_root="output"
+            )
     # elif args.train:
     #     # Split the original training set
     #     train_dataset_full = CocoSegmentationDatasetMRCNN(
