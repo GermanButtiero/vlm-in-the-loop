@@ -28,16 +28,19 @@ def get_model_instance_segmentation(num_classes):
     return model
 
 class MaskRCNN(nn.Module):
-    def __init__(self, num_classes, device):
+    def __init__(self, num_classes, device, seed=42):
         super(MaskRCNN, self).__init__()
         self.num_classes = num_classes + 1  # +1 for background
         self.model = get_model_instance_segmentation(self.num_classes)
         self.device = device
-        self.to(device)  # This now calls nn.Module's to() method
+        self.to(device)  
         self.params = [p for p in self.parameters() if p.requires_grad]
         self.optimizer = torch.optim.SGD(self.params, lr=0.005, momentum=0.9, weight_decay=0.0005)
         self.lr_scheduler = torch.optim.lr_scheduler.StepLR(self.optimizer, step_size=3, gamma=0.1)
-    
+        self.seed = seed
+        torch.manual_seed(self.seed)
+        torch.cuda.manual_seed(self.seed)
+        
     def forward(self, *args, **kwargs):
         """Forward pass, called when you do model(input)"""
         return self.model(*args, **kwargs)
@@ -52,12 +55,12 @@ class MaskRCNN(nn.Module):
         }
         for epoch in range(num_epochs):
             print(f"Epoch {epoch+1}/{num_epochs}")
-            self.train()  # Inherited from nn.Module
+            self.train()  
             total_loss = 0
             for images, targets in data_loader_train:
                 images = list(image.to(device) for image in images)
                 targets = [{k: v.to(device) for k, v in t.items()} for t in targets]
-                loss_dict = self(images, targets)  # Calls forward method
+                loss_dict = self(images, targets)  
                 losses = sum(loss for loss in loss_dict.values())
                 self.optimizer.zero_grad()
                 losses.backward()

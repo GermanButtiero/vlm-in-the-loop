@@ -52,7 +52,7 @@ def calculate_ap(model, data_loader, device, iou_threshold=0.5):
     
     # Calculate AP for each class
     ap_per_class = {}
-    for class_id in range(1, model.num_classes -1):  # Skip background (0)
+    for class_id in range(1, model.num_classes):  # Skip background (0)
         true_positives = 0
         false_positives = 0
         total_gt = 0
@@ -60,7 +60,6 @@ def calculate_ap(model, data_loader, device, iou_threshold=0.5):
         # Count total ground truth for this class
         for gt_labels in all_gt_labels:
             total_gt += (gt_labels == class_id).sum().item()
-        
         if total_gt == 0:
             ap_per_class[class_id] = float('nan')  # No ground truth for this class
             continue

@@ -43,7 +43,7 @@ COCO_INSTANCE_CATEGORY_NAMES = [
 
 def run_active_learning(
     config, device, iou_threshold=0.6, iterations=10, init_train_proportion=0.2,
-    use_vlm=False, vlm_model_name=None, output_root="output"
+    use_vlm=False, vlm_model_name=None, output_root="output", seed=42
 ):
     """
     Run active learning loop with either simulated human feedback or VLM feedback.
@@ -57,6 +57,7 @@ def run_active_learning(
         vlm_model_name: Name of the VLM model to use
         output_root: Root directory for saving outputs
     """
+    set_all_seeds(seed)
     # Categories to keep (book, bird, stop sign, zebra)
     categories_to_keep = [84, 16, 13, 24]
 
@@ -71,7 +72,6 @@ def run_active_learning(
     dataset_size = len(full_dataset)
     all_indices = np.arange(dataset_size)
 
-    np.random.seed(10)
     np.random.shuffle(all_indices)
 
     fixed_val_size = int(0.1 * dataset_size)
@@ -113,7 +113,7 @@ def run_active_learning(
     }
     #Initialize MaskRCNN model
     num_classes = len(categories_to_keep)
-    model= MaskRCNN(num_classes=num_classes, device= device)
+    model= MaskRCNN(num_classes=num_classes, device= device, seed=seed)
 
     # Initialize VLM if using it
     vlm = None
@@ -141,12 +141,17 @@ def run_active_learning(
         print(f"\n===== Iteration {iteration}/{iterations} =====")
         print(f"Training set size: {len(train_indices)}")
         print(f"Inference pool size: {len(inference_indices)}")
-        
+
+        g = torch.Generator()
+        g.manual_seed(seed)
+    
         # Use all current train_indices for training
         data_loader_train = torch.utils.data.DataLoader(
             torch.utils.data.Subset(full_dataset, list(train_indices)),
             batch_size=config["batch_size"],
-            shuffle=True, collate_fn=collate_fn
+            shuffle=True, collate_fn=collate_fn,
+        worker_init_fn=lambda worker_id: np.random.seed(seed + worker_id),
+        generator=g
         )
 
         # Use the fixed validation set for early stopping/model selection
@@ -173,7 +178,6 @@ def run_active_learning(
         print("Evaluating model...")
         mean_ap, ap_per_class = calculate_ap(maskrcnn, test_loader, device, iou_threshold=0.5)
         print(f"Mean Average Precision: {mean_ap:.4f}")
-        
         # Log metrics
         metrics_log["iteration"].append(iteration)
         metrics_log["train_size"].append(len(train_indices))
@@ -197,7 +201,9 @@ def run_active_learning(
         inference_dataset = torch.utils.data.Subset(full_dataset, list(inference_indices))
         inference_loader = torch.utils.data.DataLoader(
             inference_dataset, batch_size=1,  # Process one at a time
-            shuffle=False, collate_fn=collate_fn
+            shuffle=False, collate_fn=collate_fn,
+        worker_init_fn=lambda worker_id: np.random.seed(seed + worker_id),
+        generator=g
         )
         
         approved_indices = []
@@ -395,7 +401,7 @@ def run_active_learning(
                     if is_approved:
                         approved_indices.append(original_idx) # Keep original_idx as is for set operations
                 else:
-                    is_approved = simulate_human_feedback(outputs[0],target[0])
+                    is_approved = simulate_human_feedback(outputs[0],target[0], iou_threshold= iou_threshold)
                     if is_approved:
                         approved_indices.append(original_idx)
             if i%100 == 0:
@@ -436,8 +442,18 @@ def run_active_learning(
     
     return metrics_log
 
+def set_all_seeds(seed):
+    """Set seeds for reproducibility"""
+    import random
+    
+    random.seed(seed)
+    np.random.seed(seed)
+    torch.manual_seed(seed)
+    torch.cuda.manual_seed_all(seed)
+    torch.backends.cudnn.deterministic = True
+    torch.backends.cudnn.benchmark = False
+    os.environ['PYTHONHASHSEED'] = str(seed)
 
-# Fix the duplicate argument in the argparse section
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Train a Mask R-CNN model on COCO dataset")
     # parser.add_argument("--train", action="store_true", default=False, help="Train the model")
@@ -448,15 +464,17 @@ if __name__ == "__main__":
                        default="AIDC-AI/Ovis2-8B", #imv2-huge-patch14-448-Qwen2.5-3B-Instruct
                        help="VLM model name from HuggingFace or path to Ovis model")
     parser.add_argument("--iou-threshold", type=float, default=0.6, help="IoU threshold for active learning")
-    parser.add_argument("--iterations", type=int, default=10, help="Number of active learning iterations")
+    parser.add_argument("--iterations", type=int, default=5, help="Number of active learning iterations")
+    parser.add_argument("--seed", type=int, default=42, help="Random seed for reproducibility")
+    parser.add_argument("--init_train_prop", nargs='+', type=float, default=[0.2, 0.4, 0.6, 0.8, 1])
     args = parser.parse_args()
-
+    set_all_seeds(args.seed)
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
    
     config = json.load(open("config.json"))
 
     if args.active:
-        init_train_proportions = [0.2,0.4,0.6,0.8]
+        init_train_proportions = args.init_train_prop
         for prop in init_train_proportions:
             print("Running active learning loop...")
             run_active_learning(
@@ -467,7 +485,8 @@ if __name__ == "__main__":
                 init_train_proportion=prop,
                 use_vlm=args.vlm,
                 vlm_model_name=args.vlm_model,
-                output_root="output"
+                output_root="output",
+            seed=args.seed
             )
     # elif args.train:
     #     # Split the original training set
@@ -496,8 +515,9 @@ if __name__ == "__main__":
     #     )
 
     #     print("Training the model...")
-    #     num_classes = config["num_classes"]
-    #     train_model(data_loader_train, data_loader_val, num_epochs= config["num_epochs"], device=device)
+    #     num_classes = config["num_classes"] +1
+    #     model= MaskRCNN(num_classes=num_classes, device= device)
+    #     model.train_model(data_loader_train, data_loader_val, num_epochs= config["num_epochs"], device=device)
         
     # if args.test:
     #     print("Evaluating the model...")
@@ -514,7 +534,7 @@ if __name__ == "__main__":
     #     num_classes = config["num_classes"] + 1  # +1 for background
     
     #     # Load trained model
-    #     model = get_model_instance_segmentation(num_classes=num_classes + 1)  # +1 for background
+    #     model= MaskRCNN(num_classes=num_classes, device= device)
     #     model.load_state_dict(torch.load(config["model_path"]))
     #     model.to(device)
     #     model.eval()
