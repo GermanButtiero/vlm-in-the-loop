@@ -1,0 +1,78 @@
+{
+  "image_idx": 1164,
+  "approved": true,
+  "vlm_response": "after carefully examining the image, i have visually identified the objects as follows:\n\n1. **objects:**\n   - houses\n   - church steeple\n   - stop sign\n   - bushes\n   - street lamp\n   - mountains\n\n2. **comparison with model's detections:**\n   - all objects are correctly detected.\n   - masks are tight and well-defined.\n   - no background spill-over or missing objects.\n   - no false positives.\n\n3. **errors and improvements:**\n   - the stop sign is not a mask, but a red octagonal sign.\n   - the bushes are not masks, but part of the scene.\n\n*yes*\n\nthe image contains all objects correctly detected and each mask is good.",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        532.4600219726562,
+        171.2899932861328,
+        588.3200073242188,
+        227.16000366210938
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          550,
+          171,
+          547,
+          174,
+          546,
+          174,
+          541,
+          179,
+          540,
+          179,
+          535,
+          184,
+          534,
+          184,
+          532,
+          186,
+          532,
+          209,
+          535,
+          212,
+          535,
+          213,
+          548,
+          226,
+          571,
+          226,
+          582,
+          215,
+          583,
+          215,
+          586,
+          212,
+          586,
+          210,
+          587,
+          209,
+          587,
+          187,
+          572,
+          172,
+          560,
+          172,
+          559,
+          171
+        ]
+      ]
+    ]
+  }
+}

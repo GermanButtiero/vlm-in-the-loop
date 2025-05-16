@@ -1,0 +1,58 @@
+{
+  "image_idx": 1746,
+  "approved": true,
+  "vlm_response": "after carefully examining the image, i have identified the following objects and their visual characteristics:\n\n1. **house**: the house on the left has a beige facade with a red-tiled roof, a chimney, and a window with a blue frame.\n2. **window**: the window on the house has a white frame and is located on the left side.\n3. **street**: the street is paved and appears to be in good condition.\n4. **sign**: the sign on the right is red with a blue circle and a diagonal line through it, indicating a no parking restriction.\n5. **gate**: the gate is green and made of metal.\n6. **power lines**: there are overhead power lines running parallel to the street.\n7. **sky**: the sky is clear and blue.\n\nthe objects listed are visually distinct and fit the model's detections. the sign is correctly detected with a high iou, and there are no significant background or spill-over issues.\n\n*yes*",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        328.3399963378906,
+        176.9199981689453,
+        361.17999267578125,
+        209.2100067138672
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          329,
+          177,
+          329,
+          199,
+          328,
+          200,
+          328,
+          207,
+          337,
+          207,
+          338,
+          208,
+          359,
+          208,
+          359,
+          194,
+          360,
+          193,
+          360,
+          178,
+          345,
+          178,
+          344,
+          177
+        ]
+      ]
+    ]
+  }
+}

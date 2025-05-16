@@ -1,0 +1,90 @@
+{
+  "image_idx": 1151,
+  "approved": true,
+  "vlm_response": "after carefully examining the image, i have visually identified the objects listed in the colored masks. the objects detected are a red fire hydrant and a black lamppost. the fire hydrant is clearly visible with its distinct red color and chain, while the lamppost is black and stands upright. the background features a spire, which is not a detected object. the image does not show any significant background elements that would spill over into the foreground. the objects are correctly detected with high accuracy, and there are no errors in the visual information provided.\n\n*yes*\n\n*no \u2013 the spire is not detected in the image.*",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        353.17999267578125,
+        335.2300109863281,
+        396.1300048828125,
+        379.4200134277344
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          364,
+          335,
+          363,
+          336,
+          363,
+          337,
+          361,
+          339,
+          361,
+          340,
+          359,
+          342,
+          359,
+          343,
+          357,
+          345,
+          357,
+          346,
+          354,
+          349,
+          354,
+          350,
+          353,
+          351,
+          353,
+          368,
+          362,
+          377,
+          363,
+          377,
+          364,
+          378,
+          380,
+          378,
+          393,
+          365,
+          393,
+          362,
+          394,
+          361,
+          394,
+          354,
+          395,
+          353,
+          395,
+          348,
+          382,
+          335,
+          372,
+          335,
+          371,
+          336,
+          367,
+          336,
+          366,
+          335
+        ]
+      ]
+    ]
+  }
+}

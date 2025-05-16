@@ -1,0 +1,192 @@
+{
+  "image_idx": 631,
+  "approved": true,
+  "vlm_response": "after carefully analyzing the image, i have identified the following objects and their visual characteristics:\n\n1. **stop sign**: the stop sign is red and octagonal, located on the left side of the image.\n2. **traffic lights**: there are two traffic lights, both displaying red signals.\n3. **buildings**: several buildings are visible in the background, including a large one on the right side.\n4. **streetlights and poles**: various streetlights and poles are scattered throughout the scene.\n5. **vehicles**: a few cars are visible on the road.\n\nthe stop sign is well-defined with a high iou (\u2265 60%) with the image, indicating a tight fit. the traffic lights are also well-defined, with a high iou, showing a tight fit. the buildings and streetlights are discernible, with a high iou, indicating a tight fit. the vehicles are identifiable, with a high iou, showing a tight fit.\n\nthere are no obvious errors in the detections. the image does not show any missing objects, wrong classifications, or false positives.\n\n*yes*",
+  "prediction": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      3
+    ],
+    "scores": [
+      0.9914674758911133
+    ],
+    "boxes": [
+      [
+        23.338356018066406,
+        190.97430419921875,
+        59.74488830566406,
+        230.2755126953125
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          34,
+          191,
+          32,
+          193,
+          31,
+          193,
+          31,
+          194,
+          30,
+          195,
+          29,
+          195,
+          29,
+          196,
+          27,
+          198,
+          26,
+          198,
+          26,
+          199,
+          24,
+          201,
+          24,
+          218,
+          26,
+          220,
+          26,
+          221,
+          27,
+          221,
+          29,
+          223,
+          29,
+          224,
+          30,
+          224,
+          31,
+          225,
+          31,
+          226,
+          32,
+          227,
+          32,
+          228,
+          33,
+          228,
+          34,
+          229,
+          50,
+          229,
+          51,
+          228,
+          52,
+          228,
+          53,
+          227,
+          53,
+          226,
+          56,
+          223,
+          57,
+          223,
+          57,
+          222,
+          58,
+          221,
+          59,
+          221,
+          59,
+          220,
+          60,
+          219,
+          60,
+          211,
+          59,
+          210,
+          59,
+          202,
+          58,
+          201,
+          58,
+          199,
+          57,
+          199,
+          56,
+          198,
+          56,
+          197,
+          51,
+          192,
+          50,
+          192,
+          49,
+          191
+        ]
+      ]
+    ]
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        24.049999237060547,
+        190.8699951171875,
+        60.61000061035156,
+        230.10000610351562
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          34,
+          191,
+          27,
+          198,
+          27,
+          199,
+          24,
+          202,
+          24,
+          203,
+          25,
+          204,
+          25,
+          206,
+          24,
+          207,
+          24,
+          218,
+          33,
+          227,
+          33,
+          228,
+          34,
+          229,
+          49,
+          229,
+          59,
+          219,
+          60,
+          219,
+          60,
+          217,
+          59,
+          216,
+          59,
+          203,
+          55,
+          199,
+          55,
+          198,
+          51,
+          194,
+          51,
+          193,
+          49,
+          191
+        ]
+      ]
+    ]
+  }
+}

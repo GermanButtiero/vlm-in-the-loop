@@ -1,0 +1,180 @@
+{
+  "image_idx": 239,
+  "approved": true,
+  "vlm_response": "after carefully examining the image, i have identified the following objects visually:\n\n1. **stop sign**: yes, the stop sign is correctly detected with a high iou (\u2265 60%) and fits the object well.\n2. **hotel sign**: yes, the hotel harwal sign is correctly detected with a high iou.\n3. **windows**: yes, the windows are correctly detected with a high iou.\n4. **traffic cones**: yes, the traffic cones are correctly detected with a high iou.\n5. **fire hydrant**: yes, the fire hydrant is correctly detected with a high iou.\n6. **street signs**: yes, the street signs are correctly detected with a high iou.\n7. **background elements**: yes, the background elements such as the building, street, and other objects are correctly detected with a high iou.\n\nthere are no obvious errors in the detections. therefore, the output is:\n\n* **yes**",
+  "prediction": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      3
+    ],
+    "scores": [
+      0.9904798865318298
+    ],
+    "boxes": [
+      [
+        95.29722595214844,
+        249.28622436523438,
+        127.23474884033203,
+        283.962890625
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          113,
+          249,
+          112,
+          250,
+          104,
+          250,
+          100,
+          254,
+          99,
+          254,
+          99,
+          255,
+          98,
+          256,
+          97,
+          256,
+          96,
+          257,
+          96,
+          259,
+          95,
+          260,
+          95,
+          270,
+          96,
+          271,
+          96,
+          274,
+          99,
+          277,
+          100,
+          277,
+          101,
+          278,
+          101,
+          279,
+          102,
+          280,
+          103,
+          280,
+          105,
+          282,
+          106,
+          282,
+          107,
+          283,
+          115,
+          283,
+          116,
+          282,
+          118,
+          282,
+          121,
+          279,
+          121,
+          278,
+          126,
+          273,
+          126,
+          271,
+          127,
+          270,
+          127,
+          263,
+          126,
+          262,
+          126,
+          257,
+          120,
+          251,
+          119,
+          251,
+          118,
+          250,
+          116,
+          250,
+          115,
+          249,
+          114,
+          250
+        ]
+      ]
+    ]
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        93.86000061035156,
+        248.38999938964844,
+        129.14999389648438,
+        282.8399963378906
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          115,
+          248,
+          114,
+          249,
+          103,
+          249,
+          98,
+          254,
+          98,
+          255,
+          95,
+          258,
+          95,
+          271,
+          94,
+          272,
+          94,
+          273,
+          96,
+          275,
+          97,
+          275,
+          100,
+          278,
+          101,
+          278,
+          104,
+          281,
+          113,
+          281,
+          114,
+          282,
+          117,
+          282,
+          120,
+          279,
+          121,
+          279,
+          128,
+          272,
+          128,
+          262,
+          127,
+          261,
+          127,
+          257,
+          118,
+          248
+        ]
+      ]
+    ]
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "image_idx": 1466,
+  "approved": true,
+  "vlm_response": "after carefully examining the image, i have visually identified the objects and their corresponding masks. the objects detected are:\n\n1. los angeles\n2. st. petersburg\n3. london\n4. tokyo\n\neach mask is a distinct shape and color, fitting the objects' shapes and colors accurately. the background is clear, and there are no significant background elements that spill over onto the objects. the masks are well-defined, with no significant overlap or misclassification.\n\nbased on the visual inspection, all objects are correctly detected, and every mask is good. therefore, the output is:\n\n* **yes**",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "book"
+    ],
+    "class_ids": [
+      84
+    ],
+    "boxes": [
+      [
+        394.4100036621094,
+        577.7999877929688,
+        478.0,
+        603.2999877929688
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          431,
+          578,
+          430,
+          579,
+          397,
+          579,
+          396,
+          580,
+          395,
+          580,
+          394,
+          581,
+          394,
+          582,
+          395,
+          583,
+          395,
+          602,
+          459,
+          602,
+          460,
+          601,
+          471,
+          601,
+          472,
+          600,
+          477,
+          600,
+          477,
+          578
+        ]
+      ]
+    ]
+  }
+}

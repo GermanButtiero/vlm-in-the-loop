@@ -1,0 +1,106 @@
+{
+  "image_idx": 686,
+  "approved": true,
+  "vlm_response": "after carefully examining the image, i have visually identified the objects in the colored masks and compared them with the model's detections. the objects are as follows:\n\n1. **red mask**: a red object on the table.\n2. **green mask**: a green object on the coffee table.\n3. **yellow mask**: a yellow object on the coffee table.\n\nthe objects are correctly detected and the masks are good. there are no missing objects, wrong classes, poor masks, or extra masks/ false positives.\n\n*yes*",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "book"
+    ],
+    "class_ids": [
+      84
+    ],
+    "boxes": [
+      [
+        26.649999618530273,
+        384.69000244140625,
+        87.38999938964844,
+        401.6199951171875
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          44,
+          385,
+          43,
+          386,
+          42,
+          386,
+          41,
+          387,
+          40,
+          387,
+          39,
+          388,
+          37,
+          388,
+          36,
+          389,
+          35,
+          389,
+          34,
+          390,
+          33,
+          390,
+          32,
+          391,
+          30,
+          391,
+          29,
+          392,
+          28,
+          392,
+          27,
+          393,
+          27,
+          399,
+          28,
+          400,
+          71,
+          400,
+          72,
+          401,
+          76,
+          401,
+          77,
+          400,
+          78,
+          400,
+          79,
+          399,
+          80,
+          399,
+          81,
+          398,
+          82,
+          398,
+          83,
+          397,
+          84,
+          397,
+          85,
+          396,
+          86,
+          396,
+          86,
+          389,
+          85,
+          388,
+          85,
+          386,
+          82,
+          386,
+          81,
+          385
+        ]
+      ]
+    ]
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "image_idx": 124,
+  "approved": true,
+  "vlm_response": "after carefully examining the image, i have identified the following objects:\n\n1. **traffic light**: green, with a smiley face sticker.\n2. **streetlights**: multiple, in the background.\n3. **trees**: bare, in the background.\n4. **sky**: clear, in the background.\n\nthe traffic light is the only object that fits the criteria of being visually detected. the green color and smiley face sticker are consistent with the typical appearance of a traffic light. the streetlights and trees are not the focus of the image, and the sky is clear.\n\n**output:**\n* **yes** \u2013 all objects are correctly detected and every mask is good.",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        285.1099853515625,
+        309.79998779296875,
+        374.9100036621094,
+        329.260009765625
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          333,
+          310,
+          332,
+          311,
+          301,
+          311,
+          292,
+          320,
+          292,
+          321,
+          285,
+          328,
+          373,
+          328,
+          373,
+          327,
+          367,
+          321,
+          367,
+          320,
+          362,
+          315,
+          362,
+          314,
+          358,
+          310
+        ]
+      ]
+    ]
+  }
+}

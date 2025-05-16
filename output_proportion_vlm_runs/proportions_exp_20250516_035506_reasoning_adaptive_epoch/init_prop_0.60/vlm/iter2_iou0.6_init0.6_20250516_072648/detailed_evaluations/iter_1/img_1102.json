@@ -1,0 +1,94 @@
+{
+  "image_idx": 1102,
+  "approved": true,
+  "vlm_response": "after carefully examining the image, i have visually identified the objects and their corresponding masks. the objects detected are:\n\n1. a woman (mask: top center)\n2. a baby (mask: center)\n3. a sofa (mask: left)\n4. a lampshade (mask: center)\n5. a door (mask: right)\n6. a rug (mask: right)\n7. a bowl (mask: bottom right)\n8. a bottle (mask: bottom right)\n\nthe masks do not tightly fit any of the objects, and there are no significant background or spill-over areas. the objects are correctly detected, and the masks are not overly broad or inaccurate.\n\n*yes*\n\nthe objects are correctly detected and every mask is good.",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "book"
+    ],
+    "class_ids": [
+      84
+    ],
+    "boxes": [
+      [
+        348.5299987792969,
+        406.0899963378906,
+        477.510009765625,
+        427.0
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          453,
+          406,
+          452,
+          407,
+          432,
+          407,
+          431,
+          408,
+          411,
+          408,
+          410,
+          409,
+          389,
+          409,
+          388,
+          410,
+          368,
+          410,
+          367,
+          411,
+          349,
+          411,
+          349,
+          422,
+          350,
+          423,
+          350,
+          426,
+          476,
+          426,
+          476,
+          425,
+          474,
+          423,
+          474,
+          422,
+          473,
+          421,
+          473,
+          420,
+          471,
+          418,
+          471,
+          417,
+          469,
+          415,
+          469,
+          414,
+          467,
+          412,
+          467,
+          411,
+          465,
+          409,
+          465,
+          408,
+          464,
+          407,
+          464,
+          406
+        ]
+      ]
+    ]
+  }
+}

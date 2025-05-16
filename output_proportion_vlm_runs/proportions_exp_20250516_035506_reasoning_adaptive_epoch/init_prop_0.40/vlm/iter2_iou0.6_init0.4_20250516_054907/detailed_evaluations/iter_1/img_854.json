@@ -1,0 +1,148 @@
+{
+  "image_idx": 854,
+  "approved": true,
+  "vlm_response": "after carefully examining the image, i have visually identified the objects as follows:\n\n1. **ties**: multiple ties of various colors and patterns.\n2. **hats**: three hats (two fedoras and one baseball cap).\n3. **shelves**: a wooden shelf with books and a small lamp.\n\nthe objects are correctly detected and fit the described categories. there are no significant errors in the detections.\n\n* **yes** \u2013 all objects are correctly detected and every mask is good.",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "book"
+    ],
+    "class_ids": [
+      84,
+      84,
+      84
+    ],
+    "boxes": [
+      [
+        627.0700073242188,
+        20.049999237060547,
+        636.1699829101562,
+        102.41000366210938
+      ],
+      [
+        631.6599731445312,
+        26.600000381469727,
+        636.9400024414062,
+        100.83000183105469
+      ],
+      [
+        616.2100219726562,
+        30.350000381469727,
+        628.2000122070312,
+        105.77999877929688
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          633,
+          20,
+          632,
+          21,
+          627,
+          21,
+          627,
+          101,
+          629,
+          101,
+          630,
+          100,
+          631,
+          100,
+          631,
+          27,
+          632,
+          26,
+          633,
+          26,
+          634,
+          25,
+          634,
+          23,
+          635,
+          22,
+          635,
+          20
+        ]
+      ],
+      [
+        [
+          632,
+          27,
+          632,
+          100,
+          633,
+          99,
+          634,
+          99,
+          635,
+          98,
+          636,
+          98,
+          636,
+          54,
+          635,
+          53,
+          635,
+          27
+        ]
+      ],
+      [
+        [
+          619,
+          30,
+          619,
+          35,
+          618,
+          36,
+          618,
+          44,
+          617,
+          45,
+          617,
+          53,
+          616,
+          54,
+          616,
+          60,
+          617,
+          61,
+          617,
+          77,
+          618,
+          78,
+          618,
+          93,
+          619,
+          94,
+          619,
+          105,
+          621,
+          103,
+          622,
+          103,
+          624,
+          101,
+          625,
+          101,
+          627,
+          99,
+          627,
+          32,
+          626,
+          32,
+          625,
+          31,
+          620,
+          31
+        ]
+      ]
+    ]
+  }
+}

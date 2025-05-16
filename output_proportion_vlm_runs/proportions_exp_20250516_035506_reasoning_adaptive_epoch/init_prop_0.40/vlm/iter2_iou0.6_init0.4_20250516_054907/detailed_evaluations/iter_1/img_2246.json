@@ -1,0 +1,70 @@
+{
+  "image_idx": 2246,
+  "approved": true,
+  "vlm_response": "after carefully analyzing the image, i have identified the following objects and their visual characteristics:\n\n1. **flowers**: the image contains a bouquet of pink chrysanthemums with green centers.\n2. **vase**: the flowers are arranged in a green glass vase with a square shape.\n3. **background**: the background is blurred, but it appears to be an indoor setting with furniture.\n\nthe objects listed are visually confirmed. the vase fits the description of a square glass vase, and the flowers are clearly identifiable. there are no significant background elements that detract from the main subject, which is the bouquet of flowers.\n\nthe visual masks are:\n\n1. **flowers**: well-defined with distinct petals and centers.\n2. **vase**: clearly defined with a square shape and green color.\n3. **background**: blurred, but identifiable as an indoor setting.\n\nno objects are detected with masks, and there are no significant errors in the detections.\n\n*yes*",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "book"
+    ],
+    "class_ids": [
+      84
+    ],
+    "boxes": [
+      [
+        139.41000366210938,
+        30.489999771118164,
+        169.9499969482422,
+        69.2699966430664
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          167,
+          30,
+          166,
+          31,
+          143,
+          31,
+          142,
+          32,
+          141,
+          32,
+          141,
+          39,
+          140,
+          40,
+          140,
+          65,
+          139,
+          66,
+          139,
+          68,
+          152,
+          68,
+          153,
+          67,
+          158,
+          67,
+          159,
+          66,
+          164,
+          66,
+          165,
+          65,
+          169,
+          65,
+          169,
+          30
+        ]
+      ]
+    ]
+  }
+}

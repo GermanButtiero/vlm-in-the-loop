@@ -1,0 +1,86 @@
+{
+  "image_idx": 527,
+  "approved": true,
+  "vlm_response": "after carefully examining the image, i have visually identified the objects as follows:\n\n1. **stop sign**: yes, it is correctly detected with a high iou (\u2265 60%) and fits the shape and position.\n2. **roadwork sign**: yes, it is correctly detected with a high iou.\n3. **road signs**: yes, they are correctly detected with a high iou.\n4. **road**: yes, it is correctly detected with a high iou.\n5. **vermont 106**: yes, it is correctly detected with a high iou.\n6. **west**: yes, it is correctly detected with a high iou.\n7. **rutland**: yes, it is correctly detected with a high iou.\n8. **american flag**: yes, it is correctly detected with a high iou.\n9. **buildings**: yes, they are correctly detected with a high iou.\n10. **people**: yes, they are correctly detected with a high iou.\n\nno objects are detected with errors, and all masks are good. therefore, the output is:\n\n* **yes**",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        315.1499938964844,
+        186.25999450683594,
+        379.8900146484375,
+        259.9800109863281
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          354,
+          186,
+          353,
+          187,
+          335,
+          187,
+          315,
+          207,
+          315,
+          239,
+          317,
+          241,
+          317,
+          242,
+          322,
+          247,
+          322,
+          248,
+          326,
+          252,
+          326,
+          253,
+          330,
+          257,
+          330,
+          258,
+          331,
+          259,
+          359,
+          259,
+          362,
+          256,
+          362,
+          255,
+          372,
+          245,
+          372,
+          244,
+          379,
+          237,
+          379,
+          225,
+          378,
+          224,
+          378,
+          204,
+          371,
+          197,
+          371,
+          196,
+          361,
+          186
+        ]
+      ]
+    ]
+  }
+}

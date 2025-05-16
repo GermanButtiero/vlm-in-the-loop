@@ -1,0 +1,90 @@
+{
+  "image_idx": 2557,
+  "approved": true,
+  "vlm_response": "after carefully examining the image, i have identified the following objects visually:\n\n1. **chinese signage**: the red, blue, and green characters on the sign are clearly visible and well-defined.\n2. **restaurant sign**: the white sign with red and black text advertising a restaurant is also clearly visible.\n3. **lamp post**: the ornate lamp post with a dragon figure is identifiable.\n4. **restaurant name**: the sign reading \"grand palace restaurant\" is legible.\n5. **digital photo center**: the sign advertising a digital photo center is visible.\n6. **other signs**: there are other signs, including a green awning and a blue sign with chinese characters, but they are not clearly visible.\n\nthe objects listed are all correctly detected and fit within the specified criteria. there are no missing objects, wrong classes, poor masks, or extra masks/ false positives.\n\n*yes*",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        389.1099853515625,
+        599.4500122070312,
+        451.70001220703125,
+        640.0
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          437,
+          599,
+          436,
+          600,
+          423,
+          600,
+          422,
+          601,
+          410,
+          601,
+          409,
+          602,
+          396,
+          602,
+          395,
+          603,
+          389,
+          603,
+          389,
+          611,
+          390,
+          612,
+          390,
+          639,
+          451,
+          639,
+          451,
+          624,
+          450,
+          623,
+          450,
+          608,
+          449,
+          607,
+          449,
+          605,
+          448,
+          604,
+          448,
+          603,
+          447,
+          603,
+          446,
+          602,
+          445,
+          602,
+          444,
+          601,
+          442,
+          601,
+          441,
+          600,
+          439,
+          600,
+          438,
+          599
+        ]
+      ]
+    ]
+  }
+}

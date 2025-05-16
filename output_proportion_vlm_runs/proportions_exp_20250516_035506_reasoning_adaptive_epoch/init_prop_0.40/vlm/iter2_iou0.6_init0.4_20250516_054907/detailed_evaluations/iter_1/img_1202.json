@@ -1,0 +1,68 @@
+{
+  "image_idx": 1202,
+  "approved": true,
+  "vlm_response": "after carefully examining the image, i have visually identified the objects as follows:\n\n1. **truck**: yes, the truck is clearly visible with its back open.\n2. **men**: yes, two men are present inside the truck.\n3. **boxes**: yes, there are multiple boxes inside the truck.\n4. **jacket**: yes, the man in the red vest is wearing a jacket.\n5. **trash bin**: yes, there is a trash bin on the left side of the image.\n6. **signs**: yes, there are traffic signs visible in the background.\n7. **car**: yes, a car is parked in the foreground.\n\nthe objects are correctly detected, and the masks are good. there are no errors in the visual data.\n\n*yes*",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        82.5999984741211,
+        175.1999969482422,
+        110.30000305175781,
+        201.9600067138672
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          83,
+          175,
+          83,
+          200,
+          94,
+          200,
+          95,
+          201,
+          101,
+          201,
+          102,
+          200,
+          103,
+          200,
+          105,
+          198,
+          106,
+          198,
+          107,
+          197,
+          107,
+          196,
+          108,
+          195,
+          108,
+          186,
+          109,
+          185,
+          109,
+          176,
+          93,
+          176,
+          92,
+          175
+        ]
+      ]
+    ]
+  }
+}

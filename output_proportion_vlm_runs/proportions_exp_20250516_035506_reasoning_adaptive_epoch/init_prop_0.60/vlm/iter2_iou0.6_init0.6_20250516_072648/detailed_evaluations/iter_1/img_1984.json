@@ -1,0 +1,66 @@
+{
+  "image_idx": 1984,
+  "approved": true,
+  "vlm_response": "after carefully examining the image, i have visually identified the objects and their corresponding masks. the objects detected are a bench and a snack box. the bench is clearly visible with its wooden slats and metal support. the snack box is placed on the bench, fitting the orange mask with a red border. the background is minimal, with no significant objects or spill-over. the mask fits well, and there are no errors in object detection.\n\n*yes*\n\nthe objects have been correctly detected, and the masks are good. there are no missing objects, wrong classes, or false positives.",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "book"
+    ],
+    "class_ids": [
+      84
+    ],
+    "boxes": [
+      [
+        276.1700134277344,
+        186.13999938964844,
+        324.3299865722656,
+        226.5500030517578
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          299,
+          186,
+          298,
+          187,
+          276,
+          187,
+          276,
+          226,
+          277,
+          226,
+          278,
+          225,
+          299,
+          225,
+          300,
+          224,
+          321,
+          224,
+          322,
+          223,
+          323,
+          223,
+          323,
+          212,
+          322,
+          211,
+          322,
+          198,
+          321,
+          197,
+          321,
+          186
+        ]
+      ]
+    ]
+  }
+}

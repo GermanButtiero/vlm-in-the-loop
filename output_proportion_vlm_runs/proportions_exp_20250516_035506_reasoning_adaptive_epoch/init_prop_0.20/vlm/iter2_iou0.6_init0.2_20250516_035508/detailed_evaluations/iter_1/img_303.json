@@ -1,0 +1,62 @@
+{
+  "image_idx": 303,
+  "approved": true,
+  "vlm_response": "after carefully examining the image, i have identified the following objects and their visual characteristics:\n\n1. **person**: the individual is wearing a striped shirt and blue shorts, and is walking away from the camera.\n2. **do not enter sign**: a red octagonal sign with white text indicating \"do not enter\".\n3. **wrong way sign**: a green square sign with white text indicating \"wrong way\".\n4. **concrete barriers**: concrete barriers along the road, with orange traffic cones.\n5. **background**: greenery, road, and vehicles.\n\nthe model's detections are as follows:\n\n1. **person**: the person is clearly visible and fits the \"do not enter\" and \"wrong way\" signs.\n2. **concrete barriers**: the concrete barriers are well-defined and fit the \"do not enter\" sign.\n3. **wrong way sign**: the \"wrong way\" sign is correctly identified.\n\nno objects are detected with masks, and there are no background or spill-over issues.\n\n*yes*",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        79.1500015258789,
+        97.88999938964844,
+        149.1300048828125,
+        169.00999450683594
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          79,
+          98,
+          79,
+          165,
+          96,
+          165,
+          97,
+          166,
+          116,
+          166,
+          117,
+          167,
+          136,
+          167,
+          137,
+          168,
+          146,
+          168,
+          146,
+          148,
+          147,
+          147,
+          147,
+          118,
+          148,
+          117,
+          148,
+          98
+        ]
+      ]
+    ]
+  }
+}

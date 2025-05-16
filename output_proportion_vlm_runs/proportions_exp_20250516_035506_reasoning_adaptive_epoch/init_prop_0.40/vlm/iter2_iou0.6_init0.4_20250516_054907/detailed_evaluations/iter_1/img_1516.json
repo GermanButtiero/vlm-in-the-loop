@@ -1,0 +1,100 @@
+{
+  "image_idx": 1516,
+  "approved": true,
+  "vlm_response": "after carefully examining the image, i have visually identified the objects listed in the colored masks. the objects detected are:\n\n1. bed\n2. pillows\n3. bedspread\n4. lamp\n5. armchair\n6. tv\n7. clock\n8. alarm clock\n9. dresser\n10. curtains\n11. books\n12. remote control\n\ncomparing these with the model's detections, i find that all objects are correctly identified. the masks do not tightly fit any object, and there are no background elements or spill-over. there are no errors in the detections.\n\n*yes*\n\nthe objects are correctly detected and every mask is good.",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "book"
+    ],
+    "class_ids": [
+      84
+    ],
+    "boxes": [
+      [
+        89.98999786376953,
+        352.7200012207031,
+        155.8800048828125,
+        388.8900146484375
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          135,
+          353,
+          134,
+          354,
+          112,
+          354,
+          111,
+          355,
+          91,
+          355,
+          90,
+          354,
+          90,
+          388,
+          92,
+          388,
+          93,
+          387,
+          101,
+          387,
+          102,
+          386,
+          111,
+          386,
+          112,
+          385,
+          121,
+          385,
+          122,
+          384,
+          131,
+          384,
+          132,
+          383,
+          140,
+          383,
+          141,
+          382,
+          150,
+          382,
+          151,
+          381,
+          155,
+          381,
+          155,
+          380,
+          154,
+          379,
+          154,
+          374,
+          153,
+          373,
+          153,
+          367,
+          152,
+          366,
+          152,
+          361,
+          151,
+          360,
+          151,
+          355,
+          150,
+          354,
+          150,
+          353
+        ]
+      ]
+    ]
+  }
+}

@@ -1,0 +1,136 @@
+{
+  "image_idx": 2358,
+  "approved": true,
+  "vlm_response": "after carefully examining the image, i have identified the following objects and their visual characteristics:\n\n1. **stop sign**: the stop sign is red with white lettering, and it is located to the right of the truck.\n2. **truck**: the truck is black with the name \"garda\" on the back, and it is facing away from the camera.\n3. **taxi**: a yellow taxi is visible in the background, to the left of the truck.\n4. **buildings**: the image features a red brick building with a large advertisement on the left and a tall building in the background.\n5. **trees**: there are small trees planted along the sidewalk.\n6. **road markings**: the road has white lines, and there is a manhole cover on the sidewalk.\n\nthe stop sign fits the criteria of being tightly fitted with the object, and all objects are correctly detected. there are no significant background or spill-over issues.\n\n*yes*",
+  "prediction": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      3
+    ],
+    "scores": [
+      0.9935393929481506
+    ],
+    "boxes": [
+      [
+        397.6876525878906,
+        193.6303253173828,
+        428.4875183105469,
+        223.23507690429688
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          408,
+          194,
+          407,
+          195,
+          406,
+          195,
+          399,
+          202,
+          399,
+          215,
+          401,
+          217,
+          402,
+          217,
+          407,
+          222,
+          420,
+          222,
+          422,
+          220,
+          422,
+          219,
+          424,
+          217,
+          425,
+          217,
+          425,
+          216,
+          426,
+          215,
+          427,
+          215,
+          427,
+          213,
+          428,
+          212,
+          428,
+          205,
+          427,
+          204,
+          427,
+          202,
+          420,
+          195,
+          418,
+          195,
+          417,
+          194
+        ]
+      ]
+    ]
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        398.989990234375,
+        194.1699981689453,
+        428.239990234375,
+        224.27999877929688
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          411,
+          194,
+          410,
+          195,
+          407,
+          195,
+          399,
+          203,
+          399,
+          210,
+          400,
+          211,
+          400,
+          214,
+          401,
+          215,
+          401,
+          216,
+          408,
+          223,
+          418,
+          223,
+          419,
+          222,
+          420,
+          222,
+          423,
+          219,
+          423,
+          218,
+          427,
+          214,
+          427,
+          202,
+          419,
+          194
+        ]
+      ]
+    ]
+  }
+}

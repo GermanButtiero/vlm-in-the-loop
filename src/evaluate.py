@@ -4,6 +4,18 @@ import torchvision.ops as ops
 import numpy as np
 
 def evaluate(model, data_loader, device):
+    """
+    Evaluate the model on the validation set and return the average loss.
+    
+    Args:
+        model: The model to evaluate
+        data_loader: Validation data loader
+        device: Device to evaluate on
+        
+    Returns:
+        Average validation loss
+    """
+    model.eval()
     total_loss = 0
     
     with torch.no_grad():
@@ -11,12 +23,18 @@ def evaluate(model, data_loader, device):
             images = list(image.to(device) for image in images)
             targets = [{k: v.to(device) for k, v in t.items()} for t in targets]
             
+            # For evaluation, we need to set the model to training mode temporarily
+            # to get the loss dictionary, then switch back to eval mode
+            model.train()
             loss_dict = model(images, targets)
+            model.eval()
+            
+            # Sum up all losses
             losses = sum(loss for loss in loss_dict.values())
             total_loss += losses.item()
     
-    print(f"Validation loss: {total_loss/len(data_loader):.4f}")
-    return total_loss/len(data_loader)
+    # Calculate average validation loss
+    return total_loss / len(data_loader)
 
 
 
@@ -52,9 +70,19 @@ def calculate_ap(model, data_loader, device, iou_threshold=0.5):
                 all_pred_scores.append(output['scores'].cpu())
                 all_pred_masks.append(output['masks'].cpu() > 0.5)  # Threshold at 0.5
     
+    # Detect model type and get class range accordingly
+    if hasattr(model, 'roi_heads'):
+        # MaskRCNN model
+        num_classes = model.roi_heads.box_predictor.cls_score.out_features
+    else:
+        # YOLOv8 model
+        num_classes = model.num_classes + 1  # Add 1 because YOLOv8 doesn't count background
+    
     # Calculate AP for each class
     ap_per_class = {}
-    for class_id in range(1, model.roi_heads.box_predictor.cls_score.out_features):  # Skip background (0)
+    
+    # Process each class (skip background class 0)
+    for class_id in range(1, num_classes):
         true_positives = 0
         false_positives = 0
         total_gt = 0

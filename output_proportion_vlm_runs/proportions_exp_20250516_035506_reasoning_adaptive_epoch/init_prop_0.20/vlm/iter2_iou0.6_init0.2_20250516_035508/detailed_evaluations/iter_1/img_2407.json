@@ -1,0 +1,84 @@
+{
+  "image_idx": 2407,
+  "approved": true,
+  "vlm_response": "after carefully examining the image, i have visually identified several objects that match the colors of the masks. the objects include kites, a green octopus-like figure, and other shapes. the kites are scattered across the sky, and the octopus-like figure is prominently visible. the other shapes are less distinct but can be identified as other kites or objects. the background includes a few cars and a building, but these are not the focus of the image. the objects are correctly detected, and the masks are good in fitting them. there are no errors in the detection process.\n\n*yes*",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        559.5499877929688,
+        256.1199951171875,
+        599.6400146484375,
+        296.6400146484375
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          584,
+          256,
+          583,
+          257,
+          574,
+          257,
+          573,
+          258,
+          570,
+          258,
+          560,
+          268,
+          560,
+          285,
+          562,
+          287,
+          563,
+          287,
+          572,
+          296,
+          575,
+          296,
+          576,
+          295,
+          588,
+          295,
+          591,
+          292,
+          591,
+          291,
+          597,
+          285,
+          597,
+          284,
+          599,
+          282,
+          598,
+          281,
+          598,
+          268,
+          597,
+          267,
+          597,
+          266,
+          590,
+          259,
+          589,
+          259,
+          586,
+          256
+        ]
+      ]
+    ]
+  }
+}

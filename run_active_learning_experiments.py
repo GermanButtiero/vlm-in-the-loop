@@ -94,7 +94,7 @@ if __name__ == "__main__":
     parser.add_argument("--proportions", type=float, nargs='+', default=[0.2, 0.4, 0.6, 0.8], help="List of initial training proportions.")
     parser.add_argument("--iterations", type=int, default=5, help="Number of active learning iterations per experiment.") # Reduced default for faster testing
     parser.add_argument("--vlm", action="store_true", default=False, help="Use VLM for feedback instead of IoU.")
-    parser.add_argument("--vlm-model", type=str, default="AIDC-AI/Ovis2-8B", help="VLM model name or path.")
+    parser.add_argument("--vlm-model", type=str, default="AIDC-AI/Ovis2-1B", help="VLM model name or path.")
     parser.add_argument("--iou-threshold", type=float, default=0.6, help="IoU threshold for non-VLM active learning.")
     parser.add_argument("--output-root", type=str, default="output_experiments", help="Root directory for saving experiment results.")
 
@@ -119,3 +119,5 @@ if __name__ == "__main__":
         iou_threshold=args.iou_threshold,
         output_root=args.output_root
     )
+    
+    #python run_active_learning_experiments.py --vlm --iterations=2 --proportions 0.2 0.4 0.6 0.8 --output-root output_proportion_vlm_runs --vlm-model "AIDC-AI/Ovis2-1B"

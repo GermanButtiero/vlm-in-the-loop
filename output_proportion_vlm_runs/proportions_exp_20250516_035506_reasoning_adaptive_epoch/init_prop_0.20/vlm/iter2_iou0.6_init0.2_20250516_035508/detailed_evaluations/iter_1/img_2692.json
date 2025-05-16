@@ -1,0 +1,98 @@
+{
+  "image_idx": 2692,
+  "approved": true,
+  "vlm_response": "after carefully examining the image, i have identified the following objects and their visual characteristics:\n\n1. **cars**: multiple cars are visible, with their taillights and rear lights illuminated.\n2. **tractor**: a construction vehicle is present, identifiable by its size and shape.\n3. **traffic lights**: several traffic lights are visible, showing red lights.\n4. **signage**: a \"stop here on red\" sign is present.\n5. **background**: the background consists of trees and a road.\n\nthe visual mask does not tightly fit any object, and there are no significant background elements or spill-over. the objects are correctly detected, and the masks are good.\n\n*yes*",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        395.94000244140625,
+        97.93000030517578,
+        422.9200134277344,
+        135.32000732421875
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          400,
+          98,
+          400,
+          103,
+          399,
+          104,
+          399,
+          111,
+          398,
+          112,
+          398,
+          119,
+          397,
+          120,
+          397,
+          127,
+          396,
+          128,
+          396,
+          131,
+          398,
+          131,
+          399,
+          132,
+          405,
+          132,
+          406,
+          133,
+          412,
+          133,
+          413,
+          134,
+          418,
+          134,
+          418,
+          128,
+          419,
+          127,
+          419,
+          120,
+          420,
+          119,
+          420,
+          113,
+          421,
+          112,
+          421,
+          105,
+          422,
+          104,
+          422,
+          101,
+          419,
+          101,
+          418,
+          100,
+          412,
+          100,
+          411,
+          99,
+          404,
+          99,
+          403,
+          98
+        ]
+      ]
+    ]
+  }
+}

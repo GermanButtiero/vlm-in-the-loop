@@ -1,0 +1,46 @@
+{
+  "image_idx": 91,
+  "approved": false,
+  "vlm_response": "after carefully examining the image, i have visually identified the objects in the colored masks. the objects detected are:\n\n1. a person wearing a blue shirt and red shorts.\n2. a person wearing a black shirt and shorts.\n3. a person wearing a blue shirt and gray shorts.\n4. a person wearing a black shirt and shorts.\n5. a person wearing a white shirt and red shorts.\n6. a person wearing a pink shirt and gray shorts.\n7. a person wearing a purple shirt and shorts.\n8. a person wearing a yellow shirt and shorts.\n9. a person wearing a white shirt and shorts.\n10. a person wearing a blue shirt and shorts.\n11. a person wearing a black shirt and shorts.\n12. a person wearing a white shirt and shorts.\n13. a person wearing a blue shirt and shorts.\n14. a person wearing a purple shirt and shorts.\n15. a person wearing a white shirt and shorts.\n16. a person wearing a blue shirt and shorts.\n17. a person wearing a black shirt and shorts.\n18. a person wearing a white shirt and shorts.\n19. a person wearing a blue shirt and shorts.\n20. a person wearing a black shirt and shorts",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        606.8300170898438,
+        160.6699981689453,
+        639.8300170898438,
+        192.8300018310547
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          607,
+          161,
+          607,
+          188,
+          608,
+          189,
+          608,
+          192,
+          639,
+          192,
+          639,
+          161
+        ]
+      ]
+    ]
+  }
+}

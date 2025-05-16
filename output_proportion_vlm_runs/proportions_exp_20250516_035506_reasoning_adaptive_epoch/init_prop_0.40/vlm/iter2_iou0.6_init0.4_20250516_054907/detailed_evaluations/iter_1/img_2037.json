@@ -1,0 +1,82 @@
+{
+  "image_idx": 2037,
+  "approved": false,
+  "vlm_response": "after carefully examining the image, i have identified the following objects and their visual characteristics:\n\n1. **subway shuttle bus**: the bus is blue and white, with the destination \"subway shuttle\" displayed on the front. it has a windshield, headlights, and a route number visible.\n2. **cars**: there are several cars on the left side of the street, including a black sedan and a dark-colored suv. their features are visible, such as the rearview mirrors and windows.\n3. **traffic signs**: there are two traffic signs: a red circle with a slash and a green circle with a checkmark. the red circle indicates a no-entry zone, and the green circle indicates a green light.\n4. **buildings**: the background features several multi-story buildings, some with visible signage and others with no. the architecture suggests an urban setting.\n5. **street elements**: a utility pole, a pedestrian crossing sign, and a person standing on the sidewalk are also visible.\n\n**internal reasoning**:\n\n- **objects identified**: subway shuttle bus, cars, traffic signs, buildings.\n- **mask fit**: all objects are correctly detected, and the masks are good.\n- **no errors**: there are no missing objects, wrong classes, or poor masks",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        82.77999877929688,
+        187.39999389648438,
+        117.55999755859375,
+        221.32000732421875
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          93,
+          187,
+          89,
+          191,
+          88,
+          191,
+          83,
+          196,
+          83,
+          211,
+          88,
+          216,
+          89,
+          216,
+          90,
+          217,
+          101,
+          217,
+          102,
+          218,
+          102,
+          220,
+          107,
+          220,
+          111,
+          216,
+          112,
+          216,
+          115,
+          213,
+          115,
+          212,
+          116,
+          211,
+          116,
+          199,
+          117,
+          198,
+          111,
+          192,
+          110,
+          192,
+          106,
+          188,
+          100,
+          188,
+          99,
+          187
+        ]
+      ]
+    ]
+  }
+}

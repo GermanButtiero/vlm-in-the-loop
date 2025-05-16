@@ -1,0 +1,92 @@
+{
+  "image_idx": 883,
+  "approved": true,
+  "vlm_response": "after carefully examining the image, i have visually identified the objects and their corresponding masks. the objects detected are:\n\n1. a bicycle (left side, mounted on the wall)\n2. a white armchair (near the window)\n3. a wooden dining table (center of the room)\n4. a white sofa (to the right of the armchair)\n5. a bookshelf (back wall)\n6. a striped rug (in front of the table)\n7. small candles on the table\n8. a bicycle helmet (on the table)\n\nthe masks that fit the objects are:\n\n1. bicycle (close to the wall)\n2. armchair (near the window)\n3. sofa (to the right of the armchair)\n4. bookshelf (back wall)\n5. rug (in front of the table)\n6. helmet (on the table)\n7. candles (on the table)\n\nthe masks that do not fit the objects are:\n\n1. white bicycle (not on the wall)\n2. white sofa (not to the right of the armchair)\n3. bicycle helmet (not on the table)\n\nthere are no errors in the mask detections. therefore, the output is:\n\n* **yes**",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "book"
+    ],
+    "class_ids": [
+      84
+    ],
+    "boxes": [
+      [
+        290.489990234375,
+        67.33999633789062,
+        336.54998779296875,
+        83.86000061035156
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          322,
+          67,
+          321,
+          68,
+          316,
+          68,
+          315,
+          69,
+          314,
+          69,
+          313,
+          70,
+          312,
+          70,
+          311,
+          71,
+          310,
+          70,
+          303,
+          70,
+          302,
+          69,
+          292,
+          69,
+          291,
+          70,
+          290,
+          70,
+          290,
+          75,
+          291,
+          76,
+          291,
+          82,
+          322,
+          82,
+          323,
+          83,
+          336,
+          83,
+          336,
+          71,
+          335,
+          71,
+          334,
+          70,
+          333,
+          70,
+          332,
+          69,
+          330,
+          69,
+          329,
+          68,
+          326,
+          68,
+          325,
+          67
+        ]
+      ]
+    ]
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "image_idx": 1547,
+  "approved": true,
+  "vlm_response": "after carefully examining the image, i have visually identified the objects and their corresponding masks. the objects detected are:\n\n1. microwave oven\n2. stove\n3. oven\n4. drawers\n5. cabinets\n6. wall socket\n7. bottles\n8. cutting board\n9. kitchen towel\n\nthe masks do not fit the objects as follows:\n- mask 1: does not fit the microwave oven, stove, and oven.\n- mask 2: fits the bottles, cutting board, and kitchen towel.\n- mask 3: fits the cabinets and drawers.\n- mask 4: fits the wall socket.\n- mask 5: fits the wall socket.\n- mask 6: fits the wall socket.\n- mask 7: fits the wall socket.\n- mask 8: fits the wall socket.\n\nthere are no errors in the mask detections. therefore, the output is:\n\n* **yes**",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "book"
+    ],
+    "class_ids": [
+      84
+    ],
+    "boxes": [
+      [
+        419.92999267578125,
+        312.67999267578125,
+        457.8500061035156,
+        358.9800109863281
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          420,
+          313,
+          420,
+          355,
+          425,
+          355,
+          426,
+          356,
+          438,
+          356,
+          439,
+          357,
+          450,
+          357,
+          451,
+          358,
+          456,
+          358,
+          456,
+          348,
+          457,
+          347,
+          457,
+          314,
+          449,
+          314,
+          448,
+          313
+        ]
+      ]
+    ]
+  }
+}

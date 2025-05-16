@@ -1,0 +1,125 @@
+{
+  "image_idx": 1815,
+  "approved": true,
+  "vlm_response": "after carefully examining the image, i have visually identified the objects and their corresponding masks. the objects detected are a bed, a headboard, curtains, a bedside table, a lamp, and a pair of shoes. the masks that fit the objects are:\n\n1. bed (wide, fits the bed)\n2. headboard (wide, fits the headboard)\n3. curtains (wide, fits the curtains)\n4. bedside table (wide, fits the bedside table)\n5. lamp (wide, fits the lamp)\n6. shoes (wide, fits the shoes)\n\nthe masks that do not fit the objects are:\n\n1. the shoes, which do not fit the shape of the shoes.\n2. the lamp, which does not fit the shape of the lamp.\n\nthe objects are correctly detected and every mask is good. therefore, the output is:\n\n* **yes**",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "book"
+    ],
+    "class_ids": [
+      84,
+      84
+    ],
+    "boxes": [
+      [
+        616.239990234375,
+        289.6199951171875,
+        639.75,
+        327.1700134277344
+      ],
+      [
+        616.5599975585938,
+        326.6199951171875,
+        640.0,
+        341.6600036621094
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          621,
+          290,
+          621,
+          292,
+          620,
+          293,
+          620,
+          298,
+          619,
+          299,
+          619,
+          304,
+          618,
+          305,
+          618,
+          310,
+          617,
+          311,
+          617,
+          315,
+          616,
+          316,
+          616,
+          317,
+          617,
+          318,
+          617,
+          319,
+          619,
+          321,
+          619,
+          322,
+          621,
+          324,
+          621,
+          325,
+          626,
+          325,
+          627,
+          326,
+          639,
+          326,
+          639,
+          319,
+          638,
+          318,
+          638,
+          294,
+          637,
+          293,
+          637,
+          291,
+          630,
+          291,
+          629,
+          290
+        ]
+      ],
+      [
+        [
+          617,
+          327,
+          617,
+          338,
+          623,
+          338,
+          624,
+          339,
+          631,
+          339,
+          632,
+          340,
+          638,
+          340,
+          639,
+          341,
+          639,
+          329,
+          638,
+          328,
+          628,
+          328,
+          627,
+          327
+        ]
+      ]
+    ]
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "image_idx": 1257,
+  "approved": true,
+  "vlm_response": "after carefully examining the image, i have identified the following objects:\n\n1. **stop sign**: the stop sign is clearly visible and fits the criteria of being a rectangular shape with a green and orange color scheme.\n2. **railway track**: the railway track is visible and fits the description of metal rails and wooden ties.\n3. **trees and shrubs**: these are present in the background and fit the description of vegetation.\n\nthe stop sign is well-defined and fits the criteria of being a rectangular shape with a green and orange color scheme. the railway track is clearly visible and fits the description of metal rails and wooden ties. the trees and shrubs are present in the background and fit the description of vegetation.\n\nthere are no missing objects, wrong classifications, or extra masks. the stop sign is the only object detected, and it fits the criteria of being a rectangular shape with a green and orange color scheme.\n\n*yes*",
+  "prediction": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      3
+    ],
+    "scores": [
+      0.9911916851997375
+    ],
+    "boxes": [
+      [
+        489.17218017578125,
+        132.2587432861328,
+        526.5674438476562,
+        172.65960693359375
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          500,
+          132,
+          499,
+          133,
+          498,
+          133,
+          497,
+          134,
+          496,
+          134,
+          489,
+          141,
+          489,
+          143,
+          488,
+          144,
+          488,
+          162,
+          489,
+          163,
+          489,
+          164,
+          496,
+          171,
+          497,
+          171,
+          498,
+          172,
+          512,
+          172,
+          513,
+          171,
+          515,
+          171,
+          525,
+          161,
+          525,
+          159,
+          526,
+          158,
+          526,
+          144,
+          525,
+          143,
+          525,
+          141,
+          521,
+          137,
+          520,
+          137,
+          519,
+          136,
+          519,
+          135,
+          516,
+          132
+        ]
+      ]
+    ]
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        486.9800109863281,
+        133.0399932861328,
+        527.3200073242188,
+        172.0
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          502,
+          133,
+          501,
+          134,
+          499,
+          134,
+          488,
+          145,
+          488,
+          154,
+          487,
+          155,
+          487,
+          160,
+          494,
+          167,
+          495,
+          167,
+          499,
+          171,
+          505,
+          171,
+          506,
+          170,
+          513,
+          170,
+          516,
+          167,
+          516,
+          166,
+          522,
+          160,
+          522,
+          159,
+          525,
+          156,
+          525,
+          150,
+          526,
+          149,
+          526,
+          143,
+          524,
+          141,
+          523,
+          141,
+          518,
+          136,
+          517,
+          136,
+          514,
+          133
+        ]
+      ]
+    ]
+  }
+}

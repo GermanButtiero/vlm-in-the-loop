@@ -1,0 +1,180 @@
+{
+  "image_idx": 486,
+  "approved": true,
+  "vlm_response": "after carefully examining the image, i have identified the following objects and their visual characteristics:\n\n1. **stop sign**: located in the center-right of the image, it is a red octagonal sign with white lettering.\n2. **cars**: multiple cars are parked on the left side of the image, including a toyota minivan and a silver van.\n3. **people**: a man in a blue shirt and khaki shorts is walking on the sidewalk, and a child in a red shirt is also visible.\n4. **lanterns**: red lanterns are hanging above the awning, adding to the cultural ambiance.\n5. **awning**: a yellow awning with text in both english and chinese is visible, advertising chinese cuisine.\n\nthe stop sign is well-defined with a high iou (intersection under construction) score, indicating it fits the model's detection criteria. the other objects are also well-defined, with no significant background spill-over or errors.\n\n*yes*",
+  "prediction": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      3
+    ],
+    "scores": [
+      0.9975511431694031
+    ],
+    "boxes": [
+      [
+        407.41314697265625,
+        247.9604034423828,
+        445.3974304199219,
+        294.4602966308594
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          417,
+          249,
+          416,
+          250,
+          415,
+          250,
+          409,
+          256,
+          409,
+          257,
+          408,
+          258,
+          408,
+          264,
+          409,
+          265,
+          409,
+          267,
+          408,
+          268,
+          408,
+          269,
+          409,
+          270,
+          408,
+          271,
+          408,
+          281,
+          412,
+          285,
+          412,
+          286,
+          414,
+          288,
+          414,
+          289,
+          415,
+          289,
+          416,
+          290,
+          419,
+          290,
+          420,
+          291,
+          431,
+          291,
+          432,
+          292,
+          438,
+          286,
+          438,
+          285,
+          439,
+          284,
+          440,
+          284,
+          441,
+          283,
+          441,
+          282,
+          444,
+          279,
+          444,
+          261,
+          438,
+          255,
+          438,
+          254,
+          434,
+          250,
+          433,
+          250,
+          432,
+          249
+        ]
+      ]
+    ]
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        404.1099853515625,
+        250.1300048828125,
+        445.1400146484375,
+        289.5
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          416,
+          250,
+          412,
+          254,
+          411,
+          254,
+          406,
+          259,
+          405,
+          259,
+          404,
+          260,
+          404,
+          278,
+          405,
+          278,
+          413,
+          286,
+          414,
+          286,
+          417,
+          289,
+          418,
+          289,
+          419,
+          288,
+          432,
+          288,
+          433,
+          287,
+          434,
+          287,
+          440,
+          281,
+          441,
+          281,
+          444,
+          278,
+          444,
+          264,
+          442,
+          262,
+          442,
+          261,
+          438,
+          257,
+          438,
+          256,
+          435,
+          253,
+          435,
+          252,
+          433,
+          250
+        ]
+      ]
+    ]
+  }
+}

@@ -1,0 +1,174 @@
+{
+  "image_idx": 1952,
+  "approved": true,
+  "vlm_response": "after carefully examining the image, i have visually identified the objects and their corresponding masks. the stop sign is red with white text, and the yield sign is green with white text. the background is a flat, barren landscape with a distant road. the objects are correctly detected, and the masks fit well with the model's declarations.\n\n* **yes** - all objects are correctly detected and every mask is good.",
+  "prediction": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      3
+    ],
+    "scores": [
+      0.9986911416053772
+    ],
+    "boxes": [
+      [
+        148.66464233398438,
+        229.8419647216797,
+        178.54385375976562,
+        263.2718811035156
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          156,
+          230,
+          155,
+          231,
+          154,
+          231,
+          154,
+          232,
+          153,
+          233,
+          152,
+          233,
+          151,
+          234,
+          151,
+          235,
+          148,
+          238,
+          148,
+          251,
+          149,
+          252,
+          149,
+          253,
+          156,
+          260,
+          160,
+          260,
+          161,
+          261,
+          168,
+          261,
+          169,
+          260,
+          170,
+          260,
+          171,
+          259,
+          172,
+          259,
+          172,
+          258,
+          173,
+          257,
+          174,
+          257,
+          174,
+          256,
+          177,
+          253,
+          177,
+          252,
+          178,
+          251,
+          178,
+          240,
+          177,
+          239,
+          177,
+          238,
+          176,
+          237,
+          176,
+          236,
+          171,
+          231,
+          169,
+          231,
+          168,
+          230
+        ]
+      ]
+    ]
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        146.6199951171875,
+        230.14999389648438,
+        177.89999389648438,
+        263.5
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          168,
+          230,
+          167,
+          231,
+          158,
+          231,
+          157,
+          232,
+          155,
+          232,
+          153,
+          234,
+          152,
+          234,
+          151,
+          235,
+          150,
+          235,
+          148,
+          237,
+          147,
+          237,
+          147,
+          252,
+          156,
+          261,
+          161,
+          261,
+          162,
+          262,
+          167,
+          262,
+          168,
+          263,
+          169,
+          262,
+          169,
+          261,
+          177,
+          253,
+          177,
+          239,
+          176,
+          238,
+          176,
+          237,
+          172,
+          233,
+          172,
+          232,
+          170,
+          230
+        ]
+      ]
+    ]
+  }
+}

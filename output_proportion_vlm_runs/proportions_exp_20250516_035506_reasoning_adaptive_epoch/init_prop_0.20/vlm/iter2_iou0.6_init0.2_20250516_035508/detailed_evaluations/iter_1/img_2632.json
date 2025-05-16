@@ -1,0 +1,66 @@
+{
+  "image_idx": 2632,
+  "approved": true,
+  "vlm_response": "after carefully examining the image, i have visually identified the objects and their corresponding masks. the objects detected are:\n\n1. butterfly (red mask)\n2. framed pictures (multiple masks)\n3. red curtain (red mask)\n4. bed (black mask)\n5. dresser drawers (multiple masks)\n6. clock (black mask)\n7. lampshade (black mask)\n\nthe masks do not tightly fit any of the objects, and there is no background or spill-over. the objects are correctly detected, and the masks are not too large or too small. there are no errors in the detections.\n\n*yes*\n\nthe objects are correctly detected and every mask is good.",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "book"
+    ],
+    "class_ids": [
+      84
+    ],
+    "boxes": [
+      [
+        7.989999771118164,
+        135.99000549316406,
+        64.87000274658203,
+        171.13999938964844
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          10,
+          136,
+          10,
+          155,
+          9,
+          156,
+          9,
+          159,
+          8,
+          160,
+          8,
+          170,
+          64,
+          170,
+          64,
+          148,
+          63,
+          147,
+          63,
+          140,
+          62,
+          139,
+          62,
+          138,
+          46,
+          138,
+          45,
+          137,
+          22,
+          137,
+          21,
+          136
+        ]
+      ]
+    ]
+  }
+}

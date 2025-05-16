@@ -1,0 +1,170 @@
+{
+  "image_idx": 2386,
+  "approved": true,
+  "vlm_response": "after carefully examining the image, i have identified the following objects:\n\n1. **stop sign**: the stop sign is red and octagonal, fitting the criteria of the list.\n2. **shopping carts**: there are three shopping carts in the foreground, fitting the list.\n3. **buildings**: the brick building and the blue-roofed building are present in the background, fitting the list.\n4. **car**: a black car is parked in the background, fitting the list.\n\nthe objects are correctly detected and every mask (stop sign, shopping carts, and buildings) is good. there are no errors in the detections.\n\n*yes*",
+  "prediction": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      3
+    ],
+    "scores": [
+      0.9975390434265137
+    ],
+    "boxes": [
+      [
+        358.3021240234375,
+        135.55722045898438,
+        401.0154113769531,
+        183.7169952392578
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          370,
+          136,
+          369,
+          137,
+          367,
+          137,
+          358,
+          146,
+          358,
+          171,
+          368,
+          181,
+          370,
+          181,
+          371,
+          182,
+          385,
+          182,
+          386,
+          181,
+          387,
+          181,
+          390,
+          178,
+          391,
+          178,
+          393,
+          176,
+          393,
+          175,
+          394,
+          174,
+          395,
+          174,
+          396,
+          173,
+          396,
+          172,
+          398,
+          170,
+          398,
+          169,
+          399,
+          168,
+          399,
+          153,
+          398,
+          152,
+          398,
+          151,
+          397,
+          150,
+          397,
+          149,
+          395,
+          147,
+          395,
+          146,
+          394,
+          145,
+          393,
+          145,
+          392,
+          144,
+          392,
+          143,
+          386,
+          137,
+          374,
+          137,
+          373,
+          136,
+          372,
+          137,
+          371,
+          136
+        ]
+      ]
+    ]
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        355.82000732421875,
+        136.69000244140625,
+        400.2900085449219,
+        184.00999450683594
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          368,
+          137,
+          356,
+          149,
+          356,
+          167,
+          361,
+          172,
+          361,
+          173,
+          369,
+          181,
+          373,
+          181,
+          374,
+          182,
+          380,
+          182,
+          381,
+          183,
+          384,
+          183,
+          386,
+          181,
+          387,
+          181,
+          392,
+          176,
+          393,
+          176,
+          398,
+          171,
+          399,
+          171,
+          399,
+          161,
+          398,
+          160,
+          398,
+          149,
+          386,
+          137
+        ]
+      ]
+    ]
+  }
+}

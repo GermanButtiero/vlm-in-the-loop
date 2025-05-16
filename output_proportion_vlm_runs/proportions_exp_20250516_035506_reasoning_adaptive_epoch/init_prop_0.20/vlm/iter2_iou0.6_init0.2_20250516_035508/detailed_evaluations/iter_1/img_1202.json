@@ -1,0 +1,126 @@
+{
+  "image_idx": 1202,
+  "approved": true,
+  "vlm_response": "after carefully examining the image, i have visually identified the objects as follows:\n\n1. **stop sign**: yes, the stop sign is detected with a high iou (\u2265 60%) and fits the model's description.\n2. **two-way traffic sign**: yes, the two-way traffic sign is detected with a high iou.\n3. **man in green shirt**: yes, the man in the green shirt is detected with a high iou.\n4. **man in red vest**: yes, the man in the red vest is detected with a high iou.\n5. **boxes and bags**: yes, the boxes and bags are detected with a high iou.\n6. **truck**: yes, the truck is detected with a high iou.\n7. **background elements**: yes, the background elements such as buildings and street signs are detected with a high iou.\n\nno objects are detected with errors, and all masks are good. therefore, the output is:\n\n* **yes**",
+  "prediction": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      3
+    ],
+    "scores": [
+      0.9921514987945557
+    ],
+    "boxes": [
+      [
+        83.43737030029297,
+        174.6734161376953,
+        108.9092025756836,
+        202.81455993652344
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          90,
+          175,
+          88,
+          177,
+          87,
+          177,
+          84,
+          180,
+          84,
+          181,
+          83,
+          182,
+          83,
+          194,
+          84,
+          195,
+          84,
+          196,
+          89,
+          201,
+          101,
+          201,
+          102,
+          200,
+          103,
+          200,
+          108,
+          195,
+          108,
+          182,
+          105,
+          179,
+          105,
+          178,
+          103,
+          176,
+          102,
+          176,
+          101,
+          175
+        ]
+      ]
+    ]
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        82.5999984741211,
+        175.1999969482422,
+        110.30000305175781,
+        201.9600067138672
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          83,
+          175,
+          83,
+          200,
+          94,
+          200,
+          95,
+          201,
+          101,
+          201,
+          102,
+          200,
+          103,
+          200,
+          105,
+          198,
+          106,
+          198,
+          107,
+          197,
+          107,
+          196,
+          108,
+          195,
+          108,
+          186,
+          109,
+          185,
+          109,
+          176,
+          93,
+          176,
+          92,
+          175
+        ]
+      ]
+    ]
+  }
+}

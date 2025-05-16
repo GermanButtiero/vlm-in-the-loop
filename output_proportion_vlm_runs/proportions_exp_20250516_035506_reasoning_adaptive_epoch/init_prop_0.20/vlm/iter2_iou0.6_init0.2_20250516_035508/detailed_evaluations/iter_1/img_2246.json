@@ -1,0 +1,70 @@
+{
+  "image_idx": 2246,
+  "approved": true,
+  "vlm_response": "after carefully analyzing the image, i have identified the following objects and their visual characteristics:\n\n1. **flowers**: the image prominently features a bouquet of pink chrysanthemums with green centers.\n2. **vase**: the flowers are arranged in a square green glass vase.\n3. **background**: the background is blurred, but it appears to be an indoor setting with a dark-colored table and a shelf with various items.\n\nthe objects listed are visually confirmed. the vase fits the description of a square green glass vase, and the flowers are clearly identifiable as chrysanthemums. the background is correctly identified as an indoor setting with a dark-colored table and a shelf.\n\nno objects are detected with masks, and there are no significant background elements that spill over the objects. the masks are not too tight, and the objects are correctly classified.\n\n**output:**\n* **yes**",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "book"
+    ],
+    "class_ids": [
+      84
+    ],
+    "boxes": [
+      [
+        139.41000366210938,
+        30.489999771118164,
+        169.9499969482422,
+        69.2699966430664
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          167,
+          30,
+          166,
+          31,
+          143,
+          31,
+          142,
+          32,
+          141,
+          32,
+          141,
+          39,
+          140,
+          40,
+          140,
+          65,
+          139,
+          66,
+          139,
+          68,
+          152,
+          68,
+          153,
+          67,
+          158,
+          67,
+          159,
+          66,
+          164,
+          66,
+          165,
+          65,
+          169,
+          65,
+          169,
+          30
+        ]
+      ]
+    ]
+  }
+}

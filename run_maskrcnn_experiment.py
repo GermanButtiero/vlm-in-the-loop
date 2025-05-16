@@ -6,12 +6,13 @@ from src.train import train_model, get_model_instance_segmentation
 from src.evaluate import calculate_ap
 from main import collate_fn
 import os
+from src.train import train_model, get_segmentation_model
 
 def run_experiment(
     config,
     device,
     train_proportions=[0.2, 0.35, 0.5, 0.65, 0.8],
-    output_json="maskrcnn_experiment_results.json"
+    output_json="segmentation_experiment_results.json"
 ):
     results = {
         "train_proportion": [],
@@ -68,14 +69,19 @@ def run_experiment(
         # Train model
         num_classes = config["num_classes"]
         print("Training model...")
+        use_adaptive = config.get("use_adaptive_epochs", False)
+        epochs_to_use = None if use_adaptive else config["num_epochs"]
         metrics_epoch = train_model(
             train_loader, data_loader_val, num_classes,
-            num_epochs=config["num_epochs"], device=device
+            num_epochs=epochs_to_use, device=device
         )
-
+        model_type = config.get("model_type", "maskrcnn")
+        model_path_key = "model_path"
+        if model_type == "maskrcnn" and "maskrcnn_model_path" in config:
+            model_path_key = "maskrcnn_model_path"
         # Load trained model
-        model = get_model_instance_segmentation(num_classes=num_classes + 1)
-        model.load_state_dict(torch.load(config["model_path"]))
+        model = get_segmentation_model(model_type, num_classes=num_classes + 1)
+        model.load_state_dict(torch.load(config[model_path_key]))
         model.to(device)
         model.eval()
 
@@ -103,7 +109,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Run Mask R-CNN experiments with different train sizes")
     parser.add_argument("--config", type=str, default="config.json", help="Path to config file")
     parser.add_argument("--output", type=str, default="maskrcnn_experiment_results.json", help="Output JSON file")
-    parser.add_argument("--proportions", type=float, nargs="+", default=[0.05, 0.1, 0.2, 0.5, 1.0], help="List of train proportions")
+    parser.add_argument("--proportions", type=float, nargs="+", default=[0.2, 0.35, 0.5, 0.65, 0.8], help="List of train proportions")
     args = parser.parse_args()
 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")

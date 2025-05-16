@@ -1,0 +1,70 @@
+{
+  "image_idx": 2648,
+  "approved": true,
+  "vlm_response": "after carefully examining the image, i have visually identified the objects in the colored masks. the list of objects includes people, a \"do not enter\" sign, and a usps delivery truck. the models' detections match the visual evidence: no objects are detected in the colored masks, and the masks fit well with the objects. there are no errors in the detections. therefore, the output is:\n\n* **yes**",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        147.3000030517578,
+        81.2699966430664,
+        196.27000427246094,
+        151.05999755859375
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          187,
+          81,
+          186,
+          82,
+          169,
+          82,
+          168,
+          83,
+          150,
+          83,
+          149,
+          84,
+          148,
+          84,
+          147,
+          85,
+          147,
+          149,
+          148,
+          149,
+          149,
+          150,
+          176,
+          150,
+          177,
+          149,
+          193,
+          149,
+          195,
+          147,
+          195,
+          82,
+          194,
+          82,
+          193,
+          81
+        ]
+      ]
+    ]
+  }
+}

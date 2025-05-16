@@ -1,0 +1,150 @@
+{
+  "image_idx": 2620,
+  "approved": true,
+  "vlm_response": "after carefully examining the image, i have identified the following objects and their visual characteristics:\n\n1. **stop sign**: the stop sign is red with white lettering, located on the right side of the image.\n2. **man**: the man is wearing a white cap, dark blue shirt, and shorts, and is interacting with the truck's engine.\n3. **truck engine**: the truck's engine is open, revealing various components.\n\nthe stop sign is well-defined with a high iou (intersection observer unit) score, indicating it fits the model's detection criteria. the man is also well-defined with a high iou score, fitting the model's detection criteria. the truck engine is clearly visible with good resolution.\n\nthere are no obvious errors in the object detection process. the objects are correctly identified, and the masks fit the model's detections.\n\n*yes*",
+  "prediction": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      3
+    ],
+    "scores": [
+      0.990066409111023
+    ],
+    "boxes": [
+      [
+        608.3157348632812,
+        160.68963623046875,
+        640.0,
+        195.91004943847656
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          622,
+          160,
+          621,
+          161,
+          618,
+          161,
+          609,
+          170,
+          609,
+          183,
+          610,
+          184,
+          610,
+          185,
+          611,
+          186,
+          611,
+          187,
+          618,
+          194,
+          620,
+          194,
+          621,
+          195,
+          631,
+          195,
+          632,
+          194,
+          633,
+          194,
+          634,
+          193,
+          635,
+          193,
+          639,
+          189,
+          639,
+          165,
+          635,
+          161,
+          632,
+          161,
+          631,
+          160
+        ]
+      ]
+    ]
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        608.4400024414062,
+        159.49000549316406,
+        640.0,
+        195.33999633789062
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          619,
+          159,
+          615,
+          163,
+          615,
+          164,
+          610,
+          169,
+          610,
+          170,
+          609,
+          171,
+          609,
+          182,
+          608,
+          183,
+          608,
+          185,
+          609,
+          184,
+          611,
+          186,
+          611,
+          187,
+          618,
+          194,
+          631,
+          194,
+          632,
+          193,
+          633,
+          193,
+          638,
+          188,
+          638,
+          187,
+          639,
+          186,
+          639,
+          169,
+          638,
+          168,
+          638,
+          167,
+          635,
+          164,
+          635,
+          163,
+          632,
+          160,
+          621,
+          160,
+          620,
+          159
+        ]
+      ]
+    ]
+  }
+}

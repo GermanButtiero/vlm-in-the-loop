@@ -1,0 +1,143 @@
+{
+  "image_idx": 296,
+  "approved": true,
+  "vlm_response": "after carefully examining the image, i have visually identified the objects listed in the colored masks. the objects detected are:\n\n1. **stainless steel range hood** (60% iou)\n2. **stainless steel oven** (60% iou)\n3. **stainless steel dishwasher** (60% iou)\n4. **granite countertops** (60% iou)\n5. **wooden cabinets** (60% iou)\n6. **granite backsplash** (60% iou)\n7. **stainless steel sink** (60% iou)\n8. **stainless steel faucet** (60% iou)\n9. **kitchen utensils** (60% iou)\n10. **paper towel roll** (60% iou)\n11. **window** (60% iou)\n12. **rug** (60% iou)\n\nthe objects are correctly detected and every mask has a good iou. there are no errors, and the masks do not cover the objects adequately. therefore, the output is:\n\n* **yes**",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "book"
+    ],
+    "class_ids": [
+      84,
+      84
+    ],
+    "boxes": [
+      [
+        611.7100219726562,
+        336.80999755859375,
+        628.2999877929688,
+        398.4800109863281
+      ],
+      [
+        627.3499755859375,
+        342.0299987792969,
+        640.0,
+        399.55999755859375
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          618,
+          337,
+          618,
+          342,
+          617,
+          343,
+          617,
+          351,
+          616,
+          352,
+          616,
+          360,
+          615,
+          361,
+          615,
+          369,
+          614,
+          370,
+          614,
+          378,
+          613,
+          379,
+          613,
+          387,
+          612,
+          388,
+          612,
+          394,
+          613,
+          394,
+          616,
+          397,
+          623,
+          397,
+          623,
+          389,
+          624,
+          388,
+          624,
+          376,
+          625,
+          375,
+          625,
+          363,
+          626,
+          362,
+          626,
+          350,
+          627,
+          349,
+          627,
+          338,
+          624,
+          338,
+          623,
+          337
+        ]
+      ],
+      [
+        [
+          632,
+          342,
+          632,
+          351,
+          631,
+          352,
+          631,
+          362,
+          630,
+          363,
+          630,
+          373,
+          629,
+          374,
+          629,
+          384,
+          628,
+          385,
+          628,
+          395,
+          627,
+          396,
+          629,
+          396,
+          630,
+          397,
+          633,
+          397,
+          634,
+          398,
+          638,
+          398,
+          638,
+          371,
+          639,
+          370,
+          639,
+          343,
+          636,
+          343,
+          635,
+          342
+        ]
+      ]
+    ]
+  }
+}

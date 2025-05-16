@@ -1,0 +1,110 @@
+{
+  "image_idx": 798,
+  "approved": true,
+  "vlm_response": "after carefully examining the image, i have identified the following objects:\n\n1. **stop sign**: the stop sign is red with white text, and it is clearly visible.\n2. **road**: the road is paved and curves to the right, bordered by trees and vegetation.\n3. **trees**: the trees are lush and green, with a variety of foliage.\n\nthe stop sign is well-defined and fits within the image, with no significant background spill-over. the road is clearly visible, and the trees are well-defined, with no significant background spill-over.\n\n* **yes** \u2013 all objects are correctly detected and every mask is good.",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        113.88999938964844,
+        241.88999938964844,
+        165.39999389648438,
+        295.1499938964844
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          129,
+          242,
+          127,
+          244,
+          126,
+          244,
+          118,
+          252,
+          117,
+          252,
+          116,
+          253,
+          116,
+          255,
+          115,
+          256,
+          115,
+          269,
+          114,
+          270,
+          114,
+          279,
+          115,
+          280,
+          116,
+          280,
+          119,
+          283,
+          120,
+          283,
+          122,
+          285,
+          123,
+          285,
+          126,
+          288,
+          127,
+          288,
+          130,
+          291,
+          134,
+          291,
+          135,
+          292,
+          140,
+          292,
+          141,
+          293,
+          145,
+          293,
+          146,
+          294,
+          149,
+          294,
+          161,
+          282,
+          161,
+          281,
+          163,
+          279,
+          163,
+          269,
+          164,
+          268,
+          164,
+          256,
+          156,
+          248,
+          156,
+          247,
+          152,
+          243,
+          146,
+          243,
+          145,
+          242
+        ]
+      ]
+    ]
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "image_idx": 2347,
+  "approved": true,
+  "vlm_response": "after carefully examining the image, i have visually identified the objects in the colored masks and compared them with the model's detections. the objects detected are:\n\n1. a blue traffic light.\n2. a green traffic light.\n3. a red stop sign with an arrow.\n\nthe blue and green traffic lights are correctly detected with high precision, and the red stop sign is correctly detected with a high iou (intersection over union) score. there are no missing objects, wrong classifications, or extra masks. the image does not show any spill-over or background elements.\n\n*yes*\n\nthe objects are correctly detected and every mask is good.",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        505.5,
+        123.68000030517578,
+        580.4600219726562,
+        209.35000610351562
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          551,
+          124,
+          550,
+          125,
+          521,
+          125,
+          520,
+          126,
+          506,
+          126,
+          506,
+          208,
+          579,
+          208,
+          579,
+          166,
+          578,
+          165,
+          578,
+          124
+        ]
+      ]
+    ]
+  }
+}

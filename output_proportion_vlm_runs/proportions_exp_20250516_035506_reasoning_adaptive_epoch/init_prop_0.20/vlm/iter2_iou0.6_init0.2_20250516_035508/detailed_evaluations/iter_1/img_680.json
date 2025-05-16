@@ -1,0 +1,174 @@
+{
+  "image_idx": 680,
+  "approved": true,
+  "vlm_response": "after carefully examining the image, i have identified the following objects visually:\n\n1. **fire engine**: the main object, clearly identifiable by its red color, labeled \"engine eleven,\" and the \"pottsville\" branding.\n2. **stop sign**: located on the right side of the image, with a red octagonal shape and white text.\n3. **golf cart**: to the left of the fire engine, with a white body and yellow accents.\n4. **people**: visible in the background, but not the main focus.\n\nthe stop sign is correctly detected with an iou of \u2265 60%, and all objects are correctly identified. there are no missing objects, wrong classes, or false positives.\n\n*yes*\n\nthe objects are correctly detected and every mask is good.",
+  "prediction": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      3
+    ],
+    "scores": [
+      0.9973141551017761
+    ],
+    "boxes": [
+      [
+        605.9641723632812,
+        150.63978576660156,
+        639.98486328125,
+        204.82632446289062
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          618,
+          152,
+          614,
+          156,
+          613,
+          156,
+          611,
+          158,
+          611,
+          159,
+          607,
+          163,
+          607,
+          164,
+          606,
+          165,
+          606,
+          167,
+          605,
+          168,
+          605,
+          186,
+          606,
+          187,
+          606,
+          189,
+          611,
+          194,
+          611,
+          195,
+          616,
+          200,
+          617,
+          200,
+          618,
+          201,
+          619,
+          201,
+          620,
+          202,
+          633,
+          202,
+          637,
+          198,
+          638,
+          198,
+          639,
+          197,
+          639,
+          155,
+          638,
+          154,
+          636,
+          154,
+          635,
+          153,
+          634,
+          153,
+          633,
+          152
+        ]
+      ]
+    ]
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        604.0900268554688,
+        151.13999938964844,
+        640.0,
+        202.92999267578125
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          619,
+          151,
+          617,
+          153,
+          617,
+          154,
+          606,
+          165,
+          606,
+          166,
+          605,
+          167,
+          605,
+          177,
+          604,
+          178,
+          604,
+          184,
+          607,
+          187,
+          607,
+          188,
+          610,
+          191,
+          610,
+          192,
+          612,
+          194,
+          612,
+          195,
+          615,
+          198,
+          615,
+          199,
+          618,
+          202,
+          636,
+          202,
+          637,
+          201,
+          637,
+          200,
+          638,
+          199,
+          638,
+          198,
+          639,
+          197,
+          639,
+          158,
+          638,
+          157,
+          638,
+          156,
+          637,
+          155,
+          637,
+          154,
+          635,
+          152,
+          620,
+          152
+        ]
+      ]
+    ]
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "image_idx": 428,
+  "approved": true,
+  "vlm_response": "after carefully examining the image, i have visually identified the objects listed in the colored masks. the objects detected are:\n\n1. two beds\n2. two lamps\n3. two paintings\n4. a telephone\n5. an alarm clock\n6. a drawer\n7. a telephone on the nightstand\n8. a clock on the nightstand\n\ncomparing these with the model's detections, i find that all objects are correctly detected and every mask fits well. there are no errors, and the masks do not spill over the objects. therefore, the output is:\n\n* **yes**",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "book"
+    ],
+    "class_ids": [
+      84
+    ],
+    "boxes": [
+      [
+        270.82000732421875,
+        308.3800048828125,
+        315.75,
+        341.45001220703125
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          271,
+          308,
+          271,
+          340,
+          287,
+          340,
+          288,
+          339,
+          305,
+          339,
+          306,
+          338,
+          315,
+          338,
+          315,
+          337,
+          314,
+          336,
+          314,
+          333,
+          313,
+          332,
+          313,
+          328,
+          312,
+          327,
+          312,
+          323,
+          311,
+          322,
+          311,
+          318,
+          310,
+          317,
+          310,
+          313,
+          308,
+          311,
+          297,
+          311,
+          296,
+          310,
+          285,
+          310,
+          284,
+          309,
+          273,
+          309,
+          272,
+          308
+        ]
+      ]
+    ]
+  }
+}

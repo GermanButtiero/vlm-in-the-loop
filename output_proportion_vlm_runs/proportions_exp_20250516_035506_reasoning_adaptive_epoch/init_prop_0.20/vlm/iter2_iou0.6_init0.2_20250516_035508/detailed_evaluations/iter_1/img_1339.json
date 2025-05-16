@@ -1,0 +1,92 @@
+{
+  "image_idx": 1339,
+  "approved": true,
+  "vlm_response": "after carefully analyzing the image, i have identified the following objects and their visual characteristics:\n\n1. **pedestrian crossing sign**: the red pedestrian sign is a good match for the color mask.\n2. **man in red jacket**: the man in the red jacket is a good match for the color mask.\n3. **bus**: the bus is a good match for the color mask.\n4. **people**: the people in the image are a good match for the color mask.\n5. **stroller**: the stroller is a good match for the color mask.\n\nthe objects are correctly detected and every mask is good. therefore, the output is:\n\n* **yes**",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "book"
+    ],
+    "class_ids": [
+      84
+    ],
+    "boxes": [
+      [
+        255.10000610351562,
+        283.30999755859375,
+        285.44000244140625,
+        316.1199951171875
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          283,
+          283,
+          282,
+          284,
+          268,
+          284,
+          267,
+          285,
+          255,
+          285,
+          255,
+          287,
+          256,
+          288,
+          256,
+          296,
+          257,
+          297,
+          257,
+          305,
+          258,
+          306,
+          258,
+          314,
+          259,
+          315,
+          263,
+          315,
+          264,
+          314,
+          270,
+          314,
+          271,
+          313,
+          277,
+          313,
+          277,
+          304,
+          278,
+          303,
+          278,
+          302,
+          280,
+          300,
+          280,
+          299,
+          281,
+          298,
+          281,
+          297,
+          283,
+          295,
+          283,
+          293,
+          284,
+          292,
+          284,
+          283
+        ]
+      ]
+    ]
+  }
+}

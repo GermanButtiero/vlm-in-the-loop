@@ -1,7 +1,7 @@
 import json
 import torch
 from src.dataset import CocoSegmentationDatasetMRCNN
-from src.train import train_model, get_model_instance_segmentation
+from src.train import train_model, get_model_instance_segmentation, get_segmentation_model
 from src.evaluate import calculate_ap
 import argparse
 from zipfile import ZipFile
@@ -368,20 +368,32 @@ def run_active_learning(
 
         # Use the fixed validation set for early stopping/model selection
         data_loader_val = fixed_val_loader
-        
+        # Get model type from config
+        model_type = config.get("model_type", "maskrcnn")
         # Train model
         print("Training model...")
         num_classes = config["num_classes"]
         #train_model(data_loader_train, data_loader_val, num_classes, 
                   #num_epochs=config["num_epochs"], device=device)
-        metrics_epoch = train_model(data_loader_train, data_loader_val, num_classes, 
-                           num_epochs=config["num_epochs"], device=device)
+        use_adaptive = config.get("use_adaptive_epochs", False)
+        epochs_to_use = None if use_adaptive else config["num_epochs"]
+        metrics_epoch = train_model(
+            data_loader_train, data_loader_val, num_classes, 
+            num_epochs=epochs_to_use, device=device,
+            model_type=model_type,
+            yolo_img_size=config.get("yolo_img_size", 640)
+        )
         metrics_log.setdefault("train_loss_per_epoch", []).append(metrics_epoch["train_loss"])
         metrics_log.setdefault("val_loss_per_epoch", []).append(metrics_epoch["val_loss"])
         metrics_log.setdefault("train_map_per_epoch", []).append(metrics_epoch["train_map"])
         metrics_log.setdefault("val_map_per_epoch", []).append(metrics_epoch["val_map"])
         # Load trained model
-        model = get_model_instance_segmentation(num_classes=num_classes + 1)  # +1 for background
+        model = get_segmentation_model(model_type, num_classes=num_classes + 1)
+        
+        # Get appropriate model path based on model type
+        model_path = config["model_path"]
+        if model_type == "maskrcnn" and "maskrcnn_model_path" in config:
+            model_path = config["maskrcnn_model_path"]
         model.load_state_dict(torch.load(config["model_path"]))
         model.to(device)
         model.eval()
@@ -527,7 +539,7 @@ def run_active_learning(
                     
                     gt_class_names_str = ", ".join(gt_class_names)
                     
-                    prompt = f"""
+                    """prompt = f
             Examine this image showing object segmentation masks.
             The colored areas represent the computer's identification of objects in the image.
             
@@ -537,6 +549,24 @@ def run_active_learning(
             - Begin with "yes" if both the object classes and segmentation masks are accurate
             - Begin with "no" followed by an explanation if any objects are misclassified or poorly segmented
             """
+                    prompt=f"""You are an expert quality-controller for instance-segmentation.
+
+                **Your task (think step-by-step in your head):**
+                1. **List objects you *visually* see** in the coloured masks.  
+                2. **Compare** that list with the model’s declared detections: {pred_class_names_str}  
+                3. **For every detected object**, judge whether the coloured mask tightly fits the object  
+                (≈ ≥ 60 % IoU, little background or spill-over).  
+                4. **Check for errors**:  
+                • missing objects • wrong class • poor masks • extra masks / false positives.  
+
+                After you have finished your internal reasoning, **output only one line**:
+
+                * **“yes”** – if and only if **all** objects are correctly detected **and** every mask is good.  
+                * **“no – <one-sentence reason>”** – otherwise.
+
+                (Do **not** reveal your private reasoning.)"""
+                    
+                    
                     # Get VLM feedback
                     is_approved, answer = vlm.evaluate_segmentation(vis_img, prompt)
                     print(f"VLM returned: is_approved={is_approved!r}, answer={answer!r}")

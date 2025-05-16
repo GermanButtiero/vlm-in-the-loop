@@ -1,0 +1,108 @@
+{
+  "image_idx": 360,
+  "approved": false,
+  "vlm_response": "after carefully examining the image, i have visually identified the objects and their corresponding masks. the objects detected are a man, a laptop, and a small object on the table. the laptop is green and has a sticker on it. the man is wearing a black shirt. the small object on the table is red and blue. the masks are not well-defined, and there is no clear indication of the objects fitting the masks. therefore, the output is:\n\n*no \u2013 objects are not clearly detected or masks are not good.",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "book"
+    ],
+    "class_ids": [
+      84
+    ],
+    "boxes": [
+      [
+        581.25,
+        335.510009765625,
+        640.0,
+        410.8399963378906
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          621,
+          336,
+          620,
+          337,
+          599,
+          337,
+          598,
+          338,
+          587,
+          338,
+          586,
+          339,
+          585,
+          339,
+          585,
+          341,
+          586,
+          342,
+          586,
+          343,
+          587,
+          344,
+          587,
+          391,
+          581,
+          397,
+          582,
+          398,
+          582,
+          399,
+          583,
+          400,
+          583,
+          401,
+          587,
+          401,
+          588,
+          402,
+          593,
+          402,
+          594,
+          403,
+          600,
+          403,
+          601,
+          404,
+          606,
+          404,
+          607,
+          405,
+          612,
+          405,
+          613,
+          406,
+          618,
+          406,
+          619,
+          407,
+          625,
+          407,
+          626,
+          408,
+          631,
+          408,
+          632,
+          409,
+          637,
+          409,
+          638,
+          410,
+          639,
+          410,
+          639,
+          336
+        ]
+      ]
+    ]
+  }
+}

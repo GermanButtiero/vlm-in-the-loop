@@ -1,0 +1,86 @@
+{
+  "image_idx": 1107,
+  "approved": true,
+  "vlm_response": "after carefully examining the image, i have visually identified the objects as follows:\n\n1. **girl**: visible in the foreground.\n2. **teddy bear**: green, sitting to the left of the girl.\n3. **pink bag**: to the right of the girl.\n4. **book**: in the bottom right corner.\n\nthe objects are correctly detected, and the masks fit well. there are no significant errors in the mask detections.\n\n*yes*\n\nthe objects are correctly detected and every mask is good.",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "book"
+    ],
+    "class_ids": [
+      84
+    ],
+    "boxes": [
+      [
+        599.989990234375,
+        541.1099853515625,
+        639.72998046875,
+        582.2999877929688
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          615,
+          541,
+          614,
+          542,
+          607,
+          542,
+          607,
+          546,
+          606,
+          547,
+          606,
+          552,
+          605,
+          553,
+          605,
+          557,
+          604,
+          558,
+          604,
+          561,
+          603,
+          562,
+          603,
+          566,
+          602,
+          567,
+          602,
+          570,
+          601,
+          571,
+          601,
+          574,
+          600,
+          575,
+          600,
+          577,
+          601,
+          577,
+          603,
+          579,
+          604,
+          579,
+          606,
+          581,
+          639,
+          581,
+          639,
+          551,
+          638,
+          550,
+          638,
+          541
+        ]
+      ]
+    ]
+  }
+}

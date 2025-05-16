@@ -1,0 +1,100 @@
+{
+  "image_idx": 1516,
+  "approved": true,
+  "vlm_response": "after carefully examining the image, i have visually identified the objects as follows:\n\n1. **bed**: the bed is the central object, with a white duvet and pillows.\n2. **armchairs**: two dark-colored armchairs with decorative pillows.\n3. **lamp**: a floor lamp with a white lampshade.\n4. **tv**: a black television on a wooden dresser.\n5. **clocks**: two alarm clocks, one green and one red.\n6. **curtains**: golden curtains covering the windows.\n7. **dresser**: a wooden dresser with multiple drawers.\n8. **tv on dresser**: a black television on top of the dresser.\n\nthe objects are correctly detected and every mask (labeled as 'yes') fits the object. there are no errors in the mask detections.\n\n*yes*",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "book"
+    ],
+    "class_ids": [
+      84
+    ],
+    "boxes": [
+      [
+        89.98999786376953,
+        352.7200012207031,
+        155.8800048828125,
+        388.8900146484375
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          135,
+          353,
+          134,
+          354,
+          112,
+          354,
+          111,
+          355,
+          91,
+          355,
+          90,
+          354,
+          90,
+          388,
+          92,
+          388,
+          93,
+          387,
+          101,
+          387,
+          102,
+          386,
+          111,
+          386,
+          112,
+          385,
+          121,
+          385,
+          122,
+          384,
+          131,
+          384,
+          132,
+          383,
+          140,
+          383,
+          141,
+          382,
+          150,
+          382,
+          151,
+          381,
+          155,
+          381,
+          155,
+          380,
+          154,
+          379,
+          154,
+          374,
+          153,
+          373,
+          153,
+          367,
+          152,
+          366,
+          152,
+          361,
+          151,
+          360,
+          151,
+          355,
+          150,
+          354,
+          150,
+          353
+        ]
+      ]
+    ]
+  }
+}

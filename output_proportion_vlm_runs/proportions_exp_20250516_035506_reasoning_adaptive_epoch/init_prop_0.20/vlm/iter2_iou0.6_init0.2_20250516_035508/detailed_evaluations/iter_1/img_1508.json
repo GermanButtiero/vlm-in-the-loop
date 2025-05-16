@@ -1,0 +1,58 @@
+{
+  "image_idx": 1508,
+  "approved": true,
+  "vlm_response": "after carefully examining the image, i have identified the following objects:\n\n1. **stop sign**: the stop sign is clearly visible and fits the criteria of being a \"yes\" object with a high iou (\u2265 60%).\n2. **railway track**: the railway track is visible and fits the criteria of being a \"yes\" object with a high iou.\n3. **background elements**: the background elements such as the houses, power lines, and sky are not clearly visible and are not considered for detection.\n\nthe objects are correctly detected and every mask is good. therefore, the output is:\n\n* **yes**",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        83.27999877929688,
+        240.50999450683594,
+        110.91000366210938,
+        280.70001220703125
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          107,
+          241,
+          106,
+          242,
+          85,
+          242,
+          85,
+          244,
+          84,
+          245,
+          84,
+          271,
+          83,
+          272,
+          83,
+          280,
+          109,
+          280,
+          109,
+          274,
+          110,
+          273,
+          110,
+          241
+        ]
+      ]
+    ]
+  }
+}

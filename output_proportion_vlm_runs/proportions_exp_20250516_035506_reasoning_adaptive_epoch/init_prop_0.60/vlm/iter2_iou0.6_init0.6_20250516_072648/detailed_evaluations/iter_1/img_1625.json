@@ -1,0 +1,80 @@
+{
+  "image_idx": 1625,
+  "approved": true,
+  "vlm_response": "after carefully examining the image, i have visually identified the objects as follows:\n\n1. **stop sign**: yes, it is correctly detected with a high iou (\u2265 60%).\n2. **person**: yes, the person is correctly detected with a high iou.\n3. **pole**: yes, the pole is correctly detected with a high iou.\n4. **backpack**: yes, the backpack is correctly detected with a high iou.\n5. **fire hydrant**: yes, the fire hydrant is correctly detected with a high iou.\n6. **car**: yes, the car is correctly detected with a high iou.\n7. **truck**: yes, the truck is correctly detected with a high iou.\n8. **buildings**: yes, the buildings are correctly detected with a high iou.\n9. **street signs**: yes, the street signs are correctly detected with a high iou.\n10. **street elements**: yes, the street elements are correctly detected with a high iou.\n\nno objects are detected with incorrect masks, and there are no background or spill-over issues. therefore, the output is:\n\n* **yes**",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        1.840000033378601,
+        177.75999450683594,
+        44.380001068115234,
+        221.5399932861328
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          14,
+          178,
+          13,
+          179,
+          11,
+          179,
+          10,
+          180,
+          10,
+          181,
+          2,
+          189,
+          2,
+          208,
+          14,
+          220,
+          25,
+          220,
+          26,
+          219,
+          31,
+          219,
+          32,
+          218,
+          33,
+          218,
+          33,
+          217,
+          42,
+          208,
+          42,
+          207,
+          43,
+          206,
+          43,
+          188,
+          40,
+          185,
+          39,
+          185,
+          34,
+          180,
+          33,
+          180,
+          31,
+          178
+        ]
+      ]
+    ]
+  }
+}
