@@ -1,0 +1,66 @@
+{
+  "image_idx": 1984,
+  "approved": false,
+  "vlm_response": "the image shows a wooden bench with a yellow sign on it. the computer's detection of \"no objects\" is inaccurate. the correct object classes should include a bench and a sign. the segmentation masks should highlight the bench and the sign, but they are not present in the image. therefore, the answer is:\n\nno, the computer detected no objects, but there is a bench and a sign in the image.",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "book"
+    ],
+    "class_ids": [
+      84
+    ],
+    "boxes": [
+      [
+        276.1700134277344,
+        186.13999938964844,
+        324.3299865722656,
+        226.5500030517578
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          299,
+          186,
+          298,
+          187,
+          276,
+          187,
+          276,
+          226,
+          277,
+          226,
+          278,
+          225,
+          299,
+          225,
+          300,
+          224,
+          321,
+          224,
+          322,
+          223,
+          323,
+          223,
+          323,
+          212,
+          322,
+          211,
+          322,
+          198,
+          321,
+          197,
+          321,
+          186
+        ]
+      ]
+    ]
+  }
+}

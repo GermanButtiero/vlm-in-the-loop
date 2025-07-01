@@ -1,0 +1,62 @@
+{
+  "image_idx": 1710,
+  "approved": true,
+  "vlm_response": "after carefully analyzing the image, i have identified the following objects and their visual characteristics:\n\n1. **sofa**: the sofa is striped and has a grey cushion.\n2. **armchair**: the recliner is blue and has a plush appearance.\n3. **coffee table**: the purple table in front of the sofa has a white piece of paper on it.\n4. **flower**: a vase with a yellow flower is on the coffee table.\n5. **paintings**: two framed artworks are on the walls.\n6. **door**: a white door with a window is visible.\n7. **lighting**: a ceiling light is visible.\n\nthe objects are correctly detected and every mask (striped sofa, blue recliner, coffee table, flower, paintings, door) fits within the visual boundaries. there are no significant errors in the detections.\n\n*yes*",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "book"
+    ],
+    "class_ids": [
+      84
+    ],
+    "boxes": [
+      [
+        108.58000183105469,
+        161.32000732421875,
+        178.4199981689453,
+        180.50999450683594
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          166,
+          161,
+          165,
+          162,
+          110,
+          162,
+          110,
+          165,
+          109,
+          166,
+          109,
+          178,
+          114,
+          178,
+          115,
+          179,
+          172,
+          179,
+          173,
+          180,
+          177,
+          180,
+          177,
+          166,
+          176,
+          165,
+          176,
+          161
+        ]
+      ]
+    ]
+  }
+}

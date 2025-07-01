@@ -1,0 +1,80 @@
+{
+  "image_idx": 611,
+  "approved": false,
+  "vlm_response": "the computer's detection of objects in the image is not accurate. the image shows a shepherd on a horse herding a flock of sheep, with a dog and a donkey also present. the segmentation masks incorrectly identify a red area in the middle of the image, which does not correspond to any object in the scene. additionally, the computer fails to detect the shepherd, horse, sheep, dog, and donkey, which are clearly visible in the image. therefore, the answer is:\n\nno",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        439.1099853515625,
+        21.040000915527344,
+        484.5400085449219,
+        69.55999755859375
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          459,
+          21,
+          459,
+          22,
+          446,
+          35,
+          446,
+          36,
+          439,
+          43,
+          443,
+          47,
+          443,
+          48,
+          447,
+          52,
+          447,
+          53,
+          451,
+          57,
+          451,
+          58,
+          455,
+          62,
+          455,
+          63,
+          459,
+          67,
+          459,
+          68,
+          460,
+          68,
+          468,
+          60,
+          469,
+          60,
+          483,
+          46,
+          483,
+          45,
+          465,
+          27,
+          465,
+          26,
+          460,
+          21
+        ]
+      ]
+    ]
+  }
+}

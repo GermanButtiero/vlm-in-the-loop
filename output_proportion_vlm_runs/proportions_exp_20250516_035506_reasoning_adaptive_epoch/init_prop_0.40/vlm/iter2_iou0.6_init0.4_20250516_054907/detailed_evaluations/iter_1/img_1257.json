@@ -1,0 +1,86 @@
+{
+  "image_idx": 1257,
+  "approved": true,
+  "vlm_response": "after carefully examining the image, i have identified the following objects:\n\n1. **railway track**: visible in the foreground, consisting of metal rails and wooden ties.\n2. **stop sign**: positioned on the right side of the image, with a red octagonal shape and white text.\n3. **signboard**: attached to the stop sign, with text in multiple languages.\n\nthe objects are correctly detected and the masks are good. there are no missing objects, wrong classes, or extra masks. the stop sign is correctly positioned on the railway track.\n\n*yes*",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        486.9800109863281,
+        133.0399932861328,
+        527.3200073242188,
+        172.0
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          502,
+          133,
+          501,
+          134,
+          499,
+          134,
+          488,
+          145,
+          488,
+          154,
+          487,
+          155,
+          487,
+          160,
+          494,
+          167,
+          495,
+          167,
+          499,
+          171,
+          505,
+          171,
+          506,
+          170,
+          513,
+          170,
+          516,
+          167,
+          516,
+          166,
+          522,
+          160,
+          522,
+          159,
+          525,
+          156,
+          525,
+          150,
+          526,
+          149,
+          526,
+          143,
+          524,
+          141,
+          523,
+          141,
+          518,
+          136,
+          517,
+          136,
+          514,
+          133
+        ]
+      ]
+    ]
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "image_idx": 1469,
+  "approved": true,
+  "vlm_response": "after carefully examining the image, i have visually identified the objects as follows:\n\n1. **fire hydrant**: yes, it is red and located in the foreground.\n2. **road sign**: yes, it is a diamond-shaped sign with a truck icon and a 12% incline warning.\n3. **building**: yes, it is a small, weathered shed with a metal roof.\n4. **trees and vegetation**: yes, there are trees and shrubs in the background.\n5. **sign post**: yes, it is a red circular sign post.\n\nthe objects are correctly detected, and the masks are good. there are no errors in the detection process.\n\n*yes*",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        45.02000045776367,
+        188.27999877929688,
+        74.6500015258789,
+        223.75999450683594
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          52,
+          188,
+          52,
+          189,
+          49,
+          192,
+          49,
+          193,
+          45,
+          197,
+          45,
+          203,
+          46,
+          204,
+          46,
+          213,
+          48,
+          215,
+          48,
+          216,
+          55,
+          223,
+          59,
+          223,
+          60,
+          222,
+          67,
+          222,
+          68,
+          221,
+          68,
+          220,
+          70,
+          218,
+          70,
+          217,
+          72,
+          215,
+          72,
+          214,
+          74,
+          212,
+          74,
+          211,
+          73,
+          210,
+          73,
+          200,
+          72,
+          199,
+          72,
+          196,
+          64,
+          188
+        ]
+      ]
+    ]
+  }
+}

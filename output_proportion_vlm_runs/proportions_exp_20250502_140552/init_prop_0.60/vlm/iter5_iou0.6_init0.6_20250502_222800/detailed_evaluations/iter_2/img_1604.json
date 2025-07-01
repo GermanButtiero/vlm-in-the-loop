@@ -1,0 +1,132 @@
+{
+  "image_idx": 1604,
+  "approved": true,
+  "vlm_response": "yes, the object classes and segmentation masks are accurate. the computer has correctly identified the stop sign in the image. the segmentation mask for the stop sign is well-defined, highlighting the red sign with white letters against the snowy background. there are no misclassifications or poor segmentations observed in the image.",
+  "prediction": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      3
+    ],
+    "scores": [
+      0.9913574457168579
+    ],
+    "boxes": [
+      [
+        97.71949005126953,
+        323.13824462890625,
+        131.66287231445312,
+        355.64349365234375
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          108,
+          323,
+          104,
+          327,
+          103,
+          327,
+          98,
+          332,
+          98,
+          340,
+          97,
+          341,
+          97,
+          344,
+          98,
+          345,
+          98,
+          346,
+          100,
+          348,
+          101,
+          348,
+          108,
+          355,
+          123,
+          355,
+          126,
+          352,
+          127,
+          352,
+          131,
+          348,
+          131,
+          332,
+          122,
+          323
+        ]
+      ]
+    ]
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        99.37999725341797,
+        324.80999755859375,
+        132.63999938964844,
+        358.07000732421875
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          108,
+          325,
+          107,
+          326,
+          106,
+          326,
+          104,
+          328,
+          103,
+          328,
+          100,
+          331,
+          100,
+          342,
+          99,
+          343,
+          99,
+          346,
+          104,
+          351,
+          104,
+          352,
+          108,
+          356,
+          115,
+          356,
+          116,
+          357,
+          124,
+          357,
+          126,
+          355,
+          126,
+          354,
+          132,
+          348,
+          132,
+          345,
+          131,
+          344,
+          131,
+          335,
+          121,
+          325
+        ]
+      ]
+    ]
+  }
+}

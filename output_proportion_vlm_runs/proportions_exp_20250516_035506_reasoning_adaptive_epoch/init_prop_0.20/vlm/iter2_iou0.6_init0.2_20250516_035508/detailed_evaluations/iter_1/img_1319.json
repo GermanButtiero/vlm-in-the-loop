@@ -1,0 +1,102 @@
+{
+  "image_idx": 1319,
+  "approved": true,
+  "vlm_response": "after carefully examining the image, i have identified the following objects and their visual characteristics:\n\n1. **suit**: the man on the left is wearing a light grey suit with a white shirt and a dark tie.\n2. **name tag**: the man on the right is wearing a dark blue striped shirt with a name tag.\n3. **table**: the table in the foreground is covered with a green tablecloth.\n4. **door**: there is a brown door in the background.\n5. **screen**: a projector screen displaying text and images is visible behind the men.\n6. **chair**: a red chair is partially visible in the foreground.\n7. **tablecloth**: the tablecloth is green and covers the table.\n\nthe objects are correctly detected and the masks fit well. there are no significant errors in the mask detections.\n\n*yes*",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "book"
+    ],
+    "class_ids": [
+      84
+    ],
+    "boxes": [
+      [
+        531.0999755859375,
+        339.7900085449219,
+        606.280029296875,
+        373.2099914550781
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          597,
+          340,
+          596,
+          341,
+          584,
+          341,
+          583,
+          342,
+          570,
+          342,
+          569,
+          343,
+          557,
+          343,
+          556,
+          344,
+          544,
+          344,
+          543,
+          345,
+          535,
+          345,
+          535,
+          346,
+          534,
+          347,
+          534,
+          354,
+          533,
+          355,
+          533,
+          362,
+          532,
+          363,
+          532,
+          370,
+          531,
+          371,
+          531,
+          372,
+          540,
+          372,
+          541,
+          371,
+          555,
+          371,
+          556,
+          370,
+          570,
+          370,
+          571,
+          369,
+          591,
+          369,
+          592,
+          368,
+          603,
+          368,
+          603,
+          365,
+          604,
+          364,
+          604,
+          350,
+          605,
+          349,
+          605,
+          340
+        ]
+      ]
+    ]
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "image_idx": 124,
+  "approved": true,
+  "vlm_response": "the image shows a traffic light with a smiley face sticker on it, and the segmentation mask highlights the traffic light and the sticker. the computer's detection of objects is accurate, as it has identified the traffic light and the smiley face sticker. the segmentation masks are also accurate, as they correctly outline the traffic light and the sticker. therefore, the answer is:\n\nyes",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        285.1099853515625,
+        309.79998779296875,
+        374.9100036621094,
+        329.260009765625
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          333,
+          310,
+          332,
+          311,
+          301,
+          311,
+          292,
+          320,
+          292,
+          321,
+          285,
+          328,
+          373,
+          328,
+          373,
+          327,
+          367,
+          321,
+          367,
+          320,
+          362,
+          315,
+          362,
+          314,
+          358,
+          310
+        ]
+      ]
+    ]
+  }
+}

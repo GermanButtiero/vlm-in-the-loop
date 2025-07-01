@@ -1,0 +1,46 @@
+{
+  "image_idx": 91,
+  "approved": true,
+  "vlm_response": "after carefully examining the image, i have visually identified the objects in the colored masks. the objects detected are:\n\n1. **people** (multiple individuals walking)\n2. **buses** (two buses, one blue and one pink)\n3. **signs** (one red and white sign)\n\nthe objects are correctly detected, and the masks fit well. there are no significant errors in the mask detections. therefore, the output is:\n\n* **yes**",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        606.8300170898438,
+        160.6699981689453,
+        639.8300170898438,
+        192.8300018310547
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          607,
+          161,
+          607,
+          188,
+          608,
+          189,
+          608,
+          192,
+          639,
+          192,
+          639,
+          161
+        ]
+      ]
+    ]
+  }
+}

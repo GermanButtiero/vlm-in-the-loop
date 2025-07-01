@@ -1,0 +1,160 @@
+{
+  "image_idx": 2562,
+  "approved": true,
+  "vlm_response": "after carefully examining the image, i have identified the following objects and their visual characteristics:\n\n1. **stop sign**: the stop sign is red with white lettering, and it is positioned on a pole.\n2. **house**: a brick house with a white garage door is visible in the background.\n3. **garage**: a white garage with a door is located in front of the house.\n4. **trees**: several trees, including a large evergreen and a bare tree, are present in the image.\n5. **snow**: there is snow on the ground and on the driveway.\n\nthe stop sign is well-defined and fits the criteria of having a high iou (intersection observer units) of \u2265 60% with the objects. the house and garage are also well-detected, with the house having a clear white garage door and the garage being a standard white color.\n\nthere are no missing objects, wrong classifications, or false positives. the objects are correctly detected and every mask is good.\n\n*yes*",
+  "prediction": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      3
+    ],
+    "scores": [
+      0.9956734776496887
+    ],
+    "boxes": [
+      [
+        287.24066162109375,
+        96.31375122070312,
+        326.8760681152344,
+        135.4762420654297
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          303,
+          96,
+          302,
+          97,
+          298,
+          97,
+          298,
+          98,
+          296,
+          100,
+          295,
+          100,
+          289,
+          106,
+          289,
+          107,
+          288,
+          108,
+          288,
+          121,
+          289,
+          122,
+          289,
+          124,
+          298,
+          133,
+          299,
+          133,
+          300,
+          134,
+          315,
+          134,
+          316,
+          133,
+          317,
+          133,
+          320,
+          130,
+          321,
+          130,
+          321,
+          129,
+          325,
+          125,
+          325,
+          124,
+          326,
+          123,
+          326,
+          106,
+          325,
+          105,
+          325,
+          104,
+          324,
+          104,
+          321,
+          101,
+          321,
+          100,
+          320,
+          100,
+          316,
+          96
+        ]
+      ]
+    ]
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        288.32000732421875,
+        96.7300033569336,
+        327.5199890136719,
+        135.4499969482422
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          308,
+          97,
+          307,
+          98,
+          299,
+          98,
+          288,
+          109,
+          289,
+          110,
+          289,
+          121,
+          290,
+          122,
+          290,
+          124,
+          297,
+          131,
+          297,
+          132,
+          299,
+          134,
+          315,
+          134,
+          318,
+          131,
+          319,
+          131,
+          324,
+          126,
+          325,
+          126,
+          327,
+          124,
+          326,
+          123,
+          326,
+          112,
+          325,
+          111,
+          325,
+          106,
+          316,
+          97
+        ]
+      ]
+    ]
+  }
+}

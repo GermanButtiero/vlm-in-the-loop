@@ -1,0 +1,102 @@
+{
+  "image_idx": 1459,
+  "approved": true,
+  "vlm_response": "after carefully examining the image, i have identified the following objects:\n\n1. **stop sign**: the stop sign is red with white lettering, and it is positioned on a white post.\n2. **field**: the field is a flat, golden-brown color, indicating it might be a crop field.\n3. **road**: a road is visible in the background, running parallel to the field.\n4. **sky**: the sky is blue with some clouds, suggesting it is daytime.\n\nthe objects listed are correctly detected, and the stop sign fits well within the specified criteria. there are no significant errors in the detection process.\n\n*yes*",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        292.54998779296875,
+        164.1999969482422,
+        343.510009765625,
+        218.42999267578125
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          308,
+          164,
+          301,
+          171,
+          300,
+          171,
+          293,
+          178,
+          293,
+          198,
+          294,
+          199,
+          294,
+          200,
+          297,
+          203,
+          297,
+          204,
+          300,
+          207,
+          300,
+          208,
+          302,
+          210,
+          302,
+          211,
+          305,
+          214,
+          305,
+          215,
+          307,
+          217,
+          327,
+          217,
+          333,
+          211,
+          334,
+          211,
+          342,
+          203,
+          342,
+          185,
+          343,
+          184,
+          343,
+          182,
+          341,
+          180,
+          341,
+          179,
+          339,
+          177,
+          339,
+          176,
+          337,
+          174,
+          337,
+          173,
+          335,
+          171,
+          335,
+          170,
+          332,
+          167,
+          332,
+          166,
+          330,
+          164
+        ]
+      ]
+    ]
+  }
+}

@@ -1,11 +1,29 @@
+#conda create -n ovis python=3.10 -y
+#conda activate ovis
+
+# Core
+torch==2.4.0
+torchvision==0.17.0
+transformers==4.46.2
+numpy==1.25.0
+pillow==10.3.0
+
+# Install flash-attn manually!
+# flash-attn==2.7.0.post2 --no-build-isolation
+
+# Vision and ML
+pycocotools==2.0.5
+matplotlib==3.6.0
+opencv-python==4.7.0.72
+mongoengine==0.29.1
+
+# FiftyOne suite
 fiftyone==1.4.0
 fiftyone-brain==0.20.1
-fiftyone_db==1.1.7
-pycocotools==2.0.5
-numpy==1.23.0
-matplotlib==3.5.1
-torch==1.10.0
-torchvision==0.11.1
-Pillow==8.4.0
-opencv-python==4.5.3.56
-mongoengine==0.29.1
+fiftyone-db==1.1.7
+
+#Then run
+#pip install -r requirements.txt
+#pip install flash-attn==2.7.0.post2 --no-build-isolation
+
+## Bare in mind that you need compatible nvidia toolkit, and nvidia triver isntalled. They must also at least support the torch version installed here:=2.4.0

@@ -1,0 +1,70 @@
+{
+  "image_idx": 2246,
+  "approved": true,
+  "vlm_response": "the image shows a vase with pink flowers, and the segmentation masks highlight the vase and the flowers. the computer's detection of objects is accurate, as it correctly identifies the vase and the flowers. the segmentation masks are well-defined, with the green mask highlighting the vase and the red mask outlining the base of the vase. therefore, the answer is:\n\nyes",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "book"
+    ],
+    "class_ids": [
+      84
+    ],
+    "boxes": [
+      [
+        139.41000366210938,
+        30.489999771118164,
+        169.9499969482422,
+        69.2699966430664
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          167,
+          30,
+          166,
+          31,
+          143,
+          31,
+          142,
+          32,
+          141,
+          32,
+          141,
+          39,
+          140,
+          40,
+          140,
+          65,
+          139,
+          66,
+          139,
+          68,
+          152,
+          68,
+          153,
+          67,
+          158,
+          67,
+          159,
+          66,
+          164,
+          66,
+          165,
+          65,
+          169,
+          65,
+          169,
+          30
+        ]
+      ]
+    ]
+  }
+}

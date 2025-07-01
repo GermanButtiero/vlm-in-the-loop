@@ -1,0 +1,84 @@
+{
+  "image_idx": 428,
+  "approved": true,
+  "vlm_response": "the image shows a hotel room with two beds, each with pillows, a nightstand with an alarm clock, and wall-mounted lamps. the segmentation masks highlight the objects accurately, with distinct areas for the beds, pillows, nightstand, alarm clock, and lamps. the computer's detection of objects is accurate, and the segmentation masks are well-defined, with no misclassifications or poor segmentation. therefore, the answer is:\n\nyes",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "book"
+    ],
+    "class_ids": [
+      84
+    ],
+    "boxes": [
+      [
+        270.82000732421875,
+        308.3800048828125,
+        315.75,
+        341.45001220703125
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          271,
+          308,
+          271,
+          340,
+          287,
+          340,
+          288,
+          339,
+          305,
+          339,
+          306,
+          338,
+          315,
+          338,
+          315,
+          337,
+          314,
+          336,
+          314,
+          333,
+          313,
+          332,
+          313,
+          328,
+          312,
+          327,
+          312,
+          323,
+          311,
+          322,
+          311,
+          318,
+          310,
+          317,
+          310,
+          313,
+          308,
+          311,
+          297,
+          311,
+          296,
+          310,
+          285,
+          310,
+          284,
+          309,
+          273,
+          309,
+          272,
+          308
+        ]
+      ]
+    ]
+  }
+}

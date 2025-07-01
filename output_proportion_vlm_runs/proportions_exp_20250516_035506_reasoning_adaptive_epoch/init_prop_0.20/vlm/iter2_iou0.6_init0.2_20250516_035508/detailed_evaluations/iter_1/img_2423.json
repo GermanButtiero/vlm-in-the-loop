@@ -1,0 +1,64 @@
+{
+  "image_idx": 2423,
+  "approved": true,
+  "vlm_response": "after carefully examining the image, i have visually identified the objects and their corresponding masks. the objects detected are a train, a barrier, and traffic lights. the masks are colored and have a high iou (intersection observer unit) score, indicating that they accurately represent the objects. there are no significant background spill-over or errors in the detection process. therefore, the output is:\n\n* **yes**",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        445.95001220703125,
+        134.57000732421875,
+        539.72998046875,
+        192.99000549316406
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          447,
+          135,
+          447,
+          166,
+          446,
+          167,
+          446,
+          190,
+          469,
+          190,
+          470,
+          191,
+          515,
+          191,
+          516,
+          192,
+          539,
+          192,
+          539,
+          179,
+          538,
+          178,
+          538,
+          137,
+          488,
+          137,
+          487,
+          136,
+          448,
+          136
+        ]
+      ]
+    ]
+  }
+}

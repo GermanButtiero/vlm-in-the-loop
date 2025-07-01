@@ -1,0 +1,94 @@
+{
+  "image_idx": 2299,
+  "approved": false,
+  "vlm_response": "the image shows a car and a stop sign, which are the main objects present. the computer's detection of \"no objects\" is inaccurate. the segmentation masks should identify the car and the stop sign, but they are not present in the provided information. therefore, the answer is:\n\nno, the computer detected no objects, but there are objects in the image.",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        16.780000686645508,
+        16.899999618530273,
+        125.0,
+        130.14999389648438
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          49,
+          18,
+          40,
+          27,
+          39,
+          27,
+          17,
+          49,
+          17,
+          94,
+          23,
+          100,
+          23,
+          101,
+          30,
+          108,
+          30,
+          109,
+          37,
+          116,
+          37,
+          117,
+          44,
+          124,
+          44,
+          125,
+          46,
+          127,
+          61,
+          127,
+          62,
+          128,
+          78,
+          128,
+          79,
+          129,
+          90,
+          129,
+          96,
+          123,
+          97,
+          123,
+          117,
+          103,
+          118,
+          103,
+          124,
+          97,
+          124,
+          51,
+          120,
+          47,
+          120,
+          46,
+          93,
+          19,
+          69,
+          19,
+          68,
+          18
+        ]
+      ]
+    ]
+  }
+}

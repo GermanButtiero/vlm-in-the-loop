@@ -1,0 +1,214 @@
+import unittest
+import torch
+import numpy as np
+import json
+import os
+from tqdm import tqdm
+from PIL import Image
+from download_coco import CocoSegmentationDatasetMRCNN
+
+import matplotlib.pyplot as plt
+
+# Import the class directly since we're in the same directory
+
+class TestCocoDatasetStatistics(unittest.TestCase):
+    def setUp(self):
+        """Load configuration and initialize datasets"""
+        self.config = json.load(open("dataset_download_config.json"))
+        self.categories_to_keep = [84, 16, 13, 24]  # book, bird, stop sign, zebra
+        self.category_names = {
+            84: "book", 
+            16: "bird", 
+            13: "stop sign", 
+            24: "zebra"
+        }
+        
+        # Initialize datasets
+        self.train_dataset = CocoSegmentationDatasetMRCNN(
+            self.config["train_image_dir"],
+            self.config["train_annotation_file"],
+            categories_to_keep=self.categories_to_keep,
+            min_area_threshold=200
+        )
+        
+        self.val_dataset = CocoSegmentationDatasetMRCNN(
+            self.config["val_image_dir"],
+            self.config["val_annotation_file"],
+            categories_to_keep=self.categories_to_keep,
+            min_area_threshold=200
+        )
+    
+    def test_dataset_size(self):
+        """Test that datasets are properly loaded and have expected size"""
+        print(f"\nTraining dataset size: {len(self.train_dataset)}")
+        print(f"Validation dataset size: {len(self.val_dataset)}")
+        self.assertTrue(len(self.train_dataset) > 0)
+        self.assertTrue(len(self.val_dataset) > 0)
+    
+    def calculate_statistics(self, dataset, name="dataset"):
+        """Calculate comprehensive statistics for the dataset"""
+        print(f"\nAnalyzing {name} statistics...")
+        
+        # Initialize counters
+        total_images = len(dataset)
+        total_instances = 0
+        instances_per_class = {cat_id: 0 for cat_id in self.categories_to_keep}
+        total_mask_area_ratio = 0
+        mask_area_ratio_per_class = {cat_id: [] for cat_id in self.categories_to_keep}
+        instances_per_image = []
+        
+        # Iterate through dataset
+        for idx in tqdm(range(total_images)):
+            _, target = dataset[idx]
+            
+            # Get image dimensions for area calculations
+            # For COCO images, use the typical dimensions from the dataset
+            image_h, image_w = 480, 640  # Fallback dimensions
+            if 'masks' in target and len(target['masks']) > 0:
+                image_h, image_w = target['masks'][0].shape
+            
+            image_area = image_h * image_w
+            
+            # Count instances in this image
+            image_instances = len(target['category_ids'])
+            instances_per_image.append(image_instances)
+            total_instances += image_instances
+            
+            # Track mask areas and class-specific statistics
+            if image_instances > 0:
+                # Process each instance in this image
+                for i in range(image_instances):
+                    cat_id = target['category_ids'][i].item()
+                    mask = target['masks'][i]
+                    
+                    # Calculate mask area
+                    mask_area = float(mask.sum())
+                    mask_ratio = mask_area / image_area
+                    
+                    # Update statistics
+                    total_mask_area_ratio += mask_ratio
+                    instances_per_class[cat_id] += 1
+                    mask_area_ratio_per_class[cat_id].append(mask_ratio)
+        
+        # Calculate final statistics
+        avg_instances_per_image = total_instances / total_images
+        avg_mask_area_ratio = total_mask_area_ratio / total_instances if total_instances > 0 else 0
+        
+        # Class-specific statistics
+        avg_instances_per_class = {
+            cat_id: count / total_images 
+            for cat_id, count in instances_per_class.items()
+        }
+        
+        avg_mask_area_ratio_per_class = {
+            cat_id: (sum(ratios) / len(ratios) if ratios else 0)
+            for cat_id, ratios in mask_area_ratio_per_class.items()
+        }
+        
+        # Return compiled statistics
+        return {
+            "total_images": total_images,
+            "total_instances": total_instances,
+            "avg_instances_per_image": avg_instances_per_image,
+            "instances_per_class": instances_per_class,
+            "avg_instances_per_class": avg_instances_per_class,
+            "avg_mask_area_ratio": avg_mask_area_ratio,
+            "avg_mask_area_ratio_per_class": avg_mask_area_ratio_per_class,
+            "instances_per_image_distribution": instances_per_image
+        }
+    
+    def test_calculate_dataset_statistics(self):
+        """Calculate and print comprehensive dataset statistics"""
+        # Get statistics for both datasets
+        train_stats = self.calculate_statistics(self.train_dataset, "training set")
+        val_stats = self.calculate_statistics(self.val_dataset, "validation set")
+        
+        # Print results
+        self.print_statistics(train_stats, "TRAINING SET")
+        self.print_statistics(val_stats, "VALIDATION SET")
+        
+        # Visualize the distribution of instances
+        self.visualize_statistics(train_stats, val_stats)
+        
+        # The test passes if we reach here
+        self.assertTrue(True)
+    
+    def print_statistics(self, stats, title):
+        """Print formatted statistics"""
+        print(f"\n===== {title} STATISTICS =====")
+        print(f"Total images: {stats['total_images']}")
+        print(f"Total instances: {stats['total_instances']}")
+        print(f"Average instances per image: {stats['avg_instances_per_image']:.2f}")
+        print("\nInstances per class:")
+        for cat_id in self.categories_to_keep:
+            cat_name = self.category_names[cat_id]
+            print(f"  - {cat_name}: {stats['instances_per_class'][cat_id]} instances "
+                  f"(avg {stats['avg_instances_per_class'][cat_id]:.2f} per image)")
+        
+        print("\nAverage mask area (as proportion of image):")
+        print(f"  Overall: {stats['avg_mask_area_ratio']:.2%}")
+        for cat_id in self.categories_to_keep:
+            cat_name = self.category_names[cat_id]
+            print(f"  - {cat_name}: {stats['avg_mask_area_ratio_per_class'][cat_id]:.2%}")
+    
+    def visualize_statistics(self, train_stats, val_stats):
+        """Generate visualizations for the statistics"""
+        # Create figure with multiple subplots
+        fig, axs = plt.subplots(2, 2, figsize=(15, 12))
+        
+        # 1. Instances per class
+        cat_names = [self.category_names[cat_id] for cat_id in self.categories_to_keep]
+        train_counts = [train_stats['instances_per_class'][cat_id] for cat_id in self.categories_to_keep]
+        val_counts = [val_stats['instances_per_class'][cat_id] for cat_id in self.categories_to_keep]
+        
+        x = np.arange(len(cat_names))
+        width = 0.35
+        
+        axs[0, 0].bar(x - width/2, train_counts, width, label='Train')
+        axs[0, 0].bar(x + width/2, val_counts, width, label='Val')
+        axs[0, 0].set_xticks(x)
+        axs[0, 0].set_xticklabels(cat_names)
+        axs[0, 0].set_ylabel('Count')
+        axs[0, 0].set_title('Number of instances per class')
+        axs[0, 0].legend()
+        
+        # 2. Average instances per image per class
+        train_avg = [train_stats['avg_instances_per_class'][cat_id] for cat_id in self.categories_to_keep]
+        val_avg = [val_stats['avg_instances_per_class'][cat_id] for cat_id in self.categories_to_keep]
+        
+        axs[0, 1].bar(x - width/2, train_avg, width, label='Train')
+        axs[0, 1].bar(x + width/2, val_avg, width, label='Val')
+        axs[0, 1].set_xticks(x)
+        axs[0, 1].set_xticklabels(cat_names)
+        axs[0, 1].set_ylabel('Average per image')
+        axs[0, 1].set_title('Average instances per image per class')
+        axs[0, 1].legend()
+        
+        # 3. Average mask area proportion per class
+        train_mask_ratio = [train_stats['avg_mask_area_ratio_per_class'][cat_id] for cat_id in self.categories_to_keep]
+        val_mask_ratio = [val_stats['avg_mask_area_ratio_per_class'][cat_id] for cat_id in self.categories_to_keep]
+        
+        axs[1, 0].bar(x - width/2, [r*100 for r in train_mask_ratio], width, label='Train')
+        axs[1, 0].bar(x + width/2, [r*100 for r in val_mask_ratio], width, label='Val')
+        axs[1, 0].set_xticks(x)
+        axs[1, 0].set_xticklabels(cat_names)
+        axs[1, 0].set_ylabel('Percentage of image area')
+        axs[1, 0].set_title('Average mask area (% of image area) per class')
+        axs[1, 0].legend()
+        
+        # 4. Distribution of instances per image
+        axs[1, 1].hist(train_stats['instances_per_image_distribution'], bins=range(10), 
+                      alpha=0.5, label='Train')
+        axs[1, 1].hist(val_stats['instances_per_image_distribution'], bins=range(10), 
+                      alpha=0.5, label='Val')
+        axs[1, 1].set_xlabel('Number of instances')
+        axs[1, 1].set_ylabel('Number of images')
+        axs[1, 1].set_title('Distribution of instances per image')
+        axs[1, 1].legend()
+        
+        plt.tight_layout()
+        plt.savefig('dataset_statistics.png')
+        print("\nVisualization saved as 'dataset_statistics.png'")
+
+if __name__ == '__main__':
+    unittest.main()

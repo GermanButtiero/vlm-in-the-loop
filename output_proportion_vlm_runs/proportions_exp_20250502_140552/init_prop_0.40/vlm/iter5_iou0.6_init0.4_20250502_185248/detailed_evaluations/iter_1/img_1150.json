@@ -1,0 +1,100 @@
+{
+  "image_idx": 1150,
+  "approved": false,
+  "vlm_response": "the image shows a street scene with various objects such as traffic lights, a stop sign, palm trees, and a building. the computer's detection of \"no objects\" is inaccurate. the segmentation masks should identify the traffic lights, stop sign, and other elements in the scene. therefore, the correct answer is:\n\nno, the computer detected no objects, which is inaccurate.",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        586.7100219726562,
+        168.44000244140625,
+        621.3200073242188,
+        206.25
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          608,
+          168,
+          607,
+          169,
+          597,
+          169,
+          595,
+          171,
+          594,
+          171,
+          587,
+          178,
+          587,
+          193,
+          591,
+          197,
+          591,
+          198,
+          596,
+          203,
+          596,
+          204,
+          597,
+          205,
+          606,
+          205,
+          607,
+          204,
+          608,
+          204,
+          609,
+          203,
+          610,
+          203,
+          611,
+          202,
+          612,
+          202,
+          613,
+          201,
+          614,
+          201,
+          615,
+          200,
+          616,
+          200,
+          617,
+          199,
+          618,
+          199,
+          618,
+          198,
+          619,
+          197,
+          619,
+          188,
+          620,
+          187,
+          620,
+          178,
+          617,
+          175,
+          616,
+          175,
+          609,
+          168
+        ]
+      ]
+    ]
+  }
+}

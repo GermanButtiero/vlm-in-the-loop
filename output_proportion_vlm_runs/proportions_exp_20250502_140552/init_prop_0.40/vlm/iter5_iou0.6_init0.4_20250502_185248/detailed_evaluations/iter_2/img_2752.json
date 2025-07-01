@@ -1,0 +1,90 @@
+{
+  "image_idx": 2752,
+  "approved": false,
+  "vlm_response": "the image shows a stop sign with an additional sign below it that reads \"global warming\" and \"all way.\" the stop sign is the primary object of interest, and it is correctly identified. the segmentation mask for the stop sign is accurate, as it covers the sign and its text. the additional sign is also correctly identified and segmented. the background elements, such as the buildings, cars, and street, are not the focus of the segmentation task and are not included in the object classes. therefore, the computer's detection of objects is accurate, and the segmentation masks are correctly applied to the stop sign and the additional sign.",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        203.8000030517578,
+        0.3199999928474426,
+        400.4700012207031,
+        106.22000122070312
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          205,
+          1,
+          205,
+          25,
+          204,
+          26,
+          204,
+          51,
+          258,
+          105,
+          344,
+          105,
+          344,
+          104,
+          350,
+          98,
+          350,
+          97,
+          357,
+          90,
+          357,
+          89,
+          364,
+          82,
+          364,
+          81,
+          371,
+          74,
+          371,
+          73,
+          377,
+          67,
+          377,
+          66,
+          384,
+          59,
+          384,
+          58,
+          391,
+          51,
+          391,
+          50,
+          397,
+          44,
+          397,
+          43,
+          398,
+          42,
+          398,
+          28,
+          399,
+          27,
+          399,
+          2,
+          206,
+          2
+        ]
+      ]
+    ]
+  }
+}

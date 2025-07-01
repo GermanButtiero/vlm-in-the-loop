@@ -1,0 +1,102 @@
+{
+  "image_idx": 1408,
+  "approved": false,
+  "vlm_response": "the image shows a stop sign and a road sign indicating \"buckle-up oregon,\" along with a blurred background of a train passing by. the computer's detection of \"no objects\" is inaccurate. the stop sign and road sign are clearly visible and should be included in the object segmentation masks. therefore, the correct answer is:\n\nno, the computer detected no objects, but there are clearly visible objects in the image.",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        263.19000244140625,
+        237.63999938964844,
+        334.7799987792969,
+        307.82000732421875
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          282,
+          238,
+          276,
+          244,
+          275,
+          244,
+          264,
+          255,
+          263,
+          255,
+          263,
+          276,
+          264,
+          277,
+          264,
+          284,
+          266,
+          286,
+          266,
+          287,
+          276,
+          297,
+          276,
+          298,
+          285,
+          307,
+          292,
+          307,
+          293,
+          306,
+          312,
+          306,
+          316,
+          302,
+          317,
+          302,
+          323,
+          296,
+          324,
+          296,
+          331,
+          289,
+          332,
+          289,
+          332,
+          280,
+          333,
+          279,
+          333,
+          263,
+          334,
+          262,
+          334,
+          258,
+          332,
+          256,
+          332,
+          255,
+          326,
+          249,
+          326,
+          248,
+          319,
+          241,
+          319,
+          240,
+          317,
+          238
+        ]
+      ]
+    ]
+  }
+}

@@ -1,0 +1,140 @@
+{
+  "image_idx": 2358,
+  "approved": true,
+  "vlm_response": "yes, the object classes and segmentation masks appear to be accurate. the computer has correctly identified the stop sign in the image. the segmentation mask for the stop sign is clearly visible and accurately outlines the object, with no significant misclassifications or poor segmentation.",
+  "prediction": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      3
+    ],
+    "scores": [
+      0.9912306070327759
+    ],
+    "boxes": [
+      [
+        399.3428649902344,
+        194.41119384765625,
+        429.651123046875,
+        223.8070526123047
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          411,
+          194,
+          410,
+          195,
+          406,
+          195,
+          400,
+          201,
+          400,
+          202,
+          399,
+          203,
+          399,
+          214,
+          400,
+          215,
+          400,
+          216,
+          401,
+          216,
+          402,
+          217,
+          402,
+          218,
+          403,
+          218,
+          407,
+          222,
+          419,
+          222,
+          426,
+          215,
+          426,
+          214,
+          427,
+          213,
+          427,
+          203,
+          426,
+          202,
+          426,
+          201,
+          422,
+          197,
+          421,
+          197,
+          420,
+          196,
+          420,
+          195,
+          412,
+          195
+        ]
+      ]
+    ]
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        398.989990234375,
+        194.1699981689453,
+        428.239990234375,
+        224.27999877929688
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          411,
+          194,
+          410,
+          195,
+          407,
+          195,
+          399,
+          203,
+          399,
+          210,
+          400,
+          211,
+          400,
+          214,
+          401,
+          215,
+          401,
+          216,
+          408,
+          223,
+          418,
+          223,
+          419,
+          222,
+          420,
+          222,
+          423,
+          219,
+          423,
+          218,
+          427,
+          214,
+          427,
+          202,
+          419,
+          194
+        ]
+      ]
+    ]
+  }
+}

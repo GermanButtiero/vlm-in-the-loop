@@ -1,0 +1,54 @@
+{
+  "image_idx": 2347,
+  "approved": false,
+  "vlm_response": "the image shows a road with a traffic light and a \"stop here on red\" sign, but the computer's detection of objects is listed as \"no objects.\" this is inaccurate because the image clearly contains objects such as the traffic light and the sign. therefore, the answer is:\n\nno, the computer detected no objects, but there are objects present in the image.",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        505.5,
+        123.68000030517578,
+        580.4600219726562,
+        209.35000610351562
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          551,
+          124,
+          550,
+          125,
+          521,
+          125,
+          520,
+          126,
+          506,
+          126,
+          506,
+          208,
+          579,
+          208,
+          579,
+          166,
+          578,
+          165,
+          578,
+          124
+        ]
+      ]
+    ]
+  }
+}

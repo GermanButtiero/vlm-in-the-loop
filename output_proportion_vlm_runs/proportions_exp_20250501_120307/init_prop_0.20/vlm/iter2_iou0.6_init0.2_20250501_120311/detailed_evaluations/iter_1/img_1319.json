@@ -1,0 +1,102 @@
+{
+  "image_idx": 1319,
+  "approved": false,
+  "vlm_response": "the image shows two men, one handing a red object to the other, with a projection screen in the background. the computer's detection of \"no objects\" is inaccurate. the image contains several objects that should be segmented, such as the men, the red object, the projection screen, chairs, and a table. the segmentation masks should identify these objects accurately. therefore, the answer is:\n\nno",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "book"
+    ],
+    "class_ids": [
+      84
+    ],
+    "boxes": [
+      [
+        531.0999755859375,
+        339.7900085449219,
+        606.280029296875,
+        373.2099914550781
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          597,
+          340,
+          596,
+          341,
+          584,
+          341,
+          583,
+          342,
+          570,
+          342,
+          569,
+          343,
+          557,
+          343,
+          556,
+          344,
+          544,
+          344,
+          543,
+          345,
+          535,
+          345,
+          535,
+          346,
+          534,
+          347,
+          534,
+          354,
+          533,
+          355,
+          533,
+          362,
+          532,
+          363,
+          532,
+          370,
+          531,
+          371,
+          531,
+          372,
+          540,
+          372,
+          541,
+          371,
+          555,
+          371,
+          556,
+          370,
+          570,
+          370,
+          571,
+          369,
+          591,
+          369,
+          592,
+          368,
+          603,
+          368,
+          603,
+          365,
+          604,
+          364,
+          604,
+          350,
+          605,
+          349,
+          605,
+          340
+        ]
+      ]
+    ]
+  }
+}

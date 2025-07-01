@@ -1,0 +1,112 @@
+{
+  "image_idx": 2300,
+  "approved": true,
+  "vlm_response": "after carefully examining the image, i have visually identified the objects in the colored masks and compared them with the model's detections. the objects include a backpack, gloves, a face mask, a water bottle, a pen, a wallet, a notebook, a lighter, a bandage, and a small electronic device. the masks do not fit the objects perfectly, with some exceptions. the model's detections are generally accurate, with no significant errors. therefore, the output is:\n\n* **yes** \u2013 all objects are correctly detected and every mask is good.",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "book"
+    ],
+    "class_ids": [
+      84
+    ],
+    "boxes": [
+      [
+        454.8299865722656,
+        153.52999877929688,
+        524.8699951171875,
+        237.00999450683594
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          509,
+          154,
+          508,
+          155,
+          492,
+          155,
+          491,
+          156,
+          474,
+          156,
+          473,
+          157,
+          459,
+          157,
+          459,
+          158,
+          458,
+          159,
+          458,
+          179,
+          457,
+          180,
+          457,
+          200,
+          456,
+          201,
+          456,
+          221,
+          455,
+          222,
+          455,
+          236,
+          458,
+          236,
+          459,
+          235,
+          466,
+          235,
+          467,
+          234,
+          474,
+          234,
+          475,
+          233,
+          481,
+          233,
+          482,
+          232,
+          489,
+          232,
+          490,
+          231,
+          497,
+          231,
+          498,
+          230,
+          505,
+          230,
+          506,
+          229,
+          513,
+          229,
+          514,
+          228,
+          521,
+          228,
+          522,
+          227,
+          522,
+          208,
+          523,
+          207,
+          523,
+          166,
+          524,
+          165,
+          524,
+          154
+        ]
+      ]
+    ]
+  }
+}

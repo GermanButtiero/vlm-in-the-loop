@@ -1,0 +1,154 @@
+{
+  "image_idx": 2620,
+  "approved": true,
+  "vlm_response": "yes, the object classes and segmentation masks appear to be accurate. the computer has correctly identified the stop sign in the image. the segmentation mask for the stop sign is clearly visible and accurately represents the object. there are no misclassifications or poor segmentations evident in the image.",
+  "prediction": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      3
+    ],
+    "scores": [
+      0.994679868221283
+    ],
+    "boxes": [
+      [
+        608.66259765625,
+        159.2308349609375,
+        640.0,
+        195.81080627441406
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          619,
+          160,
+          618,
+          161,
+          617,
+          161,
+          609,
+          169,
+          609,
+          172,
+          608,
+          173,
+          608,
+          177,
+          609,
+          178,
+          608,
+          179,
+          608,
+          180,
+          609,
+          181,
+          609,
+          185,
+          618,
+          194,
+          619,
+          194,
+          620,
+          195,
+          631,
+          195,
+          632,
+          194,
+          634,
+          194,
+          634,
+          193,
+          637,
+          190,
+          638,
+          190,
+          639,
+          189,
+          639,
+          166,
+          633,
+          160
+        ]
+      ]
+    ]
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        608.4400024414062,
+        159.49000549316406,
+        640.0,
+        195.33999633789062
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          619,
+          159,
+          615,
+          163,
+          615,
+          164,
+          610,
+          169,
+          610,
+          170,
+          609,
+          171,
+          609,
+          182,
+          608,
+          183,
+          608,
+          185,
+          609,
+          184,
+          611,
+          186,
+          611,
+          187,
+          618,
+          194,
+          631,
+          194,
+          632,
+          193,
+          633,
+          193,
+          638,
+          188,
+          638,
+          187,
+          639,
+          186,
+          639,
+          169,
+          638,
+          168,
+          638,
+          167,
+          635,
+          164,
+          635,
+          163,
+          632,
+          160,
+          621,
+          160,
+          620,
+          159
+        ]
+      ]
+    ]
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "image_idx": 297,
+  "approved": false,
+  "vlm_response": "the image shows a bicycle with a green seat, a bed with various items scattered on it, and a room with a whiteboard and other miscellaneous objects. the computer's detection of \"no objects\" is inaccurate. the bicycle, bed, and other items are clearly visible and should be identified. the segmentation masks should accurately represent these objects. therefore, the correct answer is:\n\nno",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "book"
+    ],
+    "class_ids": [
+      84
+    ],
+    "boxes": [
+      [
+        464.3900146484375,
+        72.33000183105469,
+        486.239990234375,
+        113.87000274658203
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          476,
+          73,
+          475,
+          74,
+          474,
+          74,
+          473,
+          75,
+          471,
+          75,
+          470,
+          76,
+          469,
+          76,
+          468,
+          77,
+          467,
+          77,
+          466,
+          78,
+          465,
+          78,
+          465,
+          84,
+          466,
+          85,
+          466,
+          90,
+          467,
+          91,
+          467,
+          96,
+          468,
+          97,
+          468,
+          101,
+          469,
+          102,
+          469,
+          106,
+          476,
+          113,
+          477,
+          113,
+          479,
+          111,
+          480,
+          111,
+          483,
+          108,
+          484,
+          108,
+          485,
+          107,
+          485,
+          80,
+          484,
+          79,
+          484,
+          76,
+          483,
+          75,
+          482,
+          75,
+          481,
+          74,
+          480,
+          74,
+          479,
+          73
+        ]
+      ]
+    ]
+  }
+}

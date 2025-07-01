@@ -1,0 +1,164 @@
+{
+  "image_idx": 2745,
+  "approved": false,
+  "vlm_response": "the image shows a scene with various objects, including a teddy bear, pirate flags, framed pictures, and decorative tinsel. the computer's detection of \"no objects\" is inaccurate. the teddy bear, pirate flags, framed pictures, and tinsel are all present and should be identified. the segmentation masks should accurately represent these objects. therefore, the correct response is:\n\nno",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "book"
+    ],
+    "class_ids": [
+      84,
+      84,
+      84
+    ],
+    "boxes": [
+      [
+        229.6999969482422,
+        240.14999389648438,
+        316.1000061035156,
+        257.0799865722656
+      ],
+      [
+        228.3800048828125,
+        263.9599914550781,
+        317.510009765625,
+        272.6199951171875
+      ],
+      [
+        229.57000732421875,
+        256.0899963378906,
+        315.42999267578125,
+        264.489990234375
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          238,
+          240,
+          237,
+          241,
+          236,
+          241,
+          235,
+          242,
+          233,
+          242,
+          232,
+          243,
+          231,
+          243,
+          230,
+          244,
+          230,
+          251,
+          231,
+          252,
+          231,
+          255,
+          232,
+          255,
+          233,
+          256,
+          262,
+          256,
+          263,
+          255,
+          315,
+          255,
+          315,
+          241,
+          312,
+          241,
+          309,
+          244,
+          298,
+          244,
+          297,
+          245,
+          289,
+          245,
+          288,
+          244,
+          275,
+          244,
+          274,
+          243,
+          257,
+          243,
+          256,
+          242,
+          241,
+          242,
+          240,
+          241,
+          239,
+          241
+        ]
+      ],
+      [
+        [
+          228,
+          264,
+          229,
+          265,
+          229,
+          270,
+          268,
+          270,
+          269,
+          271,
+          312,
+          271,
+          313,
+          272,
+          316,
+          272,
+          316,
+          268,
+          317,
+          267,
+          316,
+          267,
+          314,
+          265,
+          259,
+          265,
+          258,
+          264
+        ]
+      ],
+      [
+        [
+          231,
+          256,
+          231,
+          258,
+          230,
+          259,
+          230,
+          263,
+          314,
+          263,
+          314,
+          258,
+          294,
+          258,
+          293,
+          257,
+          252,
+          257,
+          251,
+          256
+        ]
+      ]
+    ]
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "image_idx": 1981,
+  "approved": false,
+  "vlm_response": "the computer's detection of objects in the image is not accurate. the segmentation masks indicate that no objects have been identified, which is incorrect. the image clearly shows various objects such as a kitchen island, a sink, a faucet, a stove, a mixer, a coffee maker, a poster, and a toy on the floor. these objects are not detected by the computer, leading to an inaccurate classification. therefore, the correct response is:\n\nno",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "book"
+    ],
+    "class_ids": [
+      84
+    ],
+    "boxes": [
+      [
+        220.72999572753906,
+        362.54998779296875,
+        278.1400146484375,
+        381.1400146484375
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          221,
+          363,
+          222,
+          364,
+          222,
+          380,
+          243,
+          380,
+          244,
+          379,
+          274,
+          379,
+          275,
+          378,
+          277,
+          378,
+          277,
+          377,
+          276,
+          376,
+          276,
+          373,
+          275,
+          372,
+          275,
+          369,
+          274,
+          368,
+          274,
+          366,
+          273,
+          365,
+          273,
+          363
+        ]
+      ]
+    ]
+  }
+}

@@ -4,6 +4,18 @@ import torchvision.ops as ops
 import numpy as np
 
 def evaluate(model, data_loader, device):
+    """
+    Evaluate the model on the validation set and return the average loss.
+    
+    Args:
+        model: The model to evaluate
+        data_loader: Validation data loader
+        device: Device to evaluate on
+        
+    Returns:
+        Average validation loss
+    """
+    model.eval()
     total_loss = 0
     
     with torch.no_grad():
@@ -11,12 +23,18 @@ def evaluate(model, data_loader, device):
             images = list(image.to(device) for image in images)
             targets = [{k: v.to(device) for k, v in t.items()} for t in targets]
             
+            # For evaluation, we need to set the model to training mode temporarily
+            # to get the loss dictionary, then switch back to eval mode
+            model.train()
             loss_dict = model(images, targets)
+            model.eval()
+            
+            # Sum up all losses
             losses = sum(loss for loss in loss_dict.values())
             total_loss += losses.item()
     
-    print(f"Validation loss: {total_loss/len(data_loader):.4f}")
-    return total_loss/len(data_loader)
+    # Calculate average validation loss
+    return total_loss / len(data_loader)
 
 
 
@@ -52,9 +70,19 @@ def calculate_ap(model, data_loader, device, iou_threshold=0.5):
                 all_pred_scores.append(output['scores'].cpu())
                 all_pred_masks.append(output['masks'].cpu() > 0.5)  # Threshold at 0.5
     
+    # Detect model type and get class range accordingly
+    if hasattr(model, 'roi_heads'):
+        # MaskRCNN model
+        num_classes = model.roi_heads.box_predictor.cls_score.out_features
+    else:
+        # YOLOv8 model
+        num_classes = model.num_classes + 1  # Add 1 because YOLOv8 doesn't count background
+    
     # Calculate AP for each class
     ap_per_class = {}
-    for class_id in range(1, model.roi_heads.box_predictor.cls_score.out_features):  # Skip background (0)
+    
+    # Process each class (skip background class 0)
+    for class_id in range(1, num_classes):
         true_positives = 0
         false_positives = 0
         total_gt = 0
@@ -174,5 +202,20 @@ def calculate_ap(model, data_loader, device, iou_threshold=0.5):
     valid_aps = [ap for ap in ap_per_class.values() if not np.isnan(ap)]
     mAP = sum(valid_aps) / len(valid_aps) if valid_aps else 0
     
-    return mAP, ap_per_class
+    # Fix here: Convert the dictionary to match the expected format
+    # Instead of returning class IDs as keys, create a dictionary with class names mapped to values
+    class_names = {
+        1: "book",
+        2: "bird",
+        3: "stop sign",
+        4: "zebra"
+    }
+    
+    # Create a proper dictionary with class names and their actual AP values
+    formatted_ap = {}
+    for class_id, ap_value in ap_per_class.items():
+        class_name = class_names.get(class_id, f"class_{class_id}")
+        formatted_ap[class_name] = float(ap_value)  # Ensure it's a native Python float
+    
+    return mAP, formatted_ap
 

@@ -1,0 +1,84 @@
+{
+  "image_idx": 2346,
+  "approved": true,
+  "vlm_response": "after carefully examining the image, i have visually identified the objects and their corresponding masks. the objects detected are a laptop, a speaker, a printer, and a red object that appears to be a usb drive. the masks are color-coded, with the laptop and speaker in black, the printer in white, and the red object in red. the background is blurred, making it difficult to assess the mask quality. there are no obvious errors in the mask detection process. therefore, the output is:\n\n* **yes**",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "book"
+    ],
+    "class_ids": [
+      84
+    ],
+    "boxes": [
+      [
+        411.6000061035156,
+        0.6600000262260437,
+        443.67999267578125,
+        27.639999389648438
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          419,
+          1,
+          418,
+          2,
+          414,
+          2,
+          414,
+          3,
+          413,
+          4,
+          413,
+          10,
+          412,
+          11,
+          412,
+          18,
+          414,
+          20,
+          414,
+          21,
+          418,
+          25,
+          418,
+          26,
+          419,
+          27,
+          420,
+          26,
+          428,
+          26,
+          429,
+          25,
+          438,
+          25,
+          439,
+          24,
+          443,
+          24,
+          443,
+          21,
+          442,
+          20,
+          442,
+          3,
+          441,
+          2,
+          438,
+          2,
+          437,
+          1
+        ]
+      ]
+    ]
+  }
+}

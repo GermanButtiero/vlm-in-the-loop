@@ -1,0 +1,78 @@
+{
+  "image_idx": 2562,
+  "approved": true,
+  "vlm_response": "after carefully examining the image, i have identified the following objects and their visual characteristics:\n\n1. **stop sign**: the red stop sign is clearly visible with good iou (intersection of union of) with the objects, indicating a good match.\n2. **house**: the brick house is identifiable with its distinct red brick facade and white garage door.\n3. **garage**: the white garage door is visible, matching the object.\n4. **trees**: the trees are present, with one on the right side of the image.\n5. **snow**: the snow is visible on the ground and in puddles, indicating recent snowfall.\n6. **driveway**: the driveway is visible, leading to the house.\n\nthe objects are correctly detected and match the model's declarations. there are no significant errors in the visual information provided.\n\n*yes*",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        288.32000732421875,
+        96.7300033569336,
+        327.5199890136719,
+        135.4499969482422
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          308,
+          97,
+          307,
+          98,
+          299,
+          98,
+          288,
+          109,
+          289,
+          110,
+          289,
+          121,
+          290,
+          122,
+          290,
+          124,
+          297,
+          131,
+          297,
+          132,
+          299,
+          134,
+          315,
+          134,
+          318,
+          131,
+          319,
+          131,
+          324,
+          126,
+          325,
+          126,
+          327,
+          124,
+          326,
+          123,
+          326,
+          112,
+          325,
+          111,
+          325,
+          106,
+          316,
+          97
+        ]
+      ]
+    ]
+  }
+}

@@ -1,0 +1,166 @@
+{
+  "image_idx": 305,
+  "approved": true,
+  "vlm_response": "yes, the object classes and segmentation masks appear to be accurate. the computer has correctly identified the stop sign, which is a key object in the image. the segmentation mask for the stop sign is well-defined and accurately covers the sign, with no significant portions of the sign being missed or incorrectly included. the rest of the image, including the road, vehicles, and other elements, does not show any misclassifications or poor segmentation.",
+  "prediction": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      3
+    ],
+    "scores": [
+      0.9924923777580261
+    ],
+    "boxes": [
+      [
+        43.81778335571289,
+        88.97186279296875,
+        80.78365325927734,
+        125.75169372558594
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          55,
+          89,
+          54,
+          90,
+          53,
+          90,
+          46,
+          97,
+          46,
+          98,
+          45,
+          99,
+          45,
+          115,
+          46,
+          116,
+          46,
+          117,
+          54,
+          125,
+          55,
+          125,
+          56,
+          126,
+          71,
+          126,
+          75,
+          122,
+          76,
+          122,
+          79,
+          119,
+          79,
+          117,
+          80,
+          116,
+          80,
+          103,
+          79,
+          102,
+          79,
+          101,
+          78,
+          100,
+          78,
+          99,
+          74,
+          95,
+          74,
+          94,
+          70,
+          90,
+          69,
+          90,
+          68,
+          89
+        ]
+      ]
+    ]
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        45.16999816894531,
+        88.91999816894531,
+        80.5199966430664,
+        128.3000030517578
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          56,
+          89,
+          50,
+          95,
+          49,
+          95,
+          46,
+          98,
+          46,
+          103,
+          45,
+          104,
+          45,
+          115,
+          46,
+          116,
+          46,
+          117,
+          53,
+          124,
+          53,
+          125,
+          55,
+          127,
+          69,
+          127,
+          74,
+          122,
+          74,
+          121,
+          78,
+          117,
+          78,
+          111,
+          79,
+          110,
+          79,
+          102,
+          76,
+          99,
+          76,
+          98,
+          74,
+          96,
+          74,
+          95,
+          73,
+          94,
+          73,
+          93,
+          71,
+          91,
+          71,
+          90,
+          63,
+          90,
+          62,
+          89
+        ]
+      ]
+    ]
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "image_idx": 2179,
+  "approved": false,
+  "vlm_response": "the image shows a table setting with various objects, including plates, wine bottles, glasses, napkins, a vase with flowers, baskets, and other items. the computer's detection of \"no objects\" is inaccurate. the segmentation masks should identify the objects present in the image, such as plates, wine bottles, glasses, napkins, and other items. the objects are clearly visible and distinct, and the segmentation masks should accurately represent these objects. therefore, the correct response is:\n\nno, the computer detected no objects, which is inaccurate.",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "book"
+    ],
+    "class_ids": [
+      84
+    ],
+    "boxes": [
+      [
+        276.95001220703125,
+        319.57000732421875,
+        342.7300109863281,
+        367.55999755859375
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          277,
+          320,
+          277,
+          362,
+          278,
+          363,
+          278,
+          365,
+          279,
+          366,
+          279,
+          367,
+          283,
+          367,
+          284,
+          366,
+          336,
+          366,
+          337,
+          365,
+          342,
+          365,
+          342,
+          361,
+          341,
+          360,
+          341,
+          352,
+          340,
+          351,
+          340,
+          344,
+          339,
+          343,
+          339,
+          335,
+          338,
+          334,
+          338,
+          326,
+          337,
+          325,
+          337,
+          320
+        ]
+      ]
+    ]
+  }
+}

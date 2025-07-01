@@ -1,0 +1,150 @@
+{
+  "image_idx": 2386,
+  "approved": true,
+  "vlm_response": "yes, the object classes and segmentation masks are accurate. the computer has correctly identified the stop sign in the image. the segmentation mask for the stop sign is clearly visible and accurately represents the object. there are no misclassifications or poor segmentations in this image.",
+  "prediction": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      3
+    ],
+    "scores": [
+      0.9948956370353699
+    ],
+    "boxes": [
+      [
+        355.8277893066406,
+        137.3112030029297,
+        398.13812255859375,
+        181.430419921875
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          369,
+          137,
+          368,
+          138,
+          366,
+          138,
+          363,
+          141,
+          363,
+          142,
+          362,
+          143,
+          361,
+          143,
+          356,
+          148,
+          356,
+          169,
+          368,
+          181,
+          387,
+          181,
+          397,
+          171,
+          397,
+          150,
+          395,
+          148,
+          395,
+          147,
+          388,
+          140,
+          388,
+          139,
+          387,
+          139,
+          386,
+          138,
+          385,
+          138,
+          384,
+          137,
+          383,
+          137,
+          382,
+          138,
+          381,
+          138,
+          380,
+          137,
+          379,
+          138,
+          378,
+          138,
+          377,
+          137
+        ]
+      ]
+    ]
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        355.82000732421875,
+        136.69000244140625,
+        400.2900085449219,
+        184.00999450683594
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          368,
+          137,
+          356,
+          149,
+          356,
+          167,
+          361,
+          172,
+          361,
+          173,
+          369,
+          181,
+          373,
+          181,
+          374,
+          182,
+          380,
+          182,
+          381,
+          183,
+          384,
+          183,
+          386,
+          181,
+          387,
+          181,
+          392,
+          176,
+          393,
+          176,
+          398,
+          171,
+          399,
+          171,
+          399,
+          161,
+          398,
+          160,
+          398,
+          149,
+          386,
+          137
+        ]
+      ]
+    ]
+  }
+}

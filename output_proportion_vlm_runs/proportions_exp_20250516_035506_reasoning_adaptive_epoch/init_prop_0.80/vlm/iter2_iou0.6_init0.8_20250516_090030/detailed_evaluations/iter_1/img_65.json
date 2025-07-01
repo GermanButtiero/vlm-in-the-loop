@@ -1,0 +1,108 @@
+{
+  "image_idx": 65,
+  "approved": true,
+  "vlm_response": "after carefully examining the image, i have identified the following objects:\n\n1. **stop sign**: the stop sign is clearly visible and fits the criteria of being a red octagonal shape with white lettering.\n2. **road markings**: the white lines on the road are visible and fit the description of road markings.\n3. **background lights**: the distant lights in the background are visible and fit the description of lights from vehicles or streetlights.\n\nthe stop sign is the only object that fits the criteria of being detected and properly classified. the other objects, such as the road markings and background lights, are also correctly identified.\n\n* **yes** - all objects are correctly detected and every mask is good.",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        241.42999267578125,
+        125.36000061035156,
+        308.7099914550781,
+        194.82000732421875
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          261,
+          125,
+          246,
+          140,
+          245,
+          140,
+          244,
+          141,
+          244,
+          143,
+          243,
+          144,
+          243,
+          155,
+          242,
+          156,
+          242,
+          167,
+          241,
+          168,
+          241,
+          169,
+          245,
+          173,
+          245,
+          174,
+          249,
+          178,
+          249,
+          179,
+          253,
+          183,
+          253,
+          184,
+          257,
+          188,
+          257,
+          189,
+          261,
+          193,
+          261,
+          194,
+          289,
+          194,
+          291,
+          192,
+          291,
+          191,
+          300,
+          182,
+          300,
+          181,
+          307,
+          174,
+          307,
+          160,
+          308,
+          159,
+          308,
+          146,
+          305,
+          143,
+          305,
+          142,
+          297,
+          134,
+          297,
+          133,
+          290,
+          126,
+          264,
+          126,
+          263,
+          125
+        ]
+      ]
+    ]
+  }
+}

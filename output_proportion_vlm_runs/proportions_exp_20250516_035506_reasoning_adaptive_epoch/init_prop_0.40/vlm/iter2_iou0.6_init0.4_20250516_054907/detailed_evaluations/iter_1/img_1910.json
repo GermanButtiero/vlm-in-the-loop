@@ -1,0 +1,168 @@
+{
+  "image_idx": 1910,
+  "approved": false,
+  "vlm_response": "after carefully examining the image, i have visually identified the objects that are masked. the objects that are masked are:\n\n1. apples on the countertop.\n2. a basket under the countertop.\n3. a book titled \"india\" on the countertop.\n4. a basket under the countertop.\n5. a book titled \"india\" on the countertop.\n6. a basket under the countertop.\n7. a book titled \"india\" on the countertop.\n8. a basket under the countertop.\n9. a book titled \"india\" on the countertop.\n10. a basket under the countertop.\n11. a book titled \"india\" on the countertop.\n12. a basket under the countertop.\n13. a book titled \"india\" on the countertop.\n14. a basket under the countertop.\n15. a book titled \"india\" on the countertop.\n16. a basket under the countertop.\n17. a book titled \"india\" on the countertop.\n18. a basket under the countertop.\n19. a book titled \"india\" on the countertop.\n20. a basket under the",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "book"
+    ],
+    "class_ids": [
+      84,
+      84,
+      84
+    ],
+    "boxes": [
+      [
+        557.6599731445312,
+        9.710000038146973,
+        587.8699951171875,
+        22.649999618530273
+      ],
+      [
+        632.280029296875,
+        65.02999877929688,
+        640.0,
+        103.69000244140625
+      ],
+      [
+        415.760009765625,
+        0.0,
+        490.4100036621094,
+        12.329999923706055
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          558,
+          10,
+          558,
+          14,
+          559,
+          15,
+          559,
+          19,
+          560,
+          20,
+          560,
+          21,
+          584,
+          21,
+          585,
+          22,
+          587,
+          22,
+          587,
+          20,
+          586,
+          19,
+          586,
+          14,
+          583,
+          14,
+          582,
+          13,
+          576,
+          13,
+          575,
+          12,
+          570,
+          12,
+          569,
+          11,
+          563,
+          11,
+          562,
+          10
+        ]
+      ],
+      [
+        [
+          639,
+          65,
+          638,
+          66,
+          636,
+          66,
+          636,
+          74,
+          635,
+          75,
+          635,
+          82,
+          634,
+          83,
+          634,
+          91,
+          633,
+          92,
+          633,
+          99,
+          632,
+          100,
+          632,
+          102,
+          636,
+          102,
+          637,
+          103,
+          639,
+          103
+        ]
+      ],
+      [
+        [
+          416,
+          0,
+          416,
+          2,
+          417,
+          3,
+          417,
+          6,
+          418,
+          7,
+          418,
+          11,
+          433,
+          11,
+          434,
+          10,
+          447,
+          10,
+          448,
+          9,
+          456,
+          9,
+          457,
+          8,
+          465,
+          8,
+          466,
+          7,
+          475,
+          7,
+          476,
+          6,
+          484,
+          6,
+          485,
+          5,
+          488,
+          5,
+          489,
+          4,
+          489,
+          0
+        ]
+      ]
+    ]
+  }
+}

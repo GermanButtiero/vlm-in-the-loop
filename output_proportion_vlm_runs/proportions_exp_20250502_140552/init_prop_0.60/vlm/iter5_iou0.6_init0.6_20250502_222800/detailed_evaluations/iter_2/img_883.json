@@ -1,0 +1,92 @@
+{
+  "image_idx": 883,
+  "approved": false,
+  "vlm_response": "the computer's detection of objects in the image is not accurate. the segmentation mask highlights a pink object that is not clearly identifiable as any specific object in the image. additionally, the computer has not detected any objects, which is incorrect as there are several objects present, such as a bicycle, a chair, a table, and a bookshelf. therefore, the answer is:\n\nno",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "book"
+    ],
+    "class_ids": [
+      84
+    ],
+    "boxes": [
+      [
+        290.489990234375,
+        67.33999633789062,
+        336.54998779296875,
+        83.86000061035156
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          322,
+          67,
+          321,
+          68,
+          316,
+          68,
+          315,
+          69,
+          314,
+          69,
+          313,
+          70,
+          312,
+          70,
+          311,
+          71,
+          310,
+          70,
+          303,
+          70,
+          302,
+          69,
+          292,
+          69,
+          291,
+          70,
+          290,
+          70,
+          290,
+          75,
+          291,
+          76,
+          291,
+          82,
+          322,
+          82,
+          323,
+          83,
+          336,
+          83,
+          336,
+          71,
+          335,
+          71,
+          334,
+          70,
+          333,
+          70,
+          332,
+          69,
+          330,
+          69,
+          329,
+          68,
+          326,
+          68,
+          325,
+          67
+        ]
+      ]
+    ]
+  }
+}

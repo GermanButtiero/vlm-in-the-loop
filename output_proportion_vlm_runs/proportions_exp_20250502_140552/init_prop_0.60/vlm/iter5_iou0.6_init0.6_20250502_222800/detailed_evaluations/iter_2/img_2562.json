@@ -1,0 +1,164 @@
+{
+  "image_idx": 2562,
+  "approved": true,
+  "vlm_response": "yes, the object classes and segmentation masks are accurate. the computer has correctly identified the stop sign in the image. the segmentation mask for the stop sign is well-defined, highlighting the red octagonal shape with white lettering, which is consistent with the typical appearance of a stop sign. there are no other objects misclassified or poorly segmented in the image.",
+  "prediction": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      3
+    ],
+    "scores": [
+      0.9965962767601013
+    ],
+    "boxes": [
+      [
+        289.5390625,
+        97.00544738769531,
+        325.9524841308594,
+        134.82339477539062
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          311,
+          96,
+          310,
+          97,
+          299,
+          97,
+          290,
+          106,
+          290,
+          107,
+          289,
+          108,
+          289,
+          124,
+          298,
+          133,
+          299,
+          133,
+          300,
+          134,
+          307,
+          134,
+          308,
+          135,
+          312,
+          135,
+          313,
+          134,
+          316,
+          134,
+          318,
+          132,
+          319,
+          132,
+          323,
+          128,
+          323,
+          127,
+          325,
+          125,
+          325,
+          124,
+          326,
+          123,
+          326,
+          107,
+          325,
+          106,
+          325,
+          105,
+          320,
+          100,
+          320,
+          99,
+          319,
+          98,
+          318,
+          98,
+          317,
+          97,
+          315,
+          97,
+          314,
+          96,
+          313,
+          96,
+          312,
+          97
+        ]
+      ]
+    ]
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        288.32000732421875,
+        96.7300033569336,
+        327.5199890136719,
+        135.4499969482422
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          308,
+          97,
+          307,
+          98,
+          299,
+          98,
+          288,
+          109,
+          289,
+          110,
+          289,
+          121,
+          290,
+          122,
+          290,
+          124,
+          297,
+          131,
+          297,
+          132,
+          299,
+          134,
+          315,
+          134,
+          318,
+          131,
+          319,
+          131,
+          324,
+          126,
+          325,
+          126,
+          327,
+          124,
+          326,
+          123,
+          326,
+          112,
+          325,
+          111,
+          325,
+          106,
+          316,
+          97
+        ]
+      ]
+    ]
+  }
+}

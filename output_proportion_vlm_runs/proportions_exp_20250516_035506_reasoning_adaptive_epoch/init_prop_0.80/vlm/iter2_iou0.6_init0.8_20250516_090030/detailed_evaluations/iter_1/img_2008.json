@@ -1,0 +1,82 @@
+{
+  "image_idx": 2008,
+  "approved": true,
+  "vlm_response": "after carefully examining the image, i have identified the following objects and their visual characteristics:\n\n1. **stop sign**: the red octagonal stop sign is well-defined and fits the criteria of being a \"stop sign.\"\n2. **fire hydrant**: the fire hydrant is clearly visible with water gushing out, fitting the \"fire hydrant\" descriptor.\n3. **people**: there are two individuals walking on the sidewalk, fitting the \"people\" descriptor.\n4. **cars**: multiple cars are parked along the street, fitting the \"cars\" descriptor.\n5. **street signs**: there are street signs visible, including a triangular sign and a rectangular sign, fitting the \"street signs\" descriptor.\n6. **water puddle**: a water puddle is present on the sidewalk, fitting the \"water puddle\" descriptor.\n\nthe objects are correctly detected and every mask (stop sign, fire hydrant, people, cars, street signs) fits the criteria. there are no errors in the detections.\n\n*yes*",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        377.8599853515625,
+        0.0,
+        440.82000732421875,
+        55.08000183105469
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          411,
+          0,
+          410,
+          1,
+          386,
+          1,
+          385,
+          2,
+          384,
+          2,
+          381,
+          5,
+          380,
+          5,
+          379,
+          6,
+          379,
+          14,
+          378,
+          15,
+          378,
+          35,
+          397,
+          54,
+          418,
+          54,
+          419,
+          53,
+          423,
+          53,
+          435,
+          41,
+          435,
+          40,
+          439,
+          36,
+          439,
+          21,
+          440,
+          20,
+          440,
+          4,
+          437,
+          1,
+          436,
+          1,
+          435,
+          0
+        ]
+      ]
+    ]
+  }
+}

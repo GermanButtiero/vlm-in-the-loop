@@ -1,0 +1,78 @@
+{
+  "image_idx": 726,
+  "approved": false,
+  "vlm_response": "the computer's detection of \"no objects\" is not accurate. the image shows three distinct colored areas under the bridge, which represent the computer's segmentation masks. these masks are intended to identify objects, but in this case, they are incorrectly labeled as \"no objects.\" the segmentation masks are meant to highlight specific areas of interest, such as the water under the bridge, but they are not correctly classified as objects. therefore, the correct response is:\n\nno",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        160.3800048828125,
+        181.1699981689453,
+        211.77000427246094,
+        233.17999267578125
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          173,
+          181,
+          164,
+          190,
+          163,
+          190,
+          160,
+          193,
+          160,
+          218,
+          172,
+          230,
+          174,
+          230,
+          175,
+          231,
+          187,
+          231,
+          188,
+          232,
+          196,
+          232,
+          198,
+          230,
+          199,
+          230,
+          210,
+          219,
+          210,
+          213,
+          211,
+          212,
+          211,
+          193,
+          209,
+          191,
+          208,
+          191,
+          203,
+          186,
+          202,
+          186,
+          197,
+          181
+        ]
+      ]
+    ]
+  }
+}

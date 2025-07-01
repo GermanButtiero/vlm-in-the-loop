@@ -1,0 +1,156 @@
+{
+  "image_idx": 2533,
+  "approved": true,
+  "vlm_response": "yes, the object classes and segmentation masks are accurate. the computer has correctly identified the stop sign in the image. the segmentation mask for the stop sign is clearly visible and accurately represents the object. there are no misclassifications or poor segmentations in this image.",
+  "prediction": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      3
+    ],
+    "scores": [
+      0.9956667423248291
+    ],
+    "boxes": [
+      [
+        136.42218017578125,
+        17.247587203979492,
+        175.73765563964844,
+        64.24288177490234
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          148,
+          19,
+          139,
+          28,
+          139,
+          29,
+          137,
+          31,
+          137,
+          37,
+          138,
+          38,
+          138,
+          49,
+          139,
+          50,
+          139,
+          51,
+          151,
+          63,
+          167,
+          63,
+          170,
+          60,
+          170,
+          59,
+          174,
+          55,
+          174,
+          54,
+          175,
+          53,
+          175,
+          51,
+          176,
+          50,
+          176,
+          37,
+          175,
+          36,
+          175,
+          31,
+          174,
+          30,
+          174,
+          29,
+          164,
+          19,
+          159,
+          19,
+          158,
+          20,
+          157,
+          20,
+          156,
+          19
+        ]
+      ]
+    ]
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        137.10000610351562,
+        21.100000381469727,
+        176.94000244140625,
+        64.62999725341797
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          158,
+          21,
+          157,
+          22,
+          148,
+          22,
+          137,
+          33,
+          137,
+          34,
+          138,
+          35,
+          138,
+          41,
+          139,
+          42,
+          139,
+          48,
+          140,
+          49,
+          140,
+          51,
+          141,
+          52,
+          141,
+          53,
+          151,
+          63,
+          161,
+          63,
+          162,
+          64,
+          164,
+          64,
+          169,
+          59,
+          169,
+          58,
+          176,
+          51,
+          176,
+          34,
+          168,
+          26,
+          168,
+          25,
+          164,
+          21
+        ]
+      ]
+    ]
+  }
+}

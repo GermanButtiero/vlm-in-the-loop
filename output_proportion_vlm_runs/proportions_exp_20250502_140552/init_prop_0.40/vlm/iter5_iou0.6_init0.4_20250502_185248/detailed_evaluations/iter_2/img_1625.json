@@ -1,0 +1,80 @@
+{
+  "image_idx": 1625,
+  "approved": false,
+  "vlm_response": "the computer's detection of objects in the image is not accurate. the segmentation masks are not correctly identifying any objects. the image shows a person, a fire hydrant, a street sign, a truck, and several cars, but the computer has not detected any of these objects. therefore, the answer is:\n\nno",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        1.840000033378601,
+        177.75999450683594,
+        44.380001068115234,
+        221.5399932861328
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          14,
+          178,
+          13,
+          179,
+          11,
+          179,
+          10,
+          180,
+          10,
+          181,
+          2,
+          189,
+          2,
+          208,
+          14,
+          220,
+          25,
+          220,
+          26,
+          219,
+          31,
+          219,
+          32,
+          218,
+          33,
+          218,
+          33,
+          217,
+          42,
+          208,
+          42,
+          207,
+          43,
+          206,
+          43,
+          188,
+          40,
+          185,
+          39,
+          185,
+          34,
+          180,
+          33,
+          180,
+          31,
+          178
+        ]
+      ]
+    ]
+  }
+}

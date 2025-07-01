@@ -1,0 +1,80 @@
+{
+  "image_idx": 97,
+  "approved": true,
+  "vlm_response": "after carefully examining the image, i have visually identified the objects and their detections. the objects detected are:\n\n1. man (skateboarder)\n2. skateboard\n3. car\n4. bag (plastic)\n5. street signs\n6. buildings\n7. trees\n8. grass\n\nthe man is visually detected with a high degree of accuracy, fitting the mask with a high iou (\u2265 60%). the skateboard is also detected, fitting the mask with a high iou. the car, bag, and street signs are detected with good accuracy, fitting the masks with high iou. the buildings, trees, grass, and the man are detected with high accuracy, fitting the masks with high iou.\n\nthere are no obvious errors in the detections. the image does not show any significant background spill-over or extra masks, and the objects are correctly classified.\n\n*yes*",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        182.17999267578125,
+        0.3199999928474426,
+        243.47999572753906,
+        24.229999542236328
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          212,
+          0,
+          211,
+          1,
+          183,
+          1,
+          183,
+          3,
+          184,
+          4,
+          184,
+          5,
+          190,
+          11,
+          191,
+          11,
+          197,
+          17,
+          198,
+          17,
+          203,
+          22,
+          206,
+          22,
+          207,
+          23,
+          227,
+          23,
+          232,
+          18,
+          232,
+          17,
+          238,
+          11,
+          238,
+          10,
+          242,
+          6,
+          242,
+          4,
+          241,
+          3,
+          241,
+          1,
+          240,
+          0
+        ]
+      ]
+    ]
+  }
+}

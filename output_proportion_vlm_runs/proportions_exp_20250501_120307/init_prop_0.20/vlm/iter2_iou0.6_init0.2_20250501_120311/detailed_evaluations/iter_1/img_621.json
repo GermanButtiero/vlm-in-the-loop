@@ -1,0 +1,84 @@
+{
+  "image_idx": 621,
+  "approved": false,
+  "vlm_response": "the image shows a street scene with various objects, including a stop sign, a house, parked cars, and palm trees. the computer's segmentation masks are not visible in the image, but based on the description, the computer detected no objects. this is inaccurate as the image clearly shows multiple objects. therefore, the answer is:\n\nno, the computer detected no objects, which is incorrect.",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        417.1300048828125,
+        149.1300048828125,
+        456.010009765625,
+        188.8699951171875
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          428,
+          149,
+          423,
+          154,
+          422,
+          154,
+          417,
+          159,
+          417,
+          172,
+          418,
+          173,
+          418,
+          177,
+          422,
+          181,
+          422,
+          182,
+          428,
+          188,
+          438,
+          188,
+          439,
+          187,
+          443,
+          187,
+          444,
+          186,
+          445,
+          186,
+          449,
+          182,
+          450,
+          182,
+          454,
+          178,
+          455,
+          178,
+          455,
+          163,
+          445,
+          153,
+          445,
+          152,
+          443,
+          150,
+          439,
+          150,
+          438,
+          149
+        ]
+      ]
+    ]
+  }
+}

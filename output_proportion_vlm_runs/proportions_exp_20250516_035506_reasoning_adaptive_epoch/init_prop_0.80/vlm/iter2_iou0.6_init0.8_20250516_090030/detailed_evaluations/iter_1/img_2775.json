@@ -1,0 +1,86 @@
+{
+  "image_idx": 2775,
+  "approved": false,
+  "vlm_response": "after carefully examining the image, i have identified the following objects visually:\n\n1. **surfboards**: several surfboards are visible, held by individuals.\n2. **wetsuits**: multiple individuals are wearing wetsuits.\n3. **people**: various people are walking or standing, some with surfboards.\n4. **cars**: several cars are parked or driving on the street.\n5. **signs**: a stop sign is visible.\n6. **bicycles**: a bicycle is parked on the right side.\n7. **people with disabilities**: a person in a wheelchair is present.\n\nthe model's detections are as follows:\n\n- **surfboards**: all surfboards are detected with a high iou (\u2265 60%).\n- **wetsuits**: all individuals wearing wetsuits are detected with a high iou.\n- **people**: all individuals are detected with a high iou.\n- **cars**: all cars are detected with a high iou.\n- **signs**: all signs are detected with a high iou.\n- **bicycles**: all bicycles are detected with a high iou.\n- **people with disabilities**: all individuals with disabilities are detected with a high iou.\n\nno objects are detected with errors,",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        225.49000549316406,
+        0.0,
+        307.3999938964844,
+        29.8700008392334
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          227,
+          0,
+          227,
+          1,
+          226,
+          2,
+          226,
+          6,
+          225,
+          7,
+          226,
+          8,
+          227,
+          8,
+          233,
+          14,
+          234,
+          14,
+          239,
+          19,
+          240,
+          19,
+          245,
+          24,
+          246,
+          24,
+          251,
+          29,
+          290,
+          29,
+          292,
+          27,
+          292,
+          26,
+          296,
+          22,
+          296,
+          21,
+          299,
+          18,
+          299,
+          17,
+          303,
+          13,
+          303,
+          12,
+          306,
+          9,
+          306,
+          1,
+          305,
+          0
+        ]
+      ]
+    ]
+  }
+}

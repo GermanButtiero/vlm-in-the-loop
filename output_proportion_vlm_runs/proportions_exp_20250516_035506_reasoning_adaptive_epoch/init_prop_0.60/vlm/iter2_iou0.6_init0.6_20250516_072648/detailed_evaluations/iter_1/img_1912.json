@@ -1,0 +1,58 @@
+{
+  "image_idx": 1912,
+  "approved": true,
+  "vlm_response": "after carefully examining the image, i have visually identified the objects and their corresponding masks. the objects detected are a cat, a piano, a table, a rug, and a plant. the masks are:\n\n1. cat: the cat is clearly visible and fits within the mask with an iou of \u2265 60%.\n2. piano: the piano is partially visible and fits within the mask with an iou of \u2265 60%.\n3. table: the table is clearly visible and fits within the mask with an iou of \u2265 60%.\n4. rug: the rug is visible and fits within the mask with an iou of \u2265 60%.\n5. plant: the plant is visible and fits within the mask with an iou of \u2265 60%.\n\nthe objects are correctly detected and every mask is good. therefore, the output is:\n\n* **yes**",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "book"
+    ],
+    "class_ids": [
+      84
+    ],
+    "boxes": [
+      [
+        283.80999755859375,
+        0.0,
+        397.1400146484375,
+        41.900001525878906
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          288,
+          0,
+          287,
+          1,
+          285,
+          1,
+          285,
+          12,
+          284,
+          13,
+          284,
+          41,
+          396,
+          41,
+          396,
+          2,
+          371,
+          2,
+          370,
+          1,
+          318,
+          1,
+          317,
+          0
+        ]
+      ]
+    ]
+  }
+}

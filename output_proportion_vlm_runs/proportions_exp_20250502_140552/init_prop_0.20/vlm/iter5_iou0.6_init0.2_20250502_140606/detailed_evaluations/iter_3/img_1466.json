@@ -1,0 +1,64 @@
+{
+  "image_idx": 1466,
+  "approved": true,
+  "vlm_response": "the image shows a set of clocks with labels indicating different cities, and there are colored areas representing the computer's identification of objects. the computer detected the following objects: clocks, labels, and a cup. the segmentation masks are accurate, as they correctly identify the clocks, labels, and the cup. therefore, the answer is:\n\nyes",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "book"
+    ],
+    "class_ids": [
+      84
+    ],
+    "boxes": [
+      [
+        394.4100036621094,
+        577.7999877929688,
+        478.0,
+        603.2999877929688
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          431,
+          578,
+          430,
+          579,
+          397,
+          579,
+          396,
+          580,
+          395,
+          580,
+          394,
+          581,
+          394,
+          582,
+          395,
+          583,
+          395,
+          602,
+          459,
+          602,
+          460,
+          601,
+          471,
+          601,
+          472,
+          600,
+          477,
+          600,
+          477,
+          578
+        ]
+      ]
+    ]
+  }
+}

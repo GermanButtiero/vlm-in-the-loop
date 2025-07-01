@@ -1,0 +1,78 @@
+{
+  "image_idx": 726,
+  "approved": false,
+  "vlm_response": "the image shows a bridge over a river with a stop sign and some buildings in the background. the green and red segmentation masks highlight specific areas, but the computer's detection of \"no objects\" is inaccurate. the segmentation masks are present, but the objects they represent are not correctly identified. the green mask highlights water, which is not an object, and the red mask highlights a stop sign, which is an object. therefore, the segmentation masks are not accurately identifying objects in the image.\n\nthe correct answer is: \"no\" followed by an explanation that the segmentation masks are present but the objects they represent are not correctly identified.",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        160.3800048828125,
+        181.1699981689453,
+        211.77000427246094,
+        233.17999267578125
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          173,
+          181,
+          164,
+          190,
+          163,
+          190,
+          160,
+          193,
+          160,
+          218,
+          172,
+          230,
+          174,
+          230,
+          175,
+          231,
+          187,
+          231,
+          188,
+          232,
+          196,
+          232,
+          198,
+          230,
+          199,
+          230,
+          210,
+          219,
+          210,
+          213,
+          211,
+          212,
+          211,
+          193,
+          209,
+          191,
+          208,
+          191,
+          203,
+          186,
+          202,
+          186,
+          197,
+          181
+        ]
+      ]
+    ]
+  }
+}

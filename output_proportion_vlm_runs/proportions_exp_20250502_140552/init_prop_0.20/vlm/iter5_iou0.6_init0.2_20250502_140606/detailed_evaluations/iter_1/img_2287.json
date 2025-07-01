@@ -1,0 +1,78 @@
+{
+  "image_idx": 2287,
+  "approved": false,
+  "vlm_response": "the image shows a scene with vehicles, a stop sign, and a wet road, but the computer's detection of \"no objects\" is inaccurate. the image clearly contains multiple objects, including vehicles, a stop sign, and a road. the segmentation masks should identify these objects accurately. therefore, the correct response is:\n\nno, the computer detected no objects, which is inaccurate.",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        512.010009765625,
+        269.57000732421875,
+        565.8699951171875,
+        323.0799865722656
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          529,
+          270,
+          526,
+          273,
+          525,
+          273,
+          521,
+          277,
+          520,
+          277,
+          517,
+          280,
+          516,
+          280,
+          513,
+          283,
+          513,
+          299,
+          512,
+          300,
+          512,
+          307,
+          517,
+          312,
+          518,
+          312,
+          528,
+          322,
+          550,
+          322,
+          557,
+          315,
+          558,
+          315,
+          565,
+          308,
+          565,
+          287,
+          549,
+          271,
+          548,
+          271,
+          547,
+          270
+        ]
+      ]
+    ]
+  }
+}

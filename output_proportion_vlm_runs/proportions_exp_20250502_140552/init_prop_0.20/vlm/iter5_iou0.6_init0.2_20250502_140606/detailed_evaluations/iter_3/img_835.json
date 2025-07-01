@@ -1,0 +1,84 @@
+{
+  "image_idx": 835,
+  "approved": false,
+  "vlm_response": "the image shows a stop sign, which is a common object in road scenes. the computer's detection of \"no objects\" is inaccurate. the stop sign is a clear and distinct object in the image, and it should be included in the object segmentation masks. therefore, the correct answer is:\n\nno, the computer detected no objects, but there is a stop sign present in the image.",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        115.47000122070312,
+        172.4600067138672,
+        157.5800018310547,
+        213.47999572753906
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          143,
+          172,
+          142,
+          173,
+          130,
+          173,
+          129,
+          174,
+          127,
+          174,
+          123,
+          178,
+          122,
+          178,
+          119,
+          181,
+          118,
+          181,
+          115,
+          184,
+          116,
+          185,
+          116,
+          192,
+          117,
+          193,
+          117,
+          200,
+          118,
+          201,
+          118,
+          202,
+          122,
+          206,
+          123,
+          206,
+          129,
+          212,
+          145,
+          212,
+          157,
+          200,
+          157,
+          199,
+          156,
+          198,
+          156,
+          184,
+          144,
+          172
+        ]
+      ]
+    ]
+  }
+}

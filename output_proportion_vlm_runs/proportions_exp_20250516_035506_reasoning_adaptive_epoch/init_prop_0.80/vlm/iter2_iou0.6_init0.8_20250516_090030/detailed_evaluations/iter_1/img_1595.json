@@ -1,0 +1,112 @@
+{
+  "image_idx": 1595,
+  "approved": true,
+  "vlm_response": "after carefully examining the image, i have visually identified the objects as follows:\n\n1. **woman**: wearing a black top, smiling, with hands clasped.\n2. **man**: bald, wearing a white shirt, looking to the side.\n3. **pizza**: on a green plate, with a slice missing.\n4. **drinks**: various glasses with straws, including a martini glass and a glass of iced tea.\n5. **tableware**: coasters, plates, and cutlery.\n\nthe model's detections are as follows:\n\n- woman: \u2265 60% iou, fits well.\n- man: \u2265 60% iou, fits well.\n- pizza: \u2265 60% iou, fits well.\n- drinks: \u2265 60% iou, fits well.\n\nno objects are missing, wrong class, or false positives.\n\n*yes*",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        242.02999877929688,
+        0.7599999904632568,
+        274.6199951171875,
+        51.060001373291016
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          251,
+          1,
+          250,
+          2,
+          250,
+          3,
+          247,
+          6,
+          247,
+          7,
+          245,
+          9,
+          245,
+          10,
+          244,
+          11,
+          244,
+          14,
+          243,
+          15,
+          243,
+          26,
+          242,
+          27,
+          242,
+          33,
+          243,
+          34,
+          243,
+          35,
+          244,
+          36,
+          244,
+          37,
+          246,
+          39,
+          246,
+          40,
+          247,
+          41,
+          247,
+          42,
+          249,
+          44,
+          249,
+          45,
+          250,
+          46,
+          250,
+          47,
+          251,
+          48,
+          251,
+          49,
+          252,
+          50,
+          265,
+          50,
+          269,
+          46,
+          270,
+          46,
+          270,
+          42,
+          271,
+          41,
+          271,
+          29,
+          272,
+          28,
+          272,
+          15,
+          273,
+          14,
+          273,
+          2,
+          274,
+          1
+        ]
+      ]
+    ]
+  }
+}

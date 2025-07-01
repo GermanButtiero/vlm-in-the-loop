@@ -1,0 +1,70 @@
+{
+  "image_idx": 2572,
+  "approved": true,
+  "vlm_response": "the computer detected three plush dog toys, which are accurately represented by the segmentation masks. the masks correctly identify the plush toys as the primary objects in the image, with distinct color areas corresponding to the toys' orange bodies and blue accents. the segmentation is clear and well-defined, with no misclassification or poor segmentation observed. therefore, the answer is:\n\nyes",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "book"
+    ],
+    "class_ids": [
+      84
+    ],
+    "boxes": [
+      [
+        0.4399999976158142,
+        225.47999572753906,
+        31.06999969482422,
+        328.1700134277344
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          0,
+          225,
+          0,
+          229,
+          1,
+          230,
+          1,
+          271,
+          2,
+          272,
+          2,
+          314,
+          3,
+          315,
+          3,
+          327,
+          18,
+          327,
+          19,
+          326,
+          30,
+          326,
+          30,
+          306,
+          29,
+          305,
+          29,
+          264,
+          28,
+          263,
+          28,
+          226,
+          5,
+          226,
+          4,
+          225
+        ]
+      ]
+    ]
+  }
+}

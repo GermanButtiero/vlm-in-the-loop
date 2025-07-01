@@ -1,0 +1,164 @@
+{
+  "image_idx": 2033,
+  "approved": false,
+  "vlm_response": "the computer's detection of objects in the image is not accurate. the image shows a wooden cabinet with multiple drawers and cabinets, a vase, a plant, a framed picture, and a wall socket. however, the computer's segmentation masks indicate that no objects were detected. this is incorrect as the image clearly contains several objects. therefore, the answer is:\n\nno",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "book"
+    ],
+    "class_ids": [
+      84,
+      84,
+      84
+    ],
+    "boxes": [
+      [
+        575.489990234375,
+        140.41000366210938,
+        589.52001953125,
+        177.61000061035156
+      ],
+      [
+        538.2999877929688,
+        137.16000366210938,
+        640.0,
+        177.9499969482422
+      ],
+      [
+        534.0800170898438,
+        182.0399932861328,
+        640.0,
+        221.5500030517578
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          578,
+          141,
+          578,
+          152,
+          577,
+          153,
+          577,
+          164,
+          576,
+          165,
+          576,
+          175,
+          575,
+          176,
+          575,
+          177,
+          576,
+          177,
+          577,
+          176,
+          585,
+          176,
+          585,
+          172,
+          586,
+          171,
+          586,
+          162,
+          587,
+          161,
+          587,
+          152,
+          588,
+          151,
+          588,
+          142,
+          589,
+          141
+        ]
+      ],
+      [
+        [
+          633,
+          137,
+          632,
+          138,
+          610,
+          138,
+          609,
+          139,
+          586,
+          139,
+          585,
+          140,
+          563,
+          140,
+          562,
+          141,
+          542,
+          141,
+          542,
+          145,
+          541,
+          146,
+          541,
+          156,
+          540,
+          157,
+          540,
+          166,
+          539,
+          167,
+          539,
+          176,
+          538,
+          177,
+          639,
+          177,
+          639,
+          137
+        ]
+      ],
+      [
+        [
+          535,
+          182,
+          535,
+          187,
+          534,
+          188,
+          534,
+          216,
+          545,
+          216,
+          546,
+          217,
+          568,
+          217,
+          569,
+          218,
+          591,
+          218,
+          592,
+          219,
+          614,
+          219,
+          615,
+          220,
+          637,
+          220,
+          638,
+          221,
+          639,
+          221,
+          639,
+          182
+        ]
+      ]
+    ]
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "image_idx": 15,
+  "approved": false,
+  "vlm_response": "the computer's detection of objects in the image is not accurate. the segmentation masks indicate that no objects have been identified, which is incorrect. the image clearly shows a person on a bicycle, a stop sign, a traffic light, and parts of a car. these objects should be detected and segmented by the computer. therefore, the answer is:\n\nno",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        324.69000244140625,
+        0.0,
+        381.1600036621094,
+        27.700000762939453
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          325,
+          0,
+          325,
+          10,
+          326,
+          10,
+          335,
+          19,
+          336,
+          19,
+          344,
+          27,
+          362,
+          27,
+          365,
+          24,
+          366,
+          24,
+          369,
+          21,
+          370,
+          21,
+          374,
+          17,
+          375,
+          17,
+          379,
+          13,
+          380,
+          13,
+          380,
+          3,
+          372,
+          3,
+          371,
+          2,
+          353,
+          2,
+          352,
+          1,
+          335,
+          1,
+          334,
+          0
+        ]
+      ]
+    ]
+  }
+}

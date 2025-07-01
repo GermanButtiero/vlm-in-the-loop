@@ -1,0 +1,70 @@
+{
+  "image_idx": 2648,
+  "approved": false,
+  "vlm_response": "the computer's detection of \"no objects\" is not accurate. the image clearly shows a group of people, a \"do not enter\" sign, a traffic light, a ups mailbox, and a building. the segmentation masks should identify these objects. the computer's segmentation masks are not present in the image, but based on the visual content, the objects should be segmented as follows:\n\n- people: the computer should identify and segment the group of people standing on the sidewalk.\n- \"do not enter\" sign: the computer should identify and segment the red \"do not enter\" sign.\n- traffic light: the computer should identify and segment the traffic light.\n- ups mailbox: the computer should identify and segment the ups mailbox.\n- building: the computer should identify and segment the building in the background.\n\ntherefore, the correct answer is:\n\nno, the computer detected no objects, but there are several objects in the image that should be identified and segmented.",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        147.3000030517578,
+        81.2699966430664,
+        196.27000427246094,
+        151.05999755859375
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          187,
+          81,
+          186,
+          82,
+          169,
+          82,
+          168,
+          83,
+          150,
+          83,
+          149,
+          84,
+          148,
+          84,
+          147,
+          85,
+          147,
+          149,
+          148,
+          149,
+          149,
+          150,
+          176,
+          150,
+          177,
+          149,
+          193,
+          149,
+          195,
+          147,
+          195,
+          82,
+          194,
+          82,
+          193,
+          81
+        ]
+      ]
+    ]
+  }
+}

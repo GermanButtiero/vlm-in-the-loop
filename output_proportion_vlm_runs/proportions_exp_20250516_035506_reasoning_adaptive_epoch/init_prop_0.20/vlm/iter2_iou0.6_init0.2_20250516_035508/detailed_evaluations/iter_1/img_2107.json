@@ -1,0 +1,152 @@
+{
+  "image_idx": 2107,
+  "approved": true,
+  "vlm_response": "after carefully examining the image, i have identified the following objects:\n\n1. **stop sign**: the stop sign is red with white lettering, and it is located near the road.\n2. **bollards**: there are three white bollards with red stripes, positioned on the side of the road.\n3. **grass and vegetation**: the image shows a grassy area with some vegetation.\n\nthe stop sign is well-defined with a high iou (intersectionous areas under construction) score, indicating it fits the model's detection criteria. the bollards are also well-defined, with a high iou score, indicating they fit the model's detection criteria.\n\nthere are no obvious errors in the object detection process. the image does not show any missing objects, wrong classifications, poor masks, or extra masks/ false positives.\n\n**yes**\n\nthe stop sign and bollards are correctly detected, and every mask is good.",
+  "prediction": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      3
+    ],
+    "scores": [
+      0.9974791407585144
+    ],
+    "boxes": [
+      [
+        332.0480651855469,
+        30.42119026184082,
+        366.22039794921875,
+        70.51844024658203
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          341,
+          31,
+          338,
+          34,
+          337,
+          34,
+          332,
+          39,
+          332,
+          40,
+          331,
+          41,
+          331,
+          56,
+          332,
+          57,
+          332,
+          58,
+          333,
+          59,
+          333,
+          60,
+          341,
+          68,
+          342,
+          68,
+          343,
+          69,
+          355,
+          69,
+          356,
+          68,
+          357,
+          68,
+          365,
+          60,
+          365,
+          59,
+          366,
+          58,
+          366,
+          45,
+          365,
+          44,
+          365,
+          42,
+          362,
+          39,
+          362,
+          38,
+          356,
+          32,
+          354,
+          32,
+          353,
+          31
+        ]
+      ]
+    ]
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        330.67999267578125,
+        32.65999984741211,
+        366.760009765625,
+        69.7300033569336
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          339,
+          33,
+          338,
+          34,
+          338,
+          35,
+          334,
+          39,
+          334,
+          40,
+          331,
+          43,
+          331,
+          58,
+          342,
+          69,
+          345,
+          69,
+          346,
+          68,
+          356,
+          68,
+          364,
+          60,
+          365,
+          60,
+          366,
+          59,
+          366,
+          55,
+          365,
+          54,
+          365,
+          44,
+          363,
+          42,
+          363,
+          41,
+          359,
+          37,
+          359,
+          36,
+          356,
+          33
+        ]
+      ]
+    ]
+  }
+}

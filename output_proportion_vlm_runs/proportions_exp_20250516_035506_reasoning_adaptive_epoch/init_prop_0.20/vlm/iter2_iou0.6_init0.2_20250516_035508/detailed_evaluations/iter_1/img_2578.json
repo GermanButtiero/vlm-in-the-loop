@@ -1,0 +1,80 @@
+{
+  "image_idx": 2578,
+  "approved": true,
+  "vlm_response": "after carefully examining the image, i have visually identified the objects and their corresponding masks. the objects detected are a road sign with the word \"arr\u00eat\" and an arrow, and a wooden pole. the colored masks are not tightly fitting the objects, and there are no significant background spill-over. the model's detections are accurate, with no errors. therefore, the output is:\n\n* **yes**",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        48.93000030517578,
+        112.18000030517578,
+        166.19000244140625,
+        228.50999450683594
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          103,
+          112,
+          90,
+          125,
+          90,
+          126,
+          63,
+          153,
+          63,
+          154,
+          49,
+          168,
+          65,
+          184,
+          65,
+          185,
+          98,
+          218,
+          98,
+          219,
+          106,
+          227,
+          107,
+          227,
+          128,
+          206,
+          129,
+          206,
+          165,
+          170,
+          154,
+          159,
+          153,
+          159,
+          140,
+          146,
+          139,
+          146,
+          127,
+          134,
+          126,
+          134,
+          113,
+          121,
+          112,
+          121
+        ]
+      ]
+    ]
+  }
+}

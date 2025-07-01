@@ -1,0 +1,88 @@
+{
+  "image_idx": 2564,
+  "approved": false,
+  "vlm_response": "the image shows a plush teddy bear and a bottle of wine on an airplane tray table. the segmentation masks highlight the teddy bear and the wine bottle, with the teddy bear having a green outline and the wine bottle having a red outline. the computer's detection of objects is accurate, as it correctly identifies the teddy bear and the wine bottle. however, the segmentation masks are not entirely accurate, as the teddy bear's outline is not entirely contained within the green area, and the wine bottle's outline is not entirely contained within the red area. additionally, the computer has not detected other objects in the image, such as the tray table, seatbelt, and napkin. therefore, the answer is:\n\nno",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "book"
+    ],
+    "class_ids": [
+      84
+    ],
+    "boxes": [
+      [
+        17.530000686645508,
+        189.94000244140625,
+        109.08999633789062,
+        240.5800018310547
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          55,
+          190,
+          54,
+          191,
+          18,
+          191,
+          18,
+          238,
+          43,
+          238,
+          44,
+          239,
+          65,
+          239,
+          66,
+          240,
+          67,
+          240,
+          69,
+          238,
+          70,
+          238,
+          74,
+          234,
+          75,
+          234,
+          79,
+          230,
+          80,
+          230,
+          85,
+          225,
+          86,
+          225,
+          90,
+          221,
+          91,
+          221,
+          96,
+          216,
+          97,
+          216,
+          101,
+          212,
+          102,
+          212,
+          106,
+          208,
+          107,
+          208,
+          108,
+          207,
+          91,
+          190
+        ]
+      ]
+    ]
+  }
+}

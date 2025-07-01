@@ -1,0 +1,80 @@
+{
+  "image_idx": 611,
+  "approved": false,
+  "vlm_response": "the image shows a scene with a shepherd herding sheep and other animals on a road. the computer's segmentation masks highlight various objects, including sheep, a horse, and a cow, with different colors. however, the statement \"the computer detected these objects: no objects\" is incorrect. the computer has indeed detected objects, but the segmentation masks are not entirely accurate. the masks incorrectly identify some objects, such as the green and pink areas, which do not correspond to any real objects in the image. additionally, the segmentation of the cow is incomplete, with only part of its body highlighted. therefore, the answer is:\n\nno, the computer detected objects, but the segmentation masks are not entirely accurate.",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        439.1099853515625,
+        21.040000915527344,
+        484.5400085449219,
+        69.55999755859375
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          459,
+          21,
+          459,
+          22,
+          446,
+          35,
+          446,
+          36,
+          439,
+          43,
+          443,
+          47,
+          443,
+          48,
+          447,
+          52,
+          447,
+          53,
+          451,
+          57,
+          451,
+          58,
+          455,
+          62,
+          455,
+          63,
+          459,
+          67,
+          459,
+          68,
+          460,
+          68,
+          468,
+          60,
+          469,
+          60,
+          483,
+          46,
+          483,
+          45,
+          465,
+          27,
+          465,
+          26,
+          460,
+          21
+        ]
+      ]
+    ]
+  }
+}

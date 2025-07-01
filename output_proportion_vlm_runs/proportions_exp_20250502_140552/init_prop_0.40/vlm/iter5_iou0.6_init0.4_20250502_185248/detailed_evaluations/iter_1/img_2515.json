@@ -1,0 +1,106 @@
+{
+  "image_idx": 2515,
+  "approved": false,
+  "vlm_response": "the computer detected no objects, which is incorrect. the image clearly shows a person holding a dell laptop, which is the main object in the image. the segmentation mask around the laptop is red, indicating that the computer has identified the laptop as an object. therefore, the object classes and segmentation masks are not accurate.\n\nthe correct answer is: no, the computer detected no objects, but there is a dell laptop in the image.",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "book"
+    ],
+    "class_ids": [
+      84
+    ],
+    "boxes": [
+      [
+        607.239990234375,
+        114.48999786376953,
+        640.0,
+        233.8300018310547
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          625,
+          114,
+          624,
+          115,
+          615,
+          115,
+          614,
+          116,
+          607,
+          116,
+          607,
+          121,
+          608,
+          122,
+          608,
+          140,
+          609,
+          141,
+          609,
+          160,
+          610,
+          161,
+          610,
+          179,
+          611,
+          180,
+          611,
+          199,
+          612,
+          200,
+          612,
+          218,
+          613,
+          219,
+          613,
+          232,
+          612,
+          233,
+          610,
+          233,
+          626,
+          233,
+          626,
+          229,
+          627,
+          228,
+          627,
+          226,
+          628,
+          225,
+          636,
+          225,
+          637,
+          224,
+          637,
+          218,
+          638,
+          217,
+          638,
+          150,
+          639,
+          149,
+          639,
+          116,
+          635,
+          116,
+          634,
+          115,
+          627,
+          115,
+          626,
+          114
+        ]
+      ]
+    ]
+  }
+}

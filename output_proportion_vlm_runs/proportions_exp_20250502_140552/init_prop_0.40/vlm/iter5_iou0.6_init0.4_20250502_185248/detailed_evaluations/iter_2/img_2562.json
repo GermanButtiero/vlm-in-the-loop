@@ -1,0 +1,78 @@
+{
+  "image_idx": 2562,
+  "approved": false,
+  "vlm_response": "the image shows a stop sign, houses, trees, and a snowy street. the computer's detection of \"no objects\" is inaccurate. the stop sign, houses, trees, and snowy street should be identified and segmented. therefore, the answer is \"no\" followed by an explanation that the objects are misclassified or poorly segmented.",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        288.32000732421875,
+        96.7300033569336,
+        327.5199890136719,
+        135.4499969482422
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          308,
+          97,
+          307,
+          98,
+          299,
+          98,
+          288,
+          109,
+          289,
+          110,
+          289,
+          121,
+          290,
+          122,
+          290,
+          124,
+          297,
+          131,
+          297,
+          132,
+          299,
+          134,
+          315,
+          134,
+          318,
+          131,
+          319,
+          131,
+          324,
+          126,
+          325,
+          126,
+          327,
+          124,
+          326,
+          123,
+          326,
+          112,
+          325,
+          111,
+          325,
+          106,
+          316,
+          97
+        ]
+      ]
+    ]
+  }
+}

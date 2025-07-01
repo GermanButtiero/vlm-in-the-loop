@@ -1,0 +1,90 @@
+{
+  "image_idx": 572,
+  "approved": true,
+  "vlm_response": "after carefully examining the image, i have identified the following objects:\n\n1. **traffic light**: the traffic light is red, indicating vehicles should stop.\n2. **cones**: orange and white traffic cones are placed on the road, likely indicating a construction or roadwork area.\n3. **bus**: a bus is visible in the distance, approaching the construction area.\n4. **sign**: a red sign with white text instructs drivers to stop here on red, with an arrow pointing to the right.\n\nthe objects are correctly detected, and the masks are good. there are no errors in the detection process.\n\n*yes*",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        511.42999267578125,
+        85.26000213623047,
+        554.5499877929688,
+        146.3699951171875
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          515,
+          85,
+          515,
+          89,
+          514,
+          90,
+          514,
+          107,
+          513,
+          108,
+          513,
+          125,
+          512,
+          126,
+          512,
+          142,
+          511,
+          143,
+          511,
+          144,
+          525,
+          144,
+          526,
+          145,
+          550,
+          145,
+          550,
+          141,
+          551,
+          140,
+          551,
+          124,
+          552,
+          123,
+          552,
+          107,
+          553,
+          106,
+          553,
+          90,
+          554,
+          89,
+          554,
+          88,
+          544,
+          88,
+          543,
+          87,
+          531,
+          87,
+          530,
+          86,
+          519,
+          86,
+          518,
+          85
+        ]
+      ]
+    ]
+  }
+}

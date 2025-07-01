@@ -1,0 +1,98 @@
+{
+  "image_idx": 2679,
+  "approved": true,
+  "vlm_response": "after carefully examining the image, i have identified the following objects:\n\n1. **portrait of william henry schofield** - the object is correctly detected with a high iou.\n2. **harvard college library** - the object is correctly detected with a high iou.\n3. **icelandic collection** - the object is correctly detected with a high iou.\n4. **mary lyon cheney schofield** - the object is correctly detected with a high iou.\n5. **6th april 1931** - the object is correctly detected with a high iou.\n\nthere are no obvious errors in the mask detections. therefore, the output is:\n\n* **yes**",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "book"
+    ],
+    "class_ids": [
+      84
+    ],
+    "boxes": [
+      [
+        54.86000061035156,
+        57.5,
+        408.6700134277344,
+        579.6099853515625
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          57,
+          58,
+          57,
+          114,
+          56,
+          115,
+          56,
+          177,
+          55,
+          178,
+          55,
+          392,
+          56,
+          393,
+          56,
+          468,
+          57,
+          469,
+          57,
+          577,
+          179,
+          577,
+          180,
+          578,
+          370,
+          578,
+          371,
+          579,
+          405,
+          579,
+          405,
+          570,
+          406,
+          569,
+          406,
+          552,
+          407,
+          551,
+          407,
+          515,
+          406,
+          514,
+          406,
+          482,
+          405,
+          481,
+          405,
+          350,
+          406,
+          349,
+          406,
+          319,
+          407,
+          318,
+          407,
+          76,
+          408,
+          75,
+          408,
+          59,
+          301,
+          59,
+          300,
+          58
+        ]
+      ]
+    ]
+  }
+}

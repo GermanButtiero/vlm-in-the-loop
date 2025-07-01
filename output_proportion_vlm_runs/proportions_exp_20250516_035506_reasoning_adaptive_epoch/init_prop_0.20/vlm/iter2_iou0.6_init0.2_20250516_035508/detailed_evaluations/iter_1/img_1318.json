@@ -1,0 +1,76 @@
+{
+  "image_idx": 1318,
+  "approved": true,
+  "vlm_response": "after carefully examining the image, i have identified the following objects and their corresponding masks:\n\n1. **person**: the person is clearly visible in the image.\n2. **shirt**: the person is wearing a light blue shirt.\n3. **tie**: the person is wearing a yellow and blue striped tie.\n4. **framed certificates**: there are four framed certificates on the wall behind the person.\n\nthe objects are correctly detected and the masks are good. there are no missing objects, wrong classes, poor masks, or extra masks/ false positives.\n\n*yes*",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "book"
+    ],
+    "class_ids": [
+      84
+    ],
+    "boxes": [
+      [
+        430.3800048828125,
+        245.16000366210938,
+        461.1199951171875,
+        308.95001220703125
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          453,
+          245,
+          452,
+          246,
+          441,
+          246,
+          440,
+          247,
+          430,
+          247,
+          431,
+          248,
+          431,
+          271,
+          432,
+          272,
+          432,
+          308,
+          449,
+          308,
+          450,
+          307,
+          460,
+          307,
+          460,
+          297,
+          459,
+          296,
+          459,
+          281,
+          458,
+          280,
+          458,
+          266,
+          457,
+          265,
+          457,
+          250,
+          456,
+          249,
+          456,
+          245
+        ]
+      ]
+    ]
+  }
+}

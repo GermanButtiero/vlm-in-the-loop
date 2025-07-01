@@ -1,0 +1,58 @@
+{
+  "image_idx": 1912,
+  "approved": true,
+  "vlm_response": "after carefully analyzing the image, i have visually identified the objects with corresponding masks. the objects detected are a cat, a piano, a table, a rug, and a plant. the cat is in a green mask, the piano is in a red mask, the table is in a brown mask, the rug is in a multicolored mask, and the plant is in a black mask. the masks do not tightly fit any of the objects, and there are no errors in the detection process. therefore, the output is:\n\n* **yes**",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "book"
+    ],
+    "class_ids": [
+      84
+    ],
+    "boxes": [
+      [
+        283.80999755859375,
+        0.0,
+        397.1400146484375,
+        41.900001525878906
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          288,
+          0,
+          287,
+          1,
+          285,
+          1,
+          285,
+          12,
+          284,
+          13,
+          284,
+          41,
+          396,
+          41,
+          396,
+          2,
+          371,
+          2,
+          370,
+          1,
+          318,
+          1,
+          317,
+          0
+        ]
+      ]
+    ]
+  }
+}

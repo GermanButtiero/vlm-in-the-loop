@@ -1,0 +1,174 @@
+{
+  "image_idx": 798,
+  "approved": true,
+  "vlm_response": "yes, the object classes and segmentation masks are accurate. the computer has correctly identified the stop sign as the primary object in the image. the segmentation mask for the stop sign is well-defined, highlighting the red octagonal shape with the word \"stop\" in white letters. the surrounding area, including the road and the forest, is appropriately segmented, with no other objects misclassified. the segmentation is clear and precise, effectively distinguishing the stop sign from the background.",
+  "prediction": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      3
+    ],
+    "scores": [
+      0.9948208332061768
+    ],
+    "boxes": [
+      [
+        114.93889617919922,
+        240.51271057128906,
+        164.32640075683594,
+        290.2336730957031
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          144,
+          240,
+          143,
+          241,
+          130,
+          241,
+          129,
+          242,
+          128,
+          242,
+          115,
+          255,
+          115,
+          277,
+          124,
+          286,
+          125,
+          286,
+          129,
+          290,
+          152,
+          290,
+          156,
+          286,
+          157,
+          286,
+          164,
+          279,
+          164,
+          253,
+          153,
+          242,
+          151,
+          242,
+          150,
+          241,
+          149,
+          241,
+          148,
+          240,
+          147,
+          240,
+          146,
+          241,
+          145,
+          240
+        ]
+      ]
+    ]
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        113.88999938964844,
+        241.88999938964844,
+        165.39999389648438,
+        295.1499938964844
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          129,
+          242,
+          127,
+          244,
+          126,
+          244,
+          118,
+          252,
+          117,
+          252,
+          116,
+          253,
+          116,
+          255,
+          115,
+          256,
+          115,
+          269,
+          114,
+          270,
+          114,
+          279,
+          115,
+          280,
+          116,
+          280,
+          119,
+          283,
+          120,
+          283,
+          122,
+          285,
+          123,
+          285,
+          126,
+          288,
+          127,
+          288,
+          130,
+          291,
+          134,
+          291,
+          135,
+          292,
+          140,
+          292,
+          141,
+          293,
+          145,
+          293,
+          146,
+          294,
+          149,
+          294,
+          161,
+          282,
+          161,
+          281,
+          163,
+          279,
+          163,
+          269,
+          164,
+          268,
+          164,
+          256,
+          156,
+          248,
+          156,
+          247,
+          152,
+          243,
+          146,
+          243,
+          145,
+          242
+        ]
+      ]
+    ]
+  }
+}

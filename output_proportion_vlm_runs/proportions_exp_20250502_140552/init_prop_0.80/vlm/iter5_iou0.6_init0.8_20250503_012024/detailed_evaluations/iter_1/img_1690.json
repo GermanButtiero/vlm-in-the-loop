@@ -1,0 +1,76 @@
+{
+  "image_idx": 1690,
+  "approved": false,
+  "vlm_response": "the image shows a nokia mobile phone on an open book, with colored segmentation masks overlaid on the phone. the segmentation masks are intended to identify and outline the phone. however, the text in the image is not accurately segmented, and the phone is not fully enclosed by the segmentation masks. additionally, the computer's detection of \"no objects\" is incorrect, as the phone is clearly the main object in the image. therefore, the segmentation masks are not accurate, and the object detection is incorrect.\n\nthe correct answer is: no",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "book"
+    ],
+    "class_ids": [
+      84
+    ],
+    "boxes": [
+      [
+        0.0,
+        0.6499999761581421,
+        400.0,
+        295.9700012207031
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          0,
+          1,
+          0,
+          184,
+          1,
+          185,
+          1,
+          295,
+          190,
+          295,
+          190,
+          292,
+          189,
+          291,
+          189,
+          284,
+          190,
+          283,
+          191,
+          284,
+          191,
+          289,
+          192,
+          290,
+          192,
+          295,
+          256,
+          295,
+          257,
+          294,
+          386,
+          294,
+          387,
+          293,
+          399,
+          293,
+          399,
+          2,
+          246,
+          2,
+          245,
+          1
+        ]
+      ]
+    ]
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "image_idx": 883,
+  "approved": false,
+  "vlm_response": "the computer's detection of objects in the image is not accurate. the segmentation mask highlights a pink chair, but the computer incorrectly identifies it as \"no objects.\" additionally, the segmentation mask is not accurately outlining the chair, as it is not fully enclosed by the red outline. the bicycle, bookshelf, and other objects are not detected at all. therefore, the answer is:\n\nno",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "book"
+    ],
+    "class_ids": [
+      84
+    ],
+    "boxes": [
+      [
+        290.489990234375,
+        67.33999633789062,
+        336.54998779296875,
+        83.86000061035156
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          322,
+          67,
+          321,
+          68,
+          316,
+          68,
+          315,
+          69,
+          314,
+          69,
+          313,
+          70,
+          312,
+          70,
+          311,
+          71,
+          310,
+          70,
+          303,
+          70,
+          302,
+          69,
+          292,
+          69,
+          291,
+          70,
+          290,
+          70,
+          290,
+          75,
+          291,
+          76,
+          291,
+          82,
+          322,
+          82,
+          323,
+          83,
+          336,
+          83,
+          336,
+          71,
+          335,
+          71,
+          334,
+          70,
+          333,
+          70,
+          332,
+          69,
+          330,
+          69,
+          329,
+          68,
+          326,
+          68,
+          325,
+          67
+        ]
+      ]
+    ]
+  }
+}

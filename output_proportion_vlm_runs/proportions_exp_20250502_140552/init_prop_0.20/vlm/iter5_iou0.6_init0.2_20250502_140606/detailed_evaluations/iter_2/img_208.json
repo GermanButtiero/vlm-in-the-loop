@@ -1,0 +1,86 @@
+{
+  "image_idx": 208,
+  "approved": false,
+  "vlm_response": "the image shows a street scene with a stop sign, a speed limit sign, a street sign, and trees with autumn foliage. the computer's detection of \"no objects\" is inaccurate. the image clearly contains multiple objects, including the stop sign, speed limit sign, street sign, and trees. the segmentation masks should identify these objects accurately. therefore, the correct response is:\n\nno",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        385.0899963378906,
+        203.00999450683594,
+        451.6400146484375,
+        271.80999755859375
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          423,
+          203,
+          422,
+          204,
+          410,
+          204,
+          409,
+          205,
+          401,
+          205,
+          399,
+          207,
+          399,
+          208,
+          392,
+          215,
+          392,
+          216,
+          385,
+          223,
+          385,
+          229,
+          386,
+          230,
+          386,
+          242,
+          387,
+          243,
+          387,
+          254,
+          388,
+          255,
+          389,
+          255,
+          401,
+          267,
+          402,
+          267,
+          406,
+          271,
+          432,
+          271,
+          451,
+          252,
+          451,
+          249,
+          450,
+          248,
+          450,
+          224,
+          429,
+          203
+        ]
+      ]
+    ]
+  }
+}

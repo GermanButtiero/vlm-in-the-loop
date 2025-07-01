@@ -1,0 +1,60 @@
+{
+  "image_idx": 124,
+  "approved": false,
+  "vlm_response": "the image shows a traffic light with a green light displaying a smiley face. the segmentation mask highlights the traffic light, but the computer's detection of objects is inaccurate. the computer has not identified the traffic light as an object, which is incorrect. therefore, the answer is:\n\nno",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        285.1099853515625,
+        309.79998779296875,
+        374.9100036621094,
+        329.260009765625
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          333,
+          310,
+          332,
+          311,
+          301,
+          311,
+          292,
+          320,
+          292,
+          321,
+          285,
+          328,
+          373,
+          328,
+          373,
+          327,
+          367,
+          321,
+          367,
+          320,
+          362,
+          315,
+          362,
+          314,
+          358,
+          310
+        ]
+      ]
+    ]
+  }
+}

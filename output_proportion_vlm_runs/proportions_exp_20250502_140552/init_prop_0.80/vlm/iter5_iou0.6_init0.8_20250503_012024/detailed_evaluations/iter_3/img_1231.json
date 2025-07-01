@@ -1,0 +1,139 @@
+{
+  "image_idx": 1231,
+  "approved": false,
+  "vlm_response": "the computer's detection of objects in the image is not accurate. the segmentation masks incorrectly identify a dog as an object, which is not present in the image. additionally, the segmentation masks for the wii remote and the game cases are not clearly defined, leading to poor segmentation. therefore, the answer is:\n\nno",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "book"
+    ],
+    "class_ids": [
+      84,
+      84
+    ],
+    "boxes": [
+      [
+        292.0199890136719,
+        315.30999755859375,
+        329.8999938964844,
+        349.5400085449219
+      ],
+      [
+        333.6300048828125,
+        313.739990234375,
+        371.7699890136719,
+        351.25
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          293,
+          315,
+          293,
+          334,
+          292,
+          335,
+          292,
+          345,
+          296,
+          345,
+          297,
+          346,
+          307,
+          346,
+          308,
+          347,
+          317,
+          347,
+          318,
+          348,
+          327,
+          348,
+          328,
+          349,
+          328,
+          348,
+          329,
+          347,
+          329,
+          334,
+          328,
+          333,
+          328,
+          317,
+          321,
+          317,
+          320,
+          316,
+          296,
+          316,
+          295,
+          315
+        ]
+      ],
+      [
+        [
+          335,
+          314,
+          335,
+          316,
+          334,
+          317,
+          334,
+          345,
+          338,
+          345,
+          339,
+          346,
+          345,
+          346,
+          346,
+          347,
+          352,
+          347,
+          353,
+          348,
+          359,
+          348,
+          360,
+          349,
+          366,
+          349,
+          367,
+          350,
+          371,
+          350,
+          371,
+          342,
+          370,
+          341,
+          370,
+          318,
+          365,
+          318,
+          364,
+          317,
+          357,
+          317,
+          356,
+          316,
+          349,
+          316,
+          348,
+          315,
+          340,
+          315,
+          339,
+          314
+        ]
+      ]
+    ]
+  }
+}

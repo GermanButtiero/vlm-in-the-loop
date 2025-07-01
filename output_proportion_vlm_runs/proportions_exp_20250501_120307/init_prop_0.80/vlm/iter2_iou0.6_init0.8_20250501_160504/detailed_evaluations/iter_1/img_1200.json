@@ -1,0 +1,100 @@
+{
+  "image_idx": 1200,
+  "approved": false,
+  "vlm_response": "the image shows a street scene with various traffic signs and a building in the background. the computer's detection of \"no objects\" is inaccurate. the image contains several objects that should be identified, such as the stop sign, one-way sign, street signs, and the fire hydrant. the segmentation masks should accurately identify these objects. therefore, the correct response is:\n\nno",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        425.92999267578125,
+        39.72999954223633,
+        498.9700012207031,
+        115.0999984741211
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          458,
+          40,
+          457,
+          41,
+          445,
+          41,
+          441,
+          45,
+          441,
+          46,
+          426,
+          61,
+          426,
+          68,
+          427,
+          69,
+          427,
+          82,
+          428,
+          83,
+          428,
+          93,
+          429,
+          94,
+          430,
+          94,
+          443,
+          107,
+          444,
+          107,
+          451,
+          114,
+          479,
+          114,
+          479,
+          113,
+          483,
+          109,
+          483,
+          108,
+          486,
+          105,
+          486,
+          104,
+          490,
+          100,
+          490,
+          99,
+          494,
+          95,
+          494,
+          94,
+          498,
+          90,
+          498,
+          79,
+          497,
+          78,
+          497,
+          63,
+          485,
+          51,
+          485,
+          50,
+          475,
+          40
+        ]
+      ]
+    ]
+  }
+}

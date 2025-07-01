@@ -1,0 +1,60 @@
+{
+  "image_idx": 124,
+  "approved": false,
+  "vlm_response": "the image shows a traffic light with a smiley face sticker on the green light, which is highlighted by a red segmentation mask. the computer's detection of objects is not accurate in this case. the segmentation mask incorrectly identifies the entire traffic light as a single object, while the actual object is a traffic light with a smiley face sticker. additionally, the computer does not detect the smiley face sticker as a separate object. therefore, the answer is:\n\nno",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        285.1099853515625,
+        309.79998779296875,
+        374.9100036621094,
+        329.260009765625
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          333,
+          310,
+          332,
+          311,
+          301,
+          311,
+          292,
+          320,
+          292,
+          321,
+          285,
+          328,
+          373,
+          328,
+          373,
+          327,
+          367,
+          321,
+          367,
+          320,
+          362,
+          315,
+          362,
+          314,
+          358,
+          310
+        ]
+      ]
+    ]
+  }
+}

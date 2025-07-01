@@ -1,0 +1,82 @@
+{
+  "image_idx": 239,
+  "approved": false,
+  "vlm_response": "the image shows a scene with various objects, including a hotel sign, a stop sign, traffic cones, a fire hydrant, and a green humanoid figure. the computer's detection of \"no objects\" is inaccurate. the segmentation masks should identify the hotel sign, stop sign, traffic cones, fire hydrant, and the green humanoid figure. therefore, the correct answer is:\n\nno",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        93.86000061035156,
+        248.38999938964844,
+        129.14999389648438,
+        282.8399963378906
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          115,
+          248,
+          114,
+          249,
+          103,
+          249,
+          98,
+          254,
+          98,
+          255,
+          95,
+          258,
+          95,
+          271,
+          94,
+          272,
+          94,
+          273,
+          96,
+          275,
+          97,
+          275,
+          100,
+          278,
+          101,
+          278,
+          104,
+          281,
+          113,
+          281,
+          114,
+          282,
+          117,
+          282,
+          120,
+          279,
+          121,
+          279,
+          128,
+          272,
+          128,
+          262,
+          127,
+          261,
+          127,
+          257,
+          118,
+          248
+        ]
+      ]
+    ]
+  }
+}

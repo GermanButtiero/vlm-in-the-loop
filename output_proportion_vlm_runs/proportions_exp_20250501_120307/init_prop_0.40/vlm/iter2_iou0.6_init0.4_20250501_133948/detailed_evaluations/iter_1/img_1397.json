@@ -1,0 +1,106 @@
+{
+  "image_idx": 1397,
+  "approved": false,
+  "vlm_response": "the computer's detection of objects in the image is not accurate. the image shows a bedroom with a bed, a headboard, a dresser, a lamp, and a nightstand. the segmentation masks highlight parts of the image, but the computer has not identified any objects. the masks are not accurately representing the objects in the image. therefore, the answer is:\n\nno",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "book"
+    ],
+    "class_ids": [
+      84
+    ],
+    "boxes": [
+      [
+        85.38999938964844,
+        228.94000244140625,
+        141.8800048828125,
+        250.55999755859375
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          89,
+          229,
+          88,
+          230,
+          88,
+          232,
+          87,
+          233,
+          87,
+          234,
+          86,
+          235,
+          86,
+          237,
+          85,
+          238,
+          85,
+          239,
+          86,
+          240,
+          86,
+          241,
+          87,
+          242,
+          87,
+          244,
+          99,
+          244,
+          100,
+          245,
+          113,
+          245,
+          114,
+          246,
+          126,
+          246,
+          127,
+          247,
+          127,
+          250,
+          128,
+          250,
+          129,
+          249,
+          140,
+          249,
+          140,
+          244,
+          141,
+          243,
+          141,
+          240,
+          140,
+          239,
+          140,
+          238,
+          139,
+          237,
+          139,
+          236,
+          138,
+          235,
+          138,
+          234,
+          137,
+          233,
+          137,
+          231,
+          136,
+          230,
+          136,
+          229
+        ]
+      ]
+    ]
+  }
+}

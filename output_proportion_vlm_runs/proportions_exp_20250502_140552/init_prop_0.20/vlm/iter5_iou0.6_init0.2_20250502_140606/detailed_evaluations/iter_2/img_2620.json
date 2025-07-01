@@ -1,0 +1,88 @@
+{
+  "image_idx": 2620,
+  "approved": false,
+  "vlm_response": "the image shows a blue truck with its hood open, and a man standing next to it. the computer's detection of \"no objects\" is inaccurate. the image clearly contains several objects, including the truck, the man, and the stop sign. the segmentation masks should identify these objects accurately. therefore, the correct response is:\n\nno",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        608.4400024414062,
+        159.49000549316406,
+        640.0,
+        195.33999633789062
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          619,
+          159,
+          615,
+          163,
+          615,
+          164,
+          610,
+          169,
+          610,
+          170,
+          609,
+          171,
+          609,
+          182,
+          608,
+          183,
+          608,
+          185,
+          609,
+          184,
+          611,
+          186,
+          611,
+          187,
+          618,
+          194,
+          631,
+          194,
+          632,
+          193,
+          633,
+          193,
+          638,
+          188,
+          638,
+          187,
+          639,
+          186,
+          639,
+          169,
+          638,
+          168,
+          638,
+          167,
+          635,
+          164,
+          635,
+          163,
+          632,
+          160,
+          621,
+          160,
+          620,
+          159
+        ]
+      ]
+    ]
+  }
+}

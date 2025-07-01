@@ -1,0 +1,70 @@
+{
+  "image_idx": 2572,
+  "approved": false,
+  "vlm_response": "the computer detected objects in the image, but the segmentation masks are not accurate. the image shows two plush toys, one orange and one pink, with a blue outline around the pink toy. the segmentation masks incorrectly identify the pink toy as a separate object, while the orange toy is not segmented at all. additionally, there is a red object with a blue outline, which is not a plush toy. therefore, the segmentation masks are not accurate, and the objects are misclassified.\n\nthe correct answer is: no",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "book"
+    ],
+    "class_ids": [
+      84
+    ],
+    "boxes": [
+      [
+        0.4399999976158142,
+        225.47999572753906,
+        31.06999969482422,
+        328.1700134277344
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          0,
+          225,
+          0,
+          229,
+          1,
+          230,
+          1,
+          271,
+          2,
+          272,
+          2,
+          314,
+          3,
+          315,
+          3,
+          327,
+          18,
+          327,
+          19,
+          326,
+          30,
+          326,
+          30,
+          306,
+          29,
+          305,
+          29,
+          264,
+          28,
+          263,
+          28,
+          226,
+          5,
+          226,
+          4,
+          225
+        ]
+      ]
+    ]
+  }
+}

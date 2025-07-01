@@ -1,0 +1,76 @@
+{
+  "image_idx": 1806,
+  "approved": true,
+  "vlm_response": "after carefully examining the image, i have visually identified the objects as follows:\n\n1. **railway crossing sign**: the sign is clearly visible and fits the description of a railway crossing sign.\n2. **stop sign**: the red stop sign is also clearly visible and fits the description.\n3. **railway track**: the railway track is visible in the image.\n4. **metal fence**: the metal fence is visible and fits the description.\n5. **background buildings**: the buildings in the background are visible and fit the description.\n\nthe objects are correctly detected and every mask is good. there are no errors in the visual inspection.\n\n*yes*",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        140.60000610351562,
+        355.5899963378906,
+        183.5399932861328,
+        400.6000061035156
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          153,
+          356,
+          147,
+          362,
+          147,
+          363,
+          141,
+          369,
+          141,
+          388,
+          142,
+          388,
+          152,
+          398,
+          153,
+          398,
+          154,
+          399,
+          167,
+          399,
+          168,
+          400,
+          170,
+          400,
+          183,
+          387,
+          183,
+          386,
+          182,
+          385,
+          182,
+          368,
+          174,
+          360,
+          173,
+          360,
+          170,
+          357,
+          165,
+          357,
+          164,
+          356
+        ]
+      ]
+    ]
+  }
+}

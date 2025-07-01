@@ -1,0 +1,66 @@
+{
+  "image_idx": 846,
+  "approved": false,
+  "vlm_response": "the computer's detection of objects in the image is not accurate. the image shows a dining area with a table, chairs, and various objects on the table, such as a red and green glowing object, a red cup, and some fruits. however, the computer's output indicates that no objects were detected. this is incorrect as the image clearly shows multiple objects. therefore, the answer is:\n\nno",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "book"
+    ],
+    "class_ids": [
+      84
+    ],
+    "boxes": [
+      [
+        245.97000122070312,
+        255.0800018310547,
+        290.2099914550781,
+        277.6499938964844
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          282,
+          255,
+          281,
+          256,
+          250,
+          256,
+          250,
+          260,
+          249,
+          261,
+          249,
+          264,
+          248,
+          265,
+          248,
+          269,
+          247,
+          270,
+          247,
+          274,
+          246,
+          275,
+          246,
+          276,
+          278,
+          276,
+          279,
+          277,
+          289,
+          277,
+          289,
+          255
+        ]
+      ]
+    ]
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "image_idx": 1534,
+  "approved": false,
+  "vlm_response": "the image shows a red stop sign, a green train, and a person's reflection in the train window. the computer's detection of \"no objects\" is inaccurate. the stop sign and the train are clearly visible and should be included in the object segmentation masks. the person's reflection is also a notable object. therefore, the correct answer is:\n\nno, the computer detected no objects, but there are objects present in the image.",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        212.61000061035156,
+        329.1700134277344,
+        250.72999572753906,
+        364.55999755859375
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          228,
+          329,
+          227,
+          330,
+          223,
+          330,
+          222,
+          331,
+          221,
+          331,
+          213,
+          339,
+          213,
+          355,
+          216,
+          358,
+          217,
+          358,
+          220,
+          361,
+          221,
+          361,
+          224,
+          364,
+          227,
+          364,
+          228,
+          363,
+          238,
+          363,
+          239,
+          362,
+          240,
+          362,
+          242,
+          360,
+          243,
+          360,
+          246,
+          357,
+          247,
+          357,
+          249,
+          355,
+          250,
+          355,
+          250,
+          350,
+          249,
+          349,
+          249,
+          339,
+          242,
+          332,
+          242,
+          331,
+          240,
+          329
+        ]
+      ]
+    ]
+  }
+}

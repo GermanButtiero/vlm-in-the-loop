@@ -1,0 +1,82 @@
+{
+  "image_idx": 620,
+  "approved": false,
+  "vlm_response": "the image shows a street scene with various objects, including vehicles, a stop sign, and street signs. the computer's detection of \"no objects\" is inaccurate. the segmentation masks should identify the stop sign, vehicles, street signs, and other elements in the scene. the stop sign is clearly visible and should be segmented, as well as the vehicles and street signs. the segmentation masks are not accurately identifying the objects in the image.",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        515.260009765625,
+        116.58999633789062,
+        572.1699829101562,
+        172.66000366210938
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          531,
+          117,
+          527,
+          121,
+          526,
+          121,
+          522,
+          125,
+          521,
+          125,
+          517,
+          129,
+          516,
+          129,
+          515,
+          130,
+          515,
+          154,
+          522,
+          161,
+          522,
+          162,
+          530,
+          170,
+          532,
+          170,
+          533,
+          171,
+          553,
+          171,
+          554,
+          172,
+          555,
+          172,
+          571,
+          156,
+          571,
+          132,
+          566,
+          127,
+          566,
+          126,
+          559,
+          119,
+          559,
+          118,
+          558,
+          117
+        ]
+      ]
+    ]
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "image_idx": 1516,
+  "approved": false,
+  "vlm_response": "the computer's detection of objects in the image is not accurate. the image shows a hotel room with various objects, including a bed, pillows, a television, chairs, a nightstand, and a lamp. however, the computer's output indicates that no objects were detected. this is incorrect as the image clearly contains multiple objects. therefore, the answer is:\n\nno",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "book"
+    ],
+    "class_ids": [
+      84
+    ],
+    "boxes": [
+      [
+        89.98999786376953,
+        352.7200012207031,
+        155.8800048828125,
+        388.8900146484375
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          135,
+          353,
+          134,
+          354,
+          112,
+          354,
+          111,
+          355,
+          91,
+          355,
+          90,
+          354,
+          90,
+          388,
+          92,
+          388,
+          93,
+          387,
+          101,
+          387,
+          102,
+          386,
+          111,
+          386,
+          112,
+          385,
+          121,
+          385,
+          122,
+          384,
+          131,
+          384,
+          132,
+          383,
+          140,
+          383,
+          141,
+          382,
+          150,
+          382,
+          151,
+          381,
+          155,
+          381,
+          155,
+          380,
+          154,
+          379,
+          154,
+          374,
+          153,
+          373,
+          153,
+          367,
+          152,
+          366,
+          152,
+          361,
+          151,
+          360,
+          151,
+          355,
+          150,
+          354,
+          150,
+          353
+        ]
+      ]
+    ]
+  }
+}

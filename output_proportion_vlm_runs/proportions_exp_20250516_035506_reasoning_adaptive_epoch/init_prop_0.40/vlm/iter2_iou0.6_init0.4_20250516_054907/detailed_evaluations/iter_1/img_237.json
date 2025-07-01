@@ -1,0 +1,110 @@
+{
+  "image_idx": 237,
+  "approved": true,
+  "vlm_response": "after carefully examining the image, i have visually identified the objects and their corresponding masks. the objects detected are:\n\n1. **couch** (green)\n2. **armchair** (light green)\n3. **coffee table** (dark brown)\n4. **side table** (dark brown)\n5. **handbag** (dark brown)\n6. **plastic tray** (green)\n7. **pot** (black)\n8. **picture frame** (vertical)\n9. **wall art** (vertical)\n10. **kitchen counter** (wooden)\n\nthe masks do not tightly fit any of the objects, and there are no significant background elements or spill-over. the objects are correctly detected, and the masks are not bad. therefore, the output is:\n\n* **yes**",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "book"
+    ],
+    "class_ids": [
+      84
+    ],
+    "boxes": [
+      [
+        374.3399963378906,
+        181.64999389648438,
+        426.6600036621094,
+        201.5800018310547
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          387,
+          182,
+          386,
+          183,
+          385,
+          183,
+          383,
+          185,
+          382,
+          185,
+          381,
+          186,
+          380,
+          186,
+          379,
+          187,
+          378,
+          187,
+          377,
+          188,
+          376,
+          188,
+          375,
+          189,
+          375,
+          194,
+          374,
+          195,
+          380,
+          195,
+          381,
+          196,
+          386,
+          196,
+          387,
+          197,
+          393,
+          197,
+          394,
+          198,
+          400,
+          198,
+          401,
+          199,
+          407,
+          199,
+          408,
+          200,
+          416,
+          200,
+          419,
+          197,
+          420,
+          197,
+          424,
+          193,
+          425,
+          193,
+          425,
+          186,
+          420,
+          186,
+          419,
+          185,
+          412,
+          185,
+          411,
+          184,
+          404,
+          184,
+          403,
+          183,
+          396,
+          183,
+          395,
+          182
+        ]
+      ]
+    ]
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "image_idx": 2179,
+  "approved": true,
+  "vlm_response": "after carefully examining the image, i have visually identified the objects and their corresponding masks. the objects detected are:\n\n1. plates\n2. napkins\n3. utensils (forks, knives, and spoons)\n4. wine bottles\n5. wine glasses\n6. vases\n7. flowers\n8. basket\n9. baskets with gifts\n10. salt and pepper shakers\n11. tablecloth\n12. background elements (people, store environment)\n\nthe masks do not tightly fit any of the objects, and there are no obvious errors in the detection. the objects are correctly identified, and the masks are not overly broad or overly narrow. therefore, the output is:\n\n* **yes** \u2013 all objects are correctly detected and every mask is good.",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "book"
+    ],
+    "class_ids": [
+      84
+    ],
+    "boxes": [
+      [
+        276.95001220703125,
+        319.57000732421875,
+        342.7300109863281,
+        367.55999755859375
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          277,
+          320,
+          277,
+          362,
+          278,
+          363,
+          278,
+          365,
+          279,
+          366,
+          279,
+          367,
+          283,
+          367,
+          284,
+          366,
+          336,
+          366,
+          337,
+          365,
+          342,
+          365,
+          342,
+          361,
+          341,
+          360,
+          341,
+          352,
+          340,
+          351,
+          340,
+          344,
+          339,
+          343,
+          339,
+          335,
+          338,
+          334,
+          338,
+          326,
+          337,
+          325,
+          337,
+          320
+        ]
+      ]
+    ]
+  }
+}

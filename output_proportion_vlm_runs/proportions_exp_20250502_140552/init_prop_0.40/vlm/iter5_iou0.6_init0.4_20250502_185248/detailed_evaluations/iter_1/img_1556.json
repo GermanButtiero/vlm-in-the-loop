@@ -1,0 +1,112 @@
+{
+  "image_idx": 1556,
+  "approved": false,
+  "vlm_response": "the image shows a street scene with a stop sign, a green directional sign, and a tree. the computer's detection of \"no objects\" is inaccurate. the image clearly contains multiple objects, including the stop sign, the green directional sign, and the tree. the segmentation masks should have identified these objects, but they are not present in the provided information. therefore, the correct response is:\n\nno",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        523.1500244140625,
+        171.50999450683594,
+        586.7899780273438,
+        228.6699981689453
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          541,
+          172,
+          539,
+          174,
+          538,
+          174,
+          535,
+          177,
+          534,
+          177,
+          531,
+          180,
+          530,
+          180,
+          528,
+          182,
+          527,
+          182,
+          524,
+          185,
+          523,
+          185,
+          523,
+          206,
+          545,
+          228,
+          546,
+          227,
+          555,
+          227,
+          556,
+          226,
+          564,
+          226,
+          565,
+          225,
+          566,
+          225,
+          569,
+          222,
+          570,
+          222,
+          572,
+          220,
+          573,
+          220,
+          575,
+          218,
+          576,
+          218,
+          579,
+          215,
+          580,
+          215,
+          582,
+          213,
+          583,
+          213,
+          583,
+          212,
+          584,
+          211,
+          584,
+          202,
+          585,
+          201,
+          585,
+          193,
+          586,
+          192,
+          586,
+          189,
+          578,
+          181,
+          577,
+          181,
+          568,
+          172
+        ]
+      ]
+    ]
+  }
+}

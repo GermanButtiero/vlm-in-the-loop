@@ -1,0 +1,76 @@
+{
+  "image_idx": 2386,
+  "approved": false,
+  "vlm_response": "the image shows a scene with a stop sign, shopping carts, a car, and buildings. the computer's detection of \"no objects\" is inaccurate. the objects present in the image include a stop sign, shopping carts, a car, and buildings. the segmentation masks should accurately identify these objects. therefore, the correct response is:\n\nno",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        355.82000732421875,
+        136.69000244140625,
+        400.2900085449219,
+        184.00999450683594
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          368,
+          137,
+          356,
+          149,
+          356,
+          167,
+          361,
+          172,
+          361,
+          173,
+          369,
+          181,
+          373,
+          181,
+          374,
+          182,
+          380,
+          182,
+          381,
+          183,
+          384,
+          183,
+          386,
+          181,
+          387,
+          181,
+          392,
+          176,
+          393,
+          176,
+          398,
+          171,
+          399,
+          171,
+          399,
+          161,
+          398,
+          160,
+          398,
+          149,
+          386,
+          137
+        ]
+      ]
+    ]
+  }
+}

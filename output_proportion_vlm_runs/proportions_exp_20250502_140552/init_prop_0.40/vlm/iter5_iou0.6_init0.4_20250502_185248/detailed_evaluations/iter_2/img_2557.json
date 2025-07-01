@@ -1,0 +1,90 @@
+{
+  "image_idx": 2557,
+  "approved": false,
+  "vlm_response": "the image shows a street scene with various signs, buildings, and a decorative lantern. the computer's detection of \"no objects\" is inaccurate. the image contains multiple objects, including signs, buildings, and a decorative lantern, which are not identified by the computer. the segmentation masks should highlight these objects, but they are not present in the provided information. therefore, the answer is:\n\nno",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        389.1099853515625,
+        599.4500122070312,
+        451.70001220703125,
+        640.0
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          437,
+          599,
+          436,
+          600,
+          423,
+          600,
+          422,
+          601,
+          410,
+          601,
+          409,
+          602,
+          396,
+          602,
+          395,
+          603,
+          389,
+          603,
+          389,
+          611,
+          390,
+          612,
+          390,
+          639,
+          451,
+          639,
+          451,
+          624,
+          450,
+          623,
+          450,
+          608,
+          449,
+          607,
+          449,
+          605,
+          448,
+          604,
+          448,
+          603,
+          447,
+          603,
+          446,
+          602,
+          445,
+          602,
+          444,
+          601,
+          442,
+          601,
+          441,
+          600,
+          439,
+          600,
+          438,
+          599
+        ]
+      ]
+    ]
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "image_idx": 2515,
+  "approved": true,
+  "vlm_response": "after carefully examining the image, i have visually identified the objects in the colored masks. the objects include a green dell laptop and a model of a car. the dell laptop is clearly visible and fits the criteria of being tightly fitted within the green mask with an iou of \u2265 60%. the car model is also visible but not as clearly, with an iou of \u2265 60% for the same reason. there are no other objects that fit the criteria. therefore, the output is:\n\n*yes*",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "book"
+    ],
+    "class_ids": [
+      84
+    ],
+    "boxes": [
+      [
+        607.239990234375,
+        114.48999786376953,
+        640.0,
+        233.8300018310547
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          625,
+          114,
+          624,
+          115,
+          615,
+          115,
+          614,
+          116,
+          607,
+          116,
+          607,
+          121,
+          608,
+          122,
+          608,
+          140,
+          609,
+          141,
+          609,
+          160,
+          610,
+          161,
+          610,
+          179,
+          611,
+          180,
+          611,
+          199,
+          612,
+          200,
+          612,
+          218,
+          613,
+          219,
+          613,
+          232,
+          612,
+          233,
+          610,
+          233,
+          626,
+          233,
+          626,
+          229,
+          627,
+          228,
+          627,
+          226,
+          628,
+          225,
+          636,
+          225,
+          637,
+          224,
+          637,
+          218,
+          638,
+          217,
+          638,
+          150,
+          639,
+          149,
+          639,
+          116,
+          635,
+          116,
+          634,
+          115,
+          627,
+          115,
+          626,
+          114
+        ]
+      ]
+    ]
+  }
+}

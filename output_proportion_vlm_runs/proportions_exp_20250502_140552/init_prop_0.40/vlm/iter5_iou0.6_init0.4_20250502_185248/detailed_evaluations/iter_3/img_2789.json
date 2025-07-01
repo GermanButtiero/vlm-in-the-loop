@@ -1,0 +1,84 @@
+{
+  "image_idx": 2789,
+  "approved": true,
+  "vlm_response": "the image shows a computer screen with segmentation masks overlaid on various objects. the segmentation masks are color-coded, with each color representing a different object class. the objects identified by the computer are a monitor, a keyboard, and a desk. the segmentation masks appear to accurately identify these objects, with the monitor, keyboard, and desk each having distinct color regions. the segmentation is clear and well-defined, with no apparent misclassifications or poor segmentation. therefore, the answer is:\n\nyes",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "book"
+    ],
+    "class_ids": [
+      84
+    ],
+    "boxes": [
+      [
+        264.739990234375,
+        160.32000732421875,
+        314.54998779296875,
+        189.22000122070312
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          268,
+          160,
+          267,
+          161,
+          267,
+          168,
+          266,
+          169,
+          266,
+          176,
+          265,
+          177,
+          265,
+          185,
+          270,
+          185,
+          271,
+          186,
+          286,
+          186,
+          287,
+          187,
+          302,
+          187,
+          303,
+          188,
+          314,
+          188,
+          313,
+          187,
+          313,
+          178,
+          312,
+          177,
+          312,
+          168,
+          311,
+          167,
+          311,
+          163,
+          301,
+          163,
+          300,
+          162,
+          285,
+          162,
+          284,
+          161,
+          269,
+          161
+        ]
+      ]
+    ]
+  }
+}

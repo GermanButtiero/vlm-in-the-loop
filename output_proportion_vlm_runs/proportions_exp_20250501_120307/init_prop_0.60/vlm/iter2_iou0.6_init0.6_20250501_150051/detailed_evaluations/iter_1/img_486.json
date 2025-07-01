@@ -1,0 +1,178 @@
+{
+  "image_idx": 486,
+  "approved": true,
+  "vlm_response": "yes, the object classes and segmentation masks appear to be accurate. the computer has correctly identified the stop sign in the image. the segmentation mask for the stop sign is well-defined, highlighting the sign's shape and color, which are distinct from the surrounding environment. there are no apparent misclassifications or poor segmentations in the image.",
+  "prediction": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      3
+    ],
+    "scores": [
+      0.9949544072151184
+    ],
+    "boxes": [
+      [
+        406.1706237792969,
+        248.1555633544922,
+        444.5671691894531,
+        293.1871643066406
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          416,
+          249,
+          415,
+          250,
+          414,
+          250,
+          408,
+          256,
+          408,
+          257,
+          407,
+          258,
+          407,
+          260,
+          408,
+          261,
+          408,
+          262,
+          409,
+          263,
+          409,
+          265,
+          410,
+          266,
+          409,
+          267,
+          409,
+          270,
+          407,
+          272,
+          407,
+          273,
+          406,
+          274,
+          406,
+          279,
+          407,
+          280,
+          407,
+          281,
+          408,
+          281,
+          409,
+          282,
+          409,
+          283,
+          413,
+          287,
+          413,
+          288,
+          415,
+          290,
+          430,
+          290,
+          431,
+          289,
+          433,
+          289,
+          442,
+          280,
+          442,
+          279,
+          443,
+          278,
+          443,
+          261,
+          442,
+          260,
+          442,
+          259,
+          432,
+          249
+        ]
+      ]
+    ]
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        404.1099853515625,
+        250.1300048828125,
+        445.1400146484375,
+        289.5
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          416,
+          250,
+          412,
+          254,
+          411,
+          254,
+          406,
+          259,
+          405,
+          259,
+          404,
+          260,
+          404,
+          278,
+          405,
+          278,
+          413,
+          286,
+          414,
+          286,
+          417,
+          289,
+          418,
+          289,
+          419,
+          288,
+          432,
+          288,
+          433,
+          287,
+          434,
+          287,
+          440,
+          281,
+          441,
+          281,
+          444,
+          278,
+          444,
+          264,
+          442,
+          262,
+          442,
+          261,
+          438,
+          257,
+          438,
+          256,
+          435,
+          253,
+          435,
+          252,
+          433,
+          250
+        ]
+      ]
+    ]
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "image_idx": 883,
+  "approved": false,
+  "vlm_response": "the image shows a room with various objects, including a bicycle, a chair, a table, candles, and bookshelves. the computer's detection of \"no objects\" is inaccurate. the segmentation masks should identify the bicycle, chair, table, candles, and bookshelves, among other items. the objects are well-defined and segmented, with clear boundaries. therefore, the correct response is:\n\nno, the computer detected no objects, which is inaccurate.",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "book"
+    ],
+    "class_ids": [
+      84
+    ],
+    "boxes": [
+      [
+        290.489990234375,
+        67.33999633789062,
+        336.54998779296875,
+        83.86000061035156
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          322,
+          67,
+          321,
+          68,
+          316,
+          68,
+          315,
+          69,
+          314,
+          69,
+          313,
+          70,
+          312,
+          70,
+          311,
+          71,
+          310,
+          70,
+          303,
+          70,
+          302,
+          69,
+          292,
+          69,
+          291,
+          70,
+          290,
+          70,
+          290,
+          75,
+          291,
+          76,
+          291,
+          82,
+          322,
+          82,
+          323,
+          83,
+          336,
+          83,
+          336,
+          71,
+          335,
+          71,
+          334,
+          70,
+          333,
+          70,
+          332,
+          69,
+          330,
+          69,
+          329,
+          68,
+          326,
+          68,
+          325,
+          67
+        ]
+      ]
+    ]
+  }
+}

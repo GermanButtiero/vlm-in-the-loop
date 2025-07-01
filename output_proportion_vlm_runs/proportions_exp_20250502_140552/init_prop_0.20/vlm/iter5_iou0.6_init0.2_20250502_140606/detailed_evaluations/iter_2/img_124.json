@@ -1,0 +1,60 @@
+{
+  "image_idx": 124,
+  "approved": false,
+  "vlm_response": "the image shows a traffic light with a green light displaying a smiley face. the segmentation mask highlights the traffic light, indicating that the computer has correctly identified the object. however, the text on the traffic light is not clearly visible, and the mask does not distinguish between the different parts of the traffic light, such as the red and yellow lights. additionally, the mask does not account for the stop sign at the bottom of the image. therefore, while the object class is accurate, the segmentation could be improved for better object distinction.\n\nanswer: no",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        285.1099853515625,
+        309.79998779296875,
+        374.9100036621094,
+        329.260009765625
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          333,
+          310,
+          332,
+          311,
+          301,
+          311,
+          292,
+          320,
+          292,
+          321,
+          285,
+          328,
+          373,
+          328,
+          373,
+          327,
+          367,
+          321,
+          367,
+          320,
+          362,
+          315,
+          362,
+          314,
+          358,
+          310
+        ]
+      ]
+    ]
+  }
+}

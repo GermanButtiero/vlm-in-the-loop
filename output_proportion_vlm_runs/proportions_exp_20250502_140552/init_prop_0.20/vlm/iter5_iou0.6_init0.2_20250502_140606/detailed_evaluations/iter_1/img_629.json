@@ -1,0 +1,102 @@
+{
+  "image_idx": 629,
+  "approved": false,
+  "vlm_response": "the image shows a person on a motorcycle with a stop sign and a railway crossing sign in the background. the computer's detection of \"no objects\" is inaccurate. the image clearly contains several objects, including a person, a motorcycle, a stop sign, and a railway crossing sign. the segmentation masks should identify these objects accurately. therefore, the correct response is:\n\nno",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        494.95001220703125,
+        122.0999984741211,
+        560.8400268554688,
+        188.5800018310547
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          511,
+          122,
+          507,
+          126,
+          507,
+          127,
+          501,
+          133,
+          501,
+          134,
+          496,
+          139,
+          496,
+          140,
+          495,
+          141,
+          495,
+          171,
+          503,
+          179,
+          503,
+          180,
+          511,
+          188,
+          512,
+          188,
+          513,
+          187,
+          535,
+          187,
+          536,
+          186,
+          538,
+          186,
+          541,
+          183,
+          542,
+          183,
+          552,
+          173,
+          553,
+          173,
+          558,
+          168,
+          558,
+          158,
+          559,
+          157,
+          559,
+          145,
+          560,
+          144,
+          560,
+          141,
+          556,
+          137,
+          555,
+          137,
+          548,
+          130,
+          547,
+          130,
+          540,
+          123,
+          532,
+          123,
+          531,
+          122
+        ]
+      ]
+    ]
+  }
+}

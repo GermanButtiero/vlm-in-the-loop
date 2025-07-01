@@ -1,0 +1,62 @@
+{
+  "image_idx": 1710,
+  "approved": false,
+  "vlm_response": "the image shows a living room with various objects, including a sofa, a bookshelf, a coffee table, and a recliner chair. the segmentation masks highlight these objects with different colors. the sofa is outlined in red, the bookshelf in blue, the coffee table in pink, and the recliner chair in green. the computer's detection of objects is accurate, as it correctly identifies the sofa, bookshelf, coffee table, and recliner chair. however, the segmentation masks are not entirely accurate, as they do not fully encompass the objects, especially the coffee table and the recliner chair. additionally, the computer has not detected any objects, which is incorrect since there are clearly identifiable objects in the image. therefore, the answer is:\n\nno",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "book"
+    ],
+    "class_ids": [
+      84
+    ],
+    "boxes": [
+      [
+        108.58000183105469,
+        161.32000732421875,
+        178.4199981689453,
+        180.50999450683594
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          166,
+          161,
+          165,
+          162,
+          110,
+          162,
+          110,
+          165,
+          109,
+          166,
+          109,
+          178,
+          114,
+          178,
+          115,
+          179,
+          172,
+          179,
+          173,
+          180,
+          177,
+          180,
+          177,
+          166,
+          176,
+          165,
+          176,
+          161
+        ]
+      ]
+    ]
+  }
+}

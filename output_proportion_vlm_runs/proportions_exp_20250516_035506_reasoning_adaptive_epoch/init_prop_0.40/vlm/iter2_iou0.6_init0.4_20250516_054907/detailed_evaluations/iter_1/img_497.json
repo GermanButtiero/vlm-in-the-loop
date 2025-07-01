@@ -1,0 +1,108 @@
+{
+  "image_idx": 497,
+  "approved": false,
+  "vlm_response": "after carefully examining the image, i have identified the following objects with corresponding masks:\n\n1. **green mask** on the traffic light: this mask fits the object well, with a high iou (\u2265 60%) and minimal background spill-over.\n2. **black and white mask** on the pole: this mask fits the object well, with a high iou (\u2265 60%) and minimal background spill-over.\n3. **yellow mask** on the pole: this mask fits the object well, with a high iou (\u2265 60%) and minimal background spill-over.\n4. **red mask** on the traffic light: this mask fits the object well, with a high iou (\u2265 60%) and minimal background spill-over.\n5. **blue mask** on the crane: this mask fits the object well, with a high iou (\u2265 60%) and minimal background spill-over.\n6. **white mask** on the fence: this mask fits the object well, with a high iou (\u2265 60%) and minimal background spill-over.\n7. **man in a suit**: this mask fits the object well, with a high iou (\u2265 60%) and minimal background spill-over.\n\n",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        273.6000061035156,
+        250.5800018310547,
+        301.510009765625,
+        285.7799987792969
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          281,
+          251,
+          274,
+          258,
+          274,
+          275,
+          278,
+          279,
+          279,
+          279,
+          283,
+          283,
+          284,
+          283,
+          286,
+          285,
+          287,
+          284,
+          289,
+          284,
+          290,
+          283,
+          292,
+          283,
+          293,
+          282,
+          294,
+          282,
+          294,
+          281,
+          295,
+          280,
+          295,
+          279,
+          296,
+          278,
+          296,
+          277,
+          297,
+          276,
+          297,
+          275,
+          298,
+          274,
+          298,
+          273,
+          299,
+          272,
+          299,
+          271,
+          300,
+          270,
+          300,
+          264,
+          299,
+          263,
+          299,
+          260,
+          298,
+          259,
+          298,
+          258,
+          297,
+          257,
+          297,
+          256,
+          296,
+          255,
+          296,
+          254,
+          294,
+          252,
+          294,
+          251
+        ]
+      ]
+    ]
+  }
+}

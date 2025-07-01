@@ -1,0 +1,80 @@
+{
+  "image_idx": 2578,
+  "approved": false,
+  "vlm_response": "the image shows a stop sign with the word \"arr\u00eat\" on it, which is a french word for \"stop.\" the sign is attached to a wooden pole, and there are bare trees in the background. the computer's detection of \"no objects\" is inaccurate because the stop sign is clearly visible and should be classified as an object. therefore, the correct answer is:\n\nno",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        48.93000030517578,
+        112.18000030517578,
+        166.19000244140625,
+        228.50999450683594
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          103,
+          112,
+          90,
+          125,
+          90,
+          126,
+          63,
+          153,
+          63,
+          154,
+          49,
+          168,
+          65,
+          184,
+          65,
+          185,
+          98,
+          218,
+          98,
+          219,
+          106,
+          227,
+          107,
+          227,
+          128,
+          206,
+          129,
+          206,
+          165,
+          170,
+          154,
+          159,
+          153,
+          159,
+          140,
+          146,
+          139,
+          146,
+          127,
+          134,
+          126,
+          134,
+          113,
+          121,
+          112,
+          121
+        ]
+      ]
+    ]
+  }
+}

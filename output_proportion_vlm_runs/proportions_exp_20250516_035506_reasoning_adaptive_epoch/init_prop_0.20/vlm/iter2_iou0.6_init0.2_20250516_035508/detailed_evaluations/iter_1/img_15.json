@@ -1,0 +1,78 @@
+{
+  "image_idx": 15,
+  "approved": true,
+  "vlm_response": "after carefully examining the image, i have identified the objects visually and compared them with the model's detections. the objects detected are:\n\n1. a person riding a bicycle.\n2. a stop sign.\n3. a building with a green sign reading \"harbour trading company.\"\n4. a blue awning.\n5. a red awning.\n6. a blue street lamp.\n7. a black pole with a stop sign.\n8. a white car.\n\nthe objects are correctly detected, and the masks are good. there are no errors in the detections.\n\n*yes*",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        324.69000244140625,
+        0.0,
+        381.1600036621094,
+        27.700000762939453
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          325,
+          0,
+          325,
+          10,
+          326,
+          10,
+          335,
+          19,
+          336,
+          19,
+          344,
+          27,
+          362,
+          27,
+          365,
+          24,
+          366,
+          24,
+          369,
+          21,
+          370,
+          21,
+          374,
+          17,
+          375,
+          17,
+          379,
+          13,
+          380,
+          13,
+          380,
+          3,
+          372,
+          3,
+          371,
+          2,
+          353,
+          2,
+          352,
+          1,
+          335,
+          1,
+          334,
+          0
+        ]
+      ]
+    ]
+  }
+}

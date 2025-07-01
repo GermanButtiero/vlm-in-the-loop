@@ -1,0 +1,76 @@
+{
+  "image_idx": 2767,
+  "approved": true,
+  "vlm_response": "after carefully analyzing the image, i have identified the following objects and their detections:\n\n1. **woman**: the woman is the primary subject, and her presence is confirmed by her attire and activity.\n2. **bench**: the green bench is clearly visible and is the main object in the foreground.\n3. **orange object**: the orange object in the woman's hand is identified as a pen or marker.\n4. **background**: the background is blurred, but it appears to be a park setting with trees and greenery.\n\nthe objects are correctly detected, and the masks fit well. there are no significant errors in the detections.\n\n*yes*",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "book"
+    ],
+    "class_ids": [
+      84
+    ],
+    "boxes": [
+      [
+        298.3900146484375,
+        256.1400146484375,
+        395.9700012207031,
+        271.0
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          311,
+          256,
+          308,
+          259,
+          307,
+          259,
+          299,
+          267,
+          319,
+          267,
+          320,
+          268,
+          349,
+          268,
+          350,
+          269,
+          380,
+          269,
+          381,
+          270,
+          395,
+          270,
+          391,
+          266,
+          391,
+          265,
+          386,
+          260,
+          386,
+          259,
+          365,
+          259,
+          364,
+          258,
+          342,
+          258,
+          341,
+          257,
+          318,
+          257,
+          317,
+          256
+        ]
+      ]
+    ]
+  }
+}

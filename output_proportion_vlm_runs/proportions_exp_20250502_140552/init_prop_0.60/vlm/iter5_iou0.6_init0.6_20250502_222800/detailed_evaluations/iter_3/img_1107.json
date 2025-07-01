@@ -1,0 +1,86 @@
+{
+  "image_idx": 1107,
+  "approved": false,
+  "vlm_response": "the computer detected no objects, which is incorrect. the image clearly shows a young girl, a teddy bear, a pink bag, and a red object. the segmentation masks should identify these objects. therefore, the answer is:\n\nno",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "book"
+    ],
+    "class_ids": [
+      84
+    ],
+    "boxes": [
+      [
+        599.989990234375,
+        541.1099853515625,
+        639.72998046875,
+        582.2999877929688
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          615,
+          541,
+          614,
+          542,
+          607,
+          542,
+          607,
+          546,
+          606,
+          547,
+          606,
+          552,
+          605,
+          553,
+          605,
+          557,
+          604,
+          558,
+          604,
+          561,
+          603,
+          562,
+          603,
+          566,
+          602,
+          567,
+          602,
+          570,
+          601,
+          571,
+          601,
+          574,
+          600,
+          575,
+          600,
+          577,
+          601,
+          577,
+          603,
+          579,
+          604,
+          579,
+          606,
+          581,
+          639,
+          581,
+          639,
+          551,
+          638,
+          550,
+          638,
+          541
+        ]
+      ]
+    ]
+  }
+}

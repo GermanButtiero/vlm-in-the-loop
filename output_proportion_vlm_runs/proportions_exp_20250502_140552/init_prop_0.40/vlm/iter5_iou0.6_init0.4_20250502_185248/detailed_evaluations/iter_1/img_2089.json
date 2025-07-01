@@ -1,0 +1,82 @@
+{
+  "image_idx": 2089,
+  "approved": false,
+  "vlm_response": "the image shows a stop sign, which is a common object in road safety. the computer's detection of \"no objects\" is inaccurate. the correct object class is a stop sign, and the segmentation mask should highlight the red octagonal sign with the word \"stop\" in white letters. the segmentation mask is not present in the image, but based on the visual content, the stop sign is the primary object. therefore, the answer is:\n\nno, the computer detected no objects, but the image clearly shows a stop sign.",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        194.72000122070312,
+        127.62999725341797,
+        409.489990234375,
+        343.8299865722656
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          260,
+          128,
+          196,
+          192,
+          196,
+          234,
+          195,
+          235,
+          195,
+          278,
+          215,
+          298,
+          215,
+          299,
+          238,
+          322,
+          238,
+          323,
+          258,
+          343,
+          344,
+          343,
+          408,
+          279,
+          408,
+          192,
+          370,
+          154,
+          370,
+          153,
+          349,
+          132,
+          339,
+          132,
+          338,
+          131,
+          319,
+          131,
+          318,
+          130,
+          299,
+          130,
+          298,
+          129,
+          279,
+          129,
+          278,
+          128
+        ]
+      ]
+    ]
+  }
+}

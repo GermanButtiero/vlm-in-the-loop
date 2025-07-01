@@ -1,0 +1,98 @@
+{
+  "image_idx": 1632,
+  "approved": false,
+  "vlm_response": "the image shows a scene with a stop sign, a bus stop shelter, and a sign for lincoln park zoo, along with some animal statues on top of the zoo entrance. the computer's detection of \"no objects\" is inaccurate. the image clearly contains multiple objects, including the stop sign, bus stop shelter, zoo sign, and animal statues. the segmentation masks should identify these objects accurately. therefore, the correct response is:\n\nno",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        313.17999267578125,
+        76.69000244140625,
+        377.1000061035156,
+        149.2100067138672
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          332,
+          77,
+          330,
+          79,
+          330,
+          80,
+          324,
+          86,
+          324,
+          87,
+          318,
+          93,
+          318,
+          94,
+          315,
+          97,
+          315,
+          105,
+          314,
+          106,
+          314,
+          122,
+          313,
+          123,
+          313,
+          127,
+          315,
+          129,
+          315,
+          130,
+          323,
+          138,
+          323,
+          139,
+          330,
+          146,
+          330,
+          147,
+          331,
+          148,
+          358,
+          148,
+          361,
+          145,
+          361,
+          144,
+          372,
+          133,
+          372,
+          132,
+          376,
+          128,
+          376,
+          97,
+          374,
+          95,
+          374,
+          94,
+          366,
+          86,
+          366,
+          85,
+          358,
+          77
+        ]
+      ]
+    ]
+  }
+}

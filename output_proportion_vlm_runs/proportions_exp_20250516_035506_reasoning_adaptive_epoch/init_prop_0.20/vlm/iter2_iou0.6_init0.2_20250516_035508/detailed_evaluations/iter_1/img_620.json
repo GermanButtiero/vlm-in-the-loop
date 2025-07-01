@@ -1,0 +1,182 @@
+{
+  "image_idx": 620,
+  "approved": false,
+  "vlm_response": "after carefully examining the image, i have identified the following objects and their visual characteristics:\n\n1. **stop sign**: the stop sign is red with white lettering, and it is a standard octagonal shape.\n2. **street sign**: the street sign is green with white lettering, indicating \"avenue 55\" and \"all-way.\"\n3. **stop sign with \"all-way\" text**: the stop sign has an additional \"all-way\" text below the main \"stop\" text.\n4. **traffic light**: there is a traffic light visible in the image, but its details are not clearly distinguishable.\n5. **vehicles**: several cars and a bus are visible on the road, but their details are not clear.\n6. **street signs**: there are street signs on the sidewalk, but their details are not clearly distinguishable.\n\nthe stop sign is well-defined with a high iou (intersection of union of) score, indicating it fits the object well. the street sign is also well-defined, with a high iou score. the traffic light is not clearly visible, but the stop sign with \"all-way\" text is also well-defined.\n\nthere are no obvious errors in the object detection, and the masks are",
+  "prediction": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      3
+    ],
+    "scores": [
+      0.9970724582672119
+    ],
+    "boxes": [
+      [
+        518.097412109375,
+        115.44991302490234,
+        571.34765625,
+        174.0948486328125
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          539,
+          115,
+          538,
+          116,
+          534,
+          116,
+          533,
+          117,
+          531,
+          117,
+          528,
+          120,
+          527,
+          120,
+          522,
+          125,
+          521,
+          125,
+          519,
+          127,
+          519,
+          128,
+          518,
+          129,
+          518,
+          158,
+          519,
+          159,
+          519,
+          160,
+          529,
+          170,
+          530,
+          170,
+          531,
+          171,
+          535,
+          171,
+          536,
+          172,
+          552,
+          172,
+          553,
+          171,
+          555,
+          171,
+          556,
+          170,
+          557,
+          170,
+          559,
+          168,
+          560,
+          168,
+          561,
+          167,
+          561,
+          166,
+          562,
+          165,
+          563,
+          165,
+          571,
+          157,
+          571,
+          131,
+          570,
+          130,
+          570,
+          129,
+          561,
+          120,
+          561,
+          119,
+          560,
+          119,
+          557,
+          116,
+          541,
+          116,
+          540,
+          115
+        ]
+      ]
+    ]
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        515.260009765625,
+        116.58999633789062,
+        572.1699829101562,
+        172.66000366210938
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          531,
+          117,
+          527,
+          121,
+          526,
+          121,
+          522,
+          125,
+          521,
+          125,
+          517,
+          129,
+          516,
+          129,
+          515,
+          130,
+          515,
+          154,
+          522,
+          161,
+          522,
+          162,
+          530,
+          170,
+          532,
+          170,
+          533,
+          171,
+          553,
+          171,
+          554,
+          172,
+          555,
+          172,
+          571,
+          156,
+          571,
+          132,
+          566,
+          127,
+          566,
+          126,
+          559,
+          119,
+          559,
+          118,
+          558,
+          117
+        ]
+      ]
+    ]
+  }
+}

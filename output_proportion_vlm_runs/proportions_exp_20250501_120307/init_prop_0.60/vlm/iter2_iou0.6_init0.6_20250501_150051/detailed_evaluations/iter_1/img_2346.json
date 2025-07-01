@@ -1,0 +1,84 @@
+{
+  "image_idx": 2346,
+  "approved": false,
+  "vlm_response": "no\n\nthe image shows a laptop and a usb drive, but the computer's segmentation masks incorrectly identify these objects. the laptop is segmented with blue and green outlines, and the usb drive is segmented with a red outline. however, the computer incorrectly identifies these objects as separate entities, which is not accurate. the segmentation masks do not align with the actual objects in the image, indicating a misclassification.",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "book"
+    ],
+    "class_ids": [
+      84
+    ],
+    "boxes": [
+      [
+        411.6000061035156,
+        0.6600000262260437,
+        443.67999267578125,
+        27.639999389648438
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          419,
+          1,
+          418,
+          2,
+          414,
+          2,
+          414,
+          3,
+          413,
+          4,
+          413,
+          10,
+          412,
+          11,
+          412,
+          18,
+          414,
+          20,
+          414,
+          21,
+          418,
+          25,
+          418,
+          26,
+          419,
+          27,
+          420,
+          26,
+          428,
+          26,
+          429,
+          25,
+          438,
+          25,
+          439,
+          24,
+          443,
+          24,
+          443,
+          21,
+          442,
+          20,
+          442,
+          3,
+          441,
+          2,
+          438,
+          2,
+          437,
+          1
+        ]
+      ]
+    ]
+  }
+}

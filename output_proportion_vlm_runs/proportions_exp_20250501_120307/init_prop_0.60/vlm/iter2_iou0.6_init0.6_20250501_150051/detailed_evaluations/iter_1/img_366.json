@@ -1,0 +1,102 @@
+{
+  "image_idx": 366,
+  "approved": false,
+  "vlm_response": "the computer's detection of \"no objects\" is inaccurate. the image clearly shows two distinct objects: a \"no stopping\" sign and a stop sign. the segmentation masks should have identified these objects, but they did not. the \"no stopping\" sign is orange with white text and is located on the left side of the image, while the stop sign is red with white text and is on the right side. both signs are mounted on poles and are clearly visible against the background. therefore, the correct answer is:\n\nno",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        294.0799865722656,
+        192.6199951171875,
+        369.3500061035156,
+        272.6600036621094
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          334,
+          193,
+          333,
+          194,
+          322,
+          194,
+          321,
+          195,
+          314,
+          195,
+          310,
+          199,
+          310,
+          200,
+          303,
+          207,
+          303,
+          208,
+          297,
+          214,
+          297,
+          215,
+          294,
+          218,
+          294,
+          228,
+          295,
+          229,
+          295,
+          250,
+          296,
+          251,
+          296,
+          253,
+          298,
+          255,
+          299,
+          255,
+          308,
+          264,
+          309,
+          264,
+          317,
+          272,
+          347,
+          272,
+          351,
+          268,
+          351,
+          267,
+          357,
+          261,
+          357,
+          260,
+          363,
+          254,
+          363,
+          253,
+          368,
+          248,
+          368,
+          217,
+          356,
+          205,
+          356,
+          204,
+          345,
+          193
+        ]
+      ]
+    ]
+  }
+}

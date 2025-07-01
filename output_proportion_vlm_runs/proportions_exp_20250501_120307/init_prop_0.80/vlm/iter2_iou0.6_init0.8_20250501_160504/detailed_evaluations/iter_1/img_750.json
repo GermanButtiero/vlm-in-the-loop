@@ -1,0 +1,90 @@
+{
+  "image_idx": 750,
+  "approved": false,
+  "vlm_response": "the image shows a stop sign, cacti, a house, and a car. the computer's detection of \"no objects\" is inaccurate. the stop sign, cacti, and house are clearly visible and should be included in the object segmentation masks. the car is partially visible and should also be included. therefore, the correct answer is:\n\nno, the computer detected no objects, but there are multiple objects present in the image.",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        158.92999267578125,
+        78.94999694824219,
+        286.3500061035156,
+        207.80999755859375
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          197,
+          79,
+          162,
+          114,
+          162,
+          120,
+          161,
+          121,
+          161,
+          140,
+          160,
+          141,
+          160,
+          160,
+          159,
+          161,
+          159,
+          170,
+          172,
+          183,
+          172,
+          184,
+          195,
+          207,
+          205,
+          207,
+          206,
+          206,
+          241,
+          206,
+          242,
+          205,
+          246,
+          205,
+          252,
+          199,
+          253,
+          199,
+          265,
+          187,
+          266,
+          187,
+          279,
+          174,
+          280,
+          174,
+          285,
+          169,
+          285,
+          117,
+          248,
+          80,
+          216,
+          80,
+          215,
+          79
+        ]
+      ]
+    ]
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "image_idx": 1202,
+  "approved": false,
+  "vlm_response": "the image shows a scene with two men and a moving truck, with various objects inside the truck. the computer's detection of \"no objects\" is inaccurate. the segmentation masks should identify the truck, the men, and the items inside the truck, such as boxes and storage bins. the computer's detection is missing these objects, which are clearly visible in the image. therefore, the answer is:\n\nno",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        82.5999984741211,
+        175.1999969482422,
+        110.30000305175781,
+        201.9600067138672
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          83,
+          175,
+          83,
+          200,
+          94,
+          200,
+          95,
+          201,
+          101,
+          201,
+          102,
+          200,
+          103,
+          200,
+          105,
+          198,
+          106,
+          198,
+          107,
+          197,
+          107,
+          196,
+          108,
+          195,
+          108,
+          186,
+          109,
+          185,
+          109,
+          176,
+          93,
+          176,
+          92,
+          175
+        ]
+      ]
+    ]
+  }
+}

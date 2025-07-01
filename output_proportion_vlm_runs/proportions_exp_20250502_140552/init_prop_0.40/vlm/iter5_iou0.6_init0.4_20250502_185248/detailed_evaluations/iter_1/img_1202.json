@@ -1,0 +1,68 @@
+{
+  "image_idx": 1202,
+  "approved": false,
+  "vlm_response": "the computer's detection of \"no objects\" is not accurate. the image clearly shows several objects, including a truck, two people, various items inside the truck, and other elements like traffic signs and buildings. the segmentation masks should identify these objects, but they are not present in the provided information. therefore, the correct response is:\n\nno",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        82.5999984741211,
+        175.1999969482422,
+        110.30000305175781,
+        201.9600067138672
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          83,
+          175,
+          83,
+          200,
+          94,
+          200,
+          95,
+          201,
+          101,
+          201,
+          102,
+          200,
+          103,
+          200,
+          105,
+          198,
+          106,
+          198,
+          107,
+          197,
+          107,
+          196,
+          108,
+          195,
+          108,
+          186,
+          109,
+          185,
+          109,
+          176,
+          93,
+          176,
+          92,
+          175
+        ]
+      ]
+    ]
+  }
+}

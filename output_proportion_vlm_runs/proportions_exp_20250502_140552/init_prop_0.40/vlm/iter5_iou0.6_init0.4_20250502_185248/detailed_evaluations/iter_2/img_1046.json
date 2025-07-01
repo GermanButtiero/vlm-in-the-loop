@@ -1,0 +1,98 @@
+{
+  "image_idx": 1046,
+  "approved": false,
+  "vlm_response": "the computer's detection of objects in the image is not accurate. the image shows several objects, including a sofa, a coffee table, a mirror, curtains, a staircase, and a bookshelf, among others. the segmentation masks should identify these objects, but the provided information states that no objects were detected. this discrepancy indicates that the object classes and segmentation masks are not accurate. therefore, the answer is:\n\nno",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "book"
+    ],
+    "class_ids": [
+      84
+    ],
+    "boxes": [
+      [
+        9.970000267028809,
+        241.94000244140625,
+        53.650001525878906,
+        283.6300048828125
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          10,
+          242,
+          11,
+          243,
+          11,
+          248,
+          12,
+          249,
+          12,
+          257,
+          13,
+          258,
+          13,
+          266,
+          14,
+          267,
+          14,
+          276,
+          15,
+          277,
+          15,
+          281,
+          29,
+          281,
+          30,
+          282,
+          45,
+          282,
+          46,
+          283,
+          47,
+          283,
+          47,
+          278,
+          48,
+          277,
+          48,
+          271,
+          49,
+          270,
+          49,
+          264,
+          50,
+          263,
+          50,
+          258,
+          51,
+          257,
+          51,
+          251,
+          52,
+          250,
+          52,
+          245,
+          53,
+          244,
+          21,
+          244,
+          20,
+          243,
+          14,
+          243,
+          13,
+          242
+        ]
+      ]
+    ]
+  }
+}

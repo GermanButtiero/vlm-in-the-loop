@@ -1,0 +1,84 @@
+{
+  "image_idx": 2407,
+  "approved": true,
+  "vlm_response": "after carefully analyzing the image, i have visually identified the objects as follows:\n\n1. **kites**: multiple kites of various shapes and colors are visible in the sky.\n2. **people**: two individuals are standing on the road, holding kite strings.\n3. **kite string**: the strings connecting the people to the kites are visible.\n4. **background**: a building and a road are visible in the background.\n\nthe objects are not tightly fitting the masks, and there are no significant background spill-over. the masks do not cover the entire area, and there are no obvious errors in the detections.\n\n*yes*\n\nthe objects are correctly detected, and every mask is good.",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        559.5499877929688,
+        256.1199951171875,
+        599.6400146484375,
+        296.6400146484375
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          584,
+          256,
+          583,
+          257,
+          574,
+          257,
+          573,
+          258,
+          570,
+          258,
+          560,
+          268,
+          560,
+          285,
+          562,
+          287,
+          563,
+          287,
+          572,
+          296,
+          575,
+          296,
+          576,
+          295,
+          588,
+          295,
+          591,
+          292,
+          591,
+          291,
+          597,
+          285,
+          597,
+          284,
+          599,
+          282,
+          598,
+          281,
+          598,
+          268,
+          597,
+          267,
+          597,
+          266,
+          590,
+          259,
+          589,
+          259,
+          586,
+          256
+        ]
+      ]
+    ]
+  }
+}

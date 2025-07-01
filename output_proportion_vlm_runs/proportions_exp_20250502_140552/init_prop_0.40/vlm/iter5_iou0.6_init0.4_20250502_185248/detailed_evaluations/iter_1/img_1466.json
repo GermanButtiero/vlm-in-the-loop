@@ -1,0 +1,64 @@
+{
+  "image_idx": 1466,
+  "approved": true,
+  "vlm_response": "the image shows a set of clocks with labels for different cities, each with a distinct color and design. the segmentation masks identify the clocks accurately, with each clock having a distinct color and shape. the labels for each city are also correctly identified. therefore, the object classes and segmentation masks are accurate.\n\nanswer: yes",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "book"
+    ],
+    "class_ids": [
+      84
+    ],
+    "boxes": [
+      [
+        394.4100036621094,
+        577.7999877929688,
+        478.0,
+        603.2999877929688
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          431,
+          578,
+          430,
+          579,
+          397,
+          579,
+          396,
+          580,
+          395,
+          580,
+          394,
+          581,
+          394,
+          582,
+          395,
+          583,
+          395,
+          602,
+          459,
+          602,
+          460,
+          601,
+          471,
+          601,
+          472,
+          600,
+          477,
+          600,
+          477,
+          578
+        ]
+      ]
+    ]
+  }
+}

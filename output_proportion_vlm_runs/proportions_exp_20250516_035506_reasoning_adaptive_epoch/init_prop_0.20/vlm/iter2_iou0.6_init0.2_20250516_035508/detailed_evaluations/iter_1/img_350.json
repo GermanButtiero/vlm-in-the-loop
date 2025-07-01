@@ -1,0 +1,154 @@
+{
+  "image_idx": 350,
+  "approved": true,
+  "vlm_response": "after carefully examining the image, i have identified the following objects:\n\n1. **stop sign**: the stop sign is clearly visible and fits the criteria of being a red octagonal sign with the word \"stop\" in white letters.\n2. **road signs**: there are other road signs in the background, but they are not the focus of the image and do not match the stop sign.\n3. **desert landscape**: the sandy terrain and distant mountains are part of the background, not the main focus of the image.\n\nthe stop sign is the only object that fits the criteria of being detected and properly classified. there are no other objects that match the description of the stop sign.\n\n*yes*\n\nthe stop sign is correctly detected and fits the criteria of being a red octagonal sign with the word \"stop\" in white letters.",
+  "prediction": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      3
+    ],
+    "scores": [
+      0.9982970356941223
+    ],
+    "boxes": [
+      [
+        107.96966552734375,
+        197.3665771484375,
+        146.84437561035156,
+        237.6294403076172
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          119,
+          198,
+          118,
+          199,
+          117,
+          199,
+          111,
+          205,
+          110,
+          205,
+          108,
+          207,
+          108,
+          210,
+          107,
+          211,
+          107,
+          212,
+          108,
+          213,
+          107,
+          214,
+          107,
+          222,
+          108,
+          223,
+          108,
+          226,
+          117,
+          235,
+          118,
+          235,
+          119,
+          236,
+          122,
+          236,
+          123,
+          237,
+          133,
+          237,
+          134,
+          236,
+          136,
+          236,
+          140,
+          232,
+          141,
+          232,
+          146,
+          227,
+          146,
+          209,
+          136,
+          199,
+          135,
+          199,
+          134,
+          198
+        ]
+      ]
+    ]
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        106.61000061035156,
+        198.6699981689453,
+        147.1199951171875,
+        237.52000427246094
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          126,
+          199,
+          125,
+          200,
+          117,
+          200,
+          116,
+          201,
+          116,
+          202,
+          110,
+          208,
+          110,
+          209,
+          108,
+          211,
+          108,
+          218,
+          107,
+          219,
+          107,
+          226,
+          109,
+          228,
+          110,
+          228,
+          119,
+          237,
+          122,
+          237,
+          123,
+          236,
+          135,
+          236,
+          146,
+          225,
+          146,
+          215,
+          145,
+          214,
+          145,
+          210,
+          134,
+          199
+        ]
+      ]
+    ]
+  }
+}

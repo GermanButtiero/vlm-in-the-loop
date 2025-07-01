@@ -1,0 +1,76 @@
+{
+  "image_idx": 1690,
+  "approved": true,
+  "vlm_response": "the image shows a nokia mobile phone placed on an open book. the object segmentation masks identify the phone correctly, with the colored areas accurately representing the phone's boundaries. the book is also correctly identified, with its pages and text visible. there are no misclassifications or poor segmentations in the image. therefore, the answer is:\n\nyes",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "book"
+    ],
+    "class_ids": [
+      84
+    ],
+    "boxes": [
+      [
+        0.0,
+        0.6499999761581421,
+        400.0,
+        295.9700012207031
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          0,
+          1,
+          0,
+          184,
+          1,
+          185,
+          1,
+          295,
+          190,
+          295,
+          190,
+          292,
+          189,
+          291,
+          189,
+          284,
+          190,
+          283,
+          191,
+          284,
+          191,
+          289,
+          192,
+          290,
+          192,
+          295,
+          256,
+          295,
+          257,
+          294,
+          386,
+          294,
+          387,
+          293,
+          399,
+          293,
+          399,
+          2,
+          246,
+          2,
+          245,
+          1
+        ]
+      ]
+    ]
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "image_idx": 1604,
+  "approved": false,
+  "vlm_response": "the image shows a winter scene with a stop sign, a bus stop shelter, and a tree covered in snow. the computer's detection of \"no objects\" is inaccurate. the image clearly contains several objects, including the stop sign, bus stop shelter, tree, and cars. the segmentation masks should identify these objects accurately. therefore, the correct response is:\n\nno",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        99.37999725341797,
+        324.80999755859375,
+        132.63999938964844,
+        358.07000732421875
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          108,
+          325,
+          107,
+          326,
+          106,
+          326,
+          104,
+          328,
+          103,
+          328,
+          100,
+          331,
+          100,
+          342,
+          99,
+          343,
+          99,
+          346,
+          104,
+          351,
+          104,
+          352,
+          108,
+          356,
+          115,
+          356,
+          116,
+          357,
+          124,
+          357,
+          126,
+          355,
+          126,
+          354,
+          132,
+          348,
+          132,
+          345,
+          131,
+          344,
+          131,
+          335,
+          121,
+          325
+        ]
+      ]
+    ]
+  }
+}

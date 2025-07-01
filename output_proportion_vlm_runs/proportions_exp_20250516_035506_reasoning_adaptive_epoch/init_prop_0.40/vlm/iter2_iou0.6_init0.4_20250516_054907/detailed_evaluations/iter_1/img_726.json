@@ -1,0 +1,78 @@
+{
+  "image_idx": 726,
+  "approved": true,
+  "vlm_response": "after carefully examining the image, i have identified the following objects:\n\n1. **bridge**: the stone bridge with multiple arches.\n2. **stop sign**: a red octagonal sign with a white border.\n3. **cars**: several cars on the bridge.\n4. **buildings**: various buildings in the background.\n5. **streetlights**: street lamps on the bridge.\n6. **waterway**: the river or stream under the bridge.\n7. **sky**: the sky is visible with clouds.\n\nthe objects listed are correctly detected and every mask is good. there are no errors in the detections.\n\n*yes*",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        160.3800048828125,
+        181.1699981689453,
+        211.77000427246094,
+        233.17999267578125
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          173,
+          181,
+          164,
+          190,
+          163,
+          190,
+          160,
+          193,
+          160,
+          218,
+          172,
+          230,
+          174,
+          230,
+          175,
+          231,
+          187,
+          231,
+          188,
+          232,
+          196,
+          232,
+          198,
+          230,
+          199,
+          230,
+          210,
+          219,
+          210,
+          213,
+          211,
+          212,
+          211,
+          193,
+          209,
+          191,
+          208,
+          191,
+          203,
+          186,
+          202,
+          186,
+          197,
+          181
+        ]
+      ]
+    ]
+  }
+}

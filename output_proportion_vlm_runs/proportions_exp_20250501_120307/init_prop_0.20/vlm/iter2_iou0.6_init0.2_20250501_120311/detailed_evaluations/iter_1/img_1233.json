@@ -1,0 +1,98 @@
+{
+  "image_idx": 1233,
+  "approved": true,
+  "vlm_response": "the image shows a traffic light and a stop sign, which are correctly identified by the computer. the segmentation masks accurately represent these objects. the traffic light is correctly segmented, with the red light illuminated, and the stop sign is also correctly segmented. the additional sign below the stop sign is also correctly identified. therefore, the answer is:\n\nyes",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        203.8699951171875,
+        289.0799865722656,
+        297.7099914550781,
+        389.3900146484375
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          227,
+          289,
+          216,
+          300,
+          216,
+          301,
+          204,
+          313,
+          204,
+          339,
+          205,
+          340,
+          205,
+          359,
+          229,
+          383,
+          229,
+          384,
+          231,
+          386,
+          236,
+          386,
+          237,
+          387,
+          253,
+          387,
+          254,
+          388,
+          269,
+          388,
+          277,
+          380,
+          278,
+          380,
+          286,
+          372,
+          287,
+          372,
+          294,
+          365,
+          295,
+          365,
+          297,
+          363,
+          297,
+          358,
+          296,
+          357,
+          296,
+          338,
+          295,
+          337,
+          295,
+          320,
+          266,
+          291,
+          254,
+          291,
+          253,
+          290,
+          237,
+          290,
+          236,
+          289
+        ]
+      ]
+    ]
+  }
+}

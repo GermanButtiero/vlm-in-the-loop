@@ -1,0 +1,58 @@
+{
+  "image_idx": 1746,
+  "approved": false,
+  "vlm_response": "the image shows a street scene with buildings, a road, and a no-entry sign. the computer's detection of \"no objects\" is inaccurate. the image contains several objects that should be identified, such as buildings, a road, a no-entry sign, and possibly other elements like antennas and fences. the segmentation masks should highlight these objects, but they are not present in the provided information. therefore, the answer is:\n\nno, the computer detected no objects, which is inaccurate.",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        328.3399963378906,
+        176.9199981689453,
+        361.17999267578125,
+        209.2100067138672
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          329,
+          177,
+          329,
+          199,
+          328,
+          200,
+          328,
+          207,
+          337,
+          207,
+          338,
+          208,
+          359,
+          208,
+          359,
+          194,
+          360,
+          193,
+          360,
+          178,
+          345,
+          178,
+          344,
+          177
+        ]
+      ]
+    ]
+  }
+}

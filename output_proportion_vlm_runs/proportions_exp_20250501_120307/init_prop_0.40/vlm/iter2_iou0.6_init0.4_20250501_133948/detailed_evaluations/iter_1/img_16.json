@@ -1,0 +1,106 @@
+{
+  "image_idx": 16,
+  "approved": false,
+  "vlm_response": "the image shows a stop sign, trees, houses, and a snowy street. the computer's detection of \"no objects\" is inaccurate. the stop sign is a clear object in the image, and it should be included in the segmentation masks. therefore, the correct answer is:\n\nno, the computer detected no objects, but there is a stop sign present in the image.",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        366.95001220703125,
+        163.5,
+        461.5400085449219,
+        258.0899963378906
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          419,
+          164,
+          418,
+          165,
+          407,
+          165,
+          406,
+          166,
+          396,
+          166,
+          395,
+          167,
+          392,
+          167,
+          386,
+          173,
+          386,
+          174,
+          371,
+          189,
+          371,
+          190,
+          367,
+          194,
+          367,
+          213,
+          368,
+          214,
+          368,
+          234,
+          369,
+          235,
+          370,
+          235,
+          383,
+          248,
+          384,
+          248,
+          393,
+          257,
+          434,
+          257,
+          454,
+          237,
+          454,
+          236,
+          461,
+          229,
+          461,
+          228,
+          460,
+          227,
+          460,
+          206,
+          459,
+          205,
+          459,
+          191,
+          453,
+          185,
+          452,
+          185,
+          443,
+          176,
+          442,
+          176,
+          432,
+          166,
+          431,
+          166,
+          429,
+          164
+        ]
+      ]
+    ]
+  }
+}

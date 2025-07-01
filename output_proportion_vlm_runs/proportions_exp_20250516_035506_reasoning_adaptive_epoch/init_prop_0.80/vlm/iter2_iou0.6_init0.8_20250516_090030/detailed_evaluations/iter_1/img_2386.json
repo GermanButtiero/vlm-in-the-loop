@@ -1,0 +1,76 @@
+{
+  "image_idx": 2386,
+  "approved": true,
+  "vlm_response": "after carefully examining the image, i have visually identified the objects as follows:\n\n1. **shopping carts**: three shopping carts are present, each with a red label.\n2. **stop sign**: a red stop sign is visible.\n3. **building**: a brick building is in the background.\n4. **car**: a dark-colored car is parked in the distance.\n5. **street sign**: a street sign is attached to a pole, but its content is not clearly visible.\n6. **bushes**: a bush is visible on the right side of the image.\n\nthe objects are correctly detected, and the masks are good. there are no errors in the detection process.\n\n*yes*",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        355.82000732421875,
+        136.69000244140625,
+        400.2900085449219,
+        184.00999450683594
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          368,
+          137,
+          356,
+          149,
+          356,
+          167,
+          361,
+          172,
+          361,
+          173,
+          369,
+          181,
+          373,
+          181,
+          374,
+          182,
+          380,
+          182,
+          381,
+          183,
+          384,
+          183,
+          386,
+          181,
+          387,
+          181,
+          392,
+          176,
+          393,
+          176,
+          398,
+          171,
+          399,
+          171,
+          399,
+          161,
+          398,
+          160,
+          398,
+          149,
+          386,
+          137
+        ]
+      ]
+    ]
+  }
+}

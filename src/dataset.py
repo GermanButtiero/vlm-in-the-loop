@@ -14,9 +14,10 @@ from pycocotools import mask as coco_mask
 from matplotlib import pyplot as plt
 
 class CocoSegmentationDatasetMRCNN(Dataset):
-    def __init__(self, image_dir, seg_annotation_file):
+    def __init__(self, image_dir, seg_annotation_file, categories_to_keep=None):
         self.image_dir = image_dir
         self.coco_seg = COCO(seg_annotation_file)
+        self.categories_to_keep = categories_to_keep  # Optional filter
         
         # Get all image IDs from the dataset
         all_image_ids = list(self.coco_seg.imgs.keys())
@@ -31,10 +32,24 @@ class CocoSegmentationDatasetMRCNN(Dataset):
         
         print(f"Dataset contains {len(self.image_ids)} valid images out of {len(all_image_ids)} in annotations")
         
-        # Create a category mapping for all categories
+        # Create mappings for COCO category IDs to sequential class indices
         self.category_map = {}
-        for cat in self.coco_seg.loadCats(self.coco_seg.getCatIds()):
-            self.category_map[cat['id']] = cat['name']
+        self.category_id_to_idx = {}  # Map COCO category IDs to sequential indices
+        
+        # Get all category IDs from the dataset or filter to only the ones we want
+        if self.categories_to_keep:
+            cat_ids = [cat_id for cat_id in self.categories_to_keep if self.coco_seg.loadCats(cat_id)]
+        else:
+            cat_ids = self.coco_seg.getCatIds()
+        
+        # Create mapping from category ID to sequential index (starting from 1)
+        for idx, cat_id in enumerate(cat_ids, 1):  # Start from 1, as 0 is background
+            self.category_id_to_idx[cat_id] = idx
+            cat_info = self.coco_seg.loadCats([cat_id])[0]
+            self.category_map[cat_id] = cat_info['name']
+            
+        print(f"Category mapping: {self.category_map}")
+        print(f"Category ID to index mapping: {self.category_id_to_idx}")
 
     def __len__(self):
         return len(self.image_ids)
@@ -80,8 +95,10 @@ class CocoSegmentationDatasetMRCNN(Dataset):
             # Keep original category ID for reference
             category_ids.append(ann['category_id'])
             
-            # For segmentation only, use class 1 for all foreground objects
-            labels.append(1)  # 1 for foreground, 0 for background
+            # Use the actual category index for the label
+            cat_id = ann['category_id']
+            class_idx = self.category_id_to_idx.get(cat_id, 1)  # Default to 1 if not found
+            labels.append(class_idx)
         
         # Convert to tensor format
         if boxes:

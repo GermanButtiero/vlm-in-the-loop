@@ -1,0 +1,76 @@
+{
+  "image_idx": 1318,
+  "approved": false,
+  "vlm_response": "no\n\nthe image shows a person, peter baynes, with a red outline around a framed item on the wall behind him. the computer's detection of \"no objects\" is inaccurate, as there are clearly objects present in the image. the segmentation mask should have identified the person, the framed item, and possibly other elements in the background.",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "book"
+    ],
+    "class_ids": [
+      84
+    ],
+    "boxes": [
+      [
+        430.3800048828125,
+        245.16000366210938,
+        461.1199951171875,
+        308.95001220703125
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          453,
+          245,
+          452,
+          246,
+          441,
+          246,
+          440,
+          247,
+          430,
+          247,
+          431,
+          248,
+          431,
+          271,
+          432,
+          272,
+          432,
+          308,
+          449,
+          308,
+          450,
+          307,
+          460,
+          307,
+          460,
+          297,
+          459,
+          296,
+          459,
+          281,
+          458,
+          280,
+          458,
+          266,
+          457,
+          265,
+          457,
+          250,
+          456,
+          249,
+          456,
+          245
+        ]
+      ]
+    ]
+  }
+}

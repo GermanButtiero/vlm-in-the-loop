@@ -1,0 +1,104 @@
+{
+  "image_idx": 122,
+  "approved": true,
+  "vlm_response": "after carefully examining the image, i have visually identified the objects and their corresponding masks. the objects detected are:\n\n1. **people** (3 individuals)\n2. **dog** (1 dog)\n3. **couches** (2 couches)\n4. **lamps** (2 lamps)\n5. **books** (1 book)\n6. **plants** (1 plant)\n7. **decorative items** (1 plant)\n8. **kitchen counter** (1 kitchen counter)\n\nthe masks do not tightly fit any of the objects, and there are no significant background elements or spill-over. the objects are correctly detected, and the masks are not overly broad or inaccurate.\n\n*yes*\n\nthe objects are correctly detected and every mask is good.",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "book"
+    ],
+    "class_ids": [
+      84
+    ],
+    "boxes": [
+      [
+        475.3800048828125,
+        294.489990234375,
+        591.719970703125,
+        327.04998779296875
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          475,
+          294,
+          476,
+          295,
+          476,
+          299,
+          477,
+          300,
+          477,
+          304,
+          478,
+          305,
+          478,
+          309,
+          479,
+          310,
+          479,
+          315,
+          480,
+          316,
+          480,
+          320,
+          481,
+          321,
+          481,
+          322,
+          483,
+          324,
+          517,
+          324,
+          518,
+          325,
+          566,
+          325,
+          567,
+          326,
+          591,
+          326,
+          591,
+          321,
+          589,
+          319,
+          589,
+          318,
+          585,
+          314,
+          585,
+          313,
+          580,
+          308,
+          580,
+          307,
+          576,
+          303,
+          576,
+          302,
+          571,
+          297,
+          567,
+          297,
+          566,
+          296,
+          524,
+          296,
+          523,
+          295,
+          480,
+          295,
+          479,
+          294
+        ]
+      ]
+    ]
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "image_idx": 1382,
+  "approved": false,
+  "vlm_response": "the image contains several crayons, grapes, a tire, grass, a road, carrots, and a stop sign. the computer's detection of \"no objects\" is inaccurate. the segmentation masks should identify the crayons, grapes, tire, grass, road, carrots, and stop sign. the objects are clearly visible and distinct, and the segmentation masks should accurately represent these objects. therefore, the correct response is:\n\nno, the computer detected no objects, which is inaccurate. the segmentation masks should identify the crayons, grapes, tire, grass, road, carrots, and stop sign.",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        405.6400146484375,
+        250.25999450683594,
+        498.2699890136719,
+        309.2099914550781
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          424,
+          250,
+          422,
+          252,
+          421,
+          252,
+          420,
+          253,
+          419,
+          253,
+          418,
+          254,
+          417,
+          254,
+          416,
+          255,
+          415,
+          255,
+          413,
+          257,
+          412,
+          257,
+          411,
+          258,
+          410,
+          258,
+          409,
+          259,
+          408,
+          259,
+          408,
+          274,
+          407,
+          275,
+          407,
+          291,
+          406,
+          292,
+          406,
+          306,
+          419,
+          306,
+          420,
+          307,
+          465,
+          307,
+          466,
+          308,
+          497,
+          308,
+          497,
+          262,
+          494,
+          259,
+          493,
+          259,
+          486,
+          252,
+          481,
+          252,
+          480,
+          251,
+          437,
+          251,
+          436,
+          250
+        ]
+      ]
+    ]
+  }
+}

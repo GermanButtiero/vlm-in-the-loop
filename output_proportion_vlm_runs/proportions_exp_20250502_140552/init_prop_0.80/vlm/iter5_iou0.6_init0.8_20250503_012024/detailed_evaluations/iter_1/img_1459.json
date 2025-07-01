@@ -1,0 +1,102 @@
+{
+  "image_idx": 1459,
+  "approved": true,
+  "vlm_response": "the image shows a stop sign in a rural setting, with no other objects of interest. the computer's detection of \"no objects\" is accurate, as the only object present is the stop sign, which is correctly identified. the segmentation masks are not visible in the image, but based on the description, the computer has correctly identified the stop sign without any misclassifications or poor segmentation. therefore, the answer is:\n\nyes",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        292.54998779296875,
+        164.1999969482422,
+        343.510009765625,
+        218.42999267578125
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          308,
+          164,
+          301,
+          171,
+          300,
+          171,
+          293,
+          178,
+          293,
+          198,
+          294,
+          199,
+          294,
+          200,
+          297,
+          203,
+          297,
+          204,
+          300,
+          207,
+          300,
+          208,
+          302,
+          210,
+          302,
+          211,
+          305,
+          214,
+          305,
+          215,
+          307,
+          217,
+          327,
+          217,
+          333,
+          211,
+          334,
+          211,
+          342,
+          203,
+          342,
+          185,
+          343,
+          184,
+          343,
+          182,
+          341,
+          180,
+          341,
+          179,
+          339,
+          177,
+          339,
+          176,
+          337,
+          174,
+          337,
+          173,
+          335,
+          171,
+          335,
+          170,
+          332,
+          167,
+          332,
+          166,
+          330,
+          164
+        ]
+      ]
+    ]
+  }
+}

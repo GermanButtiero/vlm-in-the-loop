@@ -1,0 +1,90 @@
+{
+  "image_idx": 572,
+  "approved": false,
+  "vlm_response": "the computer's detection of objects in the image is not accurate. the image shows several objects, including traffic cones, a traffic light, and a stop sign, which are not listed in the provided object classes. additionally, the segmentation masks are not present in the image, making it impossible to evaluate their accuracy. therefore, the correct response is:\n\nno",
+  "prediction": {
+    "classes": [],
+    "class_ids": [],
+    "scores": [],
+    "boxes": [],
+    "masks_contours": []
+  },
+  "ground_truth": {
+    "classes": [
+      "stop sign"
+    ],
+    "class_ids": [
+      13
+    ],
+    "boxes": [
+      [
+        511.42999267578125,
+        85.26000213623047,
+        554.5499877929688,
+        146.3699951171875
+      ]
+    ],
+    "masks_contours": [
+      [
+        [
+          515,
+          85,
+          515,
+          89,
+          514,
+          90,
+          514,
+          107,
+          513,
+          108,
+          513,
+          125,
+          512,
+          126,
+          512,
+          142,
+          511,
+          143,
+          511,
+          144,
+          525,
+          144,
+          526,
+          145,
+          550,
+          145,
+          550,
+          141,
+          551,
+          140,
+          551,
+          124,
+          552,
+          123,
+          552,
+          107,
+          553,
+          106,
+          553,
+          90,
+          554,
+          89,
+          554,
+          88,
+          544,
+          88,
+          543,
+          87,
+          531,
+          87,
+          530,
+          86,
+          519,
+          86,
+          518,
+          85
+        ]
+      ]
+    ]
+  }
+}
